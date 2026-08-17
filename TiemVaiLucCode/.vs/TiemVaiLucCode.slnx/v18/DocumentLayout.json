@@ -1,0 +1,138 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\TrongNghia\\VISUAL STUDIO CODE\\C#\\BAICUOIKY\\TiemVaiLucCode\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{3B53399B-D810-489D-A863-3E70C3BE2551}|TiemVaiLucCode\\TiemVaiLucCode.csproj|d:\\trongnghia\\visual studio code\\c#\\baicuoiky\\tiemvailuccode\\tiemvailuccode\\migrations\\202608140446497_thembangnhanvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3B53399B-D810-489D-A863-3E70C3BE2551}|TiemVaiLucCode\\TiemVaiLucCode.csproj|solutionrelative:tiemvailuccode\\migrations\\202608140446497_thembangnhanvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3B53399B-D810-489D-A863-3E70C3BE2551}|TiemVaiLucCode\\TiemVaiLucCode.csproj|d:\\trongnghia\\visual studio code\\c#\\baicuoiky\\tiemvailuccode\\tiemvailuccode\\models\\nhanvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3B53399B-D810-489D-A863-3E70C3BE2551}|TiemVaiLucCode\\TiemVaiLucCode.csproj|solutionrelative:tiemvailuccode\\models\\nhanvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3B53399B-D810-489D-A863-3E70C3BE2551}|TiemVaiLucCode\\TiemVaiLucCode.csproj|d:\\trongnghia\\visual studio code\\c#\\baicuoiky\\tiemvailuccode\\tiemvailuccode\\models\\taikhoancontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3B53399B-D810-489D-A863-3E70C3BE2551}|TiemVaiLucCode\\TiemVaiLucCode.csproj|solutionrelative:tiemvailuccode\\models\\taikhoancontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3B53399B-D810-489D-A863-3E70C3BE2551}|TiemVaiLucCode\\TiemVaiLucCode.csproj|d:\\trongnghia\\visual studio code\\c#\\baicuoiky\\tiemvailuccode\\tiemvailuccode\\models\\taikhoan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3B53399B-D810-489D-A863-3E70C3BE2551}|TiemVaiLucCode\\TiemVaiLucCode.csproj|solutionrelative:tiemvailuccode\\models\\taikhoan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3B53399B-D810-489D-A863-3E70C3BE2551}|TiemVaiLucCode\\TiemVaiLucCode.csproj|d:\\trongnghia\\visual studio code\\c#\\baicuoiky\\tiemvailuccode\\tiemvailuccode\\models\\donhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3B53399B-D810-489D-A863-3E70C3BE2551}|TiemVaiLucCode\\TiemVaiLucCode.csproj|solutionrelative:tiemvailuccode\\models\\donhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3B53399B-D810-489D-A863-3E70C3BE2551}|TiemVaiLucCode\\TiemVaiLucCode.csproj|d:\\trongnghia\\visual studio code\\c#\\baicuoiky\\tiemvailuccode\\tiemvailuccode\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{3B53399B-D810-489D-A863-3E70C3BE2551}|TiemVaiLucCode\\TiemVaiLucCode.csproj|solutionrelative:tiemvailuccode\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3B53399B-D810-489D-A863-3E70C3BE2551}|TiemVaiLucCode\\TiemVaiLucCode.csproj|d:\\trongnghia\\visual studio code\\c#\\baicuoiky\\tiemvailuccode\\tiemvailuccode\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{3B53399B-D810-489D-A863-3E70C3BE2551}|TiemVaiLucCode\\TiemVaiLucCode.csproj|solutionrelative:tiemvailuccode\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "202608140446497_ThemBangNhanVien.cs",
+              "DocumentMoniker": "D:\\TrongNghia\\VISUAL STUDIO CODE\\C#\\BAICUOIKY\\TiemVaiLucCode\\TiemVaiLucCode\\Migrations\\202608140446497_ThemBangNhanVien.cs",
+              "RelativeDocumentMoniker": "TiemVaiLucCode\\Migrations\\202608140446497_ThemBangNhanVien.cs",
+              "ToolTip": "D:\\TrongNghia\\VISUAL STUDIO CODE\\C#\\BAICUOIKY\\TiemVaiLucCode\\TiemVaiLucCode\\Migrations\\202608140446497_ThemBangNhanVien.cs",
+              "RelativeToolTip": "TiemVaiLucCode\\Migrations\\202608140446497_ThemBangNhanVien.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABcAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-14T04:46:54.794Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "NhanVien.cs",
+              "DocumentMoniker": "D:\\TrongNghia\\VISUAL STUDIO CODE\\C#\\BAICUOIKY\\TiemVaiLucCode\\TiemVaiLucCode\\Models\\NhanVien.cs",
+              "RelativeDocumentMoniker": "TiemVaiLucCode\\Models\\NhanVien.cs",
+              "ToolTip": "D:\\TrongNghia\\VISUAL STUDIO CODE\\C#\\BAICUOIKY\\TiemVaiLucCode\\TiemVaiLucCode\\Models\\NhanVien.cs",
+              "RelativeToolTip": "TiemVaiLucCode\\Models\\NhanVien.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAA0wCUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-14T04:41:27.148Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "DonHang.cs",
+              "DocumentMoniker": "D:\\TrongNghia\\VISUAL STUDIO CODE\\C#\\BAICUOIKY\\TiemVaiLucCode\\TiemVaiLucCode\\Models\\DonHang.cs",
+              "RelativeDocumentMoniker": "TiemVaiLucCode\\Models\\DonHang.cs",
+              "ToolTip": "D:\\TrongNghia\\VISUAL STUDIO CODE\\C#\\BAICUOIKY\\TiemVaiLucCode\\TiemVaiLucCode\\Models\\DonHang.cs",
+              "RelativeToolTip": "TiemVaiLucCode\\Models\\DonHang.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAiwBgAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-14T04:14:06.288Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "TaiKhoanContext.cs",
+              "DocumentMoniker": "D:\\TrongNghia\\VISUAL STUDIO CODE\\C#\\BAICUOIKY\\TiemVaiLucCode\\TiemVaiLucCode\\Models\\TaiKhoanContext.cs",
+              "RelativeDocumentMoniker": "TiemVaiLucCode\\Models\\TaiKhoanContext.cs",
+              "ToolTip": "D:\\TrongNghia\\VISUAL STUDIO CODE\\C#\\BAICUOIKY\\TiemVaiLucCode\\TiemVaiLucCode\\Models\\TaiKhoanContext.cs",
+              "RelativeToolTip": "TiemVaiLucCode\\Models\\TaiKhoanContext.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAcwA0AAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-14T03:57:10.578Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "App.config",
+              "DocumentMoniker": "D:\\TrongNghia\\VISUAL STUDIO CODE\\C#\\BAICUOIKY\\TiemVaiLucCode\\TiemVaiLucCode\\App.config",
+              "RelativeDocumentMoniker": "TiemVaiLucCode\\App.config",
+              "ToolTip": "D:\\TrongNghia\\VISUAL STUDIO CODE\\C#\\BAICUOIKY\\TiemVaiLucCode\\TiemVaiLucCode\\App.config",
+              "RelativeToolTip": "TiemVaiLucCode\\App.config",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2026-08-14T03:37:29.957Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "TaiKhoan.cs",
+              "DocumentMoniker": "D:\\TrongNghia\\VISUAL STUDIO CODE\\C#\\BAICUOIKY\\TiemVaiLucCode\\TiemVaiLucCode\\Models\\TaiKhoan.cs",
+              "RelativeDocumentMoniker": "TiemVaiLucCode\\Models\\TaiKhoan.cs",
+              "ToolTip": "D:\\TrongNghia\\VISUAL STUDIO CODE\\C#\\BAICUOIKY\\TiemVaiLucCode\\TiemVaiLucCode\\Models\\TaiKhoan.cs",
+              "RelativeToolTip": "TiemVaiLucCode\\Models\\TaiKhoan.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-14T03:22:40.056Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Form1.cs [Design]",
+              "DocumentMoniker": "D:\\TrongNghia\\VISUAL STUDIO CODE\\C#\\BAICUOIKY\\TiemVaiLucCode\\TiemVaiLucCode\\Form1.cs",
+              "RelativeDocumentMoniker": "TiemVaiLucCode\\Form1.cs",
+              "ToolTip": "D:\\TrongNghia\\VISUAL STUDIO CODE\\C#\\BAICUOIKY\\TiemVaiLucCode\\TiemVaiLucCode\\Form1.cs [Design]",
+              "RelativeToolTip": "TiemVaiLucCode\\Form1.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-14T03:09:46.849Z",
+              "EditorCaption": " [Design]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
