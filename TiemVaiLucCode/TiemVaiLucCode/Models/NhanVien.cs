@@ -13,7 +13,7 @@ namespace TiemVaiLucCode.Models
         [Key]
         public int NhanVienId { get; set; }
 
-        // Liên kết 1-1 với bảng TaiKhoans để lấy thông tin đăng nhập
+        
         public int TaiKhoanId { get; set; }
 
         [ForeignKey("TaiKhoanId")]

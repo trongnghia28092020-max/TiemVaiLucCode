@@ -14,7 +14,7 @@ namespace TiemVaiLucCode.Models
         public int DonHangId { get; set; }
 
         [Required]
-        public int KhachHangId { get; set; } // Thay vì NguoiDungId thì đổi thành KhachHangId
+        public int KhachHangId { get; set; } 
 
         [ForeignKey("KhachHangId")]
         public virtual KhachHang KhachHang { get; set; }
