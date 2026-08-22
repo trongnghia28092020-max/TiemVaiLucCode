@@ -63,6 +63,16 @@ namespace TiemVaiLucCode.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap apps_11319676 {
+            get {
+                object obj = ResourceManager.GetObject("apps_11319676", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap communication_15047341 {
             get {
                 object obj = ResourceManager.GetObject("communication_15047341", resourceCulture);
@@ -83,9 +93,39 @@ namespace TiemVaiLucCode.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap man_15647384 {
+            get {
+                object obj = ResourceManager.GetObject("man_15647384", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap shopping_cart_2037547 {
+            get {
+                object obj = ResourceManager.GetObject("shopping-cart_2037547", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap silk_5321738 {
             get {
                 object obj = ResourceManager.GetObject("silk_5321738", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap warehouse_10112515 {
+            get {
+                object obj = ResourceManager.GetObject("warehouse_10112515", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

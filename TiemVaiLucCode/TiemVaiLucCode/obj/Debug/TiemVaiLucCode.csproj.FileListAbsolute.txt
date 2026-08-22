@@ -71,3 +71,4 @@ D:\TrongNghia\NAM HOC 25-26\HK3\C#\TiemVaiLucCode\TiemVaiLucCode\TiemVaiLucCode\
 D:\TrongNghia\NAM HOC 25-26\HK3\C#\TiemVaiLucCode\TiemVaiLucCode\TiemVaiLucCode\obj\Debug\TiemVaiL.48603C51.Up2Date
 D:\TrongNghia\NAM HOC 25-26\HK3\C#\TiemVaiLucCode\TiemVaiLucCode\TiemVaiLucCode\obj\Debug\TiemVaiLucCode.exe
 D:\TrongNghia\NAM HOC 25-26\HK3\C#\TiemVaiLucCode\TiemVaiLucCode\TiemVaiLucCode\obj\Debug\TiemVaiLucCode.pdb
+D:\TrongNghia\NAM HOC 25-26\HK3\C#\TiemVaiLucCode\TiemVaiLucCode\TiemVaiLucCode\obj\Debug\TiemVaiLucCode.Frm_TrangChu_Admin.resources
