@@ -29,40 +29,44 @@
         private void InitializeComponent()
         {
             this.pnlCard_DangNhap = new SiticoneNetFrameworkUI.SiticonePanel();
-            this.pnlCardChinh = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.lbldk = new System.Windows.Forms.Label();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.txt_DangNhap = new SiticoneNetFrameworkUI.SiticoneTextBox();
-            this.siticoneTextBox2 = new SiticoneNetFrameworkUI.SiticoneTextBox();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.siticoneButton1 = new SiticoneNetFrameworkUI.SiticoneButton();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.llbl_QuenMK = new System.Windows.Forms.LinkLabel();
+            this.cb_HienMK = new System.Windows.Forms.CheckBox();
+            this.txt_MatKhau = new SiticoneNetFrameworkUI.SiticoneTextBox();
+            this.txt_DangNhap = new SiticoneNetFrameworkUI.SiticoneTextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.lbldk = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.pnlCardChinh = new System.Windows.Forms.Panel();
             this.pnlCard_DangKy = new SiticoneNetFrameworkUI.SiticonePanel();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.siticoneTextBox7 = new SiticoneNetFrameworkUI.SiticoneTextBox();
+            this.siticoneTextBox6 = new SiticoneNetFrameworkUI.SiticoneTextBox();
+            this.siticoneTextBox5 = new SiticoneNetFrameworkUI.SiticoneTextBox();
             this.siticoneButton2 = new SiticoneNetFrameworkUI.SiticoneButton();
             this.siticoneTextBox3 = new SiticoneNetFrameworkUI.SiticoneTextBox();
             this.siticoneTextBox4 = new SiticoneNetFrameworkUI.SiticoneTextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label6 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
             this.label7 = new System.Windows.Forms.Label();
             this.lbldn = new System.Windows.Forms.Label();
-            this.siticoneTextBox5 = new SiticoneNetFrameworkUI.SiticoneTextBox();
-            this.siticoneTextBox6 = new SiticoneNetFrameworkUI.SiticoneTextBox();
-            this.siticoneTextBox7 = new SiticoneNetFrameworkUI.SiticoneTextBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cmb_VaiTro = new System.Windows.Forms.ComboBox();
+            this.pnl_MaCapcha = new SiticoneNetFrameworkUI.SiticonePanel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pnlCard_DangNhap.SuspendLayout();
             this.pnlCardChinh.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.pnlCard_DangKy.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
             // 
             // pnlCard_DangNhap
@@ -75,10 +79,13 @@
             this.pnlCard_DangNhap.BorderGradientEndColor = System.Drawing.Color.Purple;
             this.pnlCard_DangNhap.BorderGradientStartColor = System.Drawing.Color.Blue;
             this.pnlCard_DangNhap.BorderThickness = 2F;
+            this.pnlCard_DangNhap.Controls.Add(this.pictureBox3);
+            this.pnlCard_DangNhap.Controls.Add(this.pnl_MaCapcha);
+            this.pnlCard_DangNhap.Controls.Add(this.cmb_VaiTro);
             this.pnlCard_DangNhap.Controls.Add(this.siticoneButton1);
-            this.pnlCard_DangNhap.Controls.Add(this.linkLabel1);
-            this.pnlCard_DangNhap.Controls.Add(this.checkBox1);
-            this.pnlCard_DangNhap.Controls.Add(this.siticoneTextBox2);
+            this.pnlCard_DangNhap.Controls.Add(this.llbl_QuenMK);
+            this.pnlCard_DangNhap.Controls.Add(this.cb_HienMK);
+            this.pnlCard_DangNhap.Controls.Add(this.txt_MatKhau);
             this.pnlCard_DangNhap.Controls.Add(this.txt_DangNhap);
             this.pnlCard_DangNhap.Controls.Add(this.label4);
             this.pnlCard_DangNhap.Controls.Add(this.pictureBox1);
@@ -121,214 +128,6 @@
             this.pnlCard_DangNhap.UsePatternTexture = false;
             this.pnlCard_DangNhap.UseRadialGradient = false;
             this.pnlCard_DangNhap.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlCard_DangNhap_Paint);
-            // 
-            // pnlCardChinh
-            // 
-            this.pnlCardChinh.Controls.Add(this.pnlCard_DangNhap);
-            this.pnlCardChinh.Controls.Add(this.pnlCard_DangKy);
-            this.pnlCardChinh.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.pnlCardChinh.Location = new System.Drawing.Point(445, 27);
-            this.pnlCardChinh.Name = "pnlCardChinh";
-            this.pnlCardChinh.Size = new System.Drawing.Size(395, 643);
-            this.pnlCardChinh.TabIndex = 1;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.ForeColor = System.Drawing.Color.Peru;
-            this.label1.Location = new System.Drawing.Point(54, 20);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(91, 20);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Đăng Nhập";
-            // 
-            // lbldk
-            // 
-            this.lbldk.AutoSize = true;
-            this.lbldk.Location = new System.Drawing.Point(241, 20);
-            this.lbldk.Name = "lbldk";
-            this.lbldk.Size = new System.Drawing.Size(74, 20);
-            this.lbldk.TabIndex = 1;
-            this.lbldk.Text = "Đăng Ký";
-            this.lbldk.Click += new System.EventHandler(this.lbldk_Click);
-            // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.Chocolate;
-            this.panel2.Location = new System.Drawing.Point(30, 44);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(155, 3);
-            this.panel2.TabIndex = 2;
-            // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.panel3.Location = new System.Drawing.Point(186, 46);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(155, 1);
-            this.panel3.TabIndex = 3;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(27, 67);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(151, 20);
-            this.label3.TabIndex = 4;
-            this.label3.Text = "Chào mừng trở lại !";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(27, 92);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(232, 20);
-            this.label4.TabIndex = 6;
-            this.label4.Text = "Vui lòng đăng nhập để tiếp tục.";
-            this.label4.Click += new System.EventHandler(this.label4_Click);
-            // 
-            // txt_DangNhap
-            // 
-            this.txt_DangNhap.AccessibleDescription = "A customizable text input field.";
-            this.txt_DangNhap.AccessibleName = "Text Box";
-            this.txt_DangNhap.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
-            this.txt_DangNhap.BackColor = System.Drawing.Color.Transparent;
-            this.txt_DangNhap.BlinkCount = 3;
-            this.txt_DangNhap.BlinkShadow = false;
-            this.txt_DangNhap.BorderColor1 = System.Drawing.Color.LightSlateGray;
-            this.txt_DangNhap.BorderColor2 = System.Drawing.Color.LightSlateGray;
-            this.txt_DangNhap.BorderFocusColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(77)))), ((int)(((byte)(255)))));
-            this.txt_DangNhap.BorderFocusColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(77)))), ((int)(((byte)(255)))));
-            this.txt_DangNhap.CanShake = true;
-            this.txt_DangNhap.ContinuousBlink = false;
-            this.txt_DangNhap.CornerRadiusBottomLeft = 20;
-            this.txt_DangNhap.CornerRadiusBottomRight = 20;
-            this.txt_DangNhap.CornerRadiusTopLeft = 20;
-            this.txt_DangNhap.CornerRadiusTopRight = 20;
-            this.txt_DangNhap.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txt_DangNhap.CursorBlinkRate = 500;
-            this.txt_DangNhap.CursorColor = System.Drawing.Color.Black;
-            this.txt_DangNhap.CursorHeight = 26;
-            this.txt_DangNhap.CursorOffset = 0;
-            this.txt_DangNhap.CursorStyle = SiticoneNetFrameworkUI.Helpers.DrawingStyle.SiticoneDrawingStyle.Solid;
-            this.txt_DangNhap.CursorWidth = 1;
-            this.txt_DangNhap.DisabledBackColor = System.Drawing.Color.WhiteSmoke;
-            this.txt_DangNhap.DisabledBorderColor = System.Drawing.Color.LightGray;
-            this.txt_DangNhap.DisabledTextColor = System.Drawing.Color.Gray;
-            this.txt_DangNhap.EnableDropShadow = false;
-            this.txt_DangNhap.FillColor1 = System.Drawing.Color.White;
-            this.txt_DangNhap.FillColor2 = System.Drawing.Color.White;
-            this.txt_DangNhap.Font = new System.Drawing.Font("Segoe UI", 9.5F);
-            this.txt_DangNhap.ForeColor = System.Drawing.Color.DimGray;
-            this.txt_DangNhap.HoverBorderColor1 = System.Drawing.Color.Gray;
-            this.txt_DangNhap.HoverBorderColor2 = System.Drawing.Color.Gray;
-            this.txt_DangNhap.IsEnabled = true;
-            this.txt_DangNhap.Location = new System.Drawing.Point(30, 132);
-            this.txt_DangNhap.Name = "txt_DangNhap";
-            this.txt_DangNhap.PlaceholderColor = System.Drawing.Color.Gray;
-            this.txt_DangNhap.PlaceholderText = "Enter text here...";
-            this.txt_DangNhap.ReadOnlyBorderColor1 = System.Drawing.Color.LightGray;
-            this.txt_DangNhap.ReadOnlyBorderColor2 = System.Drawing.Color.LightGray;
-            this.txt_DangNhap.ReadOnlyFillColor1 = System.Drawing.Color.WhiteSmoke;
-            this.txt_DangNhap.ReadOnlyFillColor2 = System.Drawing.Color.WhiteSmoke;
-            this.txt_DangNhap.ReadOnlyPlaceholderColor = System.Drawing.Color.DarkGray;
-            this.txt_DangNhap.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(77)))), ((int)(((byte)(255)))));
-            this.txt_DangNhap.ShadowAnimationDuration = 1;
-            this.txt_DangNhap.ShadowBlur = 10;
-            this.txt_DangNhap.ShadowColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.txt_DangNhap.Size = new System.Drawing.Size(311, 38);
-            this.txt_DangNhap.SolidBorderColor = System.Drawing.Color.LightSlateGray;
-            this.txt_DangNhap.SolidBorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(77)))), ((int)(((byte)(255)))));
-            this.txt_DangNhap.SolidBorderHoverColor = System.Drawing.Color.Gray;
-            this.txt_DangNhap.SolidFillColor = System.Drawing.Color.White;
-            this.txt_DangNhap.TabIndex = 7;
-            this.txt_DangNhap.Text = "Tên đăng nhập";
-            this.txt_DangNhap.TextPadding = new System.Windows.Forms.Padding(16, 0, 6, 0);
-            this.txt_DangNhap.ValidationErrorMessage = "Invalid input.";
-            this.txt_DangNhap.ValidationFunction = null;
-            this.txt_DangNhap.Click += new System.EventHandler(this.txt_DangNhap_Click);
-            this.txt_DangNhap.Enter += new System.EventHandler(this.txt_DangNhap_Enter);
-            this.txt_DangNhap.Leave += new System.EventHandler(this.txt_DangNhap_Leave);
-            // 
-            // siticoneTextBox2
-            // 
-            this.siticoneTextBox2.AccessibleDescription = "A customizable text input field.";
-            this.siticoneTextBox2.AccessibleName = "Text Box";
-            this.siticoneTextBox2.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
-            this.siticoneTextBox2.BackColor = System.Drawing.Color.Transparent;
-            this.siticoneTextBox2.BlinkCount = 3;
-            this.siticoneTextBox2.BlinkShadow = false;
-            this.siticoneTextBox2.BorderColor1 = System.Drawing.Color.LightSlateGray;
-            this.siticoneTextBox2.BorderColor2 = System.Drawing.Color.LightSlateGray;
-            this.siticoneTextBox2.BorderFocusColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(77)))), ((int)(((byte)(255)))));
-            this.siticoneTextBox2.BorderFocusColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(77)))), ((int)(((byte)(255)))));
-            this.siticoneTextBox2.CanShake = true;
-            this.siticoneTextBox2.ContinuousBlink = false;
-            this.siticoneTextBox2.CornerRadiusBottomLeft = 20;
-            this.siticoneTextBox2.CornerRadiusBottomRight = 20;
-            this.siticoneTextBox2.CornerRadiusTopLeft = 20;
-            this.siticoneTextBox2.CornerRadiusTopRight = 20;
-            this.siticoneTextBox2.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.siticoneTextBox2.CursorBlinkRate = 500;
-            this.siticoneTextBox2.CursorColor = System.Drawing.Color.Black;
-            this.siticoneTextBox2.CursorHeight = 26;
-            this.siticoneTextBox2.CursorOffset = 0;
-            this.siticoneTextBox2.CursorStyle = SiticoneNetFrameworkUI.Helpers.DrawingStyle.SiticoneDrawingStyle.Solid;
-            this.siticoneTextBox2.CursorWidth = 1;
-            this.siticoneTextBox2.DisabledBackColor = System.Drawing.Color.WhiteSmoke;
-            this.siticoneTextBox2.DisabledBorderColor = System.Drawing.Color.LightGray;
-            this.siticoneTextBox2.DisabledTextColor = System.Drawing.Color.Gray;
-            this.siticoneTextBox2.EnableDropShadow = false;
-            this.siticoneTextBox2.FillColor1 = System.Drawing.Color.White;
-            this.siticoneTextBox2.FillColor2 = System.Drawing.Color.White;
-            this.siticoneTextBox2.Font = new System.Drawing.Font("Segoe UI", 9.5F);
-            this.siticoneTextBox2.ForeColor = System.Drawing.Color.DimGray;
-            this.siticoneTextBox2.HoverBorderColor1 = System.Drawing.Color.Gray;
-            this.siticoneTextBox2.HoverBorderColor2 = System.Drawing.Color.Gray;
-            this.siticoneTextBox2.IsEnabled = true;
-            this.siticoneTextBox2.Location = new System.Drawing.Point(30, 192);
-            this.siticoneTextBox2.Name = "siticoneTextBox2";
-            this.siticoneTextBox2.PlaceholderColor = System.Drawing.Color.Gray;
-            this.siticoneTextBox2.PlaceholderText = "Enter text here...";
-            this.siticoneTextBox2.ReadOnlyBorderColor1 = System.Drawing.Color.LightGray;
-            this.siticoneTextBox2.ReadOnlyBorderColor2 = System.Drawing.Color.LightGray;
-            this.siticoneTextBox2.ReadOnlyFillColor1 = System.Drawing.Color.WhiteSmoke;
-            this.siticoneTextBox2.ReadOnlyFillColor2 = System.Drawing.Color.WhiteSmoke;
-            this.siticoneTextBox2.ReadOnlyPlaceholderColor = System.Drawing.Color.DarkGray;
-            this.siticoneTextBox2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(77)))), ((int)(((byte)(255)))));
-            this.siticoneTextBox2.ShadowAnimationDuration = 1;
-            this.siticoneTextBox2.ShadowBlur = 10;
-            this.siticoneTextBox2.ShadowColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.siticoneTextBox2.Size = new System.Drawing.Size(311, 38);
-            this.siticoneTextBox2.SolidBorderColor = System.Drawing.Color.LightSlateGray;
-            this.siticoneTextBox2.SolidBorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(77)))), ((int)(((byte)(255)))));
-            this.siticoneTextBox2.SolidBorderHoverColor = System.Drawing.Color.Gray;
-            this.siticoneTextBox2.SolidFillColor = System.Drawing.Color.White;
-            this.siticoneTextBox2.TabIndex = 8;
-            this.siticoneTextBox2.Text = "Mật khẩu";
-            this.siticoneTextBox2.TextPadding = new System.Windows.Forms.Padding(16, 0, 6, 0);
-            this.siticoneTextBox2.ValidationErrorMessage = "Invalid input.";
-            this.siticoneTextBox2.ValidationFunction = null;
-            // 
-            // checkBox1
-            // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(30, 260);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(137, 24);
-            this.checkBox1.TabIndex = 9;
-            this.checkBox1.Text = "Hiện mật khẩu";
-            this.checkBox1.UseVisualStyleBackColor = true;
-            // 
-            // linkLabel1
-            // 
-            this.linkLabel1.AutoSize = true;
-            this.linkLabel1.Location = new System.Drawing.Point(213, 264);
-            this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(128, 20);
-            this.linkLabel1.TabIndex = 10;
-            this.linkLabel1.TabStop = true;
-            this.linkLabel1.Text = "Quên mật khẩu?";
             // 
             // siticoneButton1
             // 
@@ -379,7 +178,7 @@
             this.siticoneButton1.IsReadOnly = false;
             this.siticoneButton1.IsToggleButton = false;
             this.siticoneButton1.IsToggled = false;
-            this.siticoneButton1.Location = new System.Drawing.Point(30, 309);
+            this.siticoneButton1.Location = new System.Drawing.Point(30, 458);
             this.siticoneButton1.LongPressDurationMS = 1000;
             this.siticoneButton1.Name = "siticoneButton1";
             this.siticoneButton1.NormalFontStyle = System.Drawing.FontStyle.Regular;
@@ -406,25 +205,215 @@
             this.siticoneButton1.UseAdvancedRendering = true;
             this.siticoneButton1.UseParticles = false;
             // 
-            // pictureBox1
+            // llbl_QuenMK
             // 
-            this.pictureBox1.Image = global::TiemVaiLucCode.Properties.Resources.communication_15047341;
-            this.pictureBox1.Location = new System.Drawing.Point(186, 62);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(26, 27);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 5;
-            this.pictureBox1.TabStop = false;
+            this.llbl_QuenMK.AutoSize = true;
+            this.llbl_QuenMK.Location = new System.Drawing.Point(213, 264);
+            this.llbl_QuenMK.Name = "llbl_QuenMK";
+            this.llbl_QuenMK.Size = new System.Drawing.Size(128, 20);
+            this.llbl_QuenMK.TabIndex = 10;
+            this.llbl_QuenMK.TabStop = true;
+            this.llbl_QuenMK.Text = "Quên mật khẩu?";
             // 
-            // panel1
+            // cb_HienMK
             // 
-            this.panel1.BackgroundImage = global::TiemVaiLucCode.Properties.Resources.dn;
-            this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel1.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(403, 688);
-            this.panel1.TabIndex = 0;
+            this.cb_HienMK.AutoSize = true;
+            this.cb_HienMK.Location = new System.Drawing.Point(30, 260);
+            this.cb_HienMK.Name = "cb_HienMK";
+            this.cb_HienMK.Size = new System.Drawing.Size(137, 24);
+            this.cb_HienMK.TabIndex = 9;
+            this.cb_HienMK.Text = "Hiện mật khẩu";
+            this.cb_HienMK.UseVisualStyleBackColor = true;
+            // 
+            // txt_MatKhau
+            // 
+            this.txt_MatKhau.AccessibleDescription = "A customizable text input field.";
+            this.txt_MatKhau.AccessibleName = "Text Box";
+            this.txt_MatKhau.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
+            this.txt_MatKhau.BackColor = System.Drawing.Color.Transparent;
+            this.txt_MatKhau.BlinkCount = 3;
+            this.txt_MatKhau.BlinkShadow = false;
+            this.txt_MatKhau.BorderColor1 = System.Drawing.Color.LightSlateGray;
+            this.txt_MatKhau.BorderColor2 = System.Drawing.Color.LightSlateGray;
+            this.txt_MatKhau.BorderFocusColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(77)))), ((int)(((byte)(255)))));
+            this.txt_MatKhau.BorderFocusColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(77)))), ((int)(((byte)(255)))));
+            this.txt_MatKhau.CanShake = true;
+            this.txt_MatKhau.ContinuousBlink = false;
+            this.txt_MatKhau.CornerRadiusBottomLeft = 20;
+            this.txt_MatKhau.CornerRadiusBottomRight = 20;
+            this.txt_MatKhau.CornerRadiusTopLeft = 20;
+            this.txt_MatKhau.CornerRadiusTopRight = 20;
+            this.txt_MatKhau.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txt_MatKhau.CursorBlinkRate = 500;
+            this.txt_MatKhau.CursorColor = System.Drawing.Color.Black;
+            this.txt_MatKhau.CursorHeight = 26;
+            this.txt_MatKhau.CursorOffset = 0;
+            this.txt_MatKhau.CursorStyle = SiticoneNetFrameworkUI.Helpers.DrawingStyle.SiticoneDrawingStyle.Solid;
+            this.txt_MatKhau.CursorWidth = 1;
+            this.txt_MatKhau.DisabledBackColor = System.Drawing.Color.WhiteSmoke;
+            this.txt_MatKhau.DisabledBorderColor = System.Drawing.Color.LightGray;
+            this.txt_MatKhau.DisabledTextColor = System.Drawing.Color.Gray;
+            this.txt_MatKhau.EnableDropShadow = false;
+            this.txt_MatKhau.FillColor1 = System.Drawing.Color.White;
+            this.txt_MatKhau.FillColor2 = System.Drawing.Color.White;
+            this.txt_MatKhau.Font = new System.Drawing.Font("Segoe UI", 9.5F);
+            this.txt_MatKhau.ForeColor = System.Drawing.Color.DimGray;
+            this.txt_MatKhau.HoverBorderColor1 = System.Drawing.Color.Gray;
+            this.txt_MatKhau.HoverBorderColor2 = System.Drawing.Color.Gray;
+            this.txt_MatKhau.IsEnabled = true;
+            this.txt_MatKhau.Location = new System.Drawing.Point(30, 192);
+            this.txt_MatKhau.Name = "txt_MatKhau";
+            this.txt_MatKhau.PlaceholderColor = System.Drawing.Color.Red;
+            this.txt_MatKhau.PlaceholderText = "Hãy nhập mật khẩu!...";
+            this.txt_MatKhau.ReadOnlyBorderColor1 = System.Drawing.Color.LightGray;
+            this.txt_MatKhau.ReadOnlyBorderColor2 = System.Drawing.Color.LightGray;
+            this.txt_MatKhau.ReadOnlyFillColor1 = System.Drawing.Color.WhiteSmoke;
+            this.txt_MatKhau.ReadOnlyFillColor2 = System.Drawing.Color.WhiteSmoke;
+            this.txt_MatKhau.ReadOnlyPlaceholderColor = System.Drawing.Color.DarkGray;
+            this.txt_MatKhau.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(77)))), ((int)(((byte)(255)))));
+            this.txt_MatKhau.ShadowAnimationDuration = 1;
+            this.txt_MatKhau.ShadowBlur = 10;
+            this.txt_MatKhau.ShadowColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.txt_MatKhau.Size = new System.Drawing.Size(311, 38);
+            this.txt_MatKhau.SolidBorderColor = System.Drawing.Color.LightSlateGray;
+            this.txt_MatKhau.SolidBorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(77)))), ((int)(((byte)(255)))));
+            this.txt_MatKhau.SolidBorderHoverColor = System.Drawing.Color.Gray;
+            this.txt_MatKhau.SolidFillColor = System.Drawing.Color.White;
+            this.txt_MatKhau.TabIndex = 7;
+            this.txt_MatKhau.Text = "Mật khẩu";
+            this.txt_MatKhau.TextPadding = new System.Windows.Forms.Padding(16, 0, 6, 0);
+            this.txt_MatKhau.ValidationErrorMessage = "Invalid input.";
+            this.txt_MatKhau.ValidationFunction = null;
+            this.txt_MatKhau.Enter += new System.EventHandler(this.txt_MatKhau_Enter);
+            this.txt_MatKhau.Leave += new System.EventHandler(this.txt_MatKhau_Leave);
+            // 
+            // txt_DangNhap
+            // 
+            this.txt_DangNhap.AccessibleDescription = "A customizable text input field.";
+            this.txt_DangNhap.AccessibleName = "Text Box";
+            this.txt_DangNhap.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
+            this.txt_DangNhap.BackColor = System.Drawing.Color.Transparent;
+            this.txt_DangNhap.BlinkCount = 3;
+            this.txt_DangNhap.BlinkShadow = false;
+            this.txt_DangNhap.BorderColor1 = System.Drawing.Color.LightSlateGray;
+            this.txt_DangNhap.BorderColor2 = System.Drawing.Color.LightSlateGray;
+            this.txt_DangNhap.BorderFocusColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(77)))), ((int)(((byte)(255)))));
+            this.txt_DangNhap.BorderFocusColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(77)))), ((int)(((byte)(255)))));
+            this.txt_DangNhap.CanShake = true;
+            this.txt_DangNhap.ContinuousBlink = false;
+            this.txt_DangNhap.CornerRadiusBottomLeft = 20;
+            this.txt_DangNhap.CornerRadiusBottomRight = 20;
+            this.txt_DangNhap.CornerRadiusTopLeft = 20;
+            this.txt_DangNhap.CornerRadiusTopRight = 20;
+            this.txt_DangNhap.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txt_DangNhap.CursorBlinkRate = 500;
+            this.txt_DangNhap.CursorColor = System.Drawing.Color.Black;
+            this.txt_DangNhap.CursorHeight = 26;
+            this.txt_DangNhap.CursorOffset = 0;
+            this.txt_DangNhap.CursorStyle = SiticoneNetFrameworkUI.Helpers.DrawingStyle.SiticoneDrawingStyle.Solid;
+            this.txt_DangNhap.CursorWidth = 1;
+            this.txt_DangNhap.DisabledBackColor = System.Drawing.Color.WhiteSmoke;
+            this.txt_DangNhap.DisabledBorderColor = System.Drawing.Color.LightGray;
+            this.txt_DangNhap.DisabledTextColor = System.Drawing.Color.Gray;
+            this.txt_DangNhap.EnableDropShadow = false;
+            this.txt_DangNhap.FillColor1 = System.Drawing.Color.White;
+            this.txt_DangNhap.FillColor2 = System.Drawing.Color.White;
+            this.txt_DangNhap.Font = new System.Drawing.Font("Segoe UI", 9.5F);
+            this.txt_DangNhap.ForeColor = System.Drawing.Color.DimGray;
+            this.txt_DangNhap.HoverBorderColor1 = System.Drawing.Color.Gray;
+            this.txt_DangNhap.HoverBorderColor2 = System.Drawing.Color.Gray;
+            this.txt_DangNhap.IsEnabled = true;
+            this.txt_DangNhap.Location = new System.Drawing.Point(30, 132);
+            this.txt_DangNhap.Name = "txt_DangNhap";
+            this.txt_DangNhap.PlaceholderColor = System.Drawing.Color.Red;
+            this.txt_DangNhap.PlaceholderText = "Hãy nhập tên!...";
+            this.txt_DangNhap.ReadOnlyBorderColor1 = System.Drawing.Color.LightGray;
+            this.txt_DangNhap.ReadOnlyBorderColor2 = System.Drawing.Color.LightGray;
+            this.txt_DangNhap.ReadOnlyFillColor1 = System.Drawing.Color.WhiteSmoke;
+            this.txt_DangNhap.ReadOnlyFillColor2 = System.Drawing.Color.WhiteSmoke;
+            this.txt_DangNhap.ReadOnlyPlaceholderColor = System.Drawing.Color.DarkGray;
+            this.txt_DangNhap.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(77)))), ((int)(((byte)(255)))));
+            this.txt_DangNhap.ShadowAnimationDuration = 1;
+            this.txt_DangNhap.ShadowBlur = 10;
+            this.txt_DangNhap.ShadowColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.txt_DangNhap.Size = new System.Drawing.Size(311, 38);
+            this.txt_DangNhap.SolidBorderColor = System.Drawing.Color.LightSlateGray;
+            this.txt_DangNhap.SolidBorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(77)))), ((int)(((byte)(255)))));
+            this.txt_DangNhap.SolidBorderHoverColor = System.Drawing.Color.Gray;
+            this.txt_DangNhap.SolidFillColor = System.Drawing.Color.White;
+            this.txt_DangNhap.TabIndex = 7;
+            this.txt_DangNhap.Text = "Tên đăng nhập";
+            this.txt_DangNhap.TextPadding = new System.Windows.Forms.Padding(16, 0, 6, 0);
+            this.txt_DangNhap.ValidationErrorMessage = "Invalid input.";
+            this.txt_DangNhap.ValidationFunction = null;
+            this.txt_DangNhap.Click += new System.EventHandler(this.txt_DangNhap_Click);
+            this.txt_DangNhap.Enter += new System.EventHandler(this.txt_DangNhap_Enter);
+            this.txt_DangNhap.Leave += new System.EventHandler(this.txt_DangNhap_Leave);
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(27, 92);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(232, 20);
+            this.label4.TabIndex = 6;
+            this.label4.Text = "Vui lòng đăng nhập để tiếp tục.";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(27, 67);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(151, 20);
+            this.label3.TabIndex = 4;
+            this.label3.Text = "Chào mừng trở lại !";
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.panel3.Location = new System.Drawing.Point(186, 46);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(155, 1);
+            this.panel3.TabIndex = 3;
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.Chocolate;
+            this.panel2.Location = new System.Drawing.Point(30, 44);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(155, 3);
+            this.panel2.TabIndex = 2;
+            // 
+            // lbldk
+            // 
+            this.lbldk.AutoSize = true;
+            this.lbldk.Location = new System.Drawing.Point(241, 20);
+            this.lbldk.Name = "lbldk";
+            this.lbldk.Size = new System.Drawing.Size(74, 20);
+            this.lbldk.TabIndex = 1;
+            this.lbldk.Text = "Đăng Ký";
+            this.lbldk.Click += new System.EventHandler(this.lbldk_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.ForeColor = System.Drawing.Color.Peru;
+            this.label1.Location = new System.Drawing.Point(54, 20);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(91, 20);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Đăng Nhập";
+            // 
+            // pnlCardChinh
+            // 
+            this.pnlCardChinh.Controls.Add(this.pnlCard_DangNhap);
+            this.pnlCardChinh.Controls.Add(this.pnlCard_DangKy);
+            this.pnlCardChinh.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pnlCardChinh.Location = new System.Drawing.Point(445, 27);
+            this.pnlCardChinh.Name = "pnlCardChinh";
+            this.pnlCardChinh.Size = new System.Drawing.Size(395, 643);
+            this.pnlCardChinh.TabIndex = 1;
             // 
             // pnlCard_DangKy
             // 
@@ -483,6 +472,194 @@
             this.pnlCard_DangKy.UseMultiGradient = false;
             this.pnlCard_DangKy.UsePatternTexture = false;
             this.pnlCard_DangKy.UseRadialGradient = false;
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(31, 315);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(310, 28);
+            this.comboBox1.TabIndex = 15;
+            // 
+            // siticoneTextBox7
+            // 
+            this.siticoneTextBox7.AccessibleDescription = "A customizable text input field.";
+            this.siticoneTextBox7.AccessibleName = "Text Box";
+            this.siticoneTextBox7.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
+            this.siticoneTextBox7.BackColor = System.Drawing.Color.Transparent;
+            this.siticoneTextBox7.BlinkCount = 3;
+            this.siticoneTextBox7.BlinkShadow = false;
+            this.siticoneTextBox7.BorderColor1 = System.Drawing.Color.LightSlateGray;
+            this.siticoneTextBox7.BorderColor2 = System.Drawing.Color.LightSlateGray;
+            this.siticoneTextBox7.BorderFocusColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(77)))), ((int)(((byte)(255)))));
+            this.siticoneTextBox7.BorderFocusColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(77)))), ((int)(((byte)(255)))));
+            this.siticoneTextBox7.CanShake = true;
+            this.siticoneTextBox7.ContinuousBlink = false;
+            this.siticoneTextBox7.CornerRadiusBottomLeft = 20;
+            this.siticoneTextBox7.CornerRadiusBottomRight = 20;
+            this.siticoneTextBox7.CornerRadiusTopLeft = 20;
+            this.siticoneTextBox7.CornerRadiusTopRight = 20;
+            this.siticoneTextBox7.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.siticoneTextBox7.CursorBlinkRate = 500;
+            this.siticoneTextBox7.CursorColor = System.Drawing.Color.Black;
+            this.siticoneTextBox7.CursorHeight = 26;
+            this.siticoneTextBox7.CursorOffset = 0;
+            this.siticoneTextBox7.CursorStyle = SiticoneNetFrameworkUI.Helpers.DrawingStyle.SiticoneDrawingStyle.Solid;
+            this.siticoneTextBox7.CursorWidth = 1;
+            this.siticoneTextBox7.DisabledBackColor = System.Drawing.Color.WhiteSmoke;
+            this.siticoneTextBox7.DisabledBorderColor = System.Drawing.Color.LightGray;
+            this.siticoneTextBox7.DisabledTextColor = System.Drawing.Color.Gray;
+            this.siticoneTextBox7.EnableDropShadow = false;
+            this.siticoneTextBox7.FillColor1 = System.Drawing.Color.White;
+            this.siticoneTextBox7.FillColor2 = System.Drawing.Color.White;
+            this.siticoneTextBox7.Font = new System.Drawing.Font("Segoe UI", 9.5F);
+            this.siticoneTextBox7.ForeColor = System.Drawing.Color.DimGray;
+            this.siticoneTextBox7.HoverBorderColor1 = System.Drawing.Color.Gray;
+            this.siticoneTextBox7.HoverBorderColor2 = System.Drawing.Color.Gray;
+            this.siticoneTextBox7.IsEnabled = true;
+            this.siticoneTextBox7.Location = new System.Drawing.Point(30, 428);
+            this.siticoneTextBox7.Name = "siticoneTextBox7";
+            this.siticoneTextBox7.PlaceholderColor = System.Drawing.Color.Gray;
+            this.siticoneTextBox7.PlaceholderText = "Enter text here...";
+            this.siticoneTextBox7.ReadOnlyBorderColor1 = System.Drawing.Color.LightGray;
+            this.siticoneTextBox7.ReadOnlyBorderColor2 = System.Drawing.Color.LightGray;
+            this.siticoneTextBox7.ReadOnlyFillColor1 = System.Drawing.Color.WhiteSmoke;
+            this.siticoneTextBox7.ReadOnlyFillColor2 = System.Drawing.Color.WhiteSmoke;
+            this.siticoneTextBox7.ReadOnlyPlaceholderColor = System.Drawing.Color.DarkGray;
+            this.siticoneTextBox7.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(77)))), ((int)(((byte)(255)))));
+            this.siticoneTextBox7.ShadowAnimationDuration = 1;
+            this.siticoneTextBox7.ShadowBlur = 10;
+            this.siticoneTextBox7.ShadowColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.siticoneTextBox7.Size = new System.Drawing.Size(311, 38);
+            this.siticoneTextBox7.SolidBorderColor = System.Drawing.Color.LightSlateGray;
+            this.siticoneTextBox7.SolidBorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(77)))), ((int)(((byte)(255)))));
+            this.siticoneTextBox7.SolidBorderHoverColor = System.Drawing.Color.Gray;
+            this.siticoneTextBox7.SolidFillColor = System.Drawing.Color.White;
+            this.siticoneTextBox7.TabIndex = 14;
+            this.siticoneTextBox7.Text = "Xác Nhận Mật Khẩu";
+            this.siticoneTextBox7.TextPadding = new System.Windows.Forms.Padding(16, 0, 6, 0);
+            this.siticoneTextBox7.ValidationErrorMessage = "Invalid input.";
+            this.siticoneTextBox7.ValidationFunction = null;
+            // 
+            // siticoneTextBox6
+            // 
+            this.siticoneTextBox6.AccessibleDescription = "A customizable text input field.";
+            this.siticoneTextBox6.AccessibleName = "Text Box";
+            this.siticoneTextBox6.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
+            this.siticoneTextBox6.BackColor = System.Drawing.Color.Transparent;
+            this.siticoneTextBox6.BlinkCount = 3;
+            this.siticoneTextBox6.BlinkShadow = false;
+            this.siticoneTextBox6.BorderColor1 = System.Drawing.Color.LightSlateGray;
+            this.siticoneTextBox6.BorderColor2 = System.Drawing.Color.LightSlateGray;
+            this.siticoneTextBox6.BorderFocusColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(77)))), ((int)(((byte)(255)))));
+            this.siticoneTextBox6.BorderFocusColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(77)))), ((int)(((byte)(255)))));
+            this.siticoneTextBox6.CanShake = true;
+            this.siticoneTextBox6.ContinuousBlink = false;
+            this.siticoneTextBox6.CornerRadiusBottomLeft = 20;
+            this.siticoneTextBox6.CornerRadiusBottomRight = 20;
+            this.siticoneTextBox6.CornerRadiusTopLeft = 20;
+            this.siticoneTextBox6.CornerRadiusTopRight = 20;
+            this.siticoneTextBox6.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.siticoneTextBox6.CursorBlinkRate = 500;
+            this.siticoneTextBox6.CursorColor = System.Drawing.Color.Black;
+            this.siticoneTextBox6.CursorHeight = 26;
+            this.siticoneTextBox6.CursorOffset = 0;
+            this.siticoneTextBox6.CursorStyle = SiticoneNetFrameworkUI.Helpers.DrawingStyle.SiticoneDrawingStyle.Solid;
+            this.siticoneTextBox6.CursorWidth = 1;
+            this.siticoneTextBox6.DisabledBackColor = System.Drawing.Color.WhiteSmoke;
+            this.siticoneTextBox6.DisabledBorderColor = System.Drawing.Color.LightGray;
+            this.siticoneTextBox6.DisabledTextColor = System.Drawing.Color.Gray;
+            this.siticoneTextBox6.EnableDropShadow = false;
+            this.siticoneTextBox6.FillColor1 = System.Drawing.Color.White;
+            this.siticoneTextBox6.FillColor2 = System.Drawing.Color.White;
+            this.siticoneTextBox6.Font = new System.Drawing.Font("Segoe UI", 9.5F);
+            this.siticoneTextBox6.ForeColor = System.Drawing.Color.DimGray;
+            this.siticoneTextBox6.HoverBorderColor1 = System.Drawing.Color.Gray;
+            this.siticoneTextBox6.HoverBorderColor2 = System.Drawing.Color.Gray;
+            this.siticoneTextBox6.IsEnabled = true;
+            this.siticoneTextBox6.Location = new System.Drawing.Point(30, 362);
+            this.siticoneTextBox6.Name = "siticoneTextBox6";
+            this.siticoneTextBox6.PlaceholderColor = System.Drawing.Color.Gray;
+            this.siticoneTextBox6.PlaceholderText = "Enter text here...";
+            this.siticoneTextBox6.ReadOnlyBorderColor1 = System.Drawing.Color.LightGray;
+            this.siticoneTextBox6.ReadOnlyBorderColor2 = System.Drawing.Color.LightGray;
+            this.siticoneTextBox6.ReadOnlyFillColor1 = System.Drawing.Color.WhiteSmoke;
+            this.siticoneTextBox6.ReadOnlyFillColor2 = System.Drawing.Color.WhiteSmoke;
+            this.siticoneTextBox6.ReadOnlyPlaceholderColor = System.Drawing.Color.DarkGray;
+            this.siticoneTextBox6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(77)))), ((int)(((byte)(255)))));
+            this.siticoneTextBox6.ShadowAnimationDuration = 1;
+            this.siticoneTextBox6.ShadowBlur = 10;
+            this.siticoneTextBox6.ShadowColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.siticoneTextBox6.Size = new System.Drawing.Size(311, 38);
+            this.siticoneTextBox6.SolidBorderColor = System.Drawing.Color.LightSlateGray;
+            this.siticoneTextBox6.SolidBorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(77)))), ((int)(((byte)(255)))));
+            this.siticoneTextBox6.SolidBorderHoverColor = System.Drawing.Color.Gray;
+            this.siticoneTextBox6.SolidFillColor = System.Drawing.Color.White;
+            this.siticoneTextBox6.TabIndex = 13;
+            this.siticoneTextBox6.Text = "Mật Khẩu";
+            this.siticoneTextBox6.TextPadding = new System.Windows.Forms.Padding(16, 0, 6, 0);
+            this.siticoneTextBox6.ValidationErrorMessage = "Invalid input.";
+            this.siticoneTextBox6.ValidationFunction = null;
+            // 
+            // siticoneTextBox5
+            // 
+            this.siticoneTextBox5.AccessibleDescription = "A customizable text input field.";
+            this.siticoneTextBox5.AccessibleName = "Text Box";
+            this.siticoneTextBox5.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
+            this.siticoneTextBox5.BackColor = System.Drawing.Color.Transparent;
+            this.siticoneTextBox5.BlinkCount = 3;
+            this.siticoneTextBox5.BlinkShadow = false;
+            this.siticoneTextBox5.BorderColor1 = System.Drawing.Color.LightSlateGray;
+            this.siticoneTextBox5.BorderColor2 = System.Drawing.Color.LightSlateGray;
+            this.siticoneTextBox5.BorderFocusColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(77)))), ((int)(((byte)(255)))));
+            this.siticoneTextBox5.BorderFocusColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(77)))), ((int)(((byte)(255)))));
+            this.siticoneTextBox5.CanShake = true;
+            this.siticoneTextBox5.ContinuousBlink = false;
+            this.siticoneTextBox5.CornerRadiusBottomLeft = 20;
+            this.siticoneTextBox5.CornerRadiusBottomRight = 20;
+            this.siticoneTextBox5.CornerRadiusTopLeft = 20;
+            this.siticoneTextBox5.CornerRadiusTopRight = 20;
+            this.siticoneTextBox5.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.siticoneTextBox5.CursorBlinkRate = 500;
+            this.siticoneTextBox5.CursorColor = System.Drawing.Color.Black;
+            this.siticoneTextBox5.CursorHeight = 26;
+            this.siticoneTextBox5.CursorOffset = 0;
+            this.siticoneTextBox5.CursorStyle = SiticoneNetFrameworkUI.Helpers.DrawingStyle.SiticoneDrawingStyle.Solid;
+            this.siticoneTextBox5.CursorWidth = 1;
+            this.siticoneTextBox5.DisabledBackColor = System.Drawing.Color.WhiteSmoke;
+            this.siticoneTextBox5.DisabledBorderColor = System.Drawing.Color.LightGray;
+            this.siticoneTextBox5.DisabledTextColor = System.Drawing.Color.Gray;
+            this.siticoneTextBox5.EnableDropShadow = false;
+            this.siticoneTextBox5.FillColor1 = System.Drawing.Color.White;
+            this.siticoneTextBox5.FillColor2 = System.Drawing.Color.White;
+            this.siticoneTextBox5.Font = new System.Drawing.Font("Segoe UI", 9.5F);
+            this.siticoneTextBox5.ForeColor = System.Drawing.Color.DimGray;
+            this.siticoneTextBox5.HoverBorderColor1 = System.Drawing.Color.Gray;
+            this.siticoneTextBox5.HoverBorderColor2 = System.Drawing.Color.Gray;
+            this.siticoneTextBox5.IsEnabled = true;
+            this.siticoneTextBox5.Location = new System.Drawing.Point(30, 257);
+            this.siticoneTextBox5.Name = "siticoneTextBox5";
+            this.siticoneTextBox5.PlaceholderColor = System.Drawing.Color.Gray;
+            this.siticoneTextBox5.PlaceholderText = "Enter text here...";
+            this.siticoneTextBox5.ReadOnlyBorderColor1 = System.Drawing.Color.LightGray;
+            this.siticoneTextBox5.ReadOnlyBorderColor2 = System.Drawing.Color.LightGray;
+            this.siticoneTextBox5.ReadOnlyFillColor1 = System.Drawing.Color.WhiteSmoke;
+            this.siticoneTextBox5.ReadOnlyFillColor2 = System.Drawing.Color.WhiteSmoke;
+            this.siticoneTextBox5.ReadOnlyPlaceholderColor = System.Drawing.Color.DarkGray;
+            this.siticoneTextBox5.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(77)))), ((int)(((byte)(255)))));
+            this.siticoneTextBox5.ShadowAnimationDuration = 1;
+            this.siticoneTextBox5.ShadowBlur = 10;
+            this.siticoneTextBox5.ShadowColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.siticoneTextBox5.Size = new System.Drawing.Size(311, 38);
+            this.siticoneTextBox5.SolidBorderColor = System.Drawing.Color.LightSlateGray;
+            this.siticoneTextBox5.SolidBorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(77)))), ((int)(((byte)(255)))));
+            this.siticoneTextBox5.SolidBorderHoverColor = System.Drawing.Color.Gray;
+            this.siticoneTextBox5.SolidFillColor = System.Drawing.Color.White;
+            this.siticoneTextBox5.TabIndex = 12;
+            this.siticoneTextBox5.Text = "Số Điện Thoại";
+            this.siticoneTextBox5.TextPadding = new System.Windows.Forms.Padding(16, 0, 6, 0);
+            this.siticoneTextBox5.ValidationErrorMessage = "Invalid input.";
+            this.siticoneTextBox5.ValidationFunction = null;
             // 
             // siticoneButton2
             // 
@@ -690,16 +867,6 @@
             this.label5.TabIndex = 6;
             this.label5.Text = "Điền thông tin bên dưới để tham gia.";
             // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = global::TiemVaiLucCode.Properties.Resources.silk_5321738;
-            this.pictureBox2.Location = new System.Drawing.Point(186, 62);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(26, 27);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 5;
-            this.pictureBox2.TabStop = false;
-            // 
             // label6
             // 
             this.label6.AutoSize = true;
@@ -746,193 +913,100 @@
             this.lbldn.Text = "Đăng Nhập";
             this.lbldn.Click += new System.EventHandler(this.lbldn_Click);
             // 
-            // siticoneTextBox5
+            // cmb_VaiTro
             // 
-            this.siticoneTextBox5.AccessibleDescription = "A customizable text input field.";
-            this.siticoneTextBox5.AccessibleName = "Text Box";
-            this.siticoneTextBox5.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
-            this.siticoneTextBox5.BackColor = System.Drawing.Color.Transparent;
-            this.siticoneTextBox5.BlinkCount = 3;
-            this.siticoneTextBox5.BlinkShadow = false;
-            this.siticoneTextBox5.BorderColor1 = System.Drawing.Color.LightSlateGray;
-            this.siticoneTextBox5.BorderColor2 = System.Drawing.Color.LightSlateGray;
-            this.siticoneTextBox5.BorderFocusColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(77)))), ((int)(((byte)(255)))));
-            this.siticoneTextBox5.BorderFocusColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(77)))), ((int)(((byte)(255)))));
-            this.siticoneTextBox5.CanShake = true;
-            this.siticoneTextBox5.ContinuousBlink = false;
-            this.siticoneTextBox5.CornerRadiusBottomLeft = 20;
-            this.siticoneTextBox5.CornerRadiusBottomRight = 20;
-            this.siticoneTextBox5.CornerRadiusTopLeft = 20;
-            this.siticoneTextBox5.CornerRadiusTopRight = 20;
-            this.siticoneTextBox5.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.siticoneTextBox5.CursorBlinkRate = 500;
-            this.siticoneTextBox5.CursorColor = System.Drawing.Color.Black;
-            this.siticoneTextBox5.CursorHeight = 26;
-            this.siticoneTextBox5.CursorOffset = 0;
-            this.siticoneTextBox5.CursorStyle = SiticoneNetFrameworkUI.Helpers.DrawingStyle.SiticoneDrawingStyle.Solid;
-            this.siticoneTextBox5.CursorWidth = 1;
-            this.siticoneTextBox5.DisabledBackColor = System.Drawing.Color.WhiteSmoke;
-            this.siticoneTextBox5.DisabledBorderColor = System.Drawing.Color.LightGray;
-            this.siticoneTextBox5.DisabledTextColor = System.Drawing.Color.Gray;
-            this.siticoneTextBox5.EnableDropShadow = false;
-            this.siticoneTextBox5.FillColor1 = System.Drawing.Color.White;
-            this.siticoneTextBox5.FillColor2 = System.Drawing.Color.White;
-            this.siticoneTextBox5.Font = new System.Drawing.Font("Segoe UI", 9.5F);
-            this.siticoneTextBox5.ForeColor = System.Drawing.Color.DimGray;
-            this.siticoneTextBox5.HoverBorderColor1 = System.Drawing.Color.Gray;
-            this.siticoneTextBox5.HoverBorderColor2 = System.Drawing.Color.Gray;
-            this.siticoneTextBox5.IsEnabled = true;
-            this.siticoneTextBox5.Location = new System.Drawing.Point(30, 257);
-            this.siticoneTextBox5.Name = "siticoneTextBox5";
-            this.siticoneTextBox5.PlaceholderColor = System.Drawing.Color.Gray;
-            this.siticoneTextBox5.PlaceholderText = "Enter text here...";
-            this.siticoneTextBox5.ReadOnlyBorderColor1 = System.Drawing.Color.LightGray;
-            this.siticoneTextBox5.ReadOnlyBorderColor2 = System.Drawing.Color.LightGray;
-            this.siticoneTextBox5.ReadOnlyFillColor1 = System.Drawing.Color.WhiteSmoke;
-            this.siticoneTextBox5.ReadOnlyFillColor2 = System.Drawing.Color.WhiteSmoke;
-            this.siticoneTextBox5.ReadOnlyPlaceholderColor = System.Drawing.Color.DarkGray;
-            this.siticoneTextBox5.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(77)))), ((int)(((byte)(255)))));
-            this.siticoneTextBox5.ShadowAnimationDuration = 1;
-            this.siticoneTextBox5.ShadowBlur = 10;
-            this.siticoneTextBox5.ShadowColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.siticoneTextBox5.Size = new System.Drawing.Size(311, 38);
-            this.siticoneTextBox5.SolidBorderColor = System.Drawing.Color.LightSlateGray;
-            this.siticoneTextBox5.SolidBorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(77)))), ((int)(((byte)(255)))));
-            this.siticoneTextBox5.SolidBorderHoverColor = System.Drawing.Color.Gray;
-            this.siticoneTextBox5.SolidFillColor = System.Drawing.Color.White;
-            this.siticoneTextBox5.TabIndex = 12;
-            this.siticoneTextBox5.Text = "Số Điện Thoại";
-            this.siticoneTextBox5.TextPadding = new System.Windows.Forms.Padding(16, 0, 6, 0);
-            this.siticoneTextBox5.ValidationErrorMessage = "Invalid input.";
-            this.siticoneTextBox5.ValidationFunction = null;
+            this.cmb_VaiTro.FormattingEnabled = true;
+            this.cmb_VaiTro.Location = new System.Drawing.Point(31, 318);
+            this.cmb_VaiTro.Name = "cmb_VaiTro";
+            this.cmb_VaiTro.Size = new System.Drawing.Size(310, 28);
+            this.cmb_VaiTro.TabIndex = 12;
             // 
-            // siticoneTextBox6
+            // pnl_MaCapcha
             // 
-            this.siticoneTextBox6.AccessibleDescription = "A customizable text input field.";
-            this.siticoneTextBox6.AccessibleName = "Text Box";
-            this.siticoneTextBox6.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
-            this.siticoneTextBox6.BackColor = System.Drawing.Color.Transparent;
-            this.siticoneTextBox6.BlinkCount = 3;
-            this.siticoneTextBox6.BlinkShadow = false;
-            this.siticoneTextBox6.BorderColor1 = System.Drawing.Color.LightSlateGray;
-            this.siticoneTextBox6.BorderColor2 = System.Drawing.Color.LightSlateGray;
-            this.siticoneTextBox6.BorderFocusColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(77)))), ((int)(((byte)(255)))));
-            this.siticoneTextBox6.BorderFocusColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(77)))), ((int)(((byte)(255)))));
-            this.siticoneTextBox6.CanShake = true;
-            this.siticoneTextBox6.ContinuousBlink = false;
-            this.siticoneTextBox6.CornerRadiusBottomLeft = 20;
-            this.siticoneTextBox6.CornerRadiusBottomRight = 20;
-            this.siticoneTextBox6.CornerRadiusTopLeft = 20;
-            this.siticoneTextBox6.CornerRadiusTopRight = 20;
-            this.siticoneTextBox6.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.siticoneTextBox6.CursorBlinkRate = 500;
-            this.siticoneTextBox6.CursorColor = System.Drawing.Color.Black;
-            this.siticoneTextBox6.CursorHeight = 26;
-            this.siticoneTextBox6.CursorOffset = 0;
-            this.siticoneTextBox6.CursorStyle = SiticoneNetFrameworkUI.Helpers.DrawingStyle.SiticoneDrawingStyle.Solid;
-            this.siticoneTextBox6.CursorWidth = 1;
-            this.siticoneTextBox6.DisabledBackColor = System.Drawing.Color.WhiteSmoke;
-            this.siticoneTextBox6.DisabledBorderColor = System.Drawing.Color.LightGray;
-            this.siticoneTextBox6.DisabledTextColor = System.Drawing.Color.Gray;
-            this.siticoneTextBox6.EnableDropShadow = false;
-            this.siticoneTextBox6.FillColor1 = System.Drawing.Color.White;
-            this.siticoneTextBox6.FillColor2 = System.Drawing.Color.White;
-            this.siticoneTextBox6.Font = new System.Drawing.Font("Segoe UI", 9.5F);
-            this.siticoneTextBox6.ForeColor = System.Drawing.Color.DimGray;
-            this.siticoneTextBox6.HoverBorderColor1 = System.Drawing.Color.Gray;
-            this.siticoneTextBox6.HoverBorderColor2 = System.Drawing.Color.Gray;
-            this.siticoneTextBox6.IsEnabled = true;
-            this.siticoneTextBox6.Location = new System.Drawing.Point(30, 362);
-            this.siticoneTextBox6.Name = "siticoneTextBox6";
-            this.siticoneTextBox6.PlaceholderColor = System.Drawing.Color.Gray;
-            this.siticoneTextBox6.PlaceholderText = "Enter text here...";
-            this.siticoneTextBox6.ReadOnlyBorderColor1 = System.Drawing.Color.LightGray;
-            this.siticoneTextBox6.ReadOnlyBorderColor2 = System.Drawing.Color.LightGray;
-            this.siticoneTextBox6.ReadOnlyFillColor1 = System.Drawing.Color.WhiteSmoke;
-            this.siticoneTextBox6.ReadOnlyFillColor2 = System.Drawing.Color.WhiteSmoke;
-            this.siticoneTextBox6.ReadOnlyPlaceholderColor = System.Drawing.Color.DarkGray;
-            this.siticoneTextBox6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(77)))), ((int)(((byte)(255)))));
-            this.siticoneTextBox6.ShadowAnimationDuration = 1;
-            this.siticoneTextBox6.ShadowBlur = 10;
-            this.siticoneTextBox6.ShadowColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.siticoneTextBox6.Size = new System.Drawing.Size(311, 38);
-            this.siticoneTextBox6.SolidBorderColor = System.Drawing.Color.LightSlateGray;
-            this.siticoneTextBox6.SolidBorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(77)))), ((int)(((byte)(255)))));
-            this.siticoneTextBox6.SolidBorderHoverColor = System.Drawing.Color.Gray;
-            this.siticoneTextBox6.SolidFillColor = System.Drawing.Color.White;
-            this.siticoneTextBox6.TabIndex = 13;
-            this.siticoneTextBox6.Text = "Mật Khẩu";
-            this.siticoneTextBox6.TextPadding = new System.Windows.Forms.Padding(16, 0, 6, 0);
-            this.siticoneTextBox6.ValidationErrorMessage = "Invalid input.";
-            this.siticoneTextBox6.ValidationFunction = null;
+            this.pnl_MaCapcha.AcrylicTintColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.pnl_MaCapcha.BackColor = System.Drawing.Color.Transparent;
+            this.pnl_MaCapcha.BorderAlignment = System.Drawing.Drawing2D.PenAlignment.Center;
+            this.pnl_MaCapcha.BorderColor = System.Drawing.Color.Gray;
+            this.pnl_MaCapcha.BorderDashPattern = null;
+            this.pnl_MaCapcha.BorderGradientEndColor = System.Drawing.Color.Purple;
+            this.pnl_MaCapcha.BorderGradientStartColor = System.Drawing.Color.Blue;
+            this.pnl_MaCapcha.BorderThickness = 2F;
+            this.pnl_MaCapcha.CornerRadiusBottomLeft = 10F;
+            this.pnl_MaCapcha.CornerRadiusBottomRight = 10F;
+            this.pnl_MaCapcha.CornerRadiusTopLeft = 10F;
+            this.pnl_MaCapcha.CornerRadiusTopRight = 10F;
+            this.pnl_MaCapcha.EnableAcrylicEffect = false;
+            this.pnl_MaCapcha.Enabled = false;
+            this.pnl_MaCapcha.EnableMicaEffect = false;
+            this.pnl_MaCapcha.EnableRippleEffect = false;
+            this.pnl_MaCapcha.FillColor = System.Drawing.Color.White;
+            this.pnl_MaCapcha.ForeColor = System.Drawing.Color.Red;
+            this.pnl_MaCapcha.GradientColors = new System.Drawing.Color[] {
+        System.Drawing.Color.White,
+        System.Drawing.Color.LightGray,
+        System.Drawing.Color.Gray};
+            this.pnl_MaCapcha.GradientPositions = new float[] {
+        0F,
+        0.5F,
+        1F};
+            this.pnl_MaCapcha.Location = new System.Drawing.Point(233, 376);
+            this.pnl_MaCapcha.Name = "pnl_MaCapcha";
+            this.pnl_MaCapcha.PatternColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.pnl_MaCapcha.PatternStyle = System.Drawing.Drawing2D.HatchStyle.LargeGrid;
+            this.pnl_MaCapcha.RippleAlpha = 50;
+            this.pnl_MaCapcha.RippleAlphaDecrement = 3;
+            this.pnl_MaCapcha.RippleColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.pnl_MaCapcha.RippleMaxSize = 600F;
+            this.pnl_MaCapcha.RippleSpeed = 15F;
+            this.pnl_MaCapcha.ShowBorder = true;
+            this.pnl_MaCapcha.Size = new System.Drawing.Size(108, 59);
+            this.pnl_MaCapcha.TabIndex = 13;
+            this.pnl_MaCapcha.TabStop = true;
+            this.pnl_MaCapcha.UseBorderGradient = false;
+            this.pnl_MaCapcha.UseMultiGradient = false;
+            this.pnl_MaCapcha.UsePatternTexture = false;
+            this.pnl_MaCapcha.UseRadialGradient = false;
             // 
-            // siticoneTextBox7
+            // pictureBox1
             // 
-            this.siticoneTextBox7.AccessibleDescription = "A customizable text input field.";
-            this.siticoneTextBox7.AccessibleName = "Text Box";
-            this.siticoneTextBox7.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
-            this.siticoneTextBox7.BackColor = System.Drawing.Color.Transparent;
-            this.siticoneTextBox7.BlinkCount = 3;
-            this.siticoneTextBox7.BlinkShadow = false;
-            this.siticoneTextBox7.BorderColor1 = System.Drawing.Color.LightSlateGray;
-            this.siticoneTextBox7.BorderColor2 = System.Drawing.Color.LightSlateGray;
-            this.siticoneTextBox7.BorderFocusColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(77)))), ((int)(((byte)(255)))));
-            this.siticoneTextBox7.BorderFocusColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(77)))), ((int)(((byte)(255)))));
-            this.siticoneTextBox7.CanShake = true;
-            this.siticoneTextBox7.ContinuousBlink = false;
-            this.siticoneTextBox7.CornerRadiusBottomLeft = 20;
-            this.siticoneTextBox7.CornerRadiusBottomRight = 20;
-            this.siticoneTextBox7.CornerRadiusTopLeft = 20;
-            this.siticoneTextBox7.CornerRadiusTopRight = 20;
-            this.siticoneTextBox7.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.siticoneTextBox7.CursorBlinkRate = 500;
-            this.siticoneTextBox7.CursorColor = System.Drawing.Color.Black;
-            this.siticoneTextBox7.CursorHeight = 26;
-            this.siticoneTextBox7.CursorOffset = 0;
-            this.siticoneTextBox7.CursorStyle = SiticoneNetFrameworkUI.Helpers.DrawingStyle.SiticoneDrawingStyle.Solid;
-            this.siticoneTextBox7.CursorWidth = 1;
-            this.siticoneTextBox7.DisabledBackColor = System.Drawing.Color.WhiteSmoke;
-            this.siticoneTextBox7.DisabledBorderColor = System.Drawing.Color.LightGray;
-            this.siticoneTextBox7.DisabledTextColor = System.Drawing.Color.Gray;
-            this.siticoneTextBox7.EnableDropShadow = false;
-            this.siticoneTextBox7.FillColor1 = System.Drawing.Color.White;
-            this.siticoneTextBox7.FillColor2 = System.Drawing.Color.White;
-            this.siticoneTextBox7.Font = new System.Drawing.Font("Segoe UI", 9.5F);
-            this.siticoneTextBox7.ForeColor = System.Drawing.Color.DimGray;
-            this.siticoneTextBox7.HoverBorderColor1 = System.Drawing.Color.Gray;
-            this.siticoneTextBox7.HoverBorderColor2 = System.Drawing.Color.Gray;
-            this.siticoneTextBox7.IsEnabled = true;
-            this.siticoneTextBox7.Location = new System.Drawing.Point(30, 428);
-            this.siticoneTextBox7.Name = "siticoneTextBox7";
-            this.siticoneTextBox7.PlaceholderColor = System.Drawing.Color.Gray;
-            this.siticoneTextBox7.PlaceholderText = "Enter text here...";
-            this.siticoneTextBox7.ReadOnlyBorderColor1 = System.Drawing.Color.LightGray;
-            this.siticoneTextBox7.ReadOnlyBorderColor2 = System.Drawing.Color.LightGray;
-            this.siticoneTextBox7.ReadOnlyFillColor1 = System.Drawing.Color.WhiteSmoke;
-            this.siticoneTextBox7.ReadOnlyFillColor2 = System.Drawing.Color.WhiteSmoke;
-            this.siticoneTextBox7.ReadOnlyPlaceholderColor = System.Drawing.Color.DarkGray;
-            this.siticoneTextBox7.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(77)))), ((int)(((byte)(255)))));
-            this.siticoneTextBox7.ShadowAnimationDuration = 1;
-            this.siticoneTextBox7.ShadowBlur = 10;
-            this.siticoneTextBox7.ShadowColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.siticoneTextBox7.Size = new System.Drawing.Size(311, 38);
-            this.siticoneTextBox7.SolidBorderColor = System.Drawing.Color.LightSlateGray;
-            this.siticoneTextBox7.SolidBorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(77)))), ((int)(((byte)(255)))));
-            this.siticoneTextBox7.SolidBorderHoverColor = System.Drawing.Color.Gray;
-            this.siticoneTextBox7.SolidFillColor = System.Drawing.Color.White;
-            this.siticoneTextBox7.TabIndex = 14;
-            this.siticoneTextBox7.Text = "Xác Nhận Mật Khẩu";
-            this.siticoneTextBox7.TextPadding = new System.Windows.Forms.Padding(16, 0, 6, 0);
-            this.siticoneTextBox7.ValidationErrorMessage = "Invalid input.";
-            this.siticoneTextBox7.ValidationFunction = null;
+            this.pictureBox1.Image = global::TiemVaiLucCode.Properties.Resources.communication_15047341;
+            this.pictureBox1.Location = new System.Drawing.Point(186, 62);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(26, 27);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 5;
+            this.pictureBox1.TabStop = false;
             // 
-            // comboBox1
+            // pictureBox2
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(31, 315);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(310, 28);
-            this.comboBox1.TabIndex = 15;
+            this.pictureBox2.Image = global::TiemVaiLucCode.Properties.Resources.silk_5321738;
+            this.pictureBox2.Location = new System.Drawing.Point(186, 62);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(26, 27);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 5;
+            this.pictureBox2.TabStop = false;
+            // 
+            // panel1
+            // 
+            this.panel1.BackgroundImage = global::TiemVaiLucCode.Properties.Resources.dn;
+            this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel1.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(403, 688);
+            this.panel1.TabIndex = 0;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox3.Image = global::TiemVaiLucCode.Properties.Resources.power_14025449;
+            this.pictureBox3.Location = new System.Drawing.Point(186, 392);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(30, 30);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox3.TabIndex = 14;
+            this.pictureBox3.TabStop = false;
             // 
             // Frm_DangNhap
             // 
@@ -946,10 +1020,11 @@
             this.pnlCard_DangNhap.ResumeLayout(false);
             this.pnlCard_DangNhap.PerformLayout();
             this.pnlCardChinh.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.pnlCard_DangKy.ResumeLayout(false);
             this.pnlCard_DangKy.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -967,10 +1042,10 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label4;
         private SiticoneNetFrameworkUI.SiticoneTextBox txt_DangNhap;
-        private System.Windows.Forms.CheckBox checkBox1;
-        private SiticoneNetFrameworkUI.SiticoneTextBox siticoneTextBox2;
+        private System.Windows.Forms.CheckBox cb_HienMK;
+        private SiticoneNetFrameworkUI.SiticoneTextBox txt_MatKhau;
         private SiticoneNetFrameworkUI.SiticoneButton siticoneButton1;
-        private System.Windows.Forms.LinkLabel linkLabel1;
+        private System.Windows.Forms.LinkLabel llbl_QuenMK;
         private SiticoneNetFrameworkUI.SiticonePanel pnlCard_DangKy;
         private SiticoneNetFrameworkUI.SiticoneButton siticoneButton2;
         private SiticoneNetFrameworkUI.SiticoneTextBox siticoneTextBox3;
@@ -986,5 +1061,8 @@
         private SiticoneNetFrameworkUI.SiticoneTextBox siticoneTextBox7;
         private SiticoneNetFrameworkUI.SiticoneTextBox siticoneTextBox6;
         private SiticoneNetFrameworkUI.SiticoneTextBox siticoneTextBox5;
+        private System.Windows.Forms.ComboBox cmb_VaiTro;
+        private SiticoneNetFrameworkUI.SiticonePanel pnl_MaCapcha;
+        private System.Windows.Forms.PictureBox pictureBox3;
     }
 }

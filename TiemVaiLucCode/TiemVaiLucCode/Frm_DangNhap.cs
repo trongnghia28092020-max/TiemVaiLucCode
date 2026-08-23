@@ -43,21 +43,39 @@ namespace TiemVaiLucCode
 
         private void txt_DangNhap_Enter(object sender, EventArgs e)
         {
-            // Nếu chữ trong ô đang là chữ gợi ý ban đầu thì xóa đi để người dùng gõ
+
             if (txt_DangNhap.Text == "Tên đăng nhập")
             {
                 txt_DangNhap.Text = "";
-                txt_DangNhap.ForeColor = Color.Black; // Đổi sang màu chữ đen khi người dùng gõ
+                txt_DangNhap.ForeColor = Color.Black;
             }
         }
 
         private void txt_DangNhap_Leave(object sender, EventArgs e)
         {
-            // Nếu người dùng không nhập gì hoặc để trống thì hiện lại chữ ban đầu
+
             if (string.IsNullOrWhiteSpace(txt_DangNhap.Text))
             {
                 txt_DangNhap.Text = "Tên đăng nhập";
-                txt_DangNhap.ForeColor = Color.Gray; // Đổi sang màu xám cho giống chữ placeholder
+                txt_DangNhap.ForeColor = Color.Gray;
+            }
+        }
+
+        private void txt_MatKhau_Enter(object sender, EventArgs e)
+        {
+            if (txt_MatKhau.Text == "Mật khẩu")
+            {
+                txt_MatKhau.Text = "";
+                txt_MatKhau.ForeColor = Color.Black;
+            }
+        }
+
+        private void txt_MatKhau_Leave(object sender, EventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(txt_MatKhau.Text))
+            {
+                txt_MatKhau.Text = "Mật khẩu";
+                txt_MatKhau.ForeColor = Color.Gray;
             }
         }
     }
