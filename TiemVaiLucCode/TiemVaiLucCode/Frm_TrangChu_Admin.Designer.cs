@@ -29,31 +29,46 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.siticoneLabel1 = new SiticoneNetFrameworkUI.SiticoneLabel();
             this.panel7 = new System.Windows.Forms.Panel();
             this.siticoneLabel4 = new SiticoneNetFrameworkUI.SiticoneLabel();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.panel6 = new System.Windows.Forms.Panel();
             this.siticoneLabel3 = new SiticoneNetFrameworkUI.SiticoneLabel();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.panel5 = new System.Windows.Forms.Panel();
             this.siticoneLabel2 = new SiticoneNetFrameworkUI.SiticoneLabel();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.siticoneLabel1 = new SiticoneNetFrameworkUI.SiticoneLabel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.siticonePanel4 = new SiticoneNetFrameworkUI.SiticonePanel();
+            this.siticonePanel3 = new SiticoneNetFrameworkUI.SiticonePanel();
+            this.siticonePanel2 = new SiticoneNetFrameworkUI.SiticonePanel();
+            this.siticonePanel1 = new SiticoneNetFrameworkUI.SiticonePanel();
+            this.siticoneTextBox1 = new SiticoneNetFrameworkUI.SiticoneTextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.siticoneTextBox2 = new SiticoneNetFrameworkUI.SiticoneTextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.siticonePanel5 = new SiticoneNetFrameworkUI.SiticonePanel();
+            this.siticonePanel6 = new SiticoneNetFrameworkUI.SiticonePanel();
             this.panel1.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
-            this.panel4.SuspendLayout();
             this.panel7.SuspendLayout();
-            this.panel6.SuspendLayout();
-            this.panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            this.panel6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            this.panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panel3.SuspendLayout();
+            this.siticonePanel2.SuspendLayout();
+            this.siticonePanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -63,26 +78,8 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(225, 615);
+            this.panel1.Size = new System.Drawing.Size(225, 820);
             this.panel1.TabIndex = 0;
-            // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.White;
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(225, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(926, 53);
-            this.panel2.TabIndex = 1;
-            // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.Color.LightCyan;
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel3.Location = new System.Drawing.Point(225, 53);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(926, 562);
-            this.panel3.TabIndex = 2;
             // 
             // tableLayoutPanel1
             // 
@@ -104,25 +101,6 @@
             this.tableLayoutPanel1.Size = new System.Drawing.Size(191, 422);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
-            // panel4
-            // 
-            this.panel4.BackColor = System.Drawing.Color.White;
-            this.panel4.Controls.Add(this.siticoneLabel1);
-            this.panel4.Controls.Add(this.pictureBox1);
-            this.panel4.Location = new System.Drawing.Point(3, 3);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(185, 46);
-            this.panel4.TabIndex = 3;
-            // 
-            // siticoneLabel1
-            // 
-            this.siticoneLabel1.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.siticoneLabel1.Location = new System.Drawing.Point(56, 10);
-            this.siticoneLabel1.Name = "siticoneLabel1";
-            this.siticoneLabel1.Size = new System.Drawing.Size(100, 23);
-            this.siticoneLabel1.TabIndex = 0;
-            this.siticoneLabel1.Text = "Tổng quan";
-            // 
             // panel7
             // 
             this.panel7.BackColor = System.Drawing.Color.White;
@@ -141,6 +119,17 @@
             this.siticoneLabel4.Size = new System.Drawing.Size(111, 23);
             this.siticoneLabel4.TabIndex = 0;
             this.siticoneLabel4.Text = "Khách Hàng";
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Dock = System.Windows.Forms.DockStyle.Left;
+            this.pictureBox4.Image = global::TiemVaiLucCode.Properties.Resources.man_15647384;
+            this.pictureBox4.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(48, 46);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox4.TabIndex = 1;
+            this.pictureBox4.TabStop = false;
             // 
             // panel6
             // 
@@ -161,6 +150,17 @@
             this.siticoneLabel3.TabIndex = 0;
             this.siticoneLabel3.Text = "Đơn Hàng";
             // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Dock = System.Windows.Forms.DockStyle.Left;
+            this.pictureBox3.Image = global::TiemVaiLucCode.Properties.Resources.shopping_cart_2037547;
+            this.pictureBox3.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(48, 58);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox3.TabIndex = 1;
+            this.pictureBox3.TabStop = false;
+            // 
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.White;
@@ -180,28 +180,6 @@
             this.siticoneLabel2.TabIndex = 0;
             this.siticoneLabel2.Text = "Kho hàng";
             // 
-            // pictureBox4
-            // 
-            this.pictureBox4.Dock = System.Windows.Forms.DockStyle.Left;
-            this.pictureBox4.Image = global::TiemVaiLucCode.Properties.Resources.man_15647384;
-            this.pictureBox4.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(48, 46);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox4.TabIndex = 1;
-            this.pictureBox4.TabStop = false;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Dock = System.Windows.Forms.DockStyle.Left;
-            this.pictureBox3.Image = global::TiemVaiLucCode.Properties.Resources.shopping_cart_2037547;
-            this.pictureBox3.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(48, 58);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox3.TabIndex = 1;
-            this.pictureBox3.TabStop = false;
-            // 
             // pictureBox2
             // 
             this.pictureBox2.Dock = System.Windows.Forms.DockStyle.Left;
@@ -213,6 +191,25 @@
             this.pictureBox2.TabIndex = 1;
             this.pictureBox2.TabStop = false;
             // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.Color.White;
+            this.panel4.Controls.Add(this.siticoneLabel1);
+            this.panel4.Controls.Add(this.pictureBox1);
+            this.panel4.Location = new System.Drawing.Point(3, 3);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(185, 46);
+            this.panel4.TabIndex = 3;
+            // 
+            // siticoneLabel1
+            // 
+            this.siticoneLabel1.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.siticoneLabel1.Location = new System.Drawing.Point(56, 10);
+            this.siticoneLabel1.Name = "siticoneLabel1";
+            this.siticoneLabel1.Size = new System.Drawing.Size(100, 23);
+            this.siticoneLabel1.TabIndex = 0;
+            this.siticoneLabel1.Text = "Tổng quan";
+            // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::TiemVaiLucCode.Properties.Resources.apps_11319676;
@@ -223,11 +220,457 @@
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
             // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.White;
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel2.Location = new System.Drawing.Point(225, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(1305, 53);
+            this.panel2.TabIndex = 1;
+            // 
+            // panel3
+            // 
+            this.panel3.AutoScroll = true;
+            this.panel3.BackColor = System.Drawing.Color.LightCyan;
+            this.panel3.Controls.Add(this.siticonePanel6);
+            this.panel3.Controls.Add(this.siticonePanel5);
+            this.panel3.Controls.Add(this.siticonePanel4);
+            this.panel3.Controls.Add(this.siticonePanel3);
+            this.panel3.Controls.Add(this.siticonePanel2);
+            this.panel3.Controls.Add(this.siticonePanel1);
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel3.Location = new System.Drawing.Point(225, 53);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(1305, 767);
+            this.panel3.TabIndex = 2;
+            // 
+            // siticonePanel4
+            // 
+            this.siticonePanel4.AcrylicTintColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.siticonePanel4.BackColor = System.Drawing.Color.Transparent;
+            this.siticonePanel4.BorderAlignment = System.Drawing.Drawing2D.PenAlignment.Center;
+            this.siticonePanel4.BorderColor = System.Drawing.Color.Gray;
+            this.siticonePanel4.BorderDashPattern = null;
+            this.siticonePanel4.BorderGradientEndColor = System.Drawing.Color.Purple;
+            this.siticonePanel4.BorderGradientStartColor = System.Drawing.Color.Blue;
+            this.siticonePanel4.BorderThickness = 2F;
+            this.siticonePanel4.CornerRadiusBottomLeft = 20F;
+            this.siticonePanel4.CornerRadiusBottomRight = 20F;
+            this.siticonePanel4.CornerRadiusTopLeft = 20F;
+            this.siticonePanel4.CornerRadiusTopRight = 20F;
+            this.siticonePanel4.EnableAcrylicEffect = false;
+            this.siticonePanel4.EnableMicaEffect = false;
+            this.siticonePanel4.EnableRippleEffect = false;
+            this.siticonePanel4.FillColor = System.Drawing.Color.White;
+            this.siticonePanel4.GradientColors = new System.Drawing.Color[] {
+        System.Drawing.Color.White,
+        System.Drawing.Color.LightGray,
+        System.Drawing.Color.Gray};
+            this.siticonePanel4.GradientPositions = new float[] {
+        0F,
+        0.5F,
+        1F};
+            this.siticonePanel4.Location = new System.Drawing.Point(1008, 38);
+            this.siticonePanel4.Name = "siticonePanel4";
+            this.siticonePanel4.PatternColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.siticonePanel4.PatternStyle = System.Drawing.Drawing2D.HatchStyle.LargeGrid;
+            this.siticonePanel4.RippleAlpha = 50;
+            this.siticonePanel4.RippleAlphaDecrement = 3;
+            this.siticonePanel4.RippleColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.siticonePanel4.RippleMaxSize = 600F;
+            this.siticonePanel4.RippleSpeed = 15F;
+            this.siticonePanel4.ShowBorder = true;
+            this.siticonePanel4.Size = new System.Drawing.Size(268, 115);
+            this.siticonePanel4.TabIndex = 1;
+            this.siticonePanel4.TabStop = true;
+            this.siticonePanel4.UseBorderGradient = false;
+            this.siticonePanel4.UseMultiGradient = false;
+            this.siticonePanel4.UsePatternTexture = false;
+            this.siticonePanel4.UseRadialGradient = false;
+            // 
+            // siticonePanel3
+            // 
+            this.siticonePanel3.AcrylicTintColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.siticonePanel3.BackColor = System.Drawing.Color.Transparent;
+            this.siticonePanel3.BorderAlignment = System.Drawing.Drawing2D.PenAlignment.Center;
+            this.siticonePanel3.BorderColor = System.Drawing.Color.Gray;
+            this.siticonePanel3.BorderDashPattern = null;
+            this.siticonePanel3.BorderGradientEndColor = System.Drawing.Color.Purple;
+            this.siticonePanel3.BorderGradientStartColor = System.Drawing.Color.Blue;
+            this.siticonePanel3.BorderThickness = 2F;
+            this.siticonePanel3.CornerRadiusBottomLeft = 20F;
+            this.siticonePanel3.CornerRadiusBottomRight = 20F;
+            this.siticonePanel3.CornerRadiusTopLeft = 20F;
+            this.siticonePanel3.CornerRadiusTopRight = 20F;
+            this.siticonePanel3.EnableAcrylicEffect = false;
+            this.siticonePanel3.EnableMicaEffect = false;
+            this.siticonePanel3.EnableRippleEffect = false;
+            this.siticonePanel3.FillColor = System.Drawing.Color.White;
+            this.siticonePanel3.GradientColors = new System.Drawing.Color[] {
+        System.Drawing.Color.White,
+        System.Drawing.Color.LightGray,
+        System.Drawing.Color.Gray};
+            this.siticonePanel3.GradientPositions = new float[] {
+        0F,
+        0.5F,
+        1F};
+            this.siticonePanel3.Location = new System.Drawing.Point(687, 38);
+            this.siticonePanel3.Name = "siticonePanel3";
+            this.siticonePanel3.PatternColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.siticonePanel3.PatternStyle = System.Drawing.Drawing2D.HatchStyle.LargeGrid;
+            this.siticonePanel3.RippleAlpha = 50;
+            this.siticonePanel3.RippleAlphaDecrement = 3;
+            this.siticonePanel3.RippleColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.siticonePanel3.RippleMaxSize = 600F;
+            this.siticonePanel3.RippleSpeed = 15F;
+            this.siticonePanel3.ShowBorder = true;
+            this.siticonePanel3.Size = new System.Drawing.Size(278, 115);
+            this.siticonePanel3.TabIndex = 1;
+            this.siticonePanel3.TabStop = true;
+            this.siticonePanel3.UseBorderGradient = false;
+            this.siticonePanel3.UseMultiGradient = false;
+            this.siticonePanel3.UsePatternTexture = false;
+            this.siticonePanel3.UseRadialGradient = false;
+            // 
+            // siticonePanel2
+            // 
+            this.siticonePanel2.AcrylicTintColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.siticonePanel2.BackColor = System.Drawing.Color.Transparent;
+            this.siticonePanel2.BorderAlignment = System.Drawing.Drawing2D.PenAlignment.Center;
+            this.siticonePanel2.BorderColor = System.Drawing.Color.Gray;
+            this.siticonePanel2.BorderDashPattern = null;
+            this.siticonePanel2.BorderGradientEndColor = System.Drawing.Color.Purple;
+            this.siticonePanel2.BorderGradientStartColor = System.Drawing.Color.Blue;
+            this.siticonePanel2.BorderThickness = 2F;
+            this.siticonePanel2.Controls.Add(this.pictureBox5);
+            this.siticonePanel2.Controls.Add(this.label2);
+            this.siticonePanel2.Controls.Add(this.siticoneTextBox2);
+            this.siticonePanel2.CornerRadiusBottomLeft = 20F;
+            this.siticonePanel2.CornerRadiusBottomRight = 20F;
+            this.siticonePanel2.CornerRadiusTopLeft = 20F;
+            this.siticonePanel2.CornerRadiusTopRight = 20F;
+            this.siticonePanel2.EnableAcrylicEffect = false;
+            this.siticonePanel2.EnableMicaEffect = false;
+            this.siticonePanel2.EnableRippleEffect = false;
+            this.siticonePanel2.FillColor = System.Drawing.Color.White;
+            this.siticonePanel2.GradientColors = new System.Drawing.Color[] {
+        System.Drawing.Color.White,
+        System.Drawing.Color.LightGray,
+        System.Drawing.Color.Gray};
+            this.siticonePanel2.GradientPositions = new float[] {
+        0F,
+        0.5F,
+        1F};
+            this.siticonePanel2.Location = new System.Drawing.Point(367, 38);
+            this.siticonePanel2.Name = "siticonePanel2";
+            this.siticonePanel2.PatternColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.siticonePanel2.PatternStyle = System.Drawing.Drawing2D.HatchStyle.LargeGrid;
+            this.siticonePanel2.RippleAlpha = 50;
+            this.siticonePanel2.RippleAlphaDecrement = 3;
+            this.siticonePanel2.RippleColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.siticonePanel2.RippleMaxSize = 600F;
+            this.siticonePanel2.RippleSpeed = 15F;
+            this.siticonePanel2.ShowBorder = true;
+            this.siticonePanel2.Size = new System.Drawing.Size(271, 115);
+            this.siticonePanel2.TabIndex = 1;
+            this.siticonePanel2.TabStop = true;
+            this.siticonePanel2.UseBorderGradient = false;
+            this.siticonePanel2.UseMultiGradient = false;
+            this.siticonePanel2.UsePatternTexture = false;
+            this.siticonePanel2.UseRadialGradient = false;
+            // 
+            // siticonePanel1
+            // 
+            this.siticonePanel1.AcrylicTintColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.siticonePanel1.BackColor = System.Drawing.Color.Transparent;
+            this.siticonePanel1.BorderAlignment = System.Drawing.Drawing2D.PenAlignment.Center;
+            this.siticonePanel1.BorderColor = System.Drawing.Color.Gray;
+            this.siticonePanel1.BorderDashPattern = null;
+            this.siticonePanel1.BorderGradientEndColor = System.Drawing.Color.Purple;
+            this.siticonePanel1.BorderGradientStartColor = System.Drawing.Color.Blue;
+            this.siticonePanel1.BorderThickness = 2F;
+            this.siticonePanel1.Controls.Add(this.siticoneTextBox1);
+            this.siticonePanel1.Controls.Add(this.label1);
+            this.siticonePanel1.CornerRadiusBottomLeft = 20F;
+            this.siticonePanel1.CornerRadiusBottomRight = 20F;
+            this.siticonePanel1.CornerRadiusTopLeft = 20F;
+            this.siticonePanel1.CornerRadiusTopRight = 20F;
+            this.siticonePanel1.EnableAcrylicEffect = false;
+            this.siticonePanel1.EnableMicaEffect = false;
+            this.siticonePanel1.EnableRippleEffect = false;
+            this.siticonePanel1.FillColor = System.Drawing.Color.White;
+            this.siticonePanel1.GradientColors = new System.Drawing.Color[] {
+        System.Drawing.Color.White,
+        System.Drawing.Color.LightGray,
+        System.Drawing.Color.Gray};
+            this.siticonePanel1.GradientPositions = new float[] {
+        0F,
+        0.5F,
+        1F};
+            this.siticonePanel1.Location = new System.Drawing.Point(42, 38);
+            this.siticonePanel1.Name = "siticonePanel1";
+            this.siticonePanel1.PatternColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.siticonePanel1.PatternStyle = System.Drawing.Drawing2D.HatchStyle.LargeGrid;
+            this.siticonePanel1.RippleAlpha = 50;
+            this.siticonePanel1.RippleAlphaDecrement = 3;
+            this.siticonePanel1.RippleColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.siticonePanel1.RippleMaxSize = 600F;
+            this.siticonePanel1.RippleSpeed = 15F;
+            this.siticonePanel1.ShowBorder = true;
+            this.siticonePanel1.Size = new System.Drawing.Size(288, 115);
+            this.siticonePanel1.TabIndex = 0;
+            this.siticonePanel1.TabStop = true;
+            this.siticonePanel1.UseBorderGradient = false;
+            this.siticonePanel1.UseMultiGradient = false;
+            this.siticonePanel1.UsePatternTexture = false;
+            this.siticonePanel1.UseRadialGradient = false;
+            // 
+            // siticoneTextBox1
+            // 
+            this.siticoneTextBox1.AccessibleDescription = "A customizable text input field.";
+            this.siticoneTextBox1.AccessibleName = "Text Box";
+            this.siticoneTextBox1.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
+            this.siticoneTextBox1.BackColor = System.Drawing.Color.Transparent;
+            this.siticoneTextBox1.BlinkCount = 3;
+            this.siticoneTextBox1.BlinkShadow = false;
+            this.siticoneTextBox1.BorderColor1 = System.Drawing.Color.LightSlateGray;
+            this.siticoneTextBox1.BorderColor2 = System.Drawing.Color.LightSlateGray;
+            this.siticoneTextBox1.BorderFocusColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(77)))), ((int)(((byte)(255)))));
+            this.siticoneTextBox1.BorderFocusColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(77)))), ((int)(((byte)(255)))));
+            this.siticoneTextBox1.CanShake = true;
+            this.siticoneTextBox1.ContinuousBlink = false;
+            this.siticoneTextBox1.CornerRadiusBottomLeft = 10;
+            this.siticoneTextBox1.CornerRadiusBottomRight = 10;
+            this.siticoneTextBox1.CornerRadiusTopLeft = 10;
+            this.siticoneTextBox1.CornerRadiusTopRight = 10;
+            this.siticoneTextBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.siticoneTextBox1.CursorBlinkRate = 500;
+            this.siticoneTextBox1.CursorColor = System.Drawing.Color.Black;
+            this.siticoneTextBox1.CursorHeight = 26;
+            this.siticoneTextBox1.CursorOffset = 0;
+            this.siticoneTextBox1.CursorStyle = SiticoneNetFrameworkUI.Helpers.DrawingStyle.SiticoneDrawingStyle.Solid;
+            this.siticoneTextBox1.CursorWidth = 1;
+            this.siticoneTextBox1.DisabledBackColor = System.Drawing.Color.WhiteSmoke;
+            this.siticoneTextBox1.DisabledBorderColor = System.Drawing.Color.LightGray;
+            this.siticoneTextBox1.DisabledTextColor = System.Drawing.Color.Gray;
+            this.siticoneTextBox1.Enabled = false;
+            this.siticoneTextBox1.EnableDropShadow = false;
+            this.siticoneTextBox1.FillColor1 = System.Drawing.Color.White;
+            this.siticoneTextBox1.FillColor2 = System.Drawing.Color.White;
+            this.siticoneTextBox1.Font = new System.Drawing.Font("Segoe UI", 9.5F);
+            this.siticoneTextBox1.ForeColor = System.Drawing.Color.DimGray;
+            this.siticoneTextBox1.HoverBorderColor1 = System.Drawing.Color.Gray;
+            this.siticoneTextBox1.HoverBorderColor2 = System.Drawing.Color.Gray;
+            this.siticoneTextBox1.IsEnabled = true;
+            this.siticoneTextBox1.Location = new System.Drawing.Point(17, 62);
+            this.siticoneTextBox1.Name = "siticoneTextBox1";
+            this.siticoneTextBox1.PlaceholderColor = System.Drawing.Color.Gray;
+            this.siticoneTextBox1.PlaceholderText = " ";
+            this.siticoneTextBox1.ReadOnlyBorderColor1 = System.Drawing.Color.LightGray;
+            this.siticoneTextBox1.ReadOnlyBorderColor2 = System.Drawing.Color.LightGray;
+            this.siticoneTextBox1.ReadOnlyFillColor1 = System.Drawing.Color.WhiteSmoke;
+            this.siticoneTextBox1.ReadOnlyFillColor2 = System.Drawing.Color.WhiteSmoke;
+            this.siticoneTextBox1.ReadOnlyPlaceholderColor = System.Drawing.Color.DarkGray;
+            this.siticoneTextBox1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(77)))), ((int)(((byte)(255)))));
+            this.siticoneTextBox1.ShadowAnimationDuration = 1;
+            this.siticoneTextBox1.ShadowBlur = 10;
+            this.siticoneTextBox1.ShadowColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.siticoneTextBox1.Size = new System.Drawing.Size(252, 40);
+            this.siticoneTextBox1.SolidBorderColor = System.Drawing.Color.LightSlateGray;
+            this.siticoneTextBox1.SolidBorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(77)))), ((int)(((byte)(255)))));
+            this.siticoneTextBox1.SolidBorderHoverColor = System.Drawing.Color.Gray;
+            this.siticoneTextBox1.SolidFillColor = System.Drawing.Color.White;
+            this.siticoneTextBox1.TabIndex = 1;
+            this.siticoneTextBox1.TextPadding = new System.Windows.Forms.Padding(16, 0, 6, 0);
+            this.siticoneTextBox1.ValidationErrorMessage = "Invalid input.";
+            this.siticoneTextBox1.ValidationFunction = null;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(13, 14);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(228, 23);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "DOANH THU HÔM NAY";
+            // 
+            // siticoneTextBox2
+            // 
+            this.siticoneTextBox2.AccessibleDescription = "A customizable text input field.";
+            this.siticoneTextBox2.AccessibleName = "Text Box";
+            this.siticoneTextBox2.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
+            this.siticoneTextBox2.BackColor = System.Drawing.Color.Transparent;
+            this.siticoneTextBox2.BlinkCount = 3;
+            this.siticoneTextBox2.BlinkShadow = false;
+            this.siticoneTextBox2.BorderColor1 = System.Drawing.Color.LightSlateGray;
+            this.siticoneTextBox2.BorderColor2 = System.Drawing.Color.LightSlateGray;
+            this.siticoneTextBox2.BorderFocusColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(77)))), ((int)(((byte)(255)))));
+            this.siticoneTextBox2.BorderFocusColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(77)))), ((int)(((byte)(255)))));
+            this.siticoneTextBox2.CanShake = true;
+            this.siticoneTextBox2.ContinuousBlink = false;
+            this.siticoneTextBox2.CornerRadiusBottomLeft = 10;
+            this.siticoneTextBox2.CornerRadiusBottomRight = 10;
+            this.siticoneTextBox2.CornerRadiusTopLeft = 10;
+            this.siticoneTextBox2.CornerRadiusTopRight = 10;
+            this.siticoneTextBox2.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.siticoneTextBox2.CursorBlinkRate = 500;
+            this.siticoneTextBox2.CursorColor = System.Drawing.Color.Black;
+            this.siticoneTextBox2.CursorHeight = 26;
+            this.siticoneTextBox2.CursorOffset = 0;
+            this.siticoneTextBox2.CursorStyle = SiticoneNetFrameworkUI.Helpers.DrawingStyle.SiticoneDrawingStyle.Solid;
+            this.siticoneTextBox2.CursorWidth = 1;
+            this.siticoneTextBox2.DisabledBackColor = System.Drawing.Color.WhiteSmoke;
+            this.siticoneTextBox2.DisabledBorderColor = System.Drawing.Color.LightGray;
+            this.siticoneTextBox2.DisabledTextColor = System.Drawing.Color.Gray;
+            this.siticoneTextBox2.Enabled = false;
+            this.siticoneTextBox2.EnableDropShadow = false;
+            this.siticoneTextBox2.FillColor1 = System.Drawing.Color.White;
+            this.siticoneTextBox2.FillColor2 = System.Drawing.Color.White;
+            this.siticoneTextBox2.Font = new System.Drawing.Font("Segoe UI", 9.5F);
+            this.siticoneTextBox2.ForeColor = System.Drawing.Color.DimGray;
+            this.siticoneTextBox2.HoverBorderColor1 = System.Drawing.Color.Gray;
+            this.siticoneTextBox2.HoverBorderColor2 = System.Drawing.Color.Gray;
+            this.siticoneTextBox2.IsEnabled = true;
+            this.siticoneTextBox2.Location = new System.Drawing.Point(19, 61);
+            this.siticoneTextBox2.Name = "siticoneTextBox2";
+            this.siticoneTextBox2.PlaceholderColor = System.Drawing.Color.Gray;
+            this.siticoneTextBox2.PlaceholderText = " ";
+            this.siticoneTextBox2.ReadOnlyBorderColor1 = System.Drawing.Color.LightGray;
+            this.siticoneTextBox2.ReadOnlyBorderColor2 = System.Drawing.Color.LightGray;
+            this.siticoneTextBox2.ReadOnlyFillColor1 = System.Drawing.Color.WhiteSmoke;
+            this.siticoneTextBox2.ReadOnlyFillColor2 = System.Drawing.Color.WhiteSmoke;
+            this.siticoneTextBox2.ReadOnlyPlaceholderColor = System.Drawing.Color.DarkGray;
+            this.siticoneTextBox2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(77)))), ((int)(((byte)(255)))));
+            this.siticoneTextBox2.ShadowAnimationDuration = 1;
+            this.siticoneTextBox2.ShadowBlur = 10;
+            this.siticoneTextBox2.ShadowColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.siticoneTextBox2.Size = new System.Drawing.Size(203, 40);
+            this.siticoneTextBox2.SolidBorderColor = System.Drawing.Color.LightSlateGray;
+            this.siticoneTextBox2.SolidBorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(77)))), ((int)(((byte)(255)))));
+            this.siticoneTextBox2.SolidBorderHoverColor = System.Drawing.Color.Gray;
+            this.siticoneTextBox2.SolidFillColor = System.Drawing.Color.White;
+            this.siticoneTextBox2.TabIndex = 3;
+            this.siticoneTextBox2.TextPadding = new System.Windows.Forms.Padding(16, 0, 6, 0);
+            this.siticoneTextBox2.ValidationErrorMessage = "Invalid input.";
+            this.siticoneTextBox2.ValidationFunction = null;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(15, 14);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(164, 23);
+            this.label2.TabIndex = 2;
+            this.label2.Text = "ĐƠN HÀNG MỚI";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.pictureBox5.Image = global::TiemVaiLucCode.Properties.Resources.shopping_cart_2037547;
+            this.pictureBox5.Location = new System.Drawing.Point(217, 5);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(48, 50);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox5.TabIndex = 4;
+            this.pictureBox5.TabStop = false;
+            // 
+            // siticonePanel5
+            // 
+            this.siticonePanel5.AcrylicTintColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.siticonePanel5.BackColor = System.Drawing.Color.Transparent;
+            this.siticonePanel5.BorderAlignment = System.Drawing.Drawing2D.PenAlignment.Center;
+            this.siticonePanel5.BorderColor = System.Drawing.Color.Gray;
+            this.siticonePanel5.BorderDashPattern = null;
+            this.siticonePanel5.BorderGradientEndColor = System.Drawing.Color.Purple;
+            this.siticonePanel5.BorderGradientStartColor = System.Drawing.Color.Blue;
+            this.siticonePanel5.BorderThickness = 2F;
+            this.siticonePanel5.CornerRadiusBottomLeft = 20F;
+            this.siticonePanel5.CornerRadiusBottomRight = 20F;
+            this.siticonePanel5.CornerRadiusTopLeft = 20F;
+            this.siticonePanel5.CornerRadiusTopRight = 20F;
+            this.siticonePanel5.EnableAcrylicEffect = false;
+            this.siticonePanel5.EnableMicaEffect = false;
+            this.siticonePanel5.EnableRippleEffect = false;
+            this.siticonePanel5.FillColor = System.Drawing.Color.White;
+            this.siticonePanel5.GradientColors = new System.Drawing.Color[] {
+        System.Drawing.Color.White,
+        System.Drawing.Color.LightGray,
+        System.Drawing.Color.Gray};
+            this.siticonePanel5.GradientPositions = new float[] {
+        0F,
+        0.5F,
+        1F};
+            this.siticonePanel5.Location = new System.Drawing.Point(42, 192);
+            this.siticonePanel5.Name = "siticonePanel5";
+            this.siticonePanel5.PatternColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.siticonePanel5.PatternStyle = System.Drawing.Drawing2D.HatchStyle.LargeGrid;
+            this.siticonePanel5.RippleAlpha = 50;
+            this.siticonePanel5.RippleAlphaDecrement = 3;
+            this.siticonePanel5.RippleColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.siticonePanel5.RippleMaxSize = 600F;
+            this.siticonePanel5.RippleSpeed = 15F;
+            this.siticonePanel5.ShowBorder = true;
+            this.siticonePanel5.Size = new System.Drawing.Size(965, 346);
+            this.siticonePanel5.TabIndex = 2;
+            this.siticonePanel5.TabStop = true;
+            this.siticonePanel5.UseBorderGradient = false;
+            this.siticonePanel5.UseMultiGradient = false;
+            this.siticonePanel5.UsePatternTexture = false;
+            this.siticonePanel5.UseRadialGradient = false;
+            // 
+            // siticonePanel6
+            // 
+            this.siticonePanel6.AcrylicTintColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.siticonePanel6.BackColor = System.Drawing.Color.Transparent;
+            this.siticonePanel6.BorderAlignment = System.Drawing.Drawing2D.PenAlignment.Center;
+            this.siticonePanel6.BorderColor = System.Drawing.Color.Gray;
+            this.siticonePanel6.BorderDashPattern = null;
+            this.siticonePanel6.BorderGradientEndColor = System.Drawing.Color.Purple;
+            this.siticonePanel6.BorderGradientStartColor = System.Drawing.Color.Blue;
+            this.siticonePanel6.BorderThickness = 2F;
+            this.siticonePanel6.CornerRadiusBottomLeft = 20F;
+            this.siticonePanel6.CornerRadiusBottomRight = 20F;
+            this.siticonePanel6.CornerRadiusTopLeft = 20F;
+            this.siticonePanel6.CornerRadiusTopRight = 20F;
+            this.siticonePanel6.EnableAcrylicEffect = false;
+            this.siticonePanel6.EnableMicaEffect = false;
+            this.siticonePanel6.EnableRippleEffect = false;
+            this.siticonePanel6.FillColor = System.Drawing.Color.White;
+            this.siticonePanel6.GradientColors = new System.Drawing.Color[] {
+        System.Drawing.Color.White,
+        System.Drawing.Color.LightGray,
+        System.Drawing.Color.Gray};
+            this.siticonePanel6.GradientPositions = new float[] {
+        0F,
+        0.5F,
+        1F};
+            this.siticonePanel6.Location = new System.Drawing.Point(42, 556);
+            this.siticonePanel6.Name = "siticonePanel6";
+            this.siticonePanel6.PatternColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.siticonePanel6.PatternStyle = System.Drawing.Drawing2D.HatchStyle.LargeGrid;
+            this.siticonePanel6.RippleAlpha = 50;
+            this.siticonePanel6.RippleAlphaDecrement = 3;
+            this.siticonePanel6.RippleColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.siticonePanel6.RippleMaxSize = 600F;
+            this.siticonePanel6.RippleSpeed = 15F;
+            this.siticonePanel6.ShowBorder = true;
+            this.siticonePanel6.Size = new System.Drawing.Size(965, 406);
+            this.siticonePanel6.TabIndex = 3;
+            this.siticonePanel6.TabStop = true;
+            this.siticonePanel6.UseBorderGradient = false;
+            this.siticonePanel6.UseMultiGradient = false;
+            this.siticonePanel6.UsePatternTexture = false;
+            this.siticonePanel6.UseRadialGradient = false;
+            // 
             // Frm_TrangChu_Admin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1151, 615);
+            this.ClientSize = new System.Drawing.Size(1530, 820);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
@@ -236,14 +679,20 @@
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.panel1.ResumeLayout(false);
             this.tableLayoutPanel1.ResumeLayout(false);
-            this.panel4.ResumeLayout(false);
             this.panel7.ResumeLayout(false);
-            this.panel6.ResumeLayout(false);
-            this.panel5.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            this.panel6.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            this.panel5.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            this.panel4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.panel3.ResumeLayout(false);
+            this.siticonePanel2.ResumeLayout(false);
+            this.siticonePanel2.PerformLayout();
+            this.siticonePanel1.ResumeLayout(false);
+            this.siticonePanel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -266,5 +715,16 @@
         private System.Windows.Forms.Panel panel5;
         private SiticoneNetFrameworkUI.SiticoneLabel siticoneLabel2;
         private System.Windows.Forms.PictureBox pictureBox2;
+        private SiticoneNetFrameworkUI.SiticonePanel siticonePanel4;
+        private SiticoneNetFrameworkUI.SiticonePanel siticonePanel3;
+        private SiticoneNetFrameworkUI.SiticonePanel siticonePanel2;
+        private SiticoneNetFrameworkUI.SiticonePanel siticonePanel1;
+        private SiticoneNetFrameworkUI.SiticoneTextBox siticoneTextBox1;
+        private System.Windows.Forms.Label label1;
+        private SiticoneNetFrameworkUI.SiticoneTextBox siticoneTextBox2;
+        private System.Windows.Forms.PictureBox pictureBox5;
+        private System.Windows.Forms.Label label2;
+        private SiticoneNetFrameworkUI.SiticonePanel siticonePanel6;
+        private SiticoneNetFrameworkUI.SiticonePanel siticonePanel5;
     }
 }
