@@ -117,50 +117,7 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="dn" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\dn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="e2d5dbf16b2bf4a2556004b9f3704d2e(3)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\e2d5dbf16b2bf4a2556004b9f3704d2e(3).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="shopping-cart_2037547" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\shopping-cart_2037547.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="silk_5321738" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\silk_5321738.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="warehouse_10112515" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\warehouse_10112515.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="man_15647384" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\man_15647384.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="51879b9983492ff976872334545c0817(2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\51879b9983492ff976872334545c0817(2).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="power_14025449" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\power_14025449.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="c5393329a022a05e2635b48b85ec59ac(1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\c5393329a022a05e2635b48b85ec59ac(1).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="communication_15047341" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\communication_15047341.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="apps_11319676" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\apps_11319676.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="n(1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\n(1).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="1eda850f78b9630f033d4fe918294b1e(3)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\1eda850f78b9630f033d4fe918294b1e(3).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="bfab1be3f0c8d4a82a53cad16a65a811(1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\bfab1be3f0c8d4a82a53cad16a65a811(1).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="51879b9983492ff976872334545c0817(2)1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\51879b9983492ff976872334545c0817(2)1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
+  <metadata name="menuStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
 </root>
