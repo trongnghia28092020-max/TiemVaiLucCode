@@ -44,7 +44,7 @@ namespace TiemVaiLucCode
         private void txt_DangNhap_Enter(object sender, EventArgs e)
         {
 
-            if (txt_DangNhap.Text == "Tên đăng nhập")
+            if (txt_DangNhap.Text == "Email/Tên đăng nhập")
             {
                 txt_DangNhap.Text = "";
                 txt_DangNhap.ForeColor = Color.Black;
@@ -56,7 +56,7 @@ namespace TiemVaiLucCode
 
             if (string.IsNullOrWhiteSpace(txt_DangNhap.Text))
             {
-                txt_DangNhap.Text = "Tên đăng nhập";
+                txt_DangNhap.Text = "Email/Tên đăng nhập";
                 txt_DangNhap.ForeColor = Color.Gray;
             }
         }
