@@ -170,3 +170,4 @@ D:\TrongNghia\NAM HOC 25-26\HK3\C#\TiemVaiLucCode\TiemVaiLucCode\TiemVaiLucCode\
 D:\TrongNghia\NAM HOC 25-26\HK3\C#\TiemVaiLucCode\TiemVaiLucCode\TiemVaiLucCode\obj\Debug\TiemVaiLucCode.Frm_BanHang.resources
 D:\TrongNghia\NAM HOC 25-26\HK3\C#\TiemVaiLucCode\TiemVaiLucCode\TiemVaiLucCode\obj\Debug\TiemVaiLucCode.Frm_TT_KhachHang.resources
 D:\TrongNghia\NAM HOC 25-26\HK3\C#\TiemVaiLucCode\TiemVaiLucCode\TiemVaiLucCode\obj\Debug\TiemVaiLucCode.Frm_QuenMK.resources
+D:\TrongNghia\NAM HOC 25-26\HK3\C#\TiemVaiLucCode\TiemVaiLucCode\TiemVaiLucCode\bin\Debug\FontAwesome.Sharp.dll
