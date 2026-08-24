@@ -29,12 +29,11 @@
         private void InitializeComponent()
         {
             this.pnlCard_DangNhap = new SiticoneNetFrameworkUI.SiticonePanel();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.ptb_TaoMaMoi = new System.Windows.Forms.PictureBox();
             this.pnl_MaCapcha = new SiticoneNetFrameworkUI.SiticonePanel();
             this.cmb_VaiTro = new System.Windows.Forms.ComboBox();
-            this.siticoneButton1 = new SiticoneNetFrameworkUI.SiticoneButton();
+            this.btn_DangNhap = new SiticoneNetFrameworkUI.SiticoneButton();
             this.llbl_QuenMK = new System.Windows.Forms.LinkLabel();
-            this.cb_HienMK = new System.Windows.Forms.CheckBox();
             this.txt_MatKhau = new SiticoneNetFrameworkUI.SiticoneTextBox();
             this.txt_DangNhap = new SiticoneNetFrameworkUI.SiticoneTextBox();
             this.label4 = new System.Windows.Forms.Label();
@@ -61,12 +60,17 @@
             this.label7 = new System.Windows.Forms.Label();
             this.lbldn = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.ipb_IconMat = new FontAwesome.Sharp.IconPictureBox();
+            this.lbl_MaCaptcha = new System.Windows.Forms.Label();
+            this.txt_MaCaptCha = new SiticoneNetFrameworkUI.SiticoneTextBox();
             this.pnlCard_DangNhap.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptb_TaoMaMoi)).BeginInit();
+            this.pnl_MaCapcha.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.pnlCardChinh.SuspendLayout();
             this.pnlCard_DangKy.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ipb_IconMat)).BeginInit();
             this.SuspendLayout();
             // 
             // pnlCard_DangNhap
@@ -79,12 +83,13 @@
             this.pnlCard_DangNhap.BorderGradientEndColor = System.Drawing.Color.Purple;
             this.pnlCard_DangNhap.BorderGradientStartColor = System.Drawing.Color.Blue;
             this.pnlCard_DangNhap.BorderThickness = 2F;
-            this.pnlCard_DangNhap.Controls.Add(this.pictureBox3);
+            this.pnlCard_DangNhap.Controls.Add(this.txt_MaCaptCha);
+            this.pnlCard_DangNhap.Controls.Add(this.ipb_IconMat);
+            this.pnlCard_DangNhap.Controls.Add(this.ptb_TaoMaMoi);
             this.pnlCard_DangNhap.Controls.Add(this.pnl_MaCapcha);
             this.pnlCard_DangNhap.Controls.Add(this.cmb_VaiTro);
-            this.pnlCard_DangNhap.Controls.Add(this.siticoneButton1);
+            this.pnlCard_DangNhap.Controls.Add(this.btn_DangNhap);
             this.pnlCard_DangNhap.Controls.Add(this.llbl_QuenMK);
-            this.pnlCard_DangNhap.Controls.Add(this.cb_HienMK);
             this.pnlCard_DangNhap.Controls.Add(this.txt_MatKhau);
             this.pnlCard_DangNhap.Controls.Add(this.txt_DangNhap);
             this.pnlCard_DangNhap.Controls.Add(this.label4);
@@ -129,16 +134,17 @@
             this.pnlCard_DangNhap.UseRadialGradient = false;
             this.pnlCard_DangNhap.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlCard_DangNhap_Paint);
             // 
-            // pictureBox3
+            // ptb_TaoMaMoi
             // 
-            this.pictureBox3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox3.Image = global::TiemVaiLucCode.Properties.Resources.power_14025449;
-            this.pictureBox3.Location = new System.Drawing.Point(186, 392);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(30, 30);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox3.TabIndex = 14;
-            this.pictureBox3.TabStop = false;
+            this.ptb_TaoMaMoi.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ptb_TaoMaMoi.Image = global::TiemVaiLucCode.Properties.Resources.power_14025449;
+            this.ptb_TaoMaMoi.Location = new System.Drawing.Point(161, 409);
+            this.ptb_TaoMaMoi.Name = "ptb_TaoMaMoi";
+            this.ptb_TaoMaMoi.Size = new System.Drawing.Size(30, 30);
+            this.ptb_TaoMaMoi.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.ptb_TaoMaMoi.TabIndex = 14;
+            this.ptb_TaoMaMoi.TabStop = false;
+            this.ptb_TaoMaMoi.Click += new System.EventHandler(this.ptb_TaoMaMoi_Click);
             // 
             // pnl_MaCapcha
             // 
@@ -150,6 +156,7 @@
             this.pnl_MaCapcha.BorderGradientEndColor = System.Drawing.Color.Purple;
             this.pnl_MaCapcha.BorderGradientStartColor = System.Drawing.Color.Blue;
             this.pnl_MaCapcha.BorderThickness = 2F;
+            this.pnl_MaCapcha.Controls.Add(this.lbl_MaCaptcha);
             this.pnl_MaCapcha.CornerRadiusBottomLeft = 10F;
             this.pnl_MaCapcha.CornerRadiusBottomRight = 10F;
             this.pnl_MaCapcha.CornerRadiusTopLeft = 10F;
@@ -168,7 +175,7 @@
         0F,
         0.5F,
         1F};
-            this.pnl_MaCapcha.Location = new System.Drawing.Point(233, 376);
+            this.pnl_MaCapcha.Location = new System.Drawing.Point(208, 393);
             this.pnl_MaCapcha.Name = "pnl_MaCapcha";
             this.pnl_MaCapcha.PatternColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.pnl_MaCapcha.PatternStyle = System.Drawing.Drawing2D.HatchStyle.LargeGrid;
@@ -178,7 +185,7 @@
             this.pnl_MaCapcha.RippleMaxSize = 600F;
             this.pnl_MaCapcha.RippleSpeed = 15F;
             this.pnl_MaCapcha.ShowBorder = true;
-            this.pnl_MaCapcha.Size = new System.Drawing.Size(108, 59);
+            this.pnl_MaCapcha.Size = new System.Drawing.Size(120, 59);
             this.pnl_MaCapcha.TabIndex = 13;
             this.pnl_MaCapcha.TabStop = true;
             this.pnl_MaCapcha.UseBorderGradient = false;
@@ -189,106 +196,101 @@
             // cmb_VaiTro
             // 
             this.cmb_VaiTro.FormattingEnabled = true;
-            this.cmb_VaiTro.Location = new System.Drawing.Point(31, 318);
+            this.cmb_VaiTro.Items.AddRange(new object[] {
+            "Admin",
+            "Khách Hàng"});
+            this.cmb_VaiTro.Location = new System.Drawing.Point(31, 290);
             this.cmb_VaiTro.Name = "cmb_VaiTro";
             this.cmb_VaiTro.Size = new System.Drawing.Size(310, 28);
             this.cmb_VaiTro.TabIndex = 12;
             // 
-            // siticoneButton1
+            // btn_DangNhap
             // 
-            this.siticoneButton1.AccessibleDescription = "The default button control that accept input though the mouse, touch and keyboard" +
+            this.btn_DangNhap.AccessibleDescription = "The default button control that accept input though the mouse, touch and keyboard" +
     "";
-            this.siticoneButton1.AccessibleName = "Đăng Nhập";
-            this.siticoneButton1.AutoSizeBasedOnText = false;
-            this.siticoneButton1.BackColor = System.Drawing.Color.Transparent;
-            this.siticoneButton1.BadgeBackColor = System.Drawing.Color.Black;
-            this.siticoneButton1.BadgeFont = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.siticoneButton1.BadgeValue = 0;
-            this.siticoneButton1.BadgeValueForeColor = System.Drawing.Color.White;
-            this.siticoneButton1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(216)))), ((int)(((byte)(220)))));
-            this.siticoneButton1.BorderWidth = 1;
-            this.siticoneButton1.ButtonBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            this.siticoneButton1.ButtonImage = null;
-            this.siticoneButton1.ButtonTextLeftPadding = 0;
-            this.siticoneButton1.CanBeep = true;
-            this.siticoneButton1.CanGlow = false;
-            this.siticoneButton1.CanShake = true;
-            this.siticoneButton1.ContextMenuStripEx = null;
-            this.siticoneButton1.CornerRadiusBottomLeft = 20;
-            this.siticoneButton1.CornerRadiusBottomRight = 20;
-            this.siticoneButton1.CornerRadiusTopLeft = 20;
-            this.siticoneButton1.CornerRadiusTopRight = 20;
-            this.siticoneButton1.CustomCursor = System.Windows.Forms.Cursors.Default;
-            this.siticoneButton1.DisabledTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(150)))), ((int)(((byte)(150)))));
-            this.siticoneButton1.EnableLongPress = false;
-            this.siticoneButton1.EnableRippleEffect = true;
-            this.siticoneButton1.EnableShadow = false;
-            this.siticoneButton1.EnableTextWrapping = false;
-            this.siticoneButton1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.siticoneButton1.GlowColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.siticoneButton1.GlowIntensity = 100;
-            this.siticoneButton1.GlowRadius = 20F;
-            this.siticoneButton1.GradientBackground = false;
-            this.siticoneButton1.GradientColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(227)))), ((int)(((byte)(64)))));
-            this.siticoneButton1.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical;
-            this.siticoneButton1.HintText = null;
-            this.siticoneButton1.HoverBackColor = System.Drawing.Color.Peru;
-            this.siticoneButton1.HoverFontStyle = System.Drawing.FontStyle.Regular;
-            this.siticoneButton1.HoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.siticoneButton1.HoverTransitionDuration = 100;
-            this.siticoneButton1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.siticoneButton1.ImagePadding = 5;
-            this.siticoneButton1.ImageSize = new System.Drawing.Size(16, 16);
-            this.siticoneButton1.IsRadial = false;
-            this.siticoneButton1.IsReadOnly = false;
-            this.siticoneButton1.IsToggleButton = false;
-            this.siticoneButton1.IsToggled = false;
-            this.siticoneButton1.Location = new System.Drawing.Point(30, 458);
-            this.siticoneButton1.LongPressDurationMS = 1000;
-            this.siticoneButton1.Name = "siticoneButton1";
-            this.siticoneButton1.NormalFontStyle = System.Drawing.FontStyle.Regular;
-            this.siticoneButton1.ParticleColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
-            this.siticoneButton1.ParticleCount = 15;
-            this.siticoneButton1.PressAnimationScale = 0.97F;
-            this.siticoneButton1.PressedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(227)))), ((int)(((byte)(230)))));
-            this.siticoneButton1.PressedFontStyle = System.Drawing.FontStyle.Regular;
-            this.siticoneButton1.PressTransitionDuration = 90;
-            this.siticoneButton1.ReadOnlyTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(100)))), ((int)(((byte)(100)))));
-            this.siticoneButton1.RippleColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.siticoneButton1.RippleRadiusMultiplier = 0.6F;
-            this.siticoneButton1.ShadowBlur = 5;
-            this.siticoneButton1.ShadowColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.siticoneButton1.ShadowOffset = new System.Drawing.Point(0, 2);
-            this.siticoneButton1.ShakeDuration = 500;
-            this.siticoneButton1.ShakeIntensity = 5;
-            this.siticoneButton1.Size = new System.Drawing.Size(311, 49);
-            this.siticoneButton1.TabIndex = 11;
-            this.siticoneButton1.Text = "Đăng Nhập";
-            this.siticoneButton1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.siticoneButton1.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.siticoneButton1.TooltipText = null;
-            this.siticoneButton1.UseAdvancedRendering = true;
-            this.siticoneButton1.UseParticles = false;
+            this.btn_DangNhap.AccessibleName = "Đăng Nhập";
+            this.btn_DangNhap.AutoSizeBasedOnText = false;
+            this.btn_DangNhap.BackColor = System.Drawing.Color.Transparent;
+            this.btn_DangNhap.BadgeBackColor = System.Drawing.Color.Black;
+            this.btn_DangNhap.BadgeFont = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_DangNhap.BadgeValue = 0;
+            this.btn_DangNhap.BadgeValueForeColor = System.Drawing.Color.White;
+            this.btn_DangNhap.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(216)))), ((int)(((byte)(220)))));
+            this.btn_DangNhap.BorderWidth = 1;
+            this.btn_DangNhap.ButtonBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.btn_DangNhap.ButtonImage = null;
+            this.btn_DangNhap.ButtonTextLeftPadding = 0;
+            this.btn_DangNhap.CanBeep = true;
+            this.btn_DangNhap.CanGlow = false;
+            this.btn_DangNhap.CanShake = true;
+            this.btn_DangNhap.ContextMenuStripEx = null;
+            this.btn_DangNhap.CornerRadiusBottomLeft = 20;
+            this.btn_DangNhap.CornerRadiusBottomRight = 20;
+            this.btn_DangNhap.CornerRadiusTopLeft = 20;
+            this.btn_DangNhap.CornerRadiusTopRight = 20;
+            this.btn_DangNhap.CustomCursor = System.Windows.Forms.Cursors.Default;
+            this.btn_DangNhap.DisabledTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(150)))), ((int)(((byte)(150)))));
+            this.btn_DangNhap.EnableLongPress = false;
+            this.btn_DangNhap.EnableRippleEffect = true;
+            this.btn_DangNhap.EnableShadow = false;
+            this.btn_DangNhap.EnableTextWrapping = false;
+            this.btn_DangNhap.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_DangNhap.GlowColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.btn_DangNhap.GlowIntensity = 100;
+            this.btn_DangNhap.GlowRadius = 20F;
+            this.btn_DangNhap.GradientBackground = false;
+            this.btn_DangNhap.GradientColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(227)))), ((int)(((byte)(64)))));
+            this.btn_DangNhap.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical;
+            this.btn_DangNhap.HintText = null;
+            this.btn_DangNhap.HoverBackColor = System.Drawing.Color.Peru;
+            this.btn_DangNhap.HoverFontStyle = System.Drawing.FontStyle.Regular;
+            this.btn_DangNhap.HoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btn_DangNhap.HoverTransitionDuration = 100;
+            this.btn_DangNhap.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_DangNhap.ImagePadding = 5;
+            this.btn_DangNhap.ImageSize = new System.Drawing.Size(16, 16);
+            this.btn_DangNhap.IsRadial = false;
+            this.btn_DangNhap.IsReadOnly = false;
+            this.btn_DangNhap.IsToggleButton = false;
+            this.btn_DangNhap.IsToggled = false;
+            this.btn_DangNhap.Location = new System.Drawing.Point(30, 502);
+            this.btn_DangNhap.LongPressDurationMS = 1000;
+            this.btn_DangNhap.Name = "btn_DangNhap";
+            this.btn_DangNhap.NormalFontStyle = System.Drawing.FontStyle.Regular;
+            this.btn_DangNhap.ParticleColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
+            this.btn_DangNhap.ParticleCount = 15;
+            this.btn_DangNhap.PressAnimationScale = 0.97F;
+            this.btn_DangNhap.PressedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(227)))), ((int)(((byte)(230)))));
+            this.btn_DangNhap.PressedFontStyle = System.Drawing.FontStyle.Regular;
+            this.btn_DangNhap.PressTransitionDuration = 90;
+            this.btn_DangNhap.ReadOnlyTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(100)))), ((int)(((byte)(100)))));
+            this.btn_DangNhap.RippleColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btn_DangNhap.RippleRadiusMultiplier = 0.6F;
+            this.btn_DangNhap.ShadowBlur = 5;
+            this.btn_DangNhap.ShadowColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btn_DangNhap.ShadowOffset = new System.Drawing.Point(0, 2);
+            this.btn_DangNhap.ShakeDuration = 500;
+            this.btn_DangNhap.ShakeIntensity = 5;
+            this.btn_DangNhap.Size = new System.Drawing.Size(311, 49);
+            this.btn_DangNhap.TabIndex = 11;
+            this.btn_DangNhap.Text = "Đăng Nhập";
+            this.btn_DangNhap.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btn_DangNhap.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btn_DangNhap.TooltipText = null;
+            this.btn_DangNhap.UseAdvancedRendering = true;
+            this.btn_DangNhap.UseParticles = false;
+            this.btn_DangNhap.Click += new System.EventHandler(this.btn_DangNhap_Click);
             // 
             // llbl_QuenMK
             // 
             this.llbl_QuenMK.AutoSize = true;
-            this.llbl_QuenMK.Location = new System.Drawing.Point(213, 258);
+            this.llbl_QuenMK.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.llbl_QuenMK.Location = new System.Drawing.Point(200, 257);
             this.llbl_QuenMK.Name = "llbl_QuenMK";
-            this.llbl_QuenMK.Size = new System.Drawing.Size(128, 20);
+            this.llbl_QuenMK.Size = new System.Drawing.Size(105, 17);
             this.llbl_QuenMK.TabIndex = 10;
             this.llbl_QuenMK.TabStop = true;
             this.llbl_QuenMK.Text = "Quên mật khẩu?";
-            // 
-            // cb_HienMK
-            // 
-            this.cb_HienMK.AutoSize = true;
-            this.cb_HienMK.Location = new System.Drawing.Point(30, 260);
-            this.cb_HienMK.Name = "cb_HienMK";
-            this.cb_HienMK.Size = new System.Drawing.Size(137, 24);
-            this.cb_HienMK.TabIndex = 9;
-            this.cb_HienMK.Text = "Hiện mật khẩu";
-            this.cb_HienMK.UseVisualStyleBackColor = true;
             // 
             // txt_MatKhau
             // 
@@ -1008,6 +1010,85 @@
             this.panel1.Size = new System.Drawing.Size(403, 688);
             this.panel1.TabIndex = 0;
             // 
+            // ipb_IconMat
+            // 
+            this.ipb_IconMat.BackColor = System.Drawing.Color.Transparent;
+            this.ipb_IconMat.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.ipb_IconMat.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.ipb_IconMat.IconColor = System.Drawing.SystemColors.ControlText;
+            this.ipb_IconMat.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.ipb_IconMat.IconSize = 30;
+            this.ipb_IconMat.Location = new System.Drawing.Point(298, 197);
+            this.ipb_IconMat.Name = "ipb_IconMat";
+            this.ipb_IconMat.Size = new System.Drawing.Size(30, 30);
+            this.ipb_IconMat.TabIndex = 15;
+            this.ipb_IconMat.TabStop = false;
+            this.ipb_IconMat.Click += new System.EventHandler(this.ipb_IconMat_Click);
+            // 
+            // lbl_MaCaptcha
+            // 
+            this.lbl_MaCaptcha.AutoSize = true;
+            this.lbl_MaCaptcha.Font = new System.Drawing.Font("Times New Roman", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Strikeout))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_MaCaptcha.ForeColor = System.Drawing.Color.Black;
+            this.lbl_MaCaptcha.Location = new System.Drawing.Point(12, 16);
+            this.lbl_MaCaptcha.Name = "lbl_MaCaptcha";
+            this.lbl_MaCaptcha.Size = new System.Drawing.Size(0, 25);
+            this.lbl_MaCaptcha.TabIndex = 0;
+            // 
+            // txt_MaCaptCha
+            // 
+            this.txt_MaCaptCha.AccessibleDescription = "A customizable text input field.";
+            this.txt_MaCaptCha.AccessibleName = "Text Box";
+            this.txt_MaCaptCha.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
+            this.txt_MaCaptCha.BackColor = System.Drawing.Color.Transparent;
+            this.txt_MaCaptCha.BlinkCount = 3;
+            this.txt_MaCaptCha.BlinkShadow = false;
+            this.txt_MaCaptCha.BorderColor1 = System.Drawing.Color.LightSlateGray;
+            this.txt_MaCaptCha.BorderColor2 = System.Drawing.Color.LightSlateGray;
+            this.txt_MaCaptCha.BorderFocusColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(77)))), ((int)(((byte)(255)))));
+            this.txt_MaCaptCha.BorderFocusColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(77)))), ((int)(((byte)(255)))));
+            this.txt_MaCaptCha.CanShake = true;
+            this.txt_MaCaptCha.ContinuousBlink = false;
+            this.txt_MaCaptCha.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txt_MaCaptCha.CursorBlinkRate = 500;
+            this.txt_MaCaptCha.CursorColor = System.Drawing.Color.Black;
+            this.txt_MaCaptCha.CursorHeight = 26;
+            this.txt_MaCaptCha.CursorOffset = 0;
+            this.txt_MaCaptCha.CursorStyle = SiticoneNetFrameworkUI.Helpers.DrawingStyle.SiticoneDrawingStyle.Solid;
+            this.txt_MaCaptCha.CursorWidth = 1;
+            this.txt_MaCaptCha.DisabledBackColor = System.Drawing.Color.WhiteSmoke;
+            this.txt_MaCaptCha.DisabledBorderColor = System.Drawing.Color.LightGray;
+            this.txt_MaCaptCha.DisabledTextColor = System.Drawing.Color.Gray;
+            this.txt_MaCaptCha.EnableDropShadow = false;
+            this.txt_MaCaptCha.FillColor1 = System.Drawing.Color.White;
+            this.txt_MaCaptCha.FillColor2 = System.Drawing.Color.White;
+            this.txt_MaCaptCha.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_MaCaptCha.ForeColor = System.Drawing.Color.DimGray;
+            this.txt_MaCaptCha.HoverBorderColor1 = System.Drawing.Color.Gray;
+            this.txt_MaCaptCha.HoverBorderColor2 = System.Drawing.Color.Gray;
+            this.txt_MaCaptCha.IsEnabled = true;
+            this.txt_MaCaptCha.Location = new System.Drawing.Point(31, 335);
+            this.txt_MaCaptCha.Name = "txt_MaCaptCha";
+            this.txt_MaCaptCha.PlaceholderColor = System.Drawing.Color.Transparent;
+            this.txt_MaCaptCha.ReadOnlyBorderColor1 = System.Drawing.Color.LightGray;
+            this.txt_MaCaptCha.ReadOnlyBorderColor2 = System.Drawing.Color.LightGray;
+            this.txt_MaCaptCha.ReadOnlyFillColor1 = System.Drawing.Color.WhiteSmoke;
+            this.txt_MaCaptCha.ReadOnlyFillColor2 = System.Drawing.Color.WhiteSmoke;
+            this.txt_MaCaptCha.ReadOnlyPlaceholderColor = System.Drawing.Color.DarkGray;
+            this.txt_MaCaptCha.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(77)))), ((int)(((byte)(255)))));
+            this.txt_MaCaptCha.ShadowAnimationDuration = 1;
+            this.txt_MaCaptCha.ShadowBlur = 10;
+            this.txt_MaCaptCha.ShadowColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.txt_MaCaptCha.Size = new System.Drawing.Size(310, 35);
+            this.txt_MaCaptCha.SolidBorderColor = System.Drawing.Color.LightSlateGray;
+            this.txt_MaCaptCha.SolidBorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(77)))), ((int)(((byte)(255)))));
+            this.txt_MaCaptCha.SolidBorderHoverColor = System.Drawing.Color.Gray;
+            this.txt_MaCaptCha.SolidFillColor = System.Drawing.Color.White;
+            this.txt_MaCaptCha.TabIndex = 16;
+            this.txt_MaCaptCha.TextPadding = new System.Windows.Forms.Padding(16, 0, 6, 0);
+            this.txt_MaCaptCha.ValidationErrorMessage = "Invalid input.";
+            this.txt_MaCaptCha.ValidationFunction = null;
+            // 
             // Frm_DangNhap
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -1019,12 +1100,15 @@
             this.Text = "Frm_DangNhap";
             this.pnlCard_DangNhap.ResumeLayout(false);
             this.pnlCard_DangNhap.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptb_TaoMaMoi)).EndInit();
+            this.pnl_MaCapcha.ResumeLayout(false);
+            this.pnl_MaCapcha.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.pnlCardChinh.ResumeLayout(false);
             this.pnlCard_DangKy.ResumeLayout(false);
             this.pnlCard_DangKy.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ipb_IconMat)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1042,9 +1126,8 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label4;
         private SiticoneNetFrameworkUI.SiticoneTextBox txt_DangNhap;
-        private System.Windows.Forms.CheckBox cb_HienMK;
         private SiticoneNetFrameworkUI.SiticoneTextBox txt_MatKhau;
-        private SiticoneNetFrameworkUI.SiticoneButton siticoneButton1;
+        private SiticoneNetFrameworkUI.SiticoneButton btn_DangNhap;
         private System.Windows.Forms.LinkLabel llbl_QuenMK;
         private SiticoneNetFrameworkUI.SiticonePanel pnlCard_DangKy;
         private SiticoneNetFrameworkUI.SiticoneButton siticoneButton2;
@@ -1063,6 +1146,9 @@
         private SiticoneNetFrameworkUI.SiticoneTextBox siticoneTextBox5;
         private System.Windows.Forms.ComboBox cmb_VaiTro;
         private SiticoneNetFrameworkUI.SiticonePanel pnl_MaCapcha;
-        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.PictureBox ptb_TaoMaMoi;
+        private FontAwesome.Sharp.IconPictureBox ipb_IconMat;
+        private System.Windows.Forms.Label lbl_MaCaptcha;
+        private SiticoneNetFrameworkUI.SiticoneTextBox txt_MaCaptCha;
     }
 }

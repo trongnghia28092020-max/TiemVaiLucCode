@@ -43,6 +43,9 @@
     <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.5.2\lib\net45\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
+    <Reference Include="FontAwesome.Sharp, Version=6.6.0.0, Culture=neutral, PublicKeyToken=d16d1e4e568ec10f, processorArchitecture=MSIL">
+      <HintPath>..\packages\FontAwesome.Sharp.6.6.0\lib\net48\FontAwesome.Sharp.dll</HintPath>
+    </Reference>
     <Reference Include="HarfBuzzSharp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=0738eb9f132ed756, processorArchitecture=MSIL">
       <HintPath>..\packages\HarfBuzzSharp.8.3.1.1\lib\net462\HarfBuzzSharp.dll</HintPath>
     </Reference>
@@ -133,12 +136,6 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form_TC.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form_TC.Designer.cs">
-      <DependentUpon>Form_TC.cs</DependentUpon>
-    </Compile>
     <Compile Include="Frm_BanHang.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -197,9 +194,6 @@
     <Compile Include="Models\TaiKhoanContext.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form_TC.resx">
-      <DependentUpon>Form_TC.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Frm_BanHang.resx">
       <DependentUpon>Frm_BanHang.cs</DependentUpon>
     </EmbeddedResource>
@@ -237,6 +231,11 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <Content Include="fonts\fontawesome-webfont.eot" />
+    <Content Include="fonts\fontawesome-webfont.ttf" />
+    <Content Include="fonts\fontawesome-webfont.woff" />
+    <Content Include="fonts\fontawesome-webfont.woff2" />
+    <Content Include="fonts\FontAwesome.otf" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -300,82 +299,9 @@
     <None Include="Resources\screen.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Untitled-5.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Untitled-5%281%29.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Untitled-5%282%29.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Untitled-5%282%291.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\ebcd57b50e556f80c52b6b24c93a9925%281%29.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\ebcd57b50e556f80c52b6b24c93a9925%282%29.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\04242a13461c995de3dc689e0aebbfb8%281%29.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\2acf33bafc54ac30fe296863964e235c%281%29.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\20b6e79a5fea0ff4d20c5eedca9a4b15%281%29.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\LUA_SATIN.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\LUA_SATIN%281%29.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\kate.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\kate%281%29.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\gam.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\nhung.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\nhung%281%29.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\nhung%282%29.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\thun%281%29.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\chiffon.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\339b738b9298e8d39cc79f8bc28462a6%281%29.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\gam1.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\gam%281%29.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\thun%282%29.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\ren%281%29.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\LUA_SATIN%281%29%281%29.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\chiffon%281%29.png" />
+    <Content Include="Content\font-awesome.css" />
+    <Content Include="Content\font-awesome.min.css" />
+    <Content Include="fonts\fontawesome-webfont.svg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
