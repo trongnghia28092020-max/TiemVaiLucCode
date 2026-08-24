@@ -29,12 +29,16 @@
         private void InitializeComponent()
         {
             this.pnlCard_DangNhap = new SiticoneNetFrameworkUI.SiticonePanel();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pnl_MaCapcha = new SiticoneNetFrameworkUI.SiticonePanel();
+            this.cmb_VaiTro = new System.Windows.Forms.ComboBox();
             this.siticoneButton1 = new SiticoneNetFrameworkUI.SiticoneButton();
             this.llbl_QuenMK = new System.Windows.Forms.LinkLabel();
             this.cb_HienMK = new System.Windows.Forms.CheckBox();
             this.txt_MatKhau = new SiticoneNetFrameworkUI.SiticoneTextBox();
             this.txt_DangNhap = new SiticoneNetFrameworkUI.SiticoneTextBox();
             this.label4 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -50,23 +54,19 @@
             this.siticoneTextBox3 = new SiticoneNetFrameworkUI.SiticoneTextBox();
             this.siticoneTextBox4 = new SiticoneNetFrameworkUI.SiticoneTextBox();
             this.label5 = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label6 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
             this.label7 = new System.Windows.Forms.Label();
             this.lbldn = new System.Windows.Forms.Label();
-            this.cmb_VaiTro = new System.Windows.Forms.ComboBox();
-            this.pnl_MaCapcha = new SiticoneNetFrameworkUI.SiticonePanel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pnlCard_DangNhap.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.pnlCardChinh.SuspendLayout();
             this.pnlCard_DangKy.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
             // 
             // pnlCard_DangNhap
@@ -128,6 +128,71 @@
             this.pnlCard_DangNhap.UsePatternTexture = false;
             this.pnlCard_DangNhap.UseRadialGradient = false;
             this.pnlCard_DangNhap.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlCard_DangNhap_Paint);
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox3.Image = global::TiemVaiLucCode.Properties.Resources.power_14025449;
+            this.pictureBox3.Location = new System.Drawing.Point(186, 392);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(30, 30);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox3.TabIndex = 14;
+            this.pictureBox3.TabStop = false;
+            // 
+            // pnl_MaCapcha
+            // 
+            this.pnl_MaCapcha.AcrylicTintColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.pnl_MaCapcha.BackColor = System.Drawing.Color.Transparent;
+            this.pnl_MaCapcha.BorderAlignment = System.Drawing.Drawing2D.PenAlignment.Center;
+            this.pnl_MaCapcha.BorderColor = System.Drawing.Color.Gray;
+            this.pnl_MaCapcha.BorderDashPattern = null;
+            this.pnl_MaCapcha.BorderGradientEndColor = System.Drawing.Color.Purple;
+            this.pnl_MaCapcha.BorderGradientStartColor = System.Drawing.Color.Blue;
+            this.pnl_MaCapcha.BorderThickness = 2F;
+            this.pnl_MaCapcha.CornerRadiusBottomLeft = 10F;
+            this.pnl_MaCapcha.CornerRadiusBottomRight = 10F;
+            this.pnl_MaCapcha.CornerRadiusTopLeft = 10F;
+            this.pnl_MaCapcha.CornerRadiusTopRight = 10F;
+            this.pnl_MaCapcha.EnableAcrylicEffect = false;
+            this.pnl_MaCapcha.Enabled = false;
+            this.pnl_MaCapcha.EnableMicaEffect = false;
+            this.pnl_MaCapcha.EnableRippleEffect = false;
+            this.pnl_MaCapcha.FillColor = System.Drawing.Color.White;
+            this.pnl_MaCapcha.ForeColor = System.Drawing.Color.Red;
+            this.pnl_MaCapcha.GradientColors = new System.Drawing.Color[] {
+        System.Drawing.Color.White,
+        System.Drawing.Color.LightGray,
+        System.Drawing.Color.Gray};
+            this.pnl_MaCapcha.GradientPositions = new float[] {
+        0F,
+        0.5F,
+        1F};
+            this.pnl_MaCapcha.Location = new System.Drawing.Point(233, 376);
+            this.pnl_MaCapcha.Name = "pnl_MaCapcha";
+            this.pnl_MaCapcha.PatternColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.pnl_MaCapcha.PatternStyle = System.Drawing.Drawing2D.HatchStyle.LargeGrid;
+            this.pnl_MaCapcha.RippleAlpha = 50;
+            this.pnl_MaCapcha.RippleAlphaDecrement = 3;
+            this.pnl_MaCapcha.RippleColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.pnl_MaCapcha.RippleMaxSize = 600F;
+            this.pnl_MaCapcha.RippleSpeed = 15F;
+            this.pnl_MaCapcha.ShowBorder = true;
+            this.pnl_MaCapcha.Size = new System.Drawing.Size(108, 59);
+            this.pnl_MaCapcha.TabIndex = 13;
+            this.pnl_MaCapcha.TabStop = true;
+            this.pnl_MaCapcha.UseBorderGradient = false;
+            this.pnl_MaCapcha.UseMultiGradient = false;
+            this.pnl_MaCapcha.UsePatternTexture = false;
+            this.pnl_MaCapcha.UseRadialGradient = false;
+            // 
+            // cmb_VaiTro
+            // 
+            this.cmb_VaiTro.FormattingEnabled = true;
+            this.cmb_VaiTro.Location = new System.Drawing.Point(31, 318);
+            this.cmb_VaiTro.Name = "cmb_VaiTro";
+            this.cmb_VaiTro.Size = new System.Drawing.Size(310, 28);
+            this.cmb_VaiTro.TabIndex = 12;
             // 
             // siticoneButton1
             // 
@@ -208,7 +273,7 @@
             // llbl_QuenMK
             // 
             this.llbl_QuenMK.AutoSize = true;
-            this.llbl_QuenMK.Location = new System.Drawing.Point(213, 264);
+            this.llbl_QuenMK.Location = new System.Drawing.Point(213, 258);
             this.llbl_QuenMK.Name = "llbl_QuenMK";
             this.llbl_QuenMK.Size = new System.Drawing.Size(128, 20);
             this.llbl_QuenMK.TabIndex = 10;
@@ -326,7 +391,7 @@
             this.txt_DangNhap.Location = new System.Drawing.Point(30, 132);
             this.txt_DangNhap.Name = "txt_DangNhap";
             this.txt_DangNhap.PlaceholderColor = System.Drawing.Color.Red;
-            this.txt_DangNhap.PlaceholderText = "Hãy nhập tên!...";
+            this.txt_DangNhap.PlaceholderText = "Hãy nhập tên hoặc email !...";
             this.txt_DangNhap.ReadOnlyBorderColor1 = System.Drawing.Color.LightGray;
             this.txt_DangNhap.ReadOnlyBorderColor2 = System.Drawing.Color.LightGray;
             this.txt_DangNhap.ReadOnlyFillColor1 = System.Drawing.Color.WhiteSmoke;
@@ -342,7 +407,7 @@
             this.txt_DangNhap.SolidBorderHoverColor = System.Drawing.Color.Gray;
             this.txt_DangNhap.SolidFillColor = System.Drawing.Color.White;
             this.txt_DangNhap.TabIndex = 7;
-            this.txt_DangNhap.Text = "Tên đăng nhập";
+            this.txt_DangNhap.Text = "Email/Tên đăng nhập";
             this.txt_DangNhap.TextPadding = new System.Windows.Forms.Padding(16, 0, 6, 0);
             this.txt_DangNhap.ValidationErrorMessage = "Invalid input.";
             this.txt_DangNhap.ValidationFunction = null;
@@ -359,6 +424,16 @@
             this.label4.TabIndex = 6;
             this.label4.Text = "Vui lòng đăng nhập để tiếp tục.";
             this.label4.Click += new System.EventHandler(this.label4_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::TiemVaiLucCode.Properties.Resources.communication_15047341;
+            this.pictureBox1.Location = new System.Drawing.Point(186, 62);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(26, 27);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 5;
+            this.pictureBox1.TabStop = false;
             // 
             // label3
             // 
@@ -867,6 +942,16 @@
             this.label5.TabIndex = 6;
             this.label5.Text = "Điền thông tin bên dưới để tham gia.";
             // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::TiemVaiLucCode.Properties.Resources.silk_5321738;
+            this.pictureBox2.Location = new System.Drawing.Point(186, 62);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(26, 27);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 5;
+            this.pictureBox2.TabStop = false;
+            // 
             // label6
             // 
             this.label6.AutoSize = true;
@@ -913,80 +998,6 @@
             this.lbldn.Text = "Đăng Nhập";
             this.lbldn.Click += new System.EventHandler(this.lbldn_Click);
             // 
-            // cmb_VaiTro
-            // 
-            this.cmb_VaiTro.FormattingEnabled = true;
-            this.cmb_VaiTro.Location = new System.Drawing.Point(31, 318);
-            this.cmb_VaiTro.Name = "cmb_VaiTro";
-            this.cmb_VaiTro.Size = new System.Drawing.Size(310, 28);
-            this.cmb_VaiTro.TabIndex = 12;
-            // 
-            // pnl_MaCapcha
-            // 
-            this.pnl_MaCapcha.AcrylicTintColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.pnl_MaCapcha.BackColor = System.Drawing.Color.Transparent;
-            this.pnl_MaCapcha.BorderAlignment = System.Drawing.Drawing2D.PenAlignment.Center;
-            this.pnl_MaCapcha.BorderColor = System.Drawing.Color.Gray;
-            this.pnl_MaCapcha.BorderDashPattern = null;
-            this.pnl_MaCapcha.BorderGradientEndColor = System.Drawing.Color.Purple;
-            this.pnl_MaCapcha.BorderGradientStartColor = System.Drawing.Color.Blue;
-            this.pnl_MaCapcha.BorderThickness = 2F;
-            this.pnl_MaCapcha.CornerRadiusBottomLeft = 10F;
-            this.pnl_MaCapcha.CornerRadiusBottomRight = 10F;
-            this.pnl_MaCapcha.CornerRadiusTopLeft = 10F;
-            this.pnl_MaCapcha.CornerRadiusTopRight = 10F;
-            this.pnl_MaCapcha.EnableAcrylicEffect = false;
-            this.pnl_MaCapcha.Enabled = false;
-            this.pnl_MaCapcha.EnableMicaEffect = false;
-            this.pnl_MaCapcha.EnableRippleEffect = false;
-            this.pnl_MaCapcha.FillColor = System.Drawing.Color.White;
-            this.pnl_MaCapcha.ForeColor = System.Drawing.Color.Red;
-            this.pnl_MaCapcha.GradientColors = new System.Drawing.Color[] {
-        System.Drawing.Color.White,
-        System.Drawing.Color.LightGray,
-        System.Drawing.Color.Gray};
-            this.pnl_MaCapcha.GradientPositions = new float[] {
-        0F,
-        0.5F,
-        1F};
-            this.pnl_MaCapcha.Location = new System.Drawing.Point(233, 376);
-            this.pnl_MaCapcha.Name = "pnl_MaCapcha";
-            this.pnl_MaCapcha.PatternColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.pnl_MaCapcha.PatternStyle = System.Drawing.Drawing2D.HatchStyle.LargeGrid;
-            this.pnl_MaCapcha.RippleAlpha = 50;
-            this.pnl_MaCapcha.RippleAlphaDecrement = 3;
-            this.pnl_MaCapcha.RippleColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.pnl_MaCapcha.RippleMaxSize = 600F;
-            this.pnl_MaCapcha.RippleSpeed = 15F;
-            this.pnl_MaCapcha.ShowBorder = true;
-            this.pnl_MaCapcha.Size = new System.Drawing.Size(108, 59);
-            this.pnl_MaCapcha.TabIndex = 13;
-            this.pnl_MaCapcha.TabStop = true;
-            this.pnl_MaCapcha.UseBorderGradient = false;
-            this.pnl_MaCapcha.UseMultiGradient = false;
-            this.pnl_MaCapcha.UsePatternTexture = false;
-            this.pnl_MaCapcha.UseRadialGradient = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::TiemVaiLucCode.Properties.Resources.communication_15047341;
-            this.pictureBox1.Location = new System.Drawing.Point(186, 62);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(26, 27);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 5;
-            this.pictureBox1.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = global::TiemVaiLucCode.Properties.Resources.silk_5321738;
-            this.pictureBox2.Location = new System.Drawing.Point(186, 62);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(26, 27);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 5;
-            this.pictureBox2.TabStop = false;
-            // 
             // panel1
             // 
             this.panel1.BackgroundImage = global::TiemVaiLucCode.Properties.Resources.dn;
@@ -996,17 +1007,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(403, 688);
             this.panel1.TabIndex = 0;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox3.Image = global::TiemVaiLucCode.Properties.Resources.power_14025449;
-            this.pictureBox3.Location = new System.Drawing.Point(186, 392);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(30, 30);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox3.TabIndex = 14;
-            this.pictureBox3.TabStop = false;
             // 
             // Frm_DangNhap
             // 
@@ -1019,12 +1019,12 @@
             this.Text = "Frm_DangNhap";
             this.pnlCard_DangNhap.ResumeLayout(false);
             this.pnlCard_DangNhap.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.pnlCardChinh.ResumeLayout(false);
             this.pnlCard_DangKy.ResumeLayout(false);
             this.pnlCard_DangKy.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.ResumeLayout(false);
 
         }

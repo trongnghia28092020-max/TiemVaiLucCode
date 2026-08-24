@@ -133,12 +133,6 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form_TrangChu.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form_TrangChu.Designer.cs">
-      <DependentUpon>Form_TrangChu.cs</DependentUpon>
-    </Compile>
     <Compile Include="Frm_BanHang.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -150,6 +144,12 @@
     </Compile>
     <Compile Include="Frm_DangNhap.Designer.cs">
       <DependentUpon>Frm_DangNhap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_QuenMK.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_QuenMK.Designer.cs">
+      <DependentUpon>Frm_QuenMK.cs</DependentUpon>
     </Compile>
     <Compile Include="Frm_TrangChu_Admin.cs">
       <SubType>Form</SubType>
@@ -196,6 +196,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Frm_DangNhap.resx">
       <DependentUpon>Frm_DangNhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_QuenMK.resx">
+      <DependentUpon>Frm_QuenMK.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Frm_TrangChu_Admin.resx">
       <DependentUpon>Frm_TrangChu_Admin.cs</DependentUpon>
@@ -285,13 +288,7 @@
     <None Include="Resources\51879b9983492ff976872334545c0817%282%291.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\3d5cf5f5f68646a0b2a220ea5a4eb46a%281%29.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\21eaea6acc0216fa0ff03b4fc7875879%281%29.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\21eaea6acc0216fa0ff03b4fc7875879%282%29.jpg" />
+    <None Include="Resources\screen.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
