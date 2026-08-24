@@ -131,6 +131,12 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Frm_BanHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_BanHang.Designer.cs">
+      <DependentUpon>Frm_BanHang.cs</DependentUpon>
+    </Compile>
     <Compile Include="Frm_DangNhap.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -142,6 +148,12 @@
     </Compile>
     <Compile Include="Frm_TrangChu_Admin.Designer.cs">
       <DependentUpon>Frm_TrangChu_Admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_TT_KhachHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_TT_KhachHang.Designer.cs">
+      <DependentUpon>Frm_TT_KhachHang.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\202608140345430_InitialCreate.cs" />
     <Compile Include="Migrations\202608140345430_InitialCreate.Designer.cs">
@@ -170,11 +182,17 @@
     <Compile Include="Models\TaiKhoanContext.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Frm_BanHang.resx">
+      <DependentUpon>Frm_BanHang.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Frm_DangNhap.resx">
       <DependentUpon>Frm_DangNhap.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Frm_TrangChu_Admin.resx">
       <DependentUpon>Frm_TrangChu_Admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_TT_KhachHang.resx">
+      <DependentUpon>Frm_TT_KhachHang.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202608140345430_InitialCreate.resx">
       <DependentUpon>202608140345430_InitialCreate.cs</DependentUpon>
@@ -235,6 +253,27 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\power_14025449.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\n%281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\51879b9983492ff976872334545c0817%282%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1eda850f78b9630f033d4fe918294b1e%283%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\c5393329a022a05e2635b48b85ec59ac%281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bfab1be3f0c8d4a82a53cad16a65a811%281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\e2d5dbf16b2bf4a2556004b9f3704d2e%283%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\51879b9983492ff976872334545c0817%282%291.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
