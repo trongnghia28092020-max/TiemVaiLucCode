@@ -73,6 +73,36 @@ namespace TiemVaiLucCode.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _21eaea6acc0216fa0ff03b4fc7875879_1_ {
+            get {
+                object obj = ResourceManager.GetObject("21eaea6acc0216fa0ff03b4fc7875879(1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _21eaea6acc0216fa0ff03b4fc7875879_2_ {
+            get {
+                object obj = ResourceManager.GetObject("21eaea6acc0216fa0ff03b4fc7875879(2)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _3d5cf5f5f68646a0b2a220ea5a4eb46a_1_ {
+            get {
+                object obj = ResourceManager.GetObject("3d5cf5f5f68646a0b2a220ea5a4eb46a(1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _51879b9983492ff976872334545c0817_2_ {
             get {
                 object obj = ResourceManager.GetObject("51879b9983492ff976872334545c0817(2)", resourceCulture);
