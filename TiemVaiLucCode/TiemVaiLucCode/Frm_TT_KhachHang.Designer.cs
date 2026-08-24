@@ -483,7 +483,7 @@
             // 
             // pictureBox4
             // 
-//            this.pictureBox4.Image = global::TiemVaiLucCode.Properties.Resources._21eaea6acc0216fa0ff03b4fc7875879_2_;
+   //         this.pictureBox4.Image = global::TiemVaiLucCode.Properties.Resources._21eaea6acc0216fa0ff03b4fc7875879_2_;
             this.pictureBox4.Location = new System.Drawing.Point(3, 3);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(349, 94);
@@ -492,7 +492,7 @@
             // 
             // pictureBox8
             // 
-//            this.pictureBox8.Image = global::TiemVaiLucCode.Properties.Resources._3d5cf5f5f68646a0b2a220ea5a4eb46a_1_;
+//          this.pictureBox8.Image = global::TiemVaiLucCode.Properties.Resources._3d5cf5f5f68646a0b2a220ea5a4eb46a_1_;
             this.pictureBox8.Location = new System.Drawing.Point(3, 3);
             this.pictureBox8.Name = "pictureBox8";
             this.pictureBox8.Size = new System.Drawing.Size(49, 46);
