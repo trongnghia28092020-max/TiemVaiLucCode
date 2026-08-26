@@ -136,6 +136,24 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Form_GioHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_GioHang.Designer.cs">
+      <DependentUpon>Form_GioHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_GT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_GT.Designer.cs">
+      <DependentUpon>Form_GT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_TC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_TC.Designer.cs">
+      <DependentUpon>Form_TC.cs</DependentUpon>
+    </Compile>
     <Compile Include="Frm_BanHang.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -194,6 +212,63 @@
     <Compile Include="Models\TaiKhoanContext.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <None Include="Resources\Screenshot 2026-08-26 130252%282%29.png" />
+    <None Include="Resources\Screenshot 2026-08-26 130252%281%29.png" />
+    <None Include="Resources\Screenshot 2026-08-26 130010%282%29.png" />
+    <None Include="Resources\Screenshot 2026-08-26 130010%281%29.png" />
+    <None Include="Resources\4e6df7f7145753d6ac80565ddc17dde1%281%29.jpg" />
+    <None Include="Resources\e0e8e9a08b536868cf50d5ff19959591%281%29.jpg" />
+    <None Include="Resources\c5334a8cabfafeb0418435a4f745a3e8%282%29.jpg" />
+    <None Include="Resources\c5334a8cabfafeb0418435a4f745a3e8%281%29.jpg" />
+    <None Include="Resources\d8daef8f6539290ccc5cda336b8a85c0%281%29.jpg" />
+    <None Include="Resources\download %282%29%281%292.png" />
+    <None Include="Resources\08ddb7c6112813b0a91cb8cd5e26724a%281%291.jpg" />
+    <None Include="Resources\08ddb7c6112813b0a91cb8cd5e26724a%281%29.jpg" />
+    <None Include="Resources\download %282%29%281%291.png" />
+    <None Include="Resources\download %282%29%281%29.png" />
+    <None Include="Resources\download %281%29%282%29.png" />
+    <None Include="Resources\download %281%29%281%29.png" />
+    <None Include="Resources\04242a13461c995de3dc689e0aebbfb8%281%291.jpg" />
+    <None Include="Resources\a6d8078aed033e848dedbbacc284bded%281%29.jpg" />
+    <None Include="Resources\dac-diem-vai-cotton-100%281%29.jpg" />
+    <None Include="Resources\LUA_SATIN%281%29%281%291.png" />
+    <None Include="Resources\OIP %281%29%281%29.jpg" />
+    <None Include="Resources\vn-11134207-7ra0g-m7jjby1kdxkj95%281%29.jpg" />
+    <None Include="Resources\vai_hoa_nhi_2_7378dd39f9%281%29.jpg" />
+    <None Include="Resources\vn-11134207-7r98o-lsiicqw7hiv8e6%281%29.jpg" />
+    <None Include="Resources\chat-vai-tuytsi.png" />
+    <None Include="Resources\OIP %284%29%281%29.png" />
+    <None Include="Resources\OIP %283%29.png" />
+    <None Include="Resources\OIP %282%29.png" />
+    <None Include="Resources\OIP %281%29.png" />
+    <None Include="Resources\OIP.jpg" />
+    <None Include="Resources\OIP.png" />
+    <None Include="Resources\OIP%281%29.jpg" />
+    <None Include="Resources\ce3246965a780ea24a50067e9e36e146%281%29.jpg" />
+    <None Include="Resources\ce3246965a780ea24a50067e9e36e146.jpg" />
+    <None Include="Resources\4f5990d4363a41f6346be542e36300c9%281%29.jpg" />
+    <None Include="Resources\image.png" />
+    <None Include="Resources\thun%282%291.png" />
+    <None Include="Resources\ren%281%291.png" />
+    <None Include="Resources\gam%281%291.png" />
+    <None Include="Resources\nhung%282%291.png" />
+    <None Include="Resources\kate%281%291.png" />
+    <None Include="Resources\chiffon1.png" />
+    <None Include="Resources\chiffon%281%29%282%29.png" />
+    <None Include="Resources\chiffon%281%29%281%29.png" />
+    <None Include="Resources\chiffon%281%291.png" />
+    <None Include="Resources\bfab1be3f0c8d4a82a53cad16a65a811%281%291.jpg" />
+    <None Include="Resources\339b738b9298e8d39cc79f8bc28462a6%281%29%281%29.jpg" />
+    <None Include="Resources\339b738b9298e8d39cc79f8bc28462a6%281%291.jpg" />
+    <EmbeddedResource Include="Form_GioHang.resx">
+      <DependentUpon>Form_GioHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_GT.resx">
+      <DependentUpon>Form_GT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_TC.resx">
+      <DependentUpon>Form_TC.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Frm_BanHang.resx">
       <DependentUpon>Frm_BanHang.cs</DependentUpon>
     </EmbeddedResource>
