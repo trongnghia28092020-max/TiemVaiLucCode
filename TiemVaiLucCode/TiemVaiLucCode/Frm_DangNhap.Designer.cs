@@ -29,8 +29,11 @@
         private void InitializeComponent()
         {
             this.pnlCard_DangNhap = new SiticoneNetFrameworkUI.SiticonePanel();
+            this.txt_MaCaptCha = new SiticoneNetFrameworkUI.SiticoneTextBox();
+            this.ipb_IconMat = new FontAwesome.Sharp.IconPictureBox();
             this.ptb_TaoMaMoi = new System.Windows.Forms.PictureBox();
             this.pnl_MaCapcha = new SiticoneNetFrameworkUI.SiticonePanel();
+            this.lbl_MaCaptcha = new System.Windows.Forms.Label();
             this.cmb_VaiTro = new System.Windows.Forms.ComboBox();
             this.btn_DangNhap = new SiticoneNetFrameworkUI.SiticoneButton();
             this.llbl_QuenMK = new System.Windows.Forms.LinkLabel();
@@ -60,17 +63,14 @@
             this.label7 = new System.Windows.Forms.Label();
             this.lbldn = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.ipb_IconMat = new FontAwesome.Sharp.IconPictureBox();
-            this.lbl_MaCaptcha = new System.Windows.Forms.Label();
-            this.txt_MaCaptCha = new SiticoneNetFrameworkUI.SiticoneTextBox();
             this.pnlCard_DangNhap.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ipb_IconMat)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptb_TaoMaMoi)).BeginInit();
             this.pnl_MaCapcha.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.pnlCardChinh.SuspendLayout();
             this.pnlCard_DangKy.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ipb_IconMat)).BeginInit();
             this.SuspendLayout();
             // 
             // pnlCard_DangNhap
@@ -134,6 +134,76 @@
             this.pnlCard_DangNhap.UseRadialGradient = false;
             this.pnlCard_DangNhap.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlCard_DangNhap_Paint);
             // 
+            // txt_MaCaptCha
+            // 
+            this.txt_MaCaptCha.AccessibleDescription = "A customizable text input field.";
+            this.txt_MaCaptCha.AccessibleName = "Text Box";
+            this.txt_MaCaptCha.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
+            this.txt_MaCaptCha.BackColor = System.Drawing.Color.Transparent;
+            this.txt_MaCaptCha.BlinkCount = 3;
+            this.txt_MaCaptCha.BlinkShadow = false;
+            this.txt_MaCaptCha.BorderColor1 = System.Drawing.Color.LightSlateGray;
+            this.txt_MaCaptCha.BorderColor2 = System.Drawing.Color.LightSlateGray;
+            this.txt_MaCaptCha.BorderFocusColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(77)))), ((int)(((byte)(255)))));
+            this.txt_MaCaptCha.BorderFocusColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(77)))), ((int)(((byte)(255)))));
+            this.txt_MaCaptCha.CanShake = true;
+            this.txt_MaCaptCha.ContinuousBlink = false;
+            this.txt_MaCaptCha.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txt_MaCaptCha.CursorBlinkRate = 500;
+            this.txt_MaCaptCha.CursorColor = System.Drawing.Color.Black;
+            this.txt_MaCaptCha.CursorHeight = 26;
+            this.txt_MaCaptCha.CursorOffset = 0;
+            this.txt_MaCaptCha.CursorStyle = SiticoneNetFrameworkUI.Helpers.DrawingStyle.SiticoneDrawingStyle.Solid;
+            this.txt_MaCaptCha.CursorWidth = 1;
+            this.txt_MaCaptCha.DisabledBackColor = System.Drawing.Color.WhiteSmoke;
+            this.txt_MaCaptCha.DisabledBorderColor = System.Drawing.Color.LightGray;
+            this.txt_MaCaptCha.DisabledTextColor = System.Drawing.Color.Gray;
+            this.txt_MaCaptCha.EnableDropShadow = false;
+            this.txt_MaCaptCha.FillColor1 = System.Drawing.Color.White;
+            this.txt_MaCaptCha.FillColor2 = System.Drawing.Color.White;
+            this.txt_MaCaptCha.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_MaCaptCha.ForeColor = System.Drawing.Color.DimGray;
+            this.txt_MaCaptCha.HoverBorderColor1 = System.Drawing.Color.Gray;
+            this.txt_MaCaptCha.HoverBorderColor2 = System.Drawing.Color.Gray;
+            this.txt_MaCaptCha.IsEnabled = true;
+            this.txt_MaCaptCha.Location = new System.Drawing.Point(31, 335);
+            this.txt_MaCaptCha.Name = "txt_MaCaptCha";
+            this.txt_MaCaptCha.PlaceholderColor = System.Drawing.Color.Transparent;
+            this.txt_MaCaptCha.PlaceholderText = "Enter text here...";
+            this.txt_MaCaptCha.ReadOnlyBorderColor1 = System.Drawing.Color.LightGray;
+            this.txt_MaCaptCha.ReadOnlyBorderColor2 = System.Drawing.Color.LightGray;
+            this.txt_MaCaptCha.ReadOnlyFillColor1 = System.Drawing.Color.WhiteSmoke;
+            this.txt_MaCaptCha.ReadOnlyFillColor2 = System.Drawing.Color.WhiteSmoke;
+            this.txt_MaCaptCha.ReadOnlyPlaceholderColor = System.Drawing.Color.DarkGray;
+            this.txt_MaCaptCha.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(77)))), ((int)(((byte)(255)))));
+            this.txt_MaCaptCha.ShadowAnimationDuration = 1;
+            this.txt_MaCaptCha.ShadowBlur = 10;
+            this.txt_MaCaptCha.ShadowColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.txt_MaCaptCha.Size = new System.Drawing.Size(310, 35);
+            this.txt_MaCaptCha.SolidBorderColor = System.Drawing.Color.LightSlateGray;
+            this.txt_MaCaptCha.SolidBorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(77)))), ((int)(((byte)(255)))));
+            this.txt_MaCaptCha.SolidBorderHoverColor = System.Drawing.Color.Gray;
+            this.txt_MaCaptCha.SolidFillColor = System.Drawing.Color.White;
+            this.txt_MaCaptCha.TabIndex = 16;
+            this.txt_MaCaptCha.TextPadding = new System.Windows.Forms.Padding(16, 0, 6, 0);
+            this.txt_MaCaptCha.ValidationErrorMessage = "Invalid input.";
+            this.txt_MaCaptCha.ValidationFunction = null;
+            // 
+            // ipb_IconMat
+            // 
+            this.ipb_IconMat.BackColor = System.Drawing.Color.Transparent;
+            this.ipb_IconMat.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.ipb_IconMat.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.ipb_IconMat.IconColor = System.Drawing.SystemColors.ControlText;
+            this.ipb_IconMat.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.ipb_IconMat.IconSize = 30;
+            this.ipb_IconMat.Location = new System.Drawing.Point(298, 197);
+            this.ipb_IconMat.Name = "ipb_IconMat";
+            this.ipb_IconMat.Size = new System.Drawing.Size(30, 30);
+            this.ipb_IconMat.TabIndex = 15;
+            this.ipb_IconMat.TabStop = false;
+            this.ipb_IconMat.Click += new System.EventHandler(this.ipb_IconMat_Click);
+            // 
             // ptb_TaoMaMoi
             // 
             this.ptb_TaoMaMoi.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -193,15 +263,26 @@
             this.pnl_MaCapcha.UsePatternTexture = false;
             this.pnl_MaCapcha.UseRadialGradient = false;
             // 
+            // lbl_MaCaptcha
+            // 
+            this.lbl_MaCaptcha.AutoSize = true;
+            this.lbl_MaCaptcha.Font = new System.Drawing.Font("Times New Roman", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Strikeout))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_MaCaptcha.ForeColor = System.Drawing.Color.Black;
+            this.lbl_MaCaptcha.Location = new System.Drawing.Point(12, 16);
+            this.lbl_MaCaptcha.Name = "lbl_MaCaptcha";
+            this.lbl_MaCaptcha.Size = new System.Drawing.Size(0, 25);
+            this.lbl_MaCaptcha.TabIndex = 0;
+            // 
             // cmb_VaiTro
             // 
+            this.cmb_VaiTro.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmb_VaiTro.FormattingEnabled = true;
             this.cmb_VaiTro.Items.AddRange(new object[] {
             "Admin",
             "Khách Hàng"});
             this.cmb_VaiTro.Location = new System.Drawing.Point(31, 290);
             this.cmb_VaiTro.Name = "cmb_VaiTro";
-            this.cmb_VaiTro.Size = new System.Drawing.Size(310, 28);
+            this.cmb_VaiTro.Size = new System.Drawing.Size(310, 30);
             this.cmb_VaiTro.TabIndex = 12;
             // 
             // btn_DangNhap
@@ -947,7 +1028,7 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = global::TiemVaiLucCode.Properties.Resources.silk_5321738;
-            this.pictureBox2.Location = new System.Drawing.Point(186, 62);
+            this.pictureBox2.Location = new System.Drawing.Point(225, 62);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(26, 27);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -1010,85 +1091,6 @@
             this.panel1.Size = new System.Drawing.Size(403, 688);
             this.panel1.TabIndex = 0;
             // 
-            // ipb_IconMat
-            // 
-            this.ipb_IconMat.BackColor = System.Drawing.Color.Transparent;
-            this.ipb_IconMat.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.ipb_IconMat.IconChar = FontAwesome.Sharp.IconChar.None;
-            this.ipb_IconMat.IconColor = System.Drawing.SystemColors.ControlText;
-            this.ipb_IconMat.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.ipb_IconMat.IconSize = 30;
-            this.ipb_IconMat.Location = new System.Drawing.Point(298, 197);
-            this.ipb_IconMat.Name = "ipb_IconMat";
-            this.ipb_IconMat.Size = new System.Drawing.Size(30, 30);
-            this.ipb_IconMat.TabIndex = 15;
-            this.ipb_IconMat.TabStop = false;
-            this.ipb_IconMat.Click += new System.EventHandler(this.ipb_IconMat_Click);
-            // 
-            // lbl_MaCaptcha
-            // 
-            this.lbl_MaCaptcha.AutoSize = true;
-            this.lbl_MaCaptcha.Font = new System.Drawing.Font("Times New Roman", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Strikeout))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_MaCaptcha.ForeColor = System.Drawing.Color.Black;
-            this.lbl_MaCaptcha.Location = new System.Drawing.Point(12, 16);
-            this.lbl_MaCaptcha.Name = "lbl_MaCaptcha";
-            this.lbl_MaCaptcha.Size = new System.Drawing.Size(0, 25);
-            this.lbl_MaCaptcha.TabIndex = 0;
-            // 
-            // txt_MaCaptCha
-            // 
-            this.txt_MaCaptCha.AccessibleDescription = "A customizable text input field.";
-            this.txt_MaCaptCha.AccessibleName = "Text Box";
-            this.txt_MaCaptCha.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
-            this.txt_MaCaptCha.BackColor = System.Drawing.Color.Transparent;
-            this.txt_MaCaptCha.BlinkCount = 3;
-            this.txt_MaCaptCha.BlinkShadow = false;
-            this.txt_MaCaptCha.BorderColor1 = System.Drawing.Color.LightSlateGray;
-            this.txt_MaCaptCha.BorderColor2 = System.Drawing.Color.LightSlateGray;
-            this.txt_MaCaptCha.BorderFocusColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(77)))), ((int)(((byte)(255)))));
-            this.txt_MaCaptCha.BorderFocusColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(77)))), ((int)(((byte)(255)))));
-            this.txt_MaCaptCha.CanShake = true;
-            this.txt_MaCaptCha.ContinuousBlink = false;
-            this.txt_MaCaptCha.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txt_MaCaptCha.CursorBlinkRate = 500;
-            this.txt_MaCaptCha.CursorColor = System.Drawing.Color.Black;
-            this.txt_MaCaptCha.CursorHeight = 26;
-            this.txt_MaCaptCha.CursorOffset = 0;
-            this.txt_MaCaptCha.CursorStyle = SiticoneNetFrameworkUI.Helpers.DrawingStyle.SiticoneDrawingStyle.Solid;
-            this.txt_MaCaptCha.CursorWidth = 1;
-            this.txt_MaCaptCha.DisabledBackColor = System.Drawing.Color.WhiteSmoke;
-            this.txt_MaCaptCha.DisabledBorderColor = System.Drawing.Color.LightGray;
-            this.txt_MaCaptCha.DisabledTextColor = System.Drawing.Color.Gray;
-            this.txt_MaCaptCha.EnableDropShadow = false;
-            this.txt_MaCaptCha.FillColor1 = System.Drawing.Color.White;
-            this.txt_MaCaptCha.FillColor2 = System.Drawing.Color.White;
-            this.txt_MaCaptCha.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_MaCaptCha.ForeColor = System.Drawing.Color.DimGray;
-            this.txt_MaCaptCha.HoverBorderColor1 = System.Drawing.Color.Gray;
-            this.txt_MaCaptCha.HoverBorderColor2 = System.Drawing.Color.Gray;
-            this.txt_MaCaptCha.IsEnabled = true;
-            this.txt_MaCaptCha.Location = new System.Drawing.Point(31, 335);
-            this.txt_MaCaptCha.Name = "txt_MaCaptCha";
-            this.txt_MaCaptCha.PlaceholderColor = System.Drawing.Color.Transparent;
-            this.txt_MaCaptCha.ReadOnlyBorderColor1 = System.Drawing.Color.LightGray;
-            this.txt_MaCaptCha.ReadOnlyBorderColor2 = System.Drawing.Color.LightGray;
-            this.txt_MaCaptCha.ReadOnlyFillColor1 = System.Drawing.Color.WhiteSmoke;
-            this.txt_MaCaptCha.ReadOnlyFillColor2 = System.Drawing.Color.WhiteSmoke;
-            this.txt_MaCaptCha.ReadOnlyPlaceholderColor = System.Drawing.Color.DarkGray;
-            this.txt_MaCaptCha.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(77)))), ((int)(((byte)(255)))));
-            this.txt_MaCaptCha.ShadowAnimationDuration = 1;
-            this.txt_MaCaptCha.ShadowBlur = 10;
-            this.txt_MaCaptCha.ShadowColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.txt_MaCaptCha.Size = new System.Drawing.Size(310, 35);
-            this.txt_MaCaptCha.SolidBorderColor = System.Drawing.Color.LightSlateGray;
-            this.txt_MaCaptCha.SolidBorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(77)))), ((int)(((byte)(255)))));
-            this.txt_MaCaptCha.SolidBorderHoverColor = System.Drawing.Color.Gray;
-            this.txt_MaCaptCha.SolidFillColor = System.Drawing.Color.White;
-            this.txt_MaCaptCha.TabIndex = 16;
-            this.txt_MaCaptCha.TextPadding = new System.Windows.Forms.Padding(16, 0, 6, 0);
-            this.txt_MaCaptCha.ValidationErrorMessage = "Invalid input.";
-            this.txt_MaCaptCha.ValidationFunction = null;
-            // 
             // Frm_DangNhap
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -1100,6 +1102,7 @@
             this.Text = "Frm_DangNhap";
             this.pnlCard_DangNhap.ResumeLayout(false);
             this.pnlCard_DangNhap.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ipb_IconMat)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptb_TaoMaMoi)).EndInit();
             this.pnl_MaCapcha.ResumeLayout(false);
             this.pnl_MaCapcha.PerformLayout();
@@ -1108,7 +1111,6 @@
             this.pnlCard_DangKy.ResumeLayout(false);
             this.pnlCard_DangKy.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ipb_IconMat)).EndInit();
             this.ResumeLayout(false);
 
         }
