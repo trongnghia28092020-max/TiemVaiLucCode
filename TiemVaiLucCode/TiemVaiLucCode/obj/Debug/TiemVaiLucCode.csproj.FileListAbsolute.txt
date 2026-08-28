@@ -95,6 +95,7 @@ D:\HK3_2026\C#\TiemVaiLucCode\TiemVaiLucCode\TiemVaiLucCode\obj\Debug\TiemVaiLuc
 D:\HK3_2026\C#\TiemVaiLucCode\TiemVaiLucCode\TiemVaiLucCode\obj\Debug\TiemVaiLucCode.pdb
 D:\HK3_2026\C#\TiemVaiLucCode\TiemVaiLucCode\TiemVaiLucCode\obj\Debug\TiemVaiLucCode.Frm_BanHang.resources
 D:\HK3_2026\C#\TiemVaiLucCode\TiemVaiLucCode\TiemVaiLucCode\obj\Debug\TiemVaiLucCode.Frm_TT_KhachHang.resources
+D:\TrongNghia\NAM HOC 25-26\HK3\C#\TiemVaiLucCode\TiemVaiLucCode\TiemVaiLucCode\bin\Debug\FontAwesome.Sharp.dll
 D:\TrongNghia\NAM HOC 25-26\HK3\C#\TiemVaiLucCode\TiemVaiLucCode\TiemVaiLucCode\bin\Debug\x86\libSkiaSharp.so
 D:\TrongNghia\NAM HOC 25-26\HK3\C#\TiemVaiLucCode\TiemVaiLucCode\TiemVaiLucCode\bin\Debug\x64\libSkiaSharp.so
 D:\TrongNghia\NAM HOC 25-26\HK3\C#\TiemVaiLucCode\TiemVaiLucCode\TiemVaiLucCode\bin\Debug\arm\libSkiaSharp.so
@@ -111,10 +112,8 @@ D:\TrongNghia\NAM HOC 25-26\HK3\C#\TiemVaiLucCode\TiemVaiLucCode\TiemVaiLucCode\
 D:\TrongNghia\NAM HOC 25-26\HK3\C#\TiemVaiLucCode\TiemVaiLucCode\TiemVaiLucCode\bin\Debug\x64\libSkiaSharp.dll
 D:\TrongNghia\NAM HOC 25-26\HK3\C#\TiemVaiLucCode\TiemVaiLucCode\TiemVaiLucCode\bin\Debug\arm64\libSkiaSharp.dll
 D:\TrongNghia\NAM HOC 25-26\HK3\C#\TiemVaiLucCode\TiemVaiLucCode\TiemVaiLucCode\bin\Debug\TiemVaiLucCode.exe.config
-D:\TrongNghia\NAM HOC 25-26\HK3\C#\TiemVaiLucCode\TiemVaiLucCode\TiemVaiLucCode\bin\Debug\TiemVaiLucCode.pdb
 D:\TrongNghia\NAM HOC 25-26\HK3\C#\TiemVaiLucCode\TiemVaiLucCode\TiemVaiLucCode\bin\Debug\EntityFramework.dll
 D:\TrongNghia\NAM HOC 25-26\HK3\C#\TiemVaiLucCode\TiemVaiLucCode\TiemVaiLucCode\bin\Debug\EntityFramework.SqlServer.dll
-D:\TrongNghia\NAM HOC 25-26\HK3\C#\TiemVaiLucCode\TiemVaiLucCode\TiemVaiLucCode\bin\Debug\FontAwesome.Sharp.dll
 D:\TrongNghia\NAM HOC 25-26\HK3\C#\TiemVaiLucCode\TiemVaiLucCode\TiemVaiLucCode\bin\Debug\HarfBuzzSharp.dll
 D:\TrongNghia\NAM HOC 25-26\HK3\C#\TiemVaiLucCode\TiemVaiLucCode\TiemVaiLucCode\bin\Debug\Microsoft.AspNetCore.Cryptography.Internal.dll
 D:\TrongNghia\NAM HOC 25-26\HK3\C#\TiemVaiLucCode\TiemVaiLucCode\TiemVaiLucCode\bin\Debug\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
@@ -177,6 +176,9 @@ D:\TrongNghia\NAM HOC 25-26\HK3\C#\TiemVaiLucCode\TiemVaiLucCode\TiemVaiLucCode\
 D:\TrongNghia\NAM HOC 25-26\HK3\C#\TiemVaiLucCode\TiemVaiLucCode\TiemVaiLucCode\bin\Debug\zxing.xml
 D:\TrongNghia\NAM HOC 25-26\HK3\C#\TiemVaiLucCode\TiemVaiLucCode\TiemVaiLucCode\bin\Debug\zxing.presentation.xml
 D:\TrongNghia\NAM HOC 25-26\HK3\C#\TiemVaiLucCode\TiemVaiLucCode\TiemVaiLucCode\obj\Debug\TiemVaiLucCode.csproj.AssemblyReference.cache
+D:\TrongNghia\NAM HOC 25-26\HK3\C#\TiemVaiLucCode\TiemVaiLucCode\TiemVaiLucCode\obj\Debug\TiemVaiLucCode.Form_GioHang.resources
+D:\TrongNghia\NAM HOC 25-26\HK3\C#\TiemVaiLucCode\TiemVaiLucCode\TiemVaiLucCode\obj\Debug\TiemVaiLucCode.Form_GT.resources
+D:\TrongNghia\NAM HOC 25-26\HK3\C#\TiemVaiLucCode\TiemVaiLucCode\TiemVaiLucCode\obj\Debug\TiemVaiLucCode.Form_TC.resources
 D:\TrongNghia\NAM HOC 25-26\HK3\C#\TiemVaiLucCode\TiemVaiLucCode\TiemVaiLucCode\obj\Debug\TiemVaiLucCode.Frm_BanHang.resources
 D:\TrongNghia\NAM HOC 25-26\HK3\C#\TiemVaiLucCode\TiemVaiLucCode\TiemVaiLucCode\obj\Debug\TiemVaiLucCode.Frm_DangNhap.resources
 D:\TrongNghia\NAM HOC 25-26\HK3\C#\TiemVaiLucCode\TiemVaiLucCode\TiemVaiLucCode\obj\Debug\TiemVaiLucCode.Frm_NhapMaXN.resources
@@ -193,3 +195,4 @@ D:\TrongNghia\NAM HOC 25-26\HK3\C#\TiemVaiLucCode\TiemVaiLucCode\TiemVaiLucCode\
 D:\TrongNghia\NAM HOC 25-26\HK3\C#\TiemVaiLucCode\TiemVaiLucCode\TiemVaiLucCode\obj\Debug\TiemVaiL.48603C51.Up2Date
 D:\TrongNghia\NAM HOC 25-26\HK3\C#\TiemVaiLucCode\TiemVaiLucCode\TiemVaiLucCode\obj\Debug\TiemVaiLucCode.exe
 D:\TrongNghia\NAM HOC 25-26\HK3\C#\TiemVaiLucCode\TiemVaiLucCode\TiemVaiLucCode\obj\Debug\TiemVaiLucCode.pdb
+D:\TrongNghia\NAM HOC 25-26\HK3\C#\TiemVaiLucCode\TiemVaiLucCode\TiemVaiLucCode\bin\Debug\TiemVaiLucCode.pdb

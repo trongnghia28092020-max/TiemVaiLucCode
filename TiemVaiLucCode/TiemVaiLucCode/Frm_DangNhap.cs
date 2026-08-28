@@ -203,5 +203,12 @@ namespace TiemVaiLucCode
             }
 
         }
+
+        private void llbl_QuenMK_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Frm_QuenMK frmQuenMK = new Frm_QuenMK();
+            frmQuenMK.Show();
+            this.Hide();
+        }
     }
 }

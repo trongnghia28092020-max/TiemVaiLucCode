@@ -372,6 +372,7 @@
             this.llbl_QuenMK.TabIndex = 10;
             this.llbl_QuenMK.TabStop = true;
             this.llbl_QuenMK.Text = "Quên mật khẩu?";
+            this.llbl_QuenMK.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.llbl_QuenMK_LinkClicked);
             // 
             // txt_MatKhau
             // 
@@ -511,7 +512,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::TiemVaiLucCode.Properties.Resources.communication_15047341;
-            this.pictureBox1.Location = new System.Drawing.Point(186, 62);
+            this.pictureBox1.Location = new System.Drawing.Point(233, 60);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(26, 27);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;

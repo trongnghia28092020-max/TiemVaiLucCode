@@ -34,7 +34,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.txt_QuenMK = new SiticoneNetFrameworkUI.SiticoneTextBox();
             this.btn_MaXacNhan = new SiticoneNetFrameworkUI.SiticoneButton();
-            this.siticoneLabel1 = new SiticoneNetFrameworkUI.SiticoneLabel();
+            this.lbl_QuayLai = new SiticoneNetFrameworkUI.SiticoneLabel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -217,17 +217,18 @@
             this.btn_MaXacNhan.UseParticles = false;
             this.btn_MaXacNhan.Click += new System.EventHandler(this.btn_MaXacNhan_Click);
             // 
-            // siticoneLabel1
+            // lbl_QuayLai
             // 
-            this.siticoneLabel1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.siticoneLabel1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.siticoneLabel1.ForeColor = System.Drawing.Color.Peru;
-            this.siticoneLabel1.Location = new System.Drawing.Point(103, 481);
-            this.siticoneLabel1.Name = "siticoneLabel1";
-            this.siticoneLabel1.Size = new System.Drawing.Size(357, 29);
-            this.siticoneLabel1.TabIndex = 7;
-            this.siticoneLabel1.Text = "Quay lại Đăng Nhập";
-            this.siticoneLabel1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbl_QuayLai.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lbl_QuayLai.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_QuayLai.ForeColor = System.Drawing.Color.Peru;
+            this.lbl_QuayLai.Location = new System.Drawing.Point(103, 481);
+            this.lbl_QuayLai.Name = "lbl_QuayLai";
+            this.lbl_QuayLai.Size = new System.Drawing.Size(357, 29);
+            this.lbl_QuayLai.TabIndex = 7;
+            this.lbl_QuayLai.Text = "Quay lại Đăng Nhập";
+            this.lbl_QuayLai.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbl_QuayLai.Click += new System.EventHandler(this.lbl_QuayLai_Click);
             // 
             // pictureBox1
             // 
@@ -244,7 +245,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(558, 648);
-            this.Controls.Add(this.siticoneLabel1);
+            this.Controls.Add(this.lbl_QuayLai);
             this.Controls.Add(this.btn_MaXacNhan);
             this.Controls.Add(this.txt_QuenMK);
             this.Controls.Add(this.label4);
@@ -270,6 +271,6 @@
         private System.Windows.Forms.Label label4;
         private SiticoneNetFrameworkUI.SiticoneTextBox txt_QuenMK;
         private SiticoneNetFrameworkUI.SiticoneButton btn_MaXacNhan;
-        private SiticoneNetFrameworkUI.SiticoneLabel siticoneLabel1;
+        private SiticoneNetFrameworkUI.SiticoneLabel lbl_QuayLai;
     }
 }

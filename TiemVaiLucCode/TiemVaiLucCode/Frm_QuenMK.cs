@@ -88,6 +88,13 @@ namespace TiemVaiLucCode
                 btn_MaXacNhan.Enabled = true;
             }
         }
+
+        private void lbl_QuayLai_Click(object sender, EventArgs e)
+        {
+            Frm_DangNhap frmDangNhap = new Frm_DangNhap();
+            frmDangNhap.Show();
+            this.Hide();
+        }
     }
     
 }
