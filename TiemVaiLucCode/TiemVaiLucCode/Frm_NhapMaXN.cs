@@ -32,6 +32,7 @@ namespace TiemVaiLucCode
             timer_GuiLai.Tick += timer_GuiLai_Tick;
 
             BatDauDemNguoc();
+            
         }
         private void BatDauDemNguoc()
         {
@@ -54,6 +55,7 @@ namespace TiemVaiLucCode
                 // Hết 30 giây thì dừng đồng hồ
                 timer_GuiLai.Stop();
                 label4.Text = "Gửi lại mã";
+               
                 label4.ForeColor = Color.Peru;
                 label4.Cursor = Cursors.Hand; // Đổi thành hình bàn tay dễ thương
             }
@@ -116,7 +118,7 @@ namespace TiemVaiLucCode
                     siticoneTextBox5.Text = pasted[4].ToString();
                     siticoneTextBox6.Text = pasted[5].ToString();
 
-                    btn_.Focus(); // Tự động nhảy con trỏ sang nút Xác nhận luôn
+                    btn_XacNhan.Focus(); // Tự động nhảy con trỏ sang nút Xác nhận luôn
                     return;
                 }
 
@@ -128,7 +130,7 @@ namespace TiemVaiLucCode
                     else if (txt.Name == "siticoneTextBox3") siticoneTextBox4.Focus();
                     else if (txt.Name == "siticoneTextBox4") siticoneTextBox5.Focus();
                     else if (txt.Name == "siticoneTextBox5") siticoneTextBox6.Focus();
-                    else if (txt.Name == "siticoneTextBox6") btn_.Focus();
+                    else if (txt.Name == "siticoneTextBox6") btn_XacNhan.Focus();
                 }
             }
         }
@@ -139,6 +141,13 @@ namespace TiemVaiLucCode
             Frm_QuenMK frmQuenMK = new Frm_QuenMK();
             frmQuenMK.Show();
             this.Hide();
+        }
+
+        private void btn_XacNhan_Click(object sender, EventArgs e)
+        {
+            Frm_DatMK frmDatMK = new Frm_DatMK(sdtHienTai);
+            frmDatMK.Show();
+            this.Close();
         }
     }
 }

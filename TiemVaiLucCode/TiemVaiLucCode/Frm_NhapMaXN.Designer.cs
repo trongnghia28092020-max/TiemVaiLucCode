@@ -30,12 +30,11 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Frm_NhapMaXN));
-            this.panel1 = new System.Windows.Forms.Panel();
             this.siticoneAdvancedPanel1 = new SiticoneNetFrameworkUI.SiticoneAdvancedPanel();
             this.siticonePanel1 = new SiticoneNetFrameworkUI.SiticonePanel();
             this.lbl_QuayLai = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.btn_ = new SiticoneNetFrameworkUI.SiticoneButton();
+            this.btn_XacNhan = new SiticoneNetFrameworkUI.SiticoneButton();
             this.siticoneTextBox6 = new SiticoneNetFrameworkUI.SiticoneTextBox();
             this.siticoneTextBox5 = new SiticoneNetFrameworkUI.SiticoneTextBox();
             this.siticoneTextBox4 = new SiticoneNetFrameworkUI.SiticoneTextBox();
@@ -46,17 +45,9 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.timer_GuiLai = new System.Windows.Forms.Timer(this.components);
+            this.panel1 = new System.Windows.Forms.Panel();
             this.siticonePanel1.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // panel1
-            // 
-            this.panel1.BackgroundImage = global::TiemVaiLucCode.Properties.Resources.dn;
-            this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel1.Location = new System.Drawing.Point(2, 2);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(378, 598);
-            this.panel1.TabIndex = 0;
             // 
             // siticoneAdvancedPanel1
             // 
@@ -128,7 +119,7 @@
             this.siticonePanel1.BorderThickness = 2F;
             this.siticonePanel1.Controls.Add(this.lbl_QuayLai);
             this.siticonePanel1.Controls.Add(this.label4);
-            this.siticonePanel1.Controls.Add(this.btn_);
+            this.siticonePanel1.Controls.Add(this.btn_XacNhan);
             this.siticonePanel1.Controls.Add(this.siticoneTextBox6);
             this.siticonePanel1.Controls.Add(this.siticoneTextBox5);
             this.siticonePanel1.Controls.Add(this.siticoneTextBox4);
@@ -185,91 +176,91 @@
             // 
             // label4
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(141, 362);
+            this.label4.Location = new System.Drawing.Point(0, 362);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(207, 16);
+            this.label4.Size = new System.Drawing.Size(489, 16);
             this.label4.TabIndex = 11;
             this.label4.Text = "Chưa nhận được mã. Gửi lại sau ( )";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
-            // btn_
+            // btn_XacNhan
             // 
-            this.btn_.AccessibleDescription = "The default button control that accept input though the mouse, touch and keyboard" +
+            this.btn_XacNhan.AccessibleDescription = "The default button control that accept input though the mouse, touch and keyboard" +
     "";
-            this.btn_.AccessibleName = "Xác nhận mã";
-            this.btn_.AutoSizeBasedOnText = false;
-            this.btn_.BackColor = System.Drawing.Color.Transparent;
-            this.btn_.BadgeBackColor = System.Drawing.Color.Black;
-            this.btn_.BadgeFont = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Bold);
-            this.btn_.BadgeValue = 0;
-            this.btn_.BadgeValueForeColor = System.Drawing.Color.White;
-            this.btn_.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(216)))), ((int)(((byte)(220)))));
-            this.btn_.BorderWidth = 1;
-            this.btn_.ButtonBackColor = System.Drawing.Color.Peru;
-            this.btn_.ButtonImage = null;
-            this.btn_.ButtonTextLeftPadding = 0;
-            this.btn_.CanBeep = true;
-            this.btn_.CanGlow = false;
-            this.btn_.CanShake = true;
-            this.btn_.ContextMenuStripEx = null;
-            this.btn_.CornerRadiusBottomLeft = 6;
-            this.btn_.CornerRadiusBottomRight = 6;
-            this.btn_.CornerRadiusTopLeft = 6;
-            this.btn_.CornerRadiusTopRight = 6;
-            this.btn_.CustomCursor = System.Windows.Forms.Cursors.Default;
-            this.btn_.DisabledTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(150)))), ((int)(((byte)(150)))));
-            this.btn_.EnableLongPress = false;
-            this.btn_.EnableRippleEffect = true;
-            this.btn_.EnableShadow = false;
-            this.btn_.EnableTextWrapping = false;
-            this.btn_.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F);
-            this.btn_.ForeColor = System.Drawing.Color.White;
-            this.btn_.GlowColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.btn_.GlowIntensity = 100;
-            this.btn_.GlowRadius = 20F;
-            this.btn_.GradientBackground = false;
-            this.btn_.GradientColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(227)))), ((int)(((byte)(64)))));
-            this.btn_.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical;
-            this.btn_.HintText = null;
-            this.btn_.HoverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            this.btn_.HoverFontStyle = System.Drawing.FontStyle.Regular;
-            this.btn_.HoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.btn_.HoverTransitionDuration = 140;
-            this.btn_.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_.ImagePadding = 5;
-            this.btn_.ImageSize = new System.Drawing.Size(16, 16);
-            this.btn_.IsRadial = false;
-            this.btn_.IsReadOnly = false;
-            this.btn_.IsToggleButton = false;
-            this.btn_.IsToggled = false;
-            this.btn_.Location = new System.Drawing.Point(26, 294);
-            this.btn_.LongPressDurationMS = 1000;
-            this.btn_.Name = "btn_";
-            this.btn_.NormalFontStyle = System.Drawing.FontStyle.Regular;
-            this.btn_.ParticleColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
-            this.btn_.ParticleCount = 15;
-            this.btn_.PressAnimationScale = 0.97F;
-            this.btn_.PressedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(227)))), ((int)(((byte)(230)))));
-            this.btn_.PressedFontStyle = System.Drawing.FontStyle.Regular;
-            this.btn_.PressTransitionDuration = 90;
-            this.btn_.ReadOnlyTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(100)))), ((int)(((byte)(100)))));
-            this.btn_.RippleColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.btn_.RippleRadiusMultiplier = 0.6F;
-            this.btn_.ShadowBlur = 5;
-            this.btn_.ShadowColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.btn_.ShadowOffset = new System.Drawing.Point(0, 2);
-            this.btn_.ShakeDuration = 500;
-            this.btn_.ShakeIntensity = 5;
-            this.btn_.Size = new System.Drawing.Size(439, 50);
-            this.btn_.TabIndex = 10;
-            this.btn_.Text = "Xác nhận mã";
-            this.btn_.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btn_.TextColor = System.Drawing.Color.White;
-            this.btn_.TooltipText = null;
-            this.btn_.UseAdvancedRendering = true;
-            this.btn_.UseParticles = false;
+            this.btn_XacNhan.AccessibleName = "Xác nhận mã";
+            this.btn_XacNhan.AutoSizeBasedOnText = false;
+            this.btn_XacNhan.BackColor = System.Drawing.Color.Transparent;
+            this.btn_XacNhan.BadgeBackColor = System.Drawing.Color.Black;
+            this.btn_XacNhan.BadgeFont = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Bold);
+            this.btn_XacNhan.BadgeValue = 0;
+            this.btn_XacNhan.BadgeValueForeColor = System.Drawing.Color.White;
+            this.btn_XacNhan.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(216)))), ((int)(((byte)(220)))));
+            this.btn_XacNhan.BorderWidth = 1;
+            this.btn_XacNhan.ButtonBackColor = System.Drawing.Color.Peru;
+            this.btn_XacNhan.ButtonImage = null;
+            this.btn_XacNhan.ButtonTextLeftPadding = 0;
+            this.btn_XacNhan.CanBeep = true;
+            this.btn_XacNhan.CanGlow = false;
+            this.btn_XacNhan.CanShake = true;
+            this.btn_XacNhan.ContextMenuStripEx = null;
+            this.btn_XacNhan.CornerRadiusBottomLeft = 6;
+            this.btn_XacNhan.CornerRadiusBottomRight = 6;
+            this.btn_XacNhan.CornerRadiusTopLeft = 6;
+            this.btn_XacNhan.CornerRadiusTopRight = 6;
+            this.btn_XacNhan.CustomCursor = System.Windows.Forms.Cursors.Default;
+            this.btn_XacNhan.DisabledTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(150)))), ((int)(((byte)(150)))));
+            this.btn_XacNhan.EnableLongPress = false;
+            this.btn_XacNhan.EnableRippleEffect = true;
+            this.btn_XacNhan.EnableShadow = false;
+            this.btn_XacNhan.EnableTextWrapping = false;
+            this.btn_XacNhan.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F);
+            this.btn_XacNhan.ForeColor = System.Drawing.Color.White;
+            this.btn_XacNhan.GlowColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.btn_XacNhan.GlowIntensity = 100;
+            this.btn_XacNhan.GlowRadius = 20F;
+            this.btn_XacNhan.GradientBackground = false;
+            this.btn_XacNhan.GradientColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(227)))), ((int)(((byte)(64)))));
+            this.btn_XacNhan.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical;
+            this.btn_XacNhan.HintText = null;
+            this.btn_XacNhan.HoverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.btn_XacNhan.HoverFontStyle = System.Drawing.FontStyle.Regular;
+            this.btn_XacNhan.HoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btn_XacNhan.HoverTransitionDuration = 140;
+            this.btn_XacNhan.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_XacNhan.ImagePadding = 5;
+            this.btn_XacNhan.ImageSize = new System.Drawing.Size(16, 16);
+            this.btn_XacNhan.IsRadial = false;
+            this.btn_XacNhan.IsReadOnly = false;
+            this.btn_XacNhan.IsToggleButton = false;
+            this.btn_XacNhan.IsToggled = false;
+            this.btn_XacNhan.Location = new System.Drawing.Point(26, 294);
+            this.btn_XacNhan.LongPressDurationMS = 1000;
+            this.btn_XacNhan.Name = "btn_XacNhan";
+            this.btn_XacNhan.NormalFontStyle = System.Drawing.FontStyle.Regular;
+            this.btn_XacNhan.ParticleColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
+            this.btn_XacNhan.ParticleCount = 15;
+            this.btn_XacNhan.PressAnimationScale = 0.97F;
+            this.btn_XacNhan.PressedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(227)))), ((int)(((byte)(230)))));
+            this.btn_XacNhan.PressedFontStyle = System.Drawing.FontStyle.Regular;
+            this.btn_XacNhan.PressTransitionDuration = 90;
+            this.btn_XacNhan.ReadOnlyTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(100)))), ((int)(((byte)(100)))));
+            this.btn_XacNhan.RippleColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btn_XacNhan.RippleRadiusMultiplier = 0.6F;
+            this.btn_XacNhan.ShadowBlur = 5;
+            this.btn_XacNhan.ShadowColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btn_XacNhan.ShadowOffset = new System.Drawing.Point(0, 2);
+            this.btn_XacNhan.ShakeDuration = 500;
+            this.btn_XacNhan.ShakeIntensity = 5;
+            this.btn_XacNhan.Size = new System.Drawing.Size(439, 50);
+            this.btn_XacNhan.TabIndex = 10;
+            this.btn_XacNhan.Text = "Xác nhận mã";
+            this.btn_XacNhan.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btn_XacNhan.TextColor = System.Drawing.Color.White;
+            this.btn_XacNhan.TooltipText = null;
+            this.btn_XacNhan.UseAdvancedRendering = true;
+            this.btn_XacNhan.UseParticles = false;
+            this.btn_XacNhan.Click += new System.EventHandler(this.btn_XacNhan_Click);
             // 
             // siticoneTextBox6
             // 
@@ -666,6 +657,15 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Nhập mã xác nhận";
             // 
+            // panel1
+            // 
+            this.panel1.BackgroundImage = global::TiemVaiLucCode.Properties.Resources.dn;
+            this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel1.Location = new System.Drawing.Point(2, 2);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(378, 598);
+            this.panel1.TabIndex = 0;
+            // 
             // Frm_NhapMaXN
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -690,7 +690,7 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private SiticoneNetFrameworkUI.SiticoneButton btn_;
+        private SiticoneNetFrameworkUI.SiticoneButton btn_XacNhan;
         private SiticoneNetFrameworkUI.SiticoneTextBox siticoneTextBox6;
         private SiticoneNetFrameworkUI.SiticoneTextBox siticoneTextBox5;
         private SiticoneNetFrameworkUI.SiticoneTextBox siticoneTextBox4;

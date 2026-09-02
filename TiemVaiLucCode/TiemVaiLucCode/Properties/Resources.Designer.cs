@@ -19,7 +19,7 @@ namespace TiemVaiLucCode.Properties {
     // class via a tool like ResGen or Visual Studio.
     // To add or remove a member, edit your .ResX file then rerun ResGen
     // with the /str option, or rebuild your VS project.
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "17.0.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "18.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     internal class Resources {
@@ -196,6 +196,16 @@ namespace TiemVaiLucCode.Properties {
         internal static System.Drawing.Bitmap _51879b9983492ff976872334545c0817_2_1 {
             get {
                 object obj = ResourceManager.GetObject("51879b9983492ff976872334545c0817(2)1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap a_high_quality_professional_macro_photograph_of_stacked_premium_fabric_rolls {
+            get {
+                object obj = ResourceManager.GetObject("a_high_quality_professional_macro_photograph_of_stacked_premium_fabric_rolls", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -786,6 +796,26 @@ namespace TiemVaiLucCode.Properties {
         internal static System.Drawing.Bitmap screen {
             get {
                 object obj = ResourceManager.GetObject("screen", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap screen1 {
+            get {
+                object obj = ResourceManager.GetObject("screen1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap screen2 {
+            get {
+                object obj = ResourceManager.GetObject("screen2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

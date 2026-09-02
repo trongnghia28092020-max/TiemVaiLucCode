@@ -233,11 +233,11 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::TiemVaiLucCode.Properties.Resources.screen;
-            this.pictureBox1.Location = new System.Drawing.Point(221, 12);
+            this.pictureBox1.Location = new System.Drawing.Point(218, 22);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(100, 100);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 3;
+            this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
             // Frm_QuenMK
@@ -245,11 +245,11 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(558, 648);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.lbl_QuayLai);
             this.Controls.Add(this.btn_MaXacNhan);
             this.Controls.Add(this.txt_QuenMK);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -267,10 +267,10 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label4;
         private SiticoneNetFrameworkUI.SiticoneTextBox txt_QuenMK;
         private SiticoneNetFrameworkUI.SiticoneButton btn_MaXacNhan;
         private SiticoneNetFrameworkUI.SiticoneLabel lbl_QuayLai;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
