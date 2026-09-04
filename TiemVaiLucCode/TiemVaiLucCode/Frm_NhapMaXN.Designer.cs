@@ -29,8 +29,6 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Frm_NhapMaXN));
-            this.siticoneAdvancedPanel1 = new SiticoneNetFrameworkUI.SiticoneAdvancedPanel();
             this.siticonePanel1 = new SiticoneNetFrameworkUI.SiticonePanel();
             this.lbl_QuayLai = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -48,64 +46,6 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.siticonePanel1.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // siticoneAdvancedPanel1
-            // 
-            this.siticoneAdvancedPanel1.ActiveBackColor = System.Drawing.Color.Empty;
-            this.siticoneAdvancedPanel1.ActiveBorderColor = System.Drawing.Color.Empty;
-            this.siticoneAdvancedPanel1.AnimationDuration = 500;
-            this.siticoneAdvancedPanel1.AnimationType = SiticoneNetFrameworkUI.SiticoneAdvancedPanel.AnimationTypeEx.Fade;
-            this.siticoneAdvancedPanel1.BackgroundImageCustom = null;
-            this.siticoneAdvancedPanel1.BackgroundImageOpacity = 1F;
-            this.siticoneAdvancedPanel1.BackgroundImageSizeMode = SiticoneNetFrameworkUI.SiticoneAdvancedPanel.ImageSizeModeEx.Stretch;
-            this.siticoneAdvancedPanel1.BackgroundOverlayColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.siticoneAdvancedPanel1.BorderDashPattern = null;
-            this.siticoneAdvancedPanel1.BorderGlowColor = System.Drawing.Color.Cyan;
-            this.siticoneAdvancedPanel1.BorderGlowSize = 3F;
-            this.siticoneAdvancedPanel1.BottomLeftRadius = 5;
-            this.siticoneAdvancedPanel1.BottomRightRadius = 5;
-            this.siticoneAdvancedPanel1.ContentAlignmentCustom = System.Drawing.ContentAlignment.MiddleCenter;
-            this.siticoneAdvancedPanel1.CornerPadding = new System.Windows.Forms.Padding(5);
-            this.siticoneAdvancedPanel1.DisabledBackColor = System.Drawing.Color.Empty;
-            this.siticoneAdvancedPanel1.DisabledBorderColor = System.Drawing.Color.Empty;
-            this.siticoneAdvancedPanel1.DoubleBorderSpacing = 2F;
-            this.siticoneAdvancedPanel1.EasingType = SiticoneNetFrameworkUI.SiticoneAdvancedPanel.EasingTypeEx.Linear;
-            this.siticoneAdvancedPanel1.EnableAnimation = false;
-            this.siticoneAdvancedPanel1.EnableBackgroundImage = false;
-            this.siticoneAdvancedPanel1.EnableBorderGlow = false;
-            this.siticoneAdvancedPanel1.EnableDoubleBorder = false;
-            this.siticoneAdvancedPanel1.EnableGradient = false;
-            this.siticoneAdvancedPanel1.EnableInnerShadow = false;
-            this.siticoneAdvancedPanel1.EnableShadow = false;
-            this.siticoneAdvancedPanel1.EnableSmartPadding = true;
-            this.siticoneAdvancedPanel1.EnableStateStyles = false;
-            this.siticoneAdvancedPanel1.FlowDirectionCustom = System.Windows.Forms.FlowDirection.LeftToRight;
-            this.siticoneAdvancedPanel1.GradientAngle = 90F;
-            this.siticoneAdvancedPanel1.GradientEndColor = System.Drawing.Color.LightGray;
-            this.siticoneAdvancedPanel1.GradientStartColor = System.Drawing.Color.White;
-            this.siticoneAdvancedPanel1.GradientType = SiticoneNetFrameworkUI.SiticoneAdvancedPanel.GradientTypeEx.Linear;
-            this.siticoneAdvancedPanel1.HoverBackColor = System.Drawing.Color.Empty;
-            this.siticoneAdvancedPanel1.HoverBorderColor = System.Drawing.Color.Empty;
-            this.siticoneAdvancedPanel1.InnerShadowColor = System.Drawing.Color.Black;
-            this.siticoneAdvancedPanel1.InnerShadowDepth = 3;
-            this.siticoneAdvancedPanel1.InnerShadowOpacity = 0.2F;
-            this.siticoneAdvancedPanel1.Location = new System.Drawing.Point(0, 0);
-            this.siticoneAdvancedPanel1.Name = "siticoneAdvancedPanel1";
-            this.siticoneAdvancedPanel1.Padding = new System.Windows.Forms.Padding(10);
-            this.siticoneAdvancedPanel1.RadialGradientCenter = ((System.Drawing.PointF)(resources.GetObject("siticoneAdvancedPanel1.RadialGradientCenter")));
-            this.siticoneAdvancedPanel1.RadialGradientRadius = 1F;
-            this.siticoneAdvancedPanel1.ScaleRatio = 0.8F;
-            this.siticoneAdvancedPanel1.SecondaryBorderColor = System.Drawing.Color.DarkGray;
-            this.siticoneAdvancedPanel1.ShadowBlur = 10;
-            this.siticoneAdvancedPanel1.ShadowColor = System.Drawing.Color.Black;
-            this.siticoneAdvancedPanel1.ShadowDepth = 5;
-            this.siticoneAdvancedPanel1.ShadowOffset = new System.Drawing.Point(2, 2);
-            this.siticoneAdvancedPanel1.ShadowOpacity = 0.3F;
-            this.siticoneAdvancedPanel1.Size = new System.Drawing.Size(200, 100);
-            this.siticoneAdvancedPanel1.SlideDirection = new System.Drawing.Point(0, -30);
-            this.siticoneAdvancedPanel1.TabIndex = 1;
-            this.siticoneAdvancedPanel1.TopLeftRadius = 5;
-            this.siticoneAdvancedPanel1.TopRightRadius = 5;
             // 
             // siticonePanel1
             // 
@@ -672,7 +612,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(962, 598);
             this.Controls.Add(this.siticonePanel1);
-            this.Controls.Add(this.siticoneAdvancedPanel1);
             this.Controls.Add(this.panel1);
             this.Name = "Frm_NhapMaXN";
             this.Text = "Frm_NhapMaXN";
@@ -685,7 +624,6 @@
         #endregion
 
         private System.Windows.Forms.Panel panel1;
-        private SiticoneNetFrameworkUI.SiticoneAdvancedPanel siticoneAdvancedPanel1;
         private SiticoneNetFrameworkUI.SiticonePanel siticonePanel1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;

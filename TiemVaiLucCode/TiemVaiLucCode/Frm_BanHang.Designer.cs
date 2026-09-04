@@ -29,233 +29,226 @@
         private void InitializeComponent()
         {
             this.panel21 = new System.Windows.Forms.Panel();
+            this.comboBox17 = new System.Windows.Forms.ComboBox();
             this.label22 = new System.Windows.Forms.Label();
             this.numericUpDown17 = new System.Windows.Forms.NumericUpDown();
             this.label23 = new System.Windows.Forms.Label();
+            this.pictureBox19 = new System.Windows.Forms.PictureBox();
             this.button18 = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.comboBox6 = new System.Windows.Forms.ComboBox();
+            this.label40 = new System.Windows.Forms.Label();
             this.numericUpDown3 = new System.Windows.Forms.NumericUpDown();
+            this.label41 = new System.Windows.Forms.Label();
+            this.pictureBox11 = new System.Windows.Forms.PictureBox();
             this.button3 = new System.Windows.Forms.Button();
             this.panel14 = new System.Windows.Forms.Panel();
+            this.comboBox7 = new System.Windows.Forms.ComboBox();
+            this.label42 = new System.Windows.Forms.Label();
             this.numericUpDown4 = new System.Windows.Forms.NumericUpDown();
+            this.label43 = new System.Windows.Forms.Label();
+            this.pictureBox13 = new System.Windows.Forms.PictureBox();
             this.button4 = new System.Windows.Forms.Button();
             this.panel20 = new System.Windows.Forms.Panel();
+            this.comboBox18 = new System.Windows.Forms.ComboBox();
+            this.label24 = new System.Windows.Forms.Label();
             this.numericUpDown18 = new System.Windows.Forms.NumericUpDown();
+            this.label25 = new System.Windows.Forms.Label();
+            this.pictureBox18 = new System.Windows.Forms.PictureBox();
             this.button19 = new System.Windows.Forms.Button();
             this.panel13 = new System.Windows.Forms.Panel();
+            this.comboBox13 = new System.Windows.Forms.ComboBox();
             this.label13 = new System.Windows.Forms.Label();
             this.numericUpDown9 = new System.Windows.Forms.NumericUpDown();
             this.label14 = new System.Windows.Forms.Label();
+            this.pictureBox12 = new System.Windows.Forms.PictureBox();
             this.button7 = new System.Windows.Forms.Button();
             this.panel18 = new System.Windows.Forms.Panel();
+            this.comboBox20 = new System.Windows.Forms.ComboBox();
+            this.label28 = new System.Windows.Forms.Label();
             this.numericUpDown20 = new System.Windows.Forms.NumericUpDown();
+            this.label29 = new System.Windows.Forms.Label();
+            this.pictureBox16 = new System.Windows.Forms.PictureBox();
             this.button21 = new System.Windows.Forms.Button();
             this.panel17 = new System.Windows.Forms.Panel();
+            this.comboBox21 = new System.Windows.Forms.ComboBox();
+            this.label30 = new System.Windows.Forms.Label();
             this.numericUpDown21 = new System.Windows.Forms.NumericUpDown();
+            this.label31 = new System.Windows.Forms.Label();
+            this.pictureBox15 = new System.Windows.Forms.PictureBox();
             this.button22 = new System.Windows.Forms.Button();
             this.panel15 = new System.Windows.Forms.Panel();
+            this.comboBox14 = new System.Windows.Forms.ComboBox();
             this.label16 = new System.Windows.Forms.Label();
             this.numericUpDown8 = new System.Windows.Forms.NumericUpDown();
             this.label17 = new System.Windows.Forms.Label();
+            this.pictureBox14 = new System.Windows.Forms.PictureBox();
             this.button6 = new System.Windows.Forms.Button();
             this.panel19 = new System.Windows.Forms.Panel();
+            this.comboBox19 = new System.Windows.Forms.ComboBox();
+            this.label26 = new System.Windows.Forms.Label();
             this.numericUpDown19 = new System.Windows.Forms.NumericUpDown();
+            this.label27 = new System.Windows.Forms.Label();
+            this.pictureBox17 = new System.Windows.Forms.PictureBox();
             this.button20 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel22 = new System.Windows.Forms.Panel();
+            this.comboBox16 = new System.Windows.Forms.ComboBox();
             this.label20 = new System.Windows.Forms.Label();
             this.numericUpDown16 = new System.Windows.Forms.NumericUpDown();
             this.label21 = new System.Windows.Forms.Label();
+            this.pictureBox20 = new System.Windows.Forms.PictureBox();
             this.button17 = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel16 = new System.Windows.Forms.Panel();
             this.panel24 = new System.Windows.Forms.Panel();
+            this.comboBox5 = new System.Windows.Forms.ComboBox();
+            this.label38 = new System.Windows.Forms.Label();
             this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
+            this.label39 = new System.Windows.Forms.Label();
+            this.pictureBox22 = new System.Windows.Forms.PictureBox();
             this.button2 = new System.Windows.Forms.Button();
             this.panel23 = new System.Windows.Forms.Panel();
+            this.comboBox15 = new System.Windows.Forms.ComboBox();
             this.label18 = new System.Windows.Forms.Label();
             this.numericUpDown15 = new System.Windows.Forms.NumericUpDown();
             this.label19 = new System.Windows.Forms.Label();
+            this.pictureBox21 = new System.Windows.Forms.PictureBox();
             this.button16 = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.comboBox12 = new System.Windows.Forms.ComboBox();
             this.label11 = new System.Windows.Forms.Label();
             this.numericUpDown10 = new System.Windows.Forms.NumericUpDown();
             this.label12 = new System.Windows.Forms.Label();
+            this.pictureBox10 = new System.Windows.Forms.PictureBox();
             this.button8 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.cmbTatCa = new System.Windows.Forms.ComboBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.panel9 = new System.Windows.Forms.Panel();
+            this.comboBox11 = new System.Windows.Forms.ComboBox();
+            this.label44 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.numericUpDown11 = new System.Windows.Forms.NumericUpDown();
             this.label3 = new System.Windows.Forms.Label();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.button9 = new System.Windows.Forms.Button();
             this.panel8 = new System.Windows.Forms.Panel();
+            this.comboBox4 = new System.Windows.Forms.ComboBox();
+            this.label36 = new System.Windows.Forms.Label();
             this.numericUpDown2 = new System.Windows.Forms.NumericUpDown();
+            this.label37 = new System.Windows.Forms.Label();
             this.button10 = new System.Windows.Forms.Button();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.panel10 = new System.Windows.Forms.Panel();
+            this.comboBox10 = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
             this.numericUpDown12 = new System.Windows.Forms.NumericUpDown();
             this.label5 = new System.Windows.Forms.Label();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.button11 = new System.Windows.Forms.Button();
             this.panel11 = new System.Windows.Forms.Panel();
+            this.comboBox9 = new System.Windows.Forms.ComboBox();
             this.label7 = new System.Windows.Forms.Label();
             this.numericUpDown13 = new System.Windows.Forms.NumericUpDown();
             this.label8 = new System.Windows.Forms.Label();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.button13 = new System.Windows.Forms.Button();
             this.panel7 = new System.Windows.Forms.Panel();
+            this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.label34 = new System.Windows.Forms.Label();
             this.numericUpDown5 = new System.Windows.Forms.NumericUpDown();
+            this.label35 = new System.Windows.Forms.Label();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.button5 = new System.Windows.Forms.Button();
             this.panel12 = new System.Windows.Forms.Panel();
+            this.comboBox8 = new System.Windows.Forms.ComboBox();
             this.label9 = new System.Windows.Forms.Label();
             this.numericUpDown14 = new System.Windows.Forms.NumericUpDown();
             this.label10 = new System.Windows.Forms.Label();
+            this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.button15 = new System.Windows.Forms.Button();
             this.panel6 = new System.Windows.Forms.Panel();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.label32 = new System.Windows.Forms.Label();
             this.numericUpDown6 = new System.Windows.Forms.NumericUpDown();
+            this.label33 = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.button12 = new System.Windows.Forms.Button();
             this.panel5 = new System.Windows.Forms.Panel();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label15 = new System.Windows.Forms.Label();
             this.numericUpDown7 = new System.Windows.Forms.NumericUpDown();
             this.label6 = new System.Windows.Forms.Label();
-            this.button14 = new System.Windows.Forms.Button();
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.bÁNHÀNGToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.kHÁCHHÀNGToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.cALÀMToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.bÁOCÁOCÁNHÂNToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.gIỎHÀNGToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.label24 = new System.Windows.Forms.Label();
-            this.label25 = new System.Windows.Forms.Label();
-            this.label26 = new System.Windows.Forms.Label();
-            this.label27 = new System.Windows.Forms.Label();
-            this.label28 = new System.Windows.Forms.Label();
-            this.label29 = new System.Windows.Forms.Label();
-            this.label30 = new System.Windows.Forms.Label();
-            this.label31 = new System.Windows.Forms.Label();
-            this.label32 = new System.Windows.Forms.Label();
-            this.label33 = new System.Windows.Forms.Label();
-            this.label34 = new System.Windows.Forms.Label();
-            this.label35 = new System.Windows.Forms.Label();
-            this.label36 = new System.Windows.Forms.Label();
-            this.label37 = new System.Windows.Forms.Label();
-            this.label38 = new System.Windows.Forms.Label();
-            this.label39 = new System.Windows.Forms.Label();
-            this.label40 = new System.Windows.Forms.Label();
-            this.label41 = new System.Windows.Forms.Label();
-            this.label42 = new System.Windows.Forms.Label();
-            this.label43 = new System.Windows.Forms.Label();
-            this.pictureBox15 = new System.Windows.Forms.PictureBox();
-            this.pictureBox13 = new System.Windows.Forms.PictureBox();
-            this.pictureBox16 = new System.Windows.Forms.PictureBox();
-            this.pictureBox14 = new System.Windows.Forms.PictureBox();
-            this.pictureBox17 = new System.Windows.Forms.PictureBox();
-            this.pictureBox11 = new System.Windows.Forms.PictureBox();
-            this.pictureBox18 = new System.Windows.Forms.PictureBox();
-            this.pictureBox19 = new System.Windows.Forms.PictureBox();
-            this.pictureBox12 = new System.Windows.Forms.PictureBox();
-            this.pictureBox20 = new System.Windows.Forms.PictureBox();
-            this.pictureBox22 = new System.Windows.Forms.PictureBox();
-            this.pictureBox21 = new System.Windows.Forms.PictureBox();
-            this.pictureBox10 = new System.Windows.Forms.PictureBox();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox8 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.button14 = new System.Windows.Forms.Button();
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
-            this.label44 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
-            this.comboBox4 = new System.Windows.Forms.ComboBox();
-            this.comboBox5 = new System.Windows.Forms.ComboBox();
-            this.comboBox6 = new System.Windows.Forms.ComboBox();
-            this.comboBox7 = new System.Windows.Forms.ComboBox();
-            this.comboBox8 = new System.Windows.Forms.ComboBox();
-            this.comboBox9 = new System.Windows.Forms.ComboBox();
-            this.comboBox10 = new System.Windows.Forms.ComboBox();
-            this.comboBox11 = new System.Windows.Forms.ComboBox();
-            this.comboBox12 = new System.Windows.Forms.ComboBox();
-            this.comboBox13 = new System.Windows.Forms.ComboBox();
-            this.comboBox14 = new System.Windows.Forms.ComboBox();
-            this.comboBox15 = new System.Windows.Forms.ComboBox();
-            this.comboBox16 = new System.Windows.Forms.ComboBox();
-            this.comboBox17 = new System.Windows.Forms.ComboBox();
-            this.comboBox18 = new System.Windows.Forms.ComboBox();
-            this.comboBox19 = new System.Windows.Forms.ComboBox();
-            this.comboBox20 = new System.Windows.Forms.ComboBox();
-            this.comboBox21 = new System.Windows.Forms.ComboBox();
             this.panel21.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown17)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox19)).BeginInit();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
             this.panel14.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).BeginInit();
             this.panel20.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown18)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox18)).BeginInit();
             this.panel13.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
             this.panel18.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown20)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).BeginInit();
             this.panel17.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown21)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).BeginInit();
             this.panel15.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).BeginInit();
             this.panel19.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown19)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox17)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel22.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown16)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox20)).BeginInit();
             this.panel2.SuspendLayout();
             this.panel16.SuspendLayout();
             this.panel24.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox22)).BeginInit();
             this.panel23.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown15)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox21)).BeginInit();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown10)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
             this.panel9.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown11)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.panel8.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.panel10.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown12)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             this.panel11.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown13)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             this.panel7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.panel12.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown14)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             this.panel6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown7)).BeginInit();
-            this.menuStrip1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox17)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox18)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox19)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox20)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox22)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox21)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             this.SuspendLayout();
@@ -273,6 +266,17 @@
             this.panel21.Name = "panel21";
             this.panel21.Size = new System.Drawing.Size(171, 222);
             this.panel21.TabIndex = 29;
+            // 
+            // comboBox17
+            // 
+            this.comboBox17.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox17.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.comboBox17.FormattingEnabled = true;
+            this.comboBox17.Location = new System.Drawing.Point(15, 151);
+            this.comboBox17.Name = "comboBox17";
+            this.comboBox17.Size = new System.Drawing.Size(147, 28);
+            this.comboBox17.TabIndex = 65;
+            this.comboBox17.Text = "Màu sắc";
             // 
             // label22
             // 
@@ -304,6 +308,15 @@
             this.label23.TabIndex = 65;
             this.label23.Text = "Vải tuytsi";
             // 
+            // pictureBox19
+            // 
+            this.pictureBox19.Image = global::TiemVaiLucCode.Properties.Resources.chat_vai_tuytsi;
+            this.pictureBox19.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox19.Name = "pictureBox19";
+            this.pictureBox19.Size = new System.Drawing.Size(171, 103);
+            this.pictureBox19.TabIndex = 5;
+            this.pictureBox19.TabStop = false;
+            // 
             // button18
             // 
             this.button18.BackColor = System.Drawing.Color.Bisque;
@@ -330,6 +343,28 @@
             this.panel4.Size = new System.Drawing.Size(171, 222);
             this.panel4.TabIndex = 23;
             // 
+            // comboBox6
+            // 
+            this.comboBox6.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox6.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.comboBox6.FormattingEnabled = true;
+            this.comboBox6.Location = new System.Drawing.Point(12, 151);
+            this.comboBox6.Name = "comboBox6";
+            this.comboBox6.Size = new System.Drawing.Size(147, 28);
+            this.comboBox6.TabIndex = 67;
+            this.comboBox6.Text = "Màu sắc";
+            // 
+            // label40
+            // 
+            this.label40.AutoSize = true;
+            this.label40.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label40.ForeColor = System.Drawing.Color.IndianRed;
+            this.label40.Location = new System.Drawing.Point(12, 131);
+            this.label40.Name = "label40";
+            this.label40.Size = new System.Drawing.Size(86, 19);
+            this.label40.TabIndex = 68;
+            this.label40.Text = "100.000/m";
+            // 
             // numericUpDown3
             // 
             this.numericUpDown3.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -337,6 +372,26 @@
             this.numericUpDown3.Name = "numericUpDown3";
             this.numericUpDown3.Size = new System.Drawing.Size(58, 30);
             this.numericUpDown3.TabIndex = 40;
+            // 
+            // label41
+            // 
+            this.label41.AutoSize = true;
+            this.label41.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label41.ForeColor = System.Drawing.Color.Maroon;
+            this.label41.Location = new System.Drawing.Point(12, 109);
+            this.label41.Name = "label41";
+            this.label41.Size = new System.Drawing.Size(72, 23);
+            this.label41.TabIndex = 67;
+            this.label41.Text = "Vải ren";
+            // 
+            // pictureBox11
+            // 
+            this.pictureBox11.Image = global::TiemVaiLucCode.Properties.Resources.ren_1_1;
+            this.pictureBox11.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox11.Name = "pictureBox11";
+            this.pictureBox11.Size = new System.Drawing.Size(171, 103);
+            this.pictureBox11.TabIndex = 3;
+            this.pictureBox11.TabStop = false;
             // 
             // button3
             // 
@@ -364,6 +419,28 @@
             this.panel14.Size = new System.Drawing.Size(171, 222);
             this.panel14.TabIndex = 25;
             // 
+            // comboBox7
+            // 
+            this.comboBox7.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox7.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.comboBox7.FormattingEnabled = true;
+            this.comboBox7.Location = new System.Drawing.Point(12, 150);
+            this.comboBox7.Name = "comboBox7";
+            this.comboBox7.Size = new System.Drawing.Size(147, 28);
+            this.comboBox7.TabIndex = 69;
+            this.comboBox7.Text = "Màu sắc";
+            // 
+            // label42
+            // 
+            this.label42.AutoSize = true;
+            this.label42.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label42.ForeColor = System.Drawing.Color.IndianRed;
+            this.label42.Location = new System.Drawing.Point(14, 131);
+            this.label42.Name = "label42";
+            this.label42.Size = new System.Drawing.Size(77, 19);
+            this.label42.TabIndex = 70;
+            this.label42.Text = "60.000/m";
+            // 
             // numericUpDown4
             // 
             this.numericUpDown4.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -371,6 +448,26 @@
             this.numericUpDown4.Name = "numericUpDown4";
             this.numericUpDown4.Size = new System.Drawing.Size(58, 30);
             this.numericUpDown4.TabIndex = 42;
+            // 
+            // label43
+            // 
+            this.label43.AutoSize = true;
+            this.label43.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label43.ForeColor = System.Drawing.Color.Maroon;
+            this.label43.Location = new System.Drawing.Point(14, 109);
+            this.label43.Name = "label43";
+            this.label43.Size = new System.Drawing.Size(81, 23);
+            this.label43.TabIndex = 69;
+            this.label43.Text = "Vải thun";
+            // 
+            // pictureBox13
+            // 
+            this.pictureBox13.Image = global::TiemVaiLucCode.Properties.Resources.thun_2_1;
+            this.pictureBox13.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox13.Name = "pictureBox13";
+            this.pictureBox13.Size = new System.Drawing.Size(171, 103);
+            this.pictureBox13.TabIndex = 3;
+            this.pictureBox13.TabStop = false;
             // 
             // button4
             // 
@@ -398,6 +495,28 @@
             this.panel20.Size = new System.Drawing.Size(171, 222);
             this.panel20.TabIndex = 30;
             // 
+            // comboBox18
+            // 
+            this.comboBox18.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox18.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.comboBox18.FormattingEnabled = true;
+            this.comboBox18.Location = new System.Drawing.Point(11, 151);
+            this.comboBox18.Name = "comboBox18";
+            this.comboBox18.Size = new System.Drawing.Size(147, 28);
+            this.comboBox18.TabIndex = 67;
+            this.comboBox18.Text = "Màu sắc";
+            // 
+            // label24
+            // 
+            this.label24.AutoSize = true;
+            this.label24.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label24.ForeColor = System.Drawing.Color.IndianRed;
+            this.label24.Location = new System.Drawing.Point(8, 131);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(77, 19);
+            this.label24.TabIndex = 68;
+            this.label24.Text = "60.000/m";
+            // 
             // numericUpDown18
             // 
             this.numericUpDown18.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -405,6 +524,26 @@
             this.numericUpDown18.Name = "numericUpDown18";
             this.numericUpDown18.Size = new System.Drawing.Size(58, 30);
             this.numericUpDown18.TabIndex = 64;
+            // 
+            // label25
+            // 
+            this.label25.AutoSize = true;
+            this.label25.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label25.ForeColor = System.Drawing.Color.Maroon;
+            this.label25.Location = new System.Drawing.Point(8, 109);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(64, 23);
+            this.label25.TabIndex = 67;
+            this.label25.Text = "Vải bố";
+            // 
+            // pictureBox18
+            // 
+            this.pictureBox18.Image = global::TiemVaiLucCode.Properties.Resources.vn_11134207_7r98o_lsiicqw7hiv8e6_1_;
+            this.pictureBox18.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox18.Name = "pictureBox18";
+            this.pictureBox18.Size = new System.Drawing.Size(171, 103);
+            this.pictureBox18.TabIndex = 4;
+            this.pictureBox18.TabStop = false;
             // 
             // button19
             // 
@@ -431,6 +570,17 @@
             this.panel13.Name = "panel13";
             this.panel13.Size = new System.Drawing.Size(171, 222);
             this.panel13.TabIndex = 24;
+            // 
+            // comboBox13
+            // 
+            this.comboBox13.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox13.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.comboBox13.FormattingEnabled = true;
+            this.comboBox13.Location = new System.Drawing.Point(13, 154);
+            this.comboBox13.Name = "comboBox13";
+            this.comboBox13.Size = new System.Drawing.Size(147, 28);
+            this.comboBox13.TabIndex = 65;
+            this.comboBox13.Text = "Màu sắc";
             // 
             // label13
             // 
@@ -462,6 +612,15 @@
             this.label14.TabIndex = 57;
             this.label14.Text = "Vải tafta";
             // 
+            // pictureBox12
+            // 
+            this.pictureBox12.Image = global::TiemVaiLucCode.Properties.Resources.OIP__1_;
+            this.pictureBox12.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox12.Name = "pictureBox12";
+            this.pictureBox12.Size = new System.Drawing.Size(171, 103);
+            this.pictureBox12.TabIndex = 4;
+            this.pictureBox12.TabStop = false;
+            // 
             // button7
             // 
             this.button7.BackColor = System.Drawing.Color.Bisque;
@@ -488,6 +647,28 @@
             this.panel18.Size = new System.Drawing.Size(171, 222);
             this.panel18.TabIndex = 32;
             // 
+            // comboBox20
+            // 
+            this.comboBox20.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox20.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.comboBox20.FormattingEnabled = true;
+            this.comboBox20.Location = new System.Drawing.Point(12, 149);
+            this.comboBox20.Name = "comboBox20";
+            this.comboBox20.Size = new System.Drawing.Size(147, 28);
+            this.comboBox20.TabIndex = 71;
+            this.comboBox20.Text = "Màu sắc";
+            // 
+            // label28
+            // 
+            this.label28.AutoSize = true;
+            this.label28.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label28.ForeColor = System.Drawing.Color.IndianRed;
+            this.label28.Location = new System.Drawing.Point(8, 131);
+            this.label28.Name = "label28";
+            this.label28.Size = new System.Drawing.Size(77, 19);
+            this.label28.TabIndex = 72;
+            this.label28.Text = "50.000/m";
+            // 
             // numericUpDown20
             // 
             this.numericUpDown20.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -495,6 +676,27 @@
             this.numericUpDown20.Name = "numericUpDown20";
             this.numericUpDown20.Size = new System.Drawing.Size(58, 30);
             this.numericUpDown20.TabIndex = 68;
+            // 
+            // label29
+            // 
+            this.label29.AutoSize = true;
+            this.label29.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label29.ForeColor = System.Drawing.Color.Maroon;
+            this.label29.Location = new System.Drawing.Point(8, 109);
+            this.label29.Name = "label29";
+            this.label29.Size = new System.Drawing.Size(106, 23);
+            this.label29.TabIndex = 71;
+            this.label29.Text = "Vải xô caro";
+            // 
+            // pictureBox16
+            // 
+            this.pictureBox16.Image = global::TiemVaiLucCode.Properties.Resources.vn_11134207_7ra0g_m7jjby1kdxkj95_1_;
+            this.pictureBox16.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox16.Name = "pictureBox16";
+            this.pictureBox16.Size = new System.Drawing.Size(171, 103);
+            this.pictureBox16.TabIndex = 4;
+            this.pictureBox16.TabStop = false;
+            this.pictureBox16.Click += new System.EventHandler(this.pictureBox16_Click);
             // 
             // button21
             // 
@@ -523,6 +725,28 @@
             this.panel17.TabIndex = 33;
             this.panel17.Paint += new System.Windows.Forms.PaintEventHandler(this.panel17_Paint);
             // 
+            // comboBox21
+            // 
+            this.comboBox21.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox21.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.comboBox21.FormattingEnabled = true;
+            this.comboBox21.Location = new System.Drawing.Point(12, 149);
+            this.comboBox21.Name = "comboBox21";
+            this.comboBox21.Size = new System.Drawing.Size(147, 28);
+            this.comboBox21.TabIndex = 73;
+            this.comboBox21.Text = "Màu sắc";
+            // 
+            // label30
+            // 
+            this.label30.AutoSize = true;
+            this.label30.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label30.ForeColor = System.Drawing.Color.IndianRed;
+            this.label30.Location = new System.Drawing.Point(8, 131);
+            this.label30.Name = "label30";
+            this.label30.Size = new System.Drawing.Size(77, 19);
+            this.label30.TabIndex = 74;
+            this.label30.Text = "60.000/m";
+            // 
             // numericUpDown21
             // 
             this.numericUpDown21.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -531,6 +755,27 @@
             this.numericUpDown21.Size = new System.Drawing.Size(58, 30);
             this.numericUpDown21.TabIndex = 70;
             this.numericUpDown21.ValueChanged += new System.EventHandler(this.numericUpDown21_ValueChanged);
+            // 
+            // label31
+            // 
+            this.label31.AutoSize = true;
+            this.label31.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label31.ForeColor = System.Drawing.Color.Maroon;
+            this.label31.Location = new System.Drawing.Point(8, 109);
+            this.label31.Name = "label31";
+            this.label31.Size = new System.Drawing.Size(87, 23);
+            this.label31.TabIndex = 73;
+            this.label31.Text = "Vải mesh";
+            // 
+            // pictureBox15
+            // 
+            this.pictureBox15.Image = global::TiemVaiLucCode.Properties.Resources.OIP__1__1_;
+            this.pictureBox15.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox15.Name = "pictureBox15";
+            this.pictureBox15.Size = new System.Drawing.Size(171, 103);
+            this.pictureBox15.TabIndex = 4;
+            this.pictureBox15.TabStop = false;
+            this.pictureBox15.Click += new System.EventHandler(this.pictureBox15_Click);
             // 
             // button22
             // 
@@ -558,6 +803,17 @@
             this.panel15.Name = "panel15";
             this.panel15.Size = new System.Drawing.Size(171, 222);
             this.panel15.TabIndex = 26;
+            // 
+            // comboBox14
+            // 
+            this.comboBox14.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox14.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.comboBox14.FormattingEnabled = true;
+            this.comboBox14.Location = new System.Drawing.Point(13, 154);
+            this.comboBox14.Name = "comboBox14";
+            this.comboBox14.Size = new System.Drawing.Size(147, 28);
+            this.comboBox14.TabIndex = 66;
+            this.comboBox14.Text = "Màu sắc";
             // 
             // label16
             // 
@@ -589,6 +845,15 @@
             this.label17.TabIndex = 59;
             this.label17.Text = "Vải dạ";
             // 
+            // pictureBox14
+            // 
+            this.pictureBox14.Image = global::TiemVaiLucCode.Properties.Resources.OIP__2_;
+            this.pictureBox14.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox14.Name = "pictureBox14";
+            this.pictureBox14.Size = new System.Drawing.Size(171, 103);
+            this.pictureBox14.TabIndex = 4;
+            this.pictureBox14.TabStop = false;
+            // 
             // button6
             // 
             this.button6.BackColor = System.Drawing.Color.Bisque;
@@ -615,6 +880,28 @@
             this.panel19.Size = new System.Drawing.Size(171, 222);
             this.panel19.TabIndex = 31;
             // 
+            // comboBox19
+            // 
+            this.comboBox19.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox19.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.comboBox19.FormattingEnabled = true;
+            this.comboBox19.Location = new System.Drawing.Point(12, 149);
+            this.comboBox19.Name = "comboBox19";
+            this.comboBox19.Size = new System.Drawing.Size(147, 28);
+            this.comboBox19.TabIndex = 69;
+            this.comboBox19.Text = "Màu sắc";
+            // 
+            // label26
+            // 
+            this.label26.AutoSize = true;
+            this.label26.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label26.ForeColor = System.Drawing.Color.IndianRed;
+            this.label26.Location = new System.Drawing.Point(8, 131);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(77, 19);
+            this.label26.TabIndex = 70;
+            this.label26.Text = "60.000/m";
+            // 
             // numericUpDown19
             // 
             this.numericUpDown19.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -622,6 +909,26 @@
             this.numericUpDown19.Name = "numericUpDown19";
             this.numericUpDown19.Size = new System.Drawing.Size(58, 30);
             this.numericUpDown19.TabIndex = 66;
+            // 
+            // label27
+            // 
+            this.label27.AutoSize = true;
+            this.label27.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label27.ForeColor = System.Drawing.Color.Maroon;
+            this.label27.Location = new System.Drawing.Point(8, 109);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(105, 23);
+            this.label27.TabIndex = 69;
+            this.label27.Text = "Vải hoa nhí";
+            // 
+            // pictureBox17
+            // 
+            this.pictureBox17.Image = global::TiemVaiLucCode.Properties.Resources.vai_hoa_nhi_2_7378dd39f9_1_;
+            this.pictureBox17.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox17.Name = "pictureBox17";
+            this.pictureBox17.Size = new System.Drawing.Size(171, 103);
+            this.pictureBox17.TabIndex = 4;
+            this.pictureBox17.TabStop = false;
             // 
             // button20
             // 
@@ -664,9 +971,9 @@
             this.panel1.Controls.Add(this.panel6);
             this.panel1.Controls.Add(this.panel5);
             this.panel1.Controls.Add(this.pictureBox9);
-            this.panel1.Location = new System.Drawing.Point(0, 33);
+            this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1298, 565);
+            this.panel1.Size = new System.Drawing.Size(1298, 568);
             this.panel1.TabIndex = 5;
             // 
             // panel22
@@ -682,6 +989,17 @@
             this.panel22.Name = "panel22";
             this.panel22.Size = new System.Drawing.Size(171, 222);
             this.panel22.TabIndex = 28;
+            // 
+            // comboBox16
+            // 
+            this.comboBox16.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox16.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.comboBox16.FormattingEnabled = true;
+            this.comboBox16.Location = new System.Drawing.Point(12, 151);
+            this.comboBox16.Name = "comboBox16";
+            this.comboBox16.Size = new System.Drawing.Size(147, 28);
+            this.comboBox16.TabIndex = 63;
+            this.comboBox16.Text = "Màu sắc";
             // 
             // label20
             // 
@@ -712,6 +1030,15 @@
             this.label21.Size = new System.Drawing.Size(76, 23);
             this.label21.TabIndex = 63;
             this.label21.Text = "Vải tăm";
+            // 
+            // pictureBox20
+            // 
+            this.pictureBox20.Image = global::TiemVaiLucCode.Properties.Resources.OIP__4__1_;
+            this.pictureBox20.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox20.Name = "pictureBox20";
+            this.pictureBox20.Size = new System.Drawing.Size(171, 103);
+            this.pictureBox20.TabIndex = 6;
+            this.pictureBox20.TabStop = false;
             // 
             // button17
             // 
@@ -755,6 +1082,28 @@
             this.panel24.Size = new System.Drawing.Size(171, 222);
             this.panel24.TabIndex = 24;
             // 
+            // comboBox5
+            // 
+            this.comboBox5.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox5.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.comboBox5.FormattingEnabled = true;
+            this.comboBox5.Location = new System.Drawing.Point(12, 153);
+            this.comboBox5.Name = "comboBox5";
+            this.comboBox5.Size = new System.Drawing.Size(147, 28);
+            this.comboBox5.TabIndex = 65;
+            this.comboBox5.Text = "Màu sắc";
+            // 
+            // label38
+            // 
+            this.label38.AutoSize = true;
+            this.label38.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label38.ForeColor = System.Drawing.Color.IndianRed;
+            this.label38.Location = new System.Drawing.Point(8, 131);
+            this.label38.Name = "label38";
+            this.label38.Size = new System.Drawing.Size(86, 19);
+            this.label38.TabIndex = 66;
+            this.label38.Text = "120.000/m";
+            // 
             // numericUpDown1
             // 
             this.numericUpDown1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -762,6 +1111,26 @@
             this.numericUpDown1.Name = "numericUpDown1";
             this.numericUpDown1.Size = new System.Drawing.Size(58, 30);
             this.numericUpDown1.TabIndex = 38;
+            // 
+            // label39
+            // 
+            this.label39.AutoSize = true;
+            this.label39.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label39.ForeColor = System.Drawing.Color.Maroon;
+            this.label39.Location = new System.Drawing.Point(8, 109);
+            this.label39.Name = "label39";
+            this.label39.Size = new System.Drawing.Size(79, 23);
+            this.label39.TabIndex = 65;
+            this.label39.Text = "Vải gấm";
+            // 
+            // pictureBox22
+            // 
+            this.pictureBox22.Image = global::TiemVaiLucCode.Properties.Resources.gam_1_1;
+            this.pictureBox22.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox22.Name = "pictureBox22";
+            this.pictureBox22.Size = new System.Drawing.Size(171, 103);
+            this.pictureBox22.TabIndex = 3;
+            this.pictureBox22.TabStop = false;
             // 
             // button2
             // 
@@ -788,6 +1157,17 @@
             this.panel23.Name = "panel23";
             this.panel23.Size = new System.Drawing.Size(171, 222);
             this.panel23.TabIndex = 27;
+            // 
+            // comboBox15
+            // 
+            this.comboBox15.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox15.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.comboBox15.FormattingEnabled = true;
+            this.comboBox15.Location = new System.Drawing.Point(11, 151);
+            this.comboBox15.Name = "comboBox15";
+            this.comboBox15.Size = new System.Drawing.Size(147, 28);
+            this.comboBox15.TabIndex = 54;
+            this.comboBox15.Text = "Màu sắc";
             // 
             // label18
             // 
@@ -819,6 +1199,15 @@
             this.label19.TabIndex = 61;
             this.label19.Text = "Vải thô";
             // 
+            // pictureBox21
+            // 
+            this.pictureBox21.Image = global::TiemVaiLucCode.Properties.Resources.OIP__3_;
+            this.pictureBox21.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox21.Name = "pictureBox21";
+            this.pictureBox21.Size = new System.Drawing.Size(171, 103);
+            this.pictureBox21.TabIndex = 7;
+            this.pictureBox21.TabStop = false;
+            // 
             // button16
             // 
             this.button16.BackColor = System.Drawing.Color.Bisque;
@@ -844,6 +1233,17 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(171, 222);
             this.panel3.TabIndex = 22;
+            // 
+            // comboBox12
+            // 
+            this.comboBox12.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox12.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.comboBox12.FormattingEnabled = true;
+            this.comboBox12.Location = new System.Drawing.Point(13, 154);
+            this.comboBox12.Name = "comboBox12";
+            this.comboBox12.Size = new System.Drawing.Size(147, 28);
+            this.comboBox12.TabIndex = 64;
+            this.comboBox12.Text = "Màu sắc";
             // 
             // label11
             // 
@@ -874,6 +1274,15 @@
             this.label12.Size = new System.Drawing.Size(69, 23);
             this.label12.TabIndex = 55;
             this.label12.Text = "Vải đũi";
+            // 
+            // pictureBox10
+            // 
+            this.pictureBox10.Image = global::TiemVaiLucCode.Properties.Resources.OIP;
+            this.pictureBox10.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox10.Name = "pictureBox10";
+            this.pictureBox10.Size = new System.Drawing.Size(171, 103);
+            this.pictureBox10.TabIndex = 4;
+            this.pictureBox10.TabStop = false;
             // 
             // button8
             // 
@@ -945,6 +1354,28 @@
             this.panel9.Size = new System.Drawing.Size(171, 222);
             this.panel9.TabIndex = 11;
             // 
+            // comboBox11
+            // 
+            this.comboBox11.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox11.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.comboBox11.FormattingEnabled = true;
+            this.comboBox11.Location = new System.Drawing.Point(11, 154);
+            this.comboBox11.Name = "comboBox11";
+            this.comboBox11.Size = new System.Drawing.Size(147, 28);
+            this.comboBox11.TabIndex = 63;
+            this.comboBox11.Text = "Màu sắc";
+            // 
+            // label44
+            // 
+            this.label44.AutoSize = true;
+            this.label44.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label44.ForeColor = System.Drawing.Color.IndianRed;
+            this.label44.Location = new System.Drawing.Point(-402, 148);
+            this.label44.Name = "label44";
+            this.label44.Size = new System.Drawing.Size(77, 19);
+            this.label44.TabIndex = 60;
+            this.label44.Text = "70.000/m";
+            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -977,6 +1408,15 @@
             this.label3.Text = "Vải tuyết mưa";
             this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
+            // pictureBox5
+            // 
+            this.pictureBox5.Image = global::TiemVaiLucCode.Properties.Resources.OIP_1_;
+            this.pictureBox5.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(171, 103);
+            this.pictureBox5.TabIndex = 4;
+            this.pictureBox5.TabStop = false;
+            // 
             // button9
             // 
             this.button9.BackColor = System.Drawing.Color.Bisque;
@@ -1003,6 +1443,28 @@
             this.panel8.Size = new System.Drawing.Size(171, 222);
             this.panel8.TabIndex = 7;
             // 
+            // comboBox4
+            // 
+            this.comboBox4.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox4.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.comboBox4.FormattingEnabled = true;
+            this.comboBox4.Location = new System.Drawing.Point(11, 153);
+            this.comboBox4.Name = "comboBox4";
+            this.comboBox4.Size = new System.Drawing.Size(147, 28);
+            this.comboBox4.TabIndex = 63;
+            this.comboBox4.Text = "Màu sắc";
+            // 
+            // label36
+            // 
+            this.label36.AutoSize = true;
+            this.label36.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label36.ForeColor = System.Drawing.Color.IndianRed;
+            this.label36.Location = new System.Drawing.Point(8, 131);
+            this.label36.Name = "label36";
+            this.label36.Size = new System.Drawing.Size(77, 19);
+            this.label36.TabIndex = 64;
+            this.label36.Text = "70.000/m";
+            // 
             // numericUpDown2
             // 
             this.numericUpDown2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -1010,6 +1472,17 @@
             this.numericUpDown2.Name = "numericUpDown2";
             this.numericUpDown2.Size = new System.Drawing.Size(58, 30);
             this.numericUpDown2.TabIndex = 36;
+            // 
+            // label37
+            // 
+            this.label37.AutoSize = true;
+            this.label37.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label37.ForeColor = System.Drawing.Color.Maroon;
+            this.label37.Location = new System.Drawing.Point(8, 109);
+            this.label37.Name = "label37";
+            this.label37.Size = new System.Drawing.Size(150, 23);
+            this.label37.TabIndex = 63;
+            this.label37.Text = "Vải cotton 100%";
             // 
             // button10
             // 
@@ -1022,6 +1495,15 @@
             this.button10.TabIndex = 35;
             this.button10.Text = "+ Thêm";
             this.button10.UseVisualStyleBackColor = false;
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Image = global::TiemVaiLucCode.Properties.Resources.dac_diem_vai_cotton_100_1_;
+            this.pictureBox4.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(171, 103);
+            this.pictureBox4.TabIndex = 3;
+            this.pictureBox4.TabStop = false;
             // 
             // panel10
             // 
@@ -1036,6 +1518,17 @@
             this.panel10.Name = "panel10";
             this.panel10.Size = new System.Drawing.Size(171, 222);
             this.panel10.TabIndex = 10;
+            // 
+            // comboBox10
+            // 
+            this.comboBox10.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox10.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.comboBox10.FormattingEnabled = true;
+            this.comboBox10.Location = new System.Drawing.Point(14, 154);
+            this.comboBox10.Name = "comboBox10";
+            this.comboBox10.Size = new System.Drawing.Size(147, 28);
+            this.comboBox10.TabIndex = 62;
+            this.comboBox10.Text = "Màu sắc";
             // 
             // label4
             // 
@@ -1067,6 +1560,15 @@
             this.label5.TabIndex = 55;
             this.label5.Text = "Vải linen";
             // 
+            // pictureBox6
+            // 
+            this.pictureBox6.Image = global::TiemVaiLucCode.Properties.Resources.ce3246965a780ea24a50067e9e36e146_1_;
+            this.pictureBox6.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(171, 103);
+            this.pictureBox6.TabIndex = 5;
+            this.pictureBox6.TabStop = false;
+            // 
             // button11
             // 
             this.button11.BackColor = System.Drawing.Color.Bisque;
@@ -1092,6 +1594,17 @@
             this.panel11.Name = "panel11";
             this.panel11.Size = new System.Drawing.Size(171, 222);
             this.panel11.TabIndex = 9;
+            // 
+            // comboBox9
+            // 
+            this.comboBox9.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox9.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.comboBox9.FormattingEnabled = true;
+            this.comboBox9.Location = new System.Drawing.Point(12, 154);
+            this.comboBox9.Name = "comboBox9";
+            this.comboBox9.Size = new System.Drawing.Size(147, 28);
+            this.comboBox9.TabIndex = 61;
+            this.comboBox9.Text = "Màu sắc";
             // 
             // label7
             // 
@@ -1123,6 +1636,15 @@
             this.label8.TabIndex = 57;
             this.label8.Text = "Vải kaki";
             // 
+            // pictureBox7
+            // 
+            this.pictureBox7.Image = global::TiemVaiLucCode.Properties.Resources._4f5990d4363a41f6346be542e36300c9_1_;
+            this.pictureBox7.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(171, 103);
+            this.pictureBox7.TabIndex = 6;
+            this.pictureBox7.TabStop = false;
+            // 
             // button13
             // 
             this.button13.BackColor = System.Drawing.Color.Bisque;
@@ -1149,6 +1671,28 @@
             this.panel7.Size = new System.Drawing.Size(171, 222);
             this.panel7.TabIndex = 6;
             // 
+            // comboBox3
+            // 
+            this.comboBox3.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox3.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.comboBox3.FormattingEnabled = true;
+            this.comboBox3.Location = new System.Drawing.Point(14, 153);
+            this.comboBox3.Name = "comboBox3";
+            this.comboBox3.Size = new System.Drawing.Size(147, 28);
+            this.comboBox3.TabIndex = 61;
+            this.comboBox3.Text = "Màu sắc";
+            // 
+            // label34
+            // 
+            this.label34.AutoSize = true;
+            this.label34.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label34.ForeColor = System.Drawing.Color.IndianRed;
+            this.label34.Location = new System.Drawing.Point(11, 131);
+            this.label34.Name = "label34";
+            this.label34.Size = new System.Drawing.Size(77, 19);
+            this.label34.TabIndex = 62;
+            this.label34.Text = "50.000/m";
+            // 
             // numericUpDown5
             // 
             this.numericUpDown5.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -1156,6 +1700,26 @@
             this.numericUpDown5.Name = "numericUpDown5";
             this.numericUpDown5.Size = new System.Drawing.Size(58, 30);
             this.numericUpDown5.TabIndex = 44;
+            // 
+            // label35
+            // 
+            this.label35.AutoSize = true;
+            this.label35.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label35.ForeColor = System.Drawing.Color.Maroon;
+            this.label35.Location = new System.Drawing.Point(11, 109);
+            this.label35.Name = "label35";
+            this.label35.Size = new System.Drawing.Size(82, 23);
+            this.label35.TabIndex = 61;
+            this.label35.Text = "Vải kate";
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = global::TiemVaiLucCode.Properties.Resources.kate_1_1;
+            this.pictureBox3.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(171, 103);
+            this.pictureBox3.TabIndex = 2;
+            this.pictureBox3.TabStop = false;
             // 
             // button5
             // 
@@ -1182,6 +1746,17 @@
             this.panel12.Name = "panel12";
             this.panel12.Size = new System.Drawing.Size(171, 222);
             this.panel12.TabIndex = 8;
+            // 
+            // comboBox8
+            // 
+            this.comboBox8.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox8.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.comboBox8.FormattingEnabled = true;
+            this.comboBox8.Location = new System.Drawing.Point(11, 154);
+            this.comboBox8.Name = "comboBox8";
+            this.comboBox8.Size = new System.Drawing.Size(147, 28);
+            this.comboBox8.TabIndex = 53;
+            this.comboBox8.Text = "Màu sắc";
             // 
             // label9
             // 
@@ -1213,6 +1788,15 @@
             this.label10.TabIndex = 59;
             this.label10.Text = "Vải jean";
             // 
+            // pictureBox8
+            // 
+            this.pictureBox8.Image = global::TiemVaiLucCode.Properties.Resources.image;
+            this.pictureBox8.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox8.Name = "pictureBox8";
+            this.pictureBox8.Size = new System.Drawing.Size(171, 103);
+            this.pictureBox8.TabIndex = 7;
+            this.pictureBox8.TabStop = false;
+            // 
             // button15
             // 
             this.button15.BackColor = System.Drawing.Color.Bisque;
@@ -1239,6 +1823,28 @@
             this.panel6.Size = new System.Drawing.Size(171, 222);
             this.panel6.TabIndex = 5;
             // 
+            // comboBox2
+            // 
+            this.comboBox2.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox2.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Location = new System.Drawing.Point(10, 153);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(147, 28);
+            this.comboBox2.TabIndex = 53;
+            this.comboBox2.Text = "Màu sắc";
+            // 
+            // label32
+            // 
+            this.label32.AutoSize = true;
+            this.label32.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label32.ForeColor = System.Drawing.Color.IndianRed;
+            this.label32.Location = new System.Drawing.Point(8, 131);
+            this.label32.Name = "label32";
+            this.label32.Size = new System.Drawing.Size(77, 19);
+            this.label32.TabIndex = 60;
+            this.label32.Text = "60.000/m";
+            // 
             // numericUpDown6
             // 
             this.numericUpDown6.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -1246,6 +1852,26 @@
             this.numericUpDown6.Name = "numericUpDown6";
             this.numericUpDown6.Size = new System.Drawing.Size(58, 30);
             this.numericUpDown6.TabIndex = 46;
+            // 
+            // label33
+            // 
+            this.label33.AutoSize = true;
+            this.label33.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label33.ForeColor = System.Drawing.Color.Maroon;
+            this.label33.Location = new System.Drawing.Point(8, 109);
+            this.label33.Name = "label33";
+            this.label33.Size = new System.Drawing.Size(102, 23);
+            this.label33.TabIndex = 59;
+            this.label33.Text = "Vải chiffon";
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::TiemVaiLucCode.Properties.Resources.chiffon1;
+            this.pictureBox2.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(171, 103);
+            this.pictureBox2.TabIndex = 1;
+            this.pictureBox2.TabStop = false;
             // 
             // button12
             // 
@@ -1272,6 +1898,17 @@
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(171, 222);
             this.panel5.TabIndex = 4;
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox1.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(11, 153);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(147, 28);
+            this.comboBox1.TabIndex = 35;
+            this.comboBox1.Text = "Màu sắc";
             // 
             // label15
             // 
@@ -1303,6 +1940,16 @@
             this.label6.TabIndex = 51;
             this.label6.Text = "Vải lụa satin";
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::TiemVaiLucCode.Properties.Resources.LUA_SATIN_1__1_1;
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(171, 103);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            // 
             // button14
             // 
             this.button14.BackColor = System.Drawing.Color.Bisque;
@@ -1315,715 +1962,14 @@
             this.button14.Text = "+ Thêm";
             this.button14.UseVisualStyleBackColor = false;
             // 
-            // menuStrip1
-            // 
-            this.menuStrip1.BackColor = System.Drawing.Color.Beige;
-            this.menuStrip1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.bÁNHÀNGToolStripMenuItem,
-            this.kHÁCHHÀNGToolStripMenuItem,
-            this.cALÀMToolStripMenuItem,
-            this.bÁOCÁOCÁNHÂNToolStripMenuItem,
-            this.gIỎHÀNGToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1298, 30);
-            this.menuStrip1.TabIndex = 4;
-            this.menuStrip1.Text = "menuStrip1";
-            // 
-            // bÁNHÀNGToolStripMenuItem
-            // 
-            this.bÁNHÀNGToolStripMenuItem.Name = "bÁNHÀNGToolStripMenuItem";
-            this.bÁNHÀNGToolStripMenuItem.Size = new System.Drawing.Size(136, 26);
-            this.bÁNHÀNGToolStripMenuItem.Text = "TRANG CHỦ";
-            // 
-            // kHÁCHHÀNGToolStripMenuItem
-            // 
-            this.kHÁCHHÀNGToolStripMenuItem.Name = "kHÁCHHÀNGToolStripMenuItem";
-            this.kHÁCHHÀNGToolStripMenuItem.Size = new System.Drawing.Size(126, 26);
-            this.kHÁCHHÀNGToolStripMenuItem.Text = "GIỚI THIỆU";
-            // 
-            // cALÀMToolStripMenuItem
-            // 
-            this.cALÀMToolStripMenuItem.Name = "cALÀMToolStripMenuItem";
-            this.cALÀMToolStripMenuItem.Size = new System.Drawing.Size(124, 26);
-            this.cALÀMToolStripMenuItem.Text = "SẢN PHẨM";
-            // 
-            // bÁOCÁOCÁNHÂNToolStripMenuItem
-            // 
-            this.bÁOCÁOCÁNHÂNToolStripMenuItem.Name = "bÁOCÁOCÁNHÂNToolStripMenuItem";
-            this.bÁOCÁOCÁNHÂNToolStripMenuItem.Size = new System.Drawing.Size(209, 26);
-            this.bÁOCÁOCÁNHÂNToolStripMenuItem.Text = "LỊCH SỬ MUA HÀNG";
-            // 
-            // gIỎHÀNGToolStripMenuItem
-            // 
-            this.gIỎHÀNGToolStripMenuItem.Name = "gIỎHÀNGToolStripMenuItem";
-            this.gIỎHÀNGToolStripMenuItem.Size = new System.Drawing.Size(119, 26);
-            this.gIỎHÀNGToolStripMenuItem.Text = "GIỎ HÀNG";
-            // 
-            // label24
-            // 
-            this.label24.AutoSize = true;
-            this.label24.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label24.ForeColor = System.Drawing.Color.IndianRed;
-            this.label24.Location = new System.Drawing.Point(8, 131);
-            this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(77, 19);
-            this.label24.TabIndex = 68;
-            this.label24.Text = "60.000/m";
-            // 
-            // label25
-            // 
-            this.label25.AutoSize = true;
-            this.label25.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label25.ForeColor = System.Drawing.Color.Maroon;
-            this.label25.Location = new System.Drawing.Point(8, 109);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(64, 23);
-            this.label25.TabIndex = 67;
-            this.label25.Text = "Vải bố";
-            // 
-            // label26
-            // 
-            this.label26.AutoSize = true;
-            this.label26.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label26.ForeColor = System.Drawing.Color.IndianRed;
-            this.label26.Location = new System.Drawing.Point(8, 131);
-            this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(77, 19);
-            this.label26.TabIndex = 70;
-            this.label26.Text = "60.000/m";
-            // 
-            // label27
-            // 
-            this.label27.AutoSize = true;
-            this.label27.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label27.ForeColor = System.Drawing.Color.Maroon;
-            this.label27.Location = new System.Drawing.Point(8, 109);
-            this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(105, 23);
-            this.label27.TabIndex = 69;
-            this.label27.Text = "Vải hoa nhí";
-            // 
-            // label28
-            // 
-            this.label28.AutoSize = true;
-            this.label28.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label28.ForeColor = System.Drawing.Color.IndianRed;
-            this.label28.Location = new System.Drawing.Point(8, 131);
-            this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(77, 19);
-            this.label28.TabIndex = 72;
-            this.label28.Text = "50.000/m";
-            // 
-            // label29
-            // 
-            this.label29.AutoSize = true;
-            this.label29.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label29.ForeColor = System.Drawing.Color.Maroon;
-            this.label29.Location = new System.Drawing.Point(8, 109);
-            this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(106, 23);
-            this.label29.TabIndex = 71;
-            this.label29.Text = "Vải xô caro";
-            // 
-            // label30
-            // 
-            this.label30.AutoSize = true;
-            this.label30.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label30.ForeColor = System.Drawing.Color.IndianRed;
-            this.label30.Location = new System.Drawing.Point(8, 131);
-            this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(77, 19);
-            this.label30.TabIndex = 74;
-            this.label30.Text = "60.000/m";
-            // 
-            // label31
-            // 
-            this.label31.AutoSize = true;
-            this.label31.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label31.ForeColor = System.Drawing.Color.Maroon;
-            this.label31.Location = new System.Drawing.Point(8, 109);
-            this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(87, 23);
-            this.label31.TabIndex = 73;
-            this.label31.Text = "Vải mesh";
-            // 
-            // label32
-            // 
-            this.label32.AutoSize = true;
-            this.label32.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label32.ForeColor = System.Drawing.Color.IndianRed;
-            this.label32.Location = new System.Drawing.Point(8, 131);
-            this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(77, 19);
-            this.label32.TabIndex = 60;
-            this.label32.Text = "60.000/m";
-            // 
-            // label33
-            // 
-            this.label33.AutoSize = true;
-            this.label33.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label33.ForeColor = System.Drawing.Color.Maroon;
-            this.label33.Location = new System.Drawing.Point(8, 109);
-            this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(102, 23);
-            this.label33.TabIndex = 59;
-            this.label33.Text = "Vải chiffon";
-            // 
-            // label34
-            // 
-            this.label34.AutoSize = true;
-            this.label34.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label34.ForeColor = System.Drawing.Color.IndianRed;
-            this.label34.Location = new System.Drawing.Point(11, 131);
-            this.label34.Name = "label34";
-            this.label34.Size = new System.Drawing.Size(77, 19);
-            this.label34.TabIndex = 62;
-            this.label34.Text = "50.000/m";
-            // 
-            // label35
-            // 
-            this.label35.AutoSize = true;
-            this.label35.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label35.ForeColor = System.Drawing.Color.Maroon;
-            this.label35.Location = new System.Drawing.Point(11, 109);
-            this.label35.Name = "label35";
-            this.label35.Size = new System.Drawing.Size(82, 23);
-            this.label35.TabIndex = 61;
-            this.label35.Text = "Vải kate";
-            // 
-            // label36
-            // 
-            this.label36.AutoSize = true;
-            this.label36.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label36.ForeColor = System.Drawing.Color.IndianRed;
-            this.label36.Location = new System.Drawing.Point(8, 131);
-            this.label36.Name = "label36";
-            this.label36.Size = new System.Drawing.Size(77, 19);
-            this.label36.TabIndex = 64;
-            this.label36.Text = "70.000/m";
-            // 
-            // label37
-            // 
-            this.label37.AutoSize = true;
-            this.label37.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label37.ForeColor = System.Drawing.Color.Maroon;
-            this.label37.Location = new System.Drawing.Point(8, 109);
-            this.label37.Name = "label37";
-            this.label37.Size = new System.Drawing.Size(150, 23);
-            this.label37.TabIndex = 63;
-            this.label37.Text = "Vải cotton 100%";
-            // 
-            // label38
-            // 
-            this.label38.AutoSize = true;
-            this.label38.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label38.ForeColor = System.Drawing.Color.IndianRed;
-            this.label38.Location = new System.Drawing.Point(8, 131);
-            this.label38.Name = "label38";
-            this.label38.Size = new System.Drawing.Size(86, 19);
-            this.label38.TabIndex = 66;
-            this.label38.Text = "120.000/m";
-            // 
-            // label39
-            // 
-            this.label39.AutoSize = true;
-            this.label39.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label39.ForeColor = System.Drawing.Color.Maroon;
-            this.label39.Location = new System.Drawing.Point(8, 109);
-            this.label39.Name = "label39";
-            this.label39.Size = new System.Drawing.Size(79, 23);
-            this.label39.TabIndex = 65;
-            this.label39.Text = "Vải gấm";
-            // 
-            // label40
-            // 
-            this.label40.AutoSize = true;
-            this.label40.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label40.ForeColor = System.Drawing.Color.IndianRed;
-            this.label40.Location = new System.Drawing.Point(12, 131);
-            this.label40.Name = "label40";
-            this.label40.Size = new System.Drawing.Size(86, 19);
-            this.label40.TabIndex = 68;
-            this.label40.Text = "100.000/m";
-            // 
-            // label41
-            // 
-            this.label41.AutoSize = true;
-            this.label41.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label41.ForeColor = System.Drawing.Color.Maroon;
-            this.label41.Location = new System.Drawing.Point(12, 109);
-            this.label41.Name = "label41";
-            this.label41.Size = new System.Drawing.Size(72, 23);
-            this.label41.TabIndex = 67;
-            this.label41.Text = "Vải ren";
-            // 
-            // label42
-            // 
-            this.label42.AutoSize = true;
-            this.label42.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label42.ForeColor = System.Drawing.Color.IndianRed;
-            this.label42.Location = new System.Drawing.Point(14, 131);
-            this.label42.Name = "label42";
-            this.label42.Size = new System.Drawing.Size(77, 19);
-            this.label42.TabIndex = 70;
-            this.label42.Text = "60.000/m";
-            // 
-            // label43
-            // 
-            this.label43.AutoSize = true;
-            this.label43.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label43.ForeColor = System.Drawing.Color.Maroon;
-            this.label43.Location = new System.Drawing.Point(14, 109);
-            this.label43.Name = "label43";
-            this.label43.Size = new System.Drawing.Size(81, 23);
-            this.label43.TabIndex = 69;
-            this.label43.Text = "Vải thun";
-            // 
-            // pictureBox15
-            // 
-            this.pictureBox15.Image = global::TiemVaiLucCode.Properties.Resources.OIP__1__1_;
-            this.pictureBox15.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox15.Name = "pictureBox15";
-            this.pictureBox15.Size = new System.Drawing.Size(171, 103);
-            this.pictureBox15.TabIndex = 4;
-            this.pictureBox15.TabStop = false;
-            this.pictureBox15.Click += new System.EventHandler(this.pictureBox15_Click);
-            // 
-            // pictureBox13
-            // 
-            this.pictureBox13.Image = global::TiemVaiLucCode.Properties.Resources.thun_2_1;
-            this.pictureBox13.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox13.Name = "pictureBox13";
-            this.pictureBox13.Size = new System.Drawing.Size(171, 103);
-            this.pictureBox13.TabIndex = 3;
-            this.pictureBox13.TabStop = false;
-            // 
-            // pictureBox16
-            // 
-            this.pictureBox16.Image = global::TiemVaiLucCode.Properties.Resources.vn_11134207_7ra0g_m7jjby1kdxkj95_1_;
-            this.pictureBox16.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox16.Name = "pictureBox16";
-            this.pictureBox16.Size = new System.Drawing.Size(171, 103);
-            this.pictureBox16.TabIndex = 4;
-            this.pictureBox16.TabStop = false;
-            this.pictureBox16.Click += new System.EventHandler(this.pictureBox16_Click);
-            // 
-            // pictureBox14
-            // 
-            this.pictureBox14.Image = global::TiemVaiLucCode.Properties.Resources.OIP__2_;
-            this.pictureBox14.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox14.Name = "pictureBox14";
-            this.pictureBox14.Size = new System.Drawing.Size(171, 103);
-            this.pictureBox14.TabIndex = 4;
-            this.pictureBox14.TabStop = false;
-            // 
-            // pictureBox17
-            // 
-            this.pictureBox17.Image = global::TiemVaiLucCode.Properties.Resources.vai_hoa_nhi_2_7378dd39f9_1_;
-            this.pictureBox17.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox17.Name = "pictureBox17";
-            this.pictureBox17.Size = new System.Drawing.Size(171, 103);
-            this.pictureBox17.TabIndex = 4;
-            this.pictureBox17.TabStop = false;
-            // 
-            // pictureBox11
-            // 
-            this.pictureBox11.Image = global::TiemVaiLucCode.Properties.Resources.ren_1_1;
-            this.pictureBox11.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox11.Name = "pictureBox11";
-            this.pictureBox11.Size = new System.Drawing.Size(171, 103);
-            this.pictureBox11.TabIndex = 3;
-            this.pictureBox11.TabStop = false;
-            // 
-            // pictureBox18
-            // 
-            this.pictureBox18.Image = global::TiemVaiLucCode.Properties.Resources.vn_11134207_7r98o_lsiicqw7hiv8e6_1_;
-            this.pictureBox18.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox18.Name = "pictureBox18";
-            this.pictureBox18.Size = new System.Drawing.Size(171, 103);
-            this.pictureBox18.TabIndex = 4;
-            this.pictureBox18.TabStop = false;
-            // 
-            // pictureBox19
-            // 
-            this.pictureBox19.Image = global::TiemVaiLucCode.Properties.Resources.chat_vai_tuytsi;
-            this.pictureBox19.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox19.Name = "pictureBox19";
-            this.pictureBox19.Size = new System.Drawing.Size(171, 103);
-            this.pictureBox19.TabIndex = 5;
-            this.pictureBox19.TabStop = false;
-            // 
-            // pictureBox12
-            // 
-            this.pictureBox12.Image = global::TiemVaiLucCode.Properties.Resources.OIP__1_;
-            this.pictureBox12.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox12.Name = "pictureBox12";
-            this.pictureBox12.Size = new System.Drawing.Size(171, 103);
-            this.pictureBox12.TabIndex = 4;
-            this.pictureBox12.TabStop = false;
-            // 
-            // pictureBox20
-            // 
-            this.pictureBox20.Image = global::TiemVaiLucCode.Properties.Resources.OIP__4__1_;
-            this.pictureBox20.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox20.Name = "pictureBox20";
-            this.pictureBox20.Size = new System.Drawing.Size(171, 103);
-            this.pictureBox20.TabIndex = 6;
-            this.pictureBox20.TabStop = false;
-            // 
-            // pictureBox22
-            // 
-            this.pictureBox22.Image = global::TiemVaiLucCode.Properties.Resources.gam_1_1;
-            this.pictureBox22.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox22.Name = "pictureBox22";
-            this.pictureBox22.Size = new System.Drawing.Size(171, 103);
-            this.pictureBox22.TabIndex = 3;
-            this.pictureBox22.TabStop = false;
-            // 
-            // pictureBox21
-            // 
-            this.pictureBox21.Image = global::TiemVaiLucCode.Properties.Resources.OIP__3_;
-            this.pictureBox21.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox21.Name = "pictureBox21";
-            this.pictureBox21.Size = new System.Drawing.Size(171, 103);
-            this.pictureBox21.TabIndex = 7;
-            this.pictureBox21.TabStop = false;
-            // 
-            // pictureBox10
-            // 
-            this.pictureBox10.Image = global::TiemVaiLucCode.Properties.Resources.OIP;
-            this.pictureBox10.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox10.Name = "pictureBox10";
-            this.pictureBox10.Size = new System.Drawing.Size(171, 103);
-            this.pictureBox10.TabIndex = 4;
-            this.pictureBox10.TabStop = false;
-            // 
-            // pictureBox5
-            // 
-            this.pictureBox5.Image = global::TiemVaiLucCode.Properties.Resources.OIP_1_;
-            this.pictureBox5.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(171, 103);
-            this.pictureBox5.TabIndex = 4;
-            this.pictureBox5.TabStop = false;
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.Image = global::TiemVaiLucCode.Properties.Resources.dac_diem_vai_cotton_100_1_;
-            this.pictureBox4.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(171, 103);
-            this.pictureBox4.TabIndex = 3;
-            this.pictureBox4.TabStop = false;
-            // 
-            // pictureBox6
-            // 
-            this.pictureBox6.Image = global::TiemVaiLucCode.Properties.Resources.ce3246965a780ea24a50067e9e36e146_1_;
-            this.pictureBox6.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(171, 103);
-            this.pictureBox6.TabIndex = 5;
-            this.pictureBox6.TabStop = false;
-            // 
-            // pictureBox7
-            // 
-            this.pictureBox7.Image = global::TiemVaiLucCode.Properties.Resources._4f5990d4363a41f6346be542e36300c9_1_;
-            this.pictureBox7.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(171, 103);
-            this.pictureBox7.TabIndex = 6;
-            this.pictureBox7.TabStop = false;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = global::TiemVaiLucCode.Properties.Resources.kate_1_1;
-            this.pictureBox3.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(171, 103);
-            this.pictureBox3.TabIndex = 2;
-            this.pictureBox3.TabStop = false;
-            // 
-            // pictureBox8
-            // 
-            this.pictureBox8.Image = global::TiemVaiLucCode.Properties.Resources.image;
-            this.pictureBox8.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(171, 103);
-            this.pictureBox8.TabIndex = 7;
-            this.pictureBox8.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = global::TiemVaiLucCode.Properties.Resources.chiffon1;
-            this.pictureBox2.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(171, 103);
-            this.pictureBox2.TabIndex = 1;
-            this.pictureBox2.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::TiemVaiLucCode.Properties.Resources.LUA_SATIN_1__1_1;
-            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(171, 103);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            // 
             // pictureBox9
             // 
             this.pictureBox9.Image = global::TiemVaiLucCode.Properties.Resources.e2d5dbf16b2bf4a2556004b9f3704d2e_3_;
             this.pictureBox9.Location = new System.Drawing.Point(0, 0);
             this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(1277, 769);
+            this.pictureBox9.Size = new System.Drawing.Size(1277, 782);
             this.pictureBox9.TabIndex = 34;
             this.pictureBox9.TabStop = false;
-            // 
-            // label44
-            // 
-            this.label44.AutoSize = true;
-            this.label44.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label44.ForeColor = System.Drawing.Color.IndianRed;
-            this.label44.Location = new System.Drawing.Point(-402, 148);
-            this.label44.Name = "label44";
-            this.label44.Size = new System.Drawing.Size(77, 19);
-            this.label44.TabIndex = 60;
-            this.label44.Text = "70.000/m";
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox1.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(11, 153);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(147, 28);
-            this.comboBox1.TabIndex = 35;
-            this.comboBox1.Text = "Màu sắc";
-            // 
-            // comboBox2
-            // 
-            this.comboBox2.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox2.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(10, 153);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(147, 28);
-            this.comboBox2.TabIndex = 53;
-            this.comboBox2.Text = "Màu sắc";
-            // 
-            // comboBox3
-            // 
-            this.comboBox3.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox3.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(14, 153);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(147, 28);
-            this.comboBox3.TabIndex = 61;
-            this.comboBox3.Text = "Màu sắc";
-            // 
-            // comboBox4
-            // 
-            this.comboBox4.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox4.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.comboBox4.FormattingEnabled = true;
-            this.comboBox4.Location = new System.Drawing.Point(11, 153);
-            this.comboBox4.Name = "comboBox4";
-            this.comboBox4.Size = new System.Drawing.Size(147, 28);
-            this.comboBox4.TabIndex = 63;
-            this.comboBox4.Text = "Màu sắc";
-            // 
-            // comboBox5
-            // 
-            this.comboBox5.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox5.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.comboBox5.FormattingEnabled = true;
-            this.comboBox5.Location = new System.Drawing.Point(12, 153);
-            this.comboBox5.Name = "comboBox5";
-            this.comboBox5.Size = new System.Drawing.Size(147, 28);
-            this.comboBox5.TabIndex = 65;
-            this.comboBox5.Text = "Màu sắc";
-            // 
-            // comboBox6
-            // 
-            this.comboBox6.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox6.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.comboBox6.FormattingEnabled = true;
-            this.comboBox6.Location = new System.Drawing.Point(12, 151);
-            this.comboBox6.Name = "comboBox6";
-            this.comboBox6.Size = new System.Drawing.Size(147, 28);
-            this.comboBox6.TabIndex = 67;
-            this.comboBox6.Text = "Màu sắc";
-            // 
-            // comboBox7
-            // 
-            this.comboBox7.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox7.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.comboBox7.FormattingEnabled = true;
-            this.comboBox7.Location = new System.Drawing.Point(12, 150);
-            this.comboBox7.Name = "comboBox7";
-            this.comboBox7.Size = new System.Drawing.Size(147, 28);
-            this.comboBox7.TabIndex = 69;
-            this.comboBox7.Text = "Màu sắc";
-            // 
-            // comboBox8
-            // 
-            this.comboBox8.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox8.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.comboBox8.FormattingEnabled = true;
-            this.comboBox8.Location = new System.Drawing.Point(11, 154);
-            this.comboBox8.Name = "comboBox8";
-            this.comboBox8.Size = new System.Drawing.Size(147, 28);
-            this.comboBox8.TabIndex = 53;
-            this.comboBox8.Text = "Màu sắc";
-            // 
-            // comboBox9
-            // 
-            this.comboBox9.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox9.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.comboBox9.FormattingEnabled = true;
-            this.comboBox9.Location = new System.Drawing.Point(12, 154);
-            this.comboBox9.Name = "comboBox9";
-            this.comboBox9.Size = new System.Drawing.Size(147, 28);
-            this.comboBox9.TabIndex = 61;
-            this.comboBox9.Text = "Màu sắc";
-            // 
-            // comboBox10
-            // 
-            this.comboBox10.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox10.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.comboBox10.FormattingEnabled = true;
-            this.comboBox10.Location = new System.Drawing.Point(14, 154);
-            this.comboBox10.Name = "comboBox10";
-            this.comboBox10.Size = new System.Drawing.Size(147, 28);
-            this.comboBox10.TabIndex = 62;
-            this.comboBox10.Text = "Màu sắc";
-            // 
-            // comboBox11
-            // 
-            this.comboBox11.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox11.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.comboBox11.FormattingEnabled = true;
-            this.comboBox11.Location = new System.Drawing.Point(11, 154);
-            this.comboBox11.Name = "comboBox11";
-            this.comboBox11.Size = new System.Drawing.Size(147, 28);
-            this.comboBox11.TabIndex = 63;
-            this.comboBox11.Text = "Màu sắc";
-            // 
-            // comboBox12
-            // 
-            this.comboBox12.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox12.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.comboBox12.FormattingEnabled = true;
-            this.comboBox12.Location = new System.Drawing.Point(13, 154);
-            this.comboBox12.Name = "comboBox12";
-            this.comboBox12.Size = new System.Drawing.Size(147, 28);
-            this.comboBox12.TabIndex = 64;
-            this.comboBox12.Text = "Màu sắc";
-            // 
-            // comboBox13
-            // 
-            this.comboBox13.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox13.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.comboBox13.FormattingEnabled = true;
-            this.comboBox13.Location = new System.Drawing.Point(13, 154);
-            this.comboBox13.Name = "comboBox13";
-            this.comboBox13.Size = new System.Drawing.Size(147, 28);
-            this.comboBox13.TabIndex = 65;
-            this.comboBox13.Text = "Màu sắc";
-            // 
-            // comboBox14
-            // 
-            this.comboBox14.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox14.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.comboBox14.FormattingEnabled = true;
-            this.comboBox14.Location = new System.Drawing.Point(13, 154);
-            this.comboBox14.Name = "comboBox14";
-            this.comboBox14.Size = new System.Drawing.Size(147, 28);
-            this.comboBox14.TabIndex = 66;
-            this.comboBox14.Text = "Màu sắc";
-            // 
-            // comboBox15
-            // 
-            this.comboBox15.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox15.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.comboBox15.FormattingEnabled = true;
-            this.comboBox15.Location = new System.Drawing.Point(11, 151);
-            this.comboBox15.Name = "comboBox15";
-            this.comboBox15.Size = new System.Drawing.Size(147, 28);
-            this.comboBox15.TabIndex = 54;
-            this.comboBox15.Text = "Màu sắc";
-            // 
-            // comboBox16
-            // 
-            this.comboBox16.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox16.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.comboBox16.FormattingEnabled = true;
-            this.comboBox16.Location = new System.Drawing.Point(12, 151);
-            this.comboBox16.Name = "comboBox16";
-            this.comboBox16.Size = new System.Drawing.Size(147, 28);
-            this.comboBox16.TabIndex = 63;
-            this.comboBox16.Text = "Màu sắc";
-            // 
-            // comboBox17
-            // 
-            this.comboBox17.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox17.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.comboBox17.FormattingEnabled = true;
-            this.comboBox17.Location = new System.Drawing.Point(15, 151);
-            this.comboBox17.Name = "comboBox17";
-            this.comboBox17.Size = new System.Drawing.Size(147, 28);
-            this.comboBox17.TabIndex = 65;
-            this.comboBox17.Text = "Màu sắc";
-            // 
-            // comboBox18
-            // 
-            this.comboBox18.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox18.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.comboBox18.FormattingEnabled = true;
-            this.comboBox18.Location = new System.Drawing.Point(11, 151);
-            this.comboBox18.Name = "comboBox18";
-            this.comboBox18.Size = new System.Drawing.Size(147, 28);
-            this.comboBox18.TabIndex = 67;
-            this.comboBox18.Text = "Màu sắc";
-            // 
-            // comboBox19
-            // 
-            this.comboBox19.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox19.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.comboBox19.FormattingEnabled = true;
-            this.comboBox19.Location = new System.Drawing.Point(12, 149);
-            this.comboBox19.Name = "comboBox19";
-            this.comboBox19.Size = new System.Drawing.Size(147, 28);
-            this.comboBox19.TabIndex = 69;
-            this.comboBox19.Text = "Màu sắc";
-            // 
-            // comboBox20
-            // 
-            this.comboBox20.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox20.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.comboBox20.FormattingEnabled = true;
-            this.comboBox20.Location = new System.Drawing.Point(12, 149);
-            this.comboBox20.Name = "comboBox20";
-            this.comboBox20.Size = new System.Drawing.Size(147, 28);
-            this.comboBox20.TabIndex = 71;
-            this.comboBox20.Text = "Màu sắc";
-            // 
-            // comboBox21
-            // 
-            this.comboBox21.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox21.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.comboBox21.FormattingEnabled = true;
-            this.comboBox21.Location = new System.Drawing.Point(12, 149);
-            this.comboBox21.Name = "comboBox21";
-            this.comboBox21.Size = new System.Drawing.Size(147, 28);
-            this.comboBox21.TabIndex = 73;
-            this.comboBox21.Text = "Màu sắc";
             // 
             // Frm_BanHang
             // 
@@ -2031,102 +1977,98 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1298, 598);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.menuStrip1);
             this.Name = "Frm_BanHang";
             this.Text = "Frm_BanHang";
             this.panel21.ResumeLayout(false);
             this.panel21.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown17)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox19)).EndInit();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
             this.panel14.ResumeLayout(false);
             this.panel14.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).EndInit();
             this.panel20.ResumeLayout(false);
             this.panel20.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown18)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox18)).EndInit();
             this.panel13.ResumeLayout(false);
             this.panel13.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
             this.panel18.ResumeLayout(false);
             this.panel18.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown20)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).EndInit();
             this.panel17.ResumeLayout(false);
             this.panel17.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown21)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).EndInit();
             this.panel15.ResumeLayout(false);
             this.panel15.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).EndInit();
             this.panel19.ResumeLayout(false);
             this.panel19.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown19)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox17)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel22.ResumeLayout(false);
             this.panel22.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown16)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox20)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel16.ResumeLayout(false);
             this.panel24.ResumeLayout(false);
             this.panel24.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox22)).EndInit();
             this.panel23.ResumeLayout(false);
             this.panel23.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown15)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox21)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown10)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
             this.panel9.ResumeLayout(false);
             this.panel9.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown11)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.panel8.ResumeLayout(false);
             this.panel8.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.panel10.ResumeLayout(false);
             this.panel10.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown12)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             this.panel11.ResumeLayout(false);
             this.panel11.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown13)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             this.panel7.ResumeLayout(false);
             this.panel7.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.panel12.ResumeLayout(false);
             this.panel12.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown14)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown7)).EndInit();
-            this.menuStrip1.ResumeLayout(false);
-            this.menuStrip1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox17)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox18)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox19)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox20)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox22)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox21)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -2181,12 +2123,6 @@
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox9;
-        private System.Windows.Forms.MenuStrip menuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem bÁNHÀNGToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem kHÁCHHÀNGToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem cALÀMToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem bÁOCÁOCÁNHÂNToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem gIỎHÀNGToolStripMenuItem;
         private System.Windows.Forms.NumericUpDown numericUpDown4;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.NumericUpDown numericUpDown3;

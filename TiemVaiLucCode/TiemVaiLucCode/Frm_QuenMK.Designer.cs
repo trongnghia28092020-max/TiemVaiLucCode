@@ -53,11 +53,11 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(38, 166);
+            this.label2.Location = new System.Drawing.Point(115, 165);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(478, 22);
+            this.label2.Size = new System.Drawing.Size(330, 22);
             this.label2.TabIndex = 1;
-            this.label2.Text = "Đừng lo lắng, hãy nhập email hoặc số điện thoại đã đăng ký";
+            this.label2.Text = "Đừng lo lắng, hãy nhập email đã đăng ký";
             // 
             // label3
             // 
@@ -73,11 +73,11 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(99, 267);
+            this.label4.Location = new System.Drawing.Point(115, 275);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(208, 22);
+            this.label4.Size = new System.Drawing.Size(62, 22);
             this.label4.TabIndex = 4;
-            this.label4.Text = "Email hoặc Số điện thoại";
+            this.label4.Text = "Email ";
             // 
             // txt_QuenMK
             // 
@@ -135,7 +135,7 @@
             this.txt_QuenMK.SolidBorderHoverColor = System.Drawing.Color.Gray;
             this.txt_QuenMK.SolidFillColor = System.Drawing.Color.White;
             this.txt_QuenMK.TabIndex = 5;
-            this.txt_QuenMK.Text = "Nhập Email hoặc số điện thoại";
+            this.txt_QuenMK.Text = "Nhập Email";
             this.txt_QuenMK.TextPadding = new System.Windows.Forms.Padding(16, 0, 6, 0);
             this.txt_QuenMK.ValidationErrorMessage = "Invalid input.";
             this.txt_QuenMK.ValidationFunction = null;
