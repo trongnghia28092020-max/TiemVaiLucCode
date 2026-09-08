@@ -187,3 +187,22 @@ D:\TrongNghia\NAM HOC 25-26\HK3\C#\TiemVaiLucCode\TiemVaiLucCode\TiemVaiLucCode\
 D:\TrongNghia\NAM HOC 25-26\HK3\C#\TiemVaiLucCode\TiemVaiLucCode\TiemVaiLucCode\obj\Debug\TiemVaiLucCode.pdb
 D:\TrongNghia\NAM HOC 25-26\HK3\C#\TiemVaiLucCode\TiemVaiLucCode\TiemVaiLucCode\bin\Debug\TiemVaiLucCode.pdb
 D:\TrongNghia\NAM HOC 25-26\HK3\C#\TiemVaiLucCode\TiemVaiLucCode\TiemVaiLucCode\obj\Debug\TiemVaiLucCode.Frm_DatMK.resources
+D:\HK3_2026\C#\TiemVaiLucCode\TiemVaiLucCode\TiemVaiLucCode\bin\Debug\FontAwesome.Sharp.dll
+D:\HK3_2026\C#\TiemVaiLucCode\TiemVaiLucCode\TiemVaiLucCode\bin\Debug\Microsoft.Bcl.TimeProvider.dll
+D:\HK3_2026\C#\TiemVaiLucCode\TiemVaiLucCode\TiemVaiLucCode\bin\Debug\Microsoft.Extensions.Logging.Abstractions.dll
+D:\HK3_2026\C#\TiemVaiLucCode\TiemVaiLucCode\TiemVaiLucCode\bin\Debug\Microsoft.IdentityModel.Abstractions.dll
+D:\HK3_2026\C#\TiemVaiLucCode\TiemVaiLucCode\TiemVaiLucCode\bin\Debug\Microsoft.IdentityModel.Logging.dll
+D:\HK3_2026\C#\TiemVaiLucCode\TiemVaiLucCode\TiemVaiLucCode\bin\Debug\OpenSSL.PrivateKeyDecoder.dll
+D:\HK3_2026\C#\TiemVaiLucCode\TiemVaiLucCode\TiemVaiLucCode\bin\Debug\OpenSSL.X509Certificate2.Provider.dll
+D:\HK3_2026\C#\TiemVaiLucCode\TiemVaiLucCode\TiemVaiLucCode\bin\Debug\Microsoft.Bcl.TimeProvider.xml
+D:\HK3_2026\C#\TiemVaiLucCode\TiemVaiLucCode\TiemVaiLucCode\bin\Debug\Microsoft.Extensions.Logging.Abstractions.xml
+D:\HK3_2026\C#\TiemVaiLucCode\TiemVaiLucCode\TiemVaiLucCode\bin\Debug\Microsoft.IdentityModel.Abstractions.xml
+D:\HK3_2026\C#\TiemVaiLucCode\TiemVaiLucCode\TiemVaiLucCode\bin\Debug\Microsoft.IdentityModel.Logging.xml
+D:\HK3_2026\C#\TiemVaiLucCode\TiemVaiLucCode\TiemVaiLucCode\bin\Debug\OpenSSL.PrivateKeyDecoder.xml
+D:\HK3_2026\C#\TiemVaiLucCode\TiemVaiLucCode\TiemVaiLucCode\bin\Debug\OpenSSL.X509Certificate2.Provider.xml
+D:\HK3_2026\C#\TiemVaiLucCode\TiemVaiLucCode\TiemVaiLucCode\obj\Debug\TiemVaiLucCode.Form_GioHang.resources
+D:\HK3_2026\C#\TiemVaiLucCode\TiemVaiLucCode\TiemVaiLucCode\obj\Debug\TiemVaiLucCode.Form_GT.resources
+D:\HK3_2026\C#\TiemVaiLucCode\TiemVaiLucCode\TiemVaiLucCode\obj\Debug\TiemVaiLucCode.Form_TC.resources
+D:\HK3_2026\C#\TiemVaiLucCode\TiemVaiLucCode\TiemVaiLucCode\obj\Debug\TiemVaiLucCode.Frm_DatMK.resources
+D:\HK3_2026\C#\TiemVaiLucCode\TiemVaiLucCode\TiemVaiLucCode\obj\Debug\TiemVaiLucCode.Frm_NhapMaXN.resources
+D:\HK3_2026\C#\TiemVaiLucCode\TiemVaiLucCode\TiemVaiLucCode\obj\Debug\TiemVaiLucCode.Frm_QuenMK.resources

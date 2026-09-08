@@ -197,6 +197,12 @@
     <Compile Include="Frm_DatMK.Designer.cs">
       <DependentUpon>Frm_DatMK.cs</DependentUpon>
     </Compile>
+    <Compile Include="Frm_LichSu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_LichSu.Designer.cs">
+      <DependentUpon>Frm_LichSu.cs</DependentUpon>
+    </Compile>
     <Compile Include="Frm_NhapMaXN.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -249,6 +255,7 @@
     <Compile Include="Models\TaiKhoanContext.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <None Include="Resources\Untitled-5%283%29.png" />
     <None Include="Resources\screen2.png" />
     <None Include="Resources\screen1.png" />
     <None Include="Resources\a_high_quality_professional_macro_photograph_of_stacked_premium_fabric_rolls.png" />
@@ -317,6 +324,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Frm_DatMK.resx">
       <DependentUpon>Frm_DatMK.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_LichSu.resx">
+      <DependentUpon>Frm_LichSu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Frm_NhapMaXN.resx">
       <DependentUpon>Frm_NhapMaXN.cs</DependentUpon>

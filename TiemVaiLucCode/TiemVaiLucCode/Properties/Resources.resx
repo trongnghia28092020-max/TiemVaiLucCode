@@ -136,14 +136,8 @@
   <data name="a_high_quality_professional_macro_photograph_of_stacked_premium_fabric_rolls" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\a_high_quality_professional_macro_photograph_of_stacked_premium_fabric_rolls.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="339b738b9298e8d39cc79f8bc28462a6(1)1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\339b738b9298e8d39cc79f8bc28462a6(1)1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="OIP (4)(1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\OIP (4)(1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="4e6df7f7145753d6ac80565ddc17dde1(1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\4e6df7f7145753d6ac80565ddc17dde1(1).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="OIP (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\OIP (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -157,8 +151,8 @@
   <data name="c5393329a022a05e2635b48b85ec59ac(1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\c5393329a022a05e2635b48b85ec59ac(1).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="ren(1)1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ren(1)1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="339b738b9298e8d39cc79f8bc28462a6(1)1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\339b738b9298e8d39cc79f8bc28462a6(1)1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="gam(1)1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\gam(1)1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -184,14 +178,14 @@
   <data name="04242a13461c995de3dc689e0aebbfb8(1)1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\04242a13461c995de3dc689e0aebbfb8(1)1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="bfab1be3f0c8d4a82a53cad16a65a811(1)1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\bfab1be3f0c8d4a82a53cad16a65a811(1)1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="4e6df7f7145753d6ac80565ddc17dde1(1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\4e6df7f7145753d6ac80565ddc17dde1(1).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="04242a13461c995de3dc689e0aebbfb8(1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\04242a13461c995de3dc689e0aebbfb8(1).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Untitled-5(1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Untitled-5(1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="ren(1)1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ren(1)1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="gam(1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\gam(1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -247,20 +241,20 @@
   <data name="thun(1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\thun(1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="kate(1)1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\kate(1)1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="51879b9983492ff976872334545c0817(2)1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\51879b9983492ff976872334545c0817(2)1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="LUA_SATIN" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\LUA_SATIN.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="bfab1be3f0c8d4a82a53cad16a65a811(1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\bfab1be3f0c8d4a82a53cad16a65a811(1).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Untitled-5(1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Untitled-5(1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="ce3246965a780ea24a50067e9e36e146(1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ce3246965a780ea24a50067e9e36e146(1).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="08ddb7c6112813b0a91cb8cd5e26724a(1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\08ddb7c6112813b0a91cb8cd5e26724a(1).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="image" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\image.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -268,17 +262,11 @@
   <data name="warehouse_10112515" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\warehouse_10112515.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="ebcd57b50e556f80c52b6b24c93a9925(1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ebcd57b50e556f80c52b6b24c93a9925(1).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="bfab1be3f0c8d4a82a53cad16a65a811(1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bfab1be3f0c8d4a82a53cad16a65a811(1).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="LUA_SATIN(1)(1)1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\LUA_SATIN(1)(1)1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="ren(1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ren(1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="chiffon(1)1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\chiffon(1)1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="chat-vai-tuytsi" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\chat-vai-tuytsi.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="51879b9983492ff976872334545c0817(2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\51879b9983492ff976872334545c0817(2).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -289,11 +277,17 @@
   <data name="download (1)(2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\download (1)(2).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="LUA_SATIN(1)(1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\LUA_SATIN(1)(1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="c5334a8cabfafeb0418435a4f745a3e8(2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\c5334a8cabfafeb0418435a4f745a3e8(2).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bfab1be3f0c8d4a82a53cad16a65a811(1)1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bfab1be3f0c8d4a82a53cad16a65a811(1)1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="screen" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\screen.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="chiffon(1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\chiffon(1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="e0e8e9a08b536868cf50d5ff19959591(1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\e0e8e9a08b536868cf50d5ff19959591(1).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -307,6 +301,9 @@
   <data name="Screenshot 2026-08-26 130252(1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Screenshot 2026-08-26 130252(1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Screenshot 2026-08-26 130010(1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Screenshot 2026-08-26 130010(1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="dac-diem-vai-cotton-100(1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\dac-diem-vai-cotton-100(1).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -319,8 +316,8 @@
   <data name="vn-11134207-7ra0g-m7jjby1kdxkj95(1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\vn-11134207-7ra0g-m7jjby1kdxkj95(1).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="c5334a8cabfafeb0418435a4f745a3e8(2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\c5334a8cabfafeb0418435a4f745a3e8(2).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="kate(1)1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\kate(1)1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="power_14025449" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\power_14025449.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -331,17 +328,20 @@
   <data name="gam1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\gam1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="screen2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\screen2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="thun(2)1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\thun(2)1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="LUA_SATIN(1)(1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\LUA_SATIN(1)(1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="chiffon(1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\chiffon(1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="vai_hoa_nhi_2_7378dd39f9(1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\vai_hoa_nhi_2_7378dd39f9(1).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Screenshot 2026-08-26 130010(1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Screenshot 2026-08-26 130010(1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="ebcd57b50e556f80c52b6b24c93a9925(1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ebcd57b50e556f80c52b6b24c93a9925(1).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="ebcd57b50e556f80c52b6b24c93a9925(2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ebcd57b50e556f80c52b6b24c93a9925(2).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -352,11 +352,14 @@
   <data name="gam" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\gam.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="08ddb7c6112813b0a91cb8cd5e26724a(1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\08ddb7c6112813b0a91cb8cd5e26724a(1).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="chiffon(1)1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\chiffon(1)1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Untitled-5(2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Untitled-5(2).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ren(1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ren(1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="download (2)(1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\download (2)(1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -391,10 +394,10 @@
   <data name="OIP (3)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\OIP (3).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="chat-vai-tuytsi" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\chat-vai-tuytsi.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="LUA_SATIN(1)(1)1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\LUA_SATIN(1)(1)1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="screen2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\screen2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Untitled-5(3)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Untitled-5(3).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
