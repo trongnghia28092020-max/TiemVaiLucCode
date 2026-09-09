@@ -973,7 +973,7 @@
             this.panel1.Controls.Add(this.pictureBox9);
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1298, 568);
+            this.panel1.Size = new System.Drawing.Size(1279, 841);
             this.panel1.TabIndex = 5;
             // 
             // panel22
@@ -1312,7 +1312,7 @@
             // 
             this.button1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.button1.Location = new System.Drawing.Point(236, 41);
+            this.button1.Location = new System.Drawing.Point(235, 40);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(43, 30);
             this.button1.TabIndex = 0;
@@ -1967,7 +1967,7 @@
             this.pictureBox9.Image = global::TiemVaiLucCode.Properties.Resources.e2d5dbf16b2bf4a2556004b9f3704d2e_3_;
             this.pictureBox9.Location = new System.Drawing.Point(0, 0);
             this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(1277, 782);
+            this.pictureBox9.Size = new System.Drawing.Size(1279, 998);
             this.pictureBox9.TabIndex = 34;
             this.pictureBox9.TabStop = false;
             // 
@@ -1975,7 +1975,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1298, 598);
+            this.ClientSize = new System.Drawing.Size(1280, 875);
             this.Controls.Add(this.panel1);
             this.Name = "Frm_BanHang";
             this.Text = "Frm_BanHang";

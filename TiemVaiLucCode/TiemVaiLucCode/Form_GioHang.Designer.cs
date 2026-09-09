@@ -29,12 +29,6 @@
         private void InitializeComponent()
         {
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.bÁNHÀNGToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.kHÁCHHÀNGToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.cALÀMToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.bÁOCÁOCÁNHÂNToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.gIỎHÀNGToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
@@ -45,57 +39,9 @@
             this.clthanhtien = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // menuStrip1
-            // 
-            this.menuStrip1.BackColor = System.Drawing.Color.Beige;
-            this.menuStrip1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.bÁNHÀNGToolStripMenuItem,
-            this.kHÁCHHÀNGToolStripMenuItem,
-            this.cALÀMToolStripMenuItem,
-            this.bÁOCÁOCÁNHÂNToolStripMenuItem,
-            this.gIỎHÀNGToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1196, 30);
-            this.menuStrip1.TabIndex = 17;
-            this.menuStrip1.Text = "menuStrip1";
-            // 
-            // bÁNHÀNGToolStripMenuItem
-            // 
-            this.bÁNHÀNGToolStripMenuItem.Name = "bÁNHÀNGToolStripMenuItem";
-            this.bÁNHÀNGToolStripMenuItem.Size = new System.Drawing.Size(136, 26);
-            this.bÁNHÀNGToolStripMenuItem.Text = "TRANG CHỦ";
-            // 
-            // kHÁCHHÀNGToolStripMenuItem
-            // 
-            this.kHÁCHHÀNGToolStripMenuItem.Name = "kHÁCHHÀNGToolStripMenuItem";
-            this.kHÁCHHÀNGToolStripMenuItem.Size = new System.Drawing.Size(126, 26);
-            this.kHÁCHHÀNGToolStripMenuItem.Text = "GIỚI THIỆU";
-            // 
-            // cALÀMToolStripMenuItem
-            // 
-            this.cALÀMToolStripMenuItem.Name = "cALÀMToolStripMenuItem";
-            this.cALÀMToolStripMenuItem.Size = new System.Drawing.Size(124, 26);
-            this.cALÀMToolStripMenuItem.Text = "SẢN PHẨM";
-            // 
-            // bÁOCÁOCÁNHÂNToolStripMenuItem
-            // 
-            this.bÁOCÁOCÁNHÂNToolStripMenuItem.Name = "bÁOCÁOCÁNHÂNToolStripMenuItem";
-            this.bÁOCÁOCÁNHÂNToolStripMenuItem.Size = new System.Drawing.Size(209, 26);
-            this.bÁOCÁOCÁNHÂNToolStripMenuItem.Text = "LỊCH SỬ MUA HÀNG";
-            // 
-            // gIỎHÀNGToolStripMenuItem
-            // 
-            this.gIỎHÀNGToolStripMenuItem.Name = "gIỎHÀNGToolStripMenuItem";
-            this.gIỎHÀNGToolStripMenuItem.Size = new System.Drawing.Size(119, 26);
-            this.gIỎHÀNGToolStripMenuItem.Text = "GIỎ HÀNG";
             // 
             // label1
             // 
@@ -206,13 +152,10 @@
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox9);
             this.Name = "Form_GioHang";
             this.Text = "Form_GioHang";
-            this.menuStrip1.ResumeLayout(false);
-            this.menuStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
@@ -221,13 +164,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.MenuStrip menuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem bÁNHÀNGToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem kHÁCHHÀNGToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem cALÀMToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem bÁOCÁOCÁNHÂNToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem gIỎHÀNGToolStripMenuItem;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox9;
         private System.Windows.Forms.DataGridView dataGridView1;

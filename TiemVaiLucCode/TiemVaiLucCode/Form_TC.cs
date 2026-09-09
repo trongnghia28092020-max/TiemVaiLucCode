@@ -81,5 +81,16 @@ namespace TiemVaiLucCode
             // Đẩy pnl_Chinh xuống dưới đáy để lộ ra lại các hình ảnh của trang chủ
             pnl_Chinh.SendToBack();
         }
+
+        private void GioiThieu_ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new Form_GT());
+        }
+
+        private void GioHang_ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new Form_GioHang());
+
+        }
     }
 }

@@ -16,5 +16,10 @@ namespace TiemVaiLucCode
         {
             InitializeComponent();
         }
+
+        private void GioHang_ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
