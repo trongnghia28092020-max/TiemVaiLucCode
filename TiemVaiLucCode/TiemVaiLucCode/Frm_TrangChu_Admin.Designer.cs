@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.panel7 = new System.Windows.Forms.Panel();
             this.siticoneLabel4 = new SiticoneNetFrameworkUI.SiticoneLabel();
@@ -56,8 +57,8 @@
             this.siticoneTextBox2 = new SiticoneNetFrameworkUI.SiticoneTextBox();
             this.siticonePanel6 = new SiticoneNetFrameworkUI.SiticonePanel();
             this.siticonePanel5 = new SiticoneNetFrameworkUI.SiticonePanel();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             this.tableLayoutPanel1.SuspendLayout();
             this.panel7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
@@ -72,7 +73,6 @@
             this.tableLayoutPanel2.SuspendLayout();
             this.siticonePanel1.SuspendLayout();
             this.siticonePanel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -86,6 +86,16 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(225, 679);
             this.panel1.TabIndex = 0;
+            // 
+            // pictureBox6
+            // 
+            this.pictureBox6.Image = global::TiemVaiLucCode.Properties.Resources.screen;
+            this.pictureBox6.Location = new System.Drawing.Point(56, 32);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(100, 100);
+            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox6.TabIndex = 1;
+            this.pictureBox6.TabStop = false;
             // 
             // tableLayoutPanel1
             // 
@@ -236,33 +246,36 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(225, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1305, 53);
+            this.panel2.Size = new System.Drawing.Size(1117, 53);
             this.panel2.TabIndex = 1;
             // 
             // pnl_ManHinhChinh
             // 
-            this.pnl_ManHinhChinh.BackColor = System.Drawing.Color.Moccasin;
+            this.pnl_ManHinhChinh.BackColor = System.Drawing.Color.Transparent;
             this.pnl_ManHinhChinh.Controls.Add(this.pnl_Card_TongQuan);
             this.pnl_ManHinhChinh.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnl_ManHinhChinh.Location = new System.Drawing.Point(225, 53);
             this.pnl_ManHinhChinh.Name = "pnl_ManHinhChinh";
-            this.pnl_ManHinhChinh.Size = new System.Drawing.Size(1305, 626);
+            this.pnl_ManHinhChinh.Size = new System.Drawing.Size(1117, 626);
             this.pnl_ManHinhChinh.TabIndex = 2;
             // 
             // pnl_Card_TongQuan
             // 
             this.pnl_Card_TongQuan.AutoScroll = true;
+            this.pnl_Card_TongQuan.BackgroundImage = global::TiemVaiLucCode.Properties.Resources._9;
+            this.pnl_Card_TongQuan.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pnl_Card_TongQuan.Controls.Add(this.tableLayoutPanel2);
             this.pnl_Card_TongQuan.Controls.Add(this.siticonePanel6);
             this.pnl_Card_TongQuan.Controls.Add(this.siticonePanel5);
             this.pnl_Card_TongQuan.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnl_Card_TongQuan.Location = new System.Drawing.Point(0, 0);
             this.pnl_Card_TongQuan.Name = "pnl_Card_TongQuan";
-            this.pnl_Card_TongQuan.Size = new System.Drawing.Size(1305, 626);
+            this.pnl_Card_TongQuan.Size = new System.Drawing.Size(1117, 626);
             this.pnl_Card_TongQuan.TabIndex = 0;
             // 
             // tableLayoutPanel2
             // 
+            this.tableLayoutPanel2.BackColor = System.Drawing.Color.Transparent;
             this.tableLayoutPanel2.ColumnCount = 4;
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
@@ -277,7 +290,7 @@
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 1;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(1284, 122);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(1096, 122);
             this.tableLayoutPanel2.TabIndex = 10;
             // 
             // siticonePanel1
@@ -319,7 +332,7 @@
             this.siticonePanel1.RippleMaxSize = 600F;
             this.siticonePanel1.RippleSpeed = 15F;
             this.siticonePanel1.ShowBorder = true;
-            this.siticonePanel1.Size = new System.Drawing.Size(315, 116);
+            this.siticonePanel1.Size = new System.Drawing.Size(268, 116);
             this.siticonePanel1.TabIndex = 4;
             this.siticonePanel1.TabStop = true;
             this.siticonePanel1.UseBorderGradient = false;
@@ -379,7 +392,7 @@
             this.siticoneTextBox1.ShadowAnimationDuration = 1;
             this.siticoneTextBox1.ShadowBlur = 10;
             this.siticoneTextBox1.ShadowColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.siticoneTextBox1.Size = new System.Drawing.Size(252, 40);
+            this.siticoneTextBox1.Size = new System.Drawing.Size(205, 40);
             this.siticoneTextBox1.SolidBorderColor = System.Drawing.Color.LightSlateGray;
             this.siticoneTextBox1.SolidBorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(77)))), ((int)(((byte)(255)))));
             this.siticoneTextBox1.SolidBorderHoverColor = System.Drawing.Color.Gray;
@@ -426,7 +439,7 @@
         0F,
         0.5F,
         1F};
-            this.siticonePanel3.Location = new System.Drawing.Point(645, 3);
+            this.siticonePanel3.Location = new System.Drawing.Point(551, 3);
             this.siticonePanel3.Name = "siticonePanel3";
             this.siticonePanel3.PatternColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.siticonePanel3.PatternStyle = System.Drawing.Drawing2D.HatchStyle.LargeGrid;
@@ -436,7 +449,7 @@
             this.siticonePanel3.RippleMaxSize = 600F;
             this.siticonePanel3.RippleSpeed = 15F;
             this.siticonePanel3.ShowBorder = true;
-            this.siticonePanel3.Size = new System.Drawing.Size(315, 116);
+            this.siticonePanel3.Size = new System.Drawing.Size(268, 116);
             this.siticonePanel3.TabIndex = 6;
             this.siticonePanel3.TabStop = true;
             this.siticonePanel3.UseBorderGradient = false;
@@ -471,7 +484,7 @@
         0F,
         0.5F,
         1F};
-            this.siticonePanel4.Location = new System.Drawing.Point(966, 3);
+            this.siticonePanel4.Location = new System.Drawing.Point(825, 3);
             this.siticonePanel4.Name = "siticonePanel4";
             this.siticonePanel4.PatternColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.siticonePanel4.PatternStyle = System.Drawing.Drawing2D.HatchStyle.LargeGrid;
@@ -481,7 +494,7 @@
             this.siticonePanel4.RippleMaxSize = 600F;
             this.siticonePanel4.RippleSpeed = 15F;
             this.siticonePanel4.ShowBorder = true;
-            this.siticonePanel4.Size = new System.Drawing.Size(315, 116);
+            this.siticonePanel4.Size = new System.Drawing.Size(268, 116);
             this.siticonePanel4.TabIndex = 5;
             this.siticonePanel4.TabStop = true;
             this.siticonePanel4.UseBorderGradient = false;
@@ -518,7 +531,7 @@
         0F,
         0.5F,
         1F};
-            this.siticonePanel2.Location = new System.Drawing.Point(324, 3);
+            this.siticonePanel2.Location = new System.Drawing.Point(277, 3);
             this.siticonePanel2.Name = "siticonePanel2";
             this.siticonePanel2.PatternColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.siticonePanel2.PatternStyle = System.Drawing.Drawing2D.HatchStyle.LargeGrid;
@@ -528,7 +541,7 @@
             this.siticonePanel2.RippleMaxSize = 600F;
             this.siticonePanel2.RippleSpeed = 15F;
             this.siticonePanel2.ShowBorder = true;
-            this.siticonePanel2.Size = new System.Drawing.Size(315, 116);
+            this.siticonePanel2.Size = new System.Drawing.Size(268, 116);
             this.siticonePanel2.TabIndex = 7;
             this.siticonePanel2.TabStop = true;
             this.siticonePanel2.UseBorderGradient = false;
@@ -694,28 +707,18 @@
             this.siticonePanel5.UsePatternTexture = false;
             this.siticonePanel5.UseRadialGradient = false;
             // 
-            // pictureBox6
-            // 
-            this.pictureBox6.Image = global::TiemVaiLucCode.Properties.Resources.screen;
-            this.pictureBox6.Location = new System.Drawing.Point(56, 32);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(100, 100);
-            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox6.TabIndex = 1;
-            this.pictureBox6.TabStop = false;
-            // 
             // Frm_TrangChu_Admin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1530, 679);
+            this.ClientSize = new System.Drawing.Size(1342, 679);
             this.Controls.Add(this.pnl_ManHinhChinh);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Name = "Frm_TrangChu_Admin";
             this.Text = "Frm_TrangChu_Admin";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             this.tableLayoutPanel1.ResumeLayout(false);
             this.panel7.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
@@ -732,7 +735,6 @@
             this.siticonePanel1.PerformLayout();
             this.siticonePanel2.ResumeLayout(false);
             this.siticonePanel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             this.ResumeLayout(false);
 
         }

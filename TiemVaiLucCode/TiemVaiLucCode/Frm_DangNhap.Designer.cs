@@ -48,7 +48,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.pnlCardChinh = new System.Windows.Forms.Panel();
             this.pnlCard_DangKy = new SiticoneNetFrameworkUI.SiticonePanel();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cmb_VTro = new System.Windows.Forms.ComboBox();
             this.siticoneTextBox7 = new SiticoneNetFrameworkUI.SiticoneTextBox();
             this.siticoneTextBox6 = new SiticoneNetFrameworkUI.SiticoneTextBox();
             this.siticoneTextBox5 = new SiticoneNetFrameworkUI.SiticoneTextBox();
@@ -566,8 +566,8 @@
             // 
             // pnlCardChinh
             // 
-            this.pnlCardChinh.Controls.Add(this.pnlCard_DangNhap);
             this.pnlCardChinh.Controls.Add(this.pnlCard_DangKy);
+            this.pnlCardChinh.Controls.Add(this.pnlCard_DangNhap);
             this.pnlCardChinh.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pnlCardChinh.Location = new System.Drawing.Point(445, 27);
             this.pnlCardChinh.Name = "pnlCardChinh";
@@ -584,7 +584,7 @@
             this.pnlCard_DangKy.BorderGradientEndColor = System.Drawing.Color.Purple;
             this.pnlCard_DangKy.BorderGradientStartColor = System.Drawing.Color.Blue;
             this.pnlCard_DangKy.BorderThickness = 2F;
-            this.pnlCard_DangKy.Controls.Add(this.comboBox1);
+            this.pnlCard_DangKy.Controls.Add(this.cmb_VTro);
             this.pnlCard_DangKy.Controls.Add(this.siticoneTextBox7);
             this.pnlCard_DangKy.Controls.Add(this.siticoneTextBox6);
             this.pnlCard_DangKy.Controls.Add(this.siticoneTextBox5);
@@ -632,13 +632,14 @@
             this.pnlCard_DangKy.UsePatternTexture = false;
             this.pnlCard_DangKy.UseRadialGradient = false;
             // 
-            // comboBox1
+            // cmb_VTro
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(31, 315);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(310, 28);
-            this.comboBox1.TabIndex = 15;
+            this.cmb_VTro.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmb_VTro.FormattingEnabled = true;
+            this.cmb_VTro.Location = new System.Drawing.Point(31, 315);
+            this.cmb_VTro.Name = "cmb_VTro";
+            this.cmb_VTro.Size = new System.Drawing.Size(310, 30);
+            this.cmb_VTro.TabIndex = 15;
             // 
             // siticoneTextBox7
             // 
@@ -678,8 +679,9 @@
             this.siticoneTextBox7.IsEnabled = true;
             this.siticoneTextBox7.Location = new System.Drawing.Point(30, 428);
             this.siticoneTextBox7.Name = "siticoneTextBox7";
-            this.siticoneTextBox7.PlaceholderColor = System.Drawing.Color.Gray;
-            this.siticoneTextBox7.PlaceholderText = "Enter text here...";
+            this.siticoneTextBox7.PasswordChar = '*';
+            this.siticoneTextBox7.PlaceholderColor = System.Drawing.Color.Red;
+            this.siticoneTextBox7.PlaceholderText = "Vui lòng nhập...";
             this.siticoneTextBox7.ReadOnlyBorderColor1 = System.Drawing.Color.LightGray;
             this.siticoneTextBox7.ReadOnlyBorderColor2 = System.Drawing.Color.LightGray;
             this.siticoneTextBox7.ReadOnlyFillColor1 = System.Drawing.Color.WhiteSmoke;
@@ -738,8 +740,9 @@
             this.siticoneTextBox6.IsEnabled = true;
             this.siticoneTextBox6.Location = new System.Drawing.Point(30, 362);
             this.siticoneTextBox6.Name = "siticoneTextBox6";
-            this.siticoneTextBox6.PlaceholderColor = System.Drawing.Color.Gray;
-            this.siticoneTextBox6.PlaceholderText = "Enter text here...";
+            this.siticoneTextBox6.PasswordChar = '*';
+            this.siticoneTextBox6.PlaceholderColor = System.Drawing.Color.Red;
+            this.siticoneTextBox6.PlaceholderText = "Vui lòng nhập mật khẩu...";
             this.siticoneTextBox6.ReadOnlyBorderColor1 = System.Drawing.Color.LightGray;
             this.siticoneTextBox6.ReadOnlyBorderColor2 = System.Drawing.Color.LightGray;
             this.siticoneTextBox6.ReadOnlyFillColor1 = System.Drawing.Color.WhiteSmoke;
@@ -798,8 +801,9 @@
             this.siticoneTextBox5.IsEnabled = true;
             this.siticoneTextBox5.Location = new System.Drawing.Point(30, 257);
             this.siticoneTextBox5.Name = "siticoneTextBox5";
-            this.siticoneTextBox5.PlaceholderColor = System.Drawing.Color.Gray;
-            this.siticoneTextBox5.PlaceholderText = "Enter text here...";
+            this.siticoneTextBox5.PasswordChar = '\0';
+            this.siticoneTextBox5.PlaceholderColor = System.Drawing.Color.Red;
+            this.siticoneTextBox5.PlaceholderText = "Vui lòng nhập số điện thoại...";
             this.siticoneTextBox5.ReadOnlyBorderColor1 = System.Drawing.Color.LightGray;
             this.siticoneTextBox5.ReadOnlyBorderColor2 = System.Drawing.Color.LightGray;
             this.siticoneTextBox5.ReadOnlyFillColor1 = System.Drawing.Color.WhiteSmoke;
@@ -934,8 +938,9 @@
             this.siticoneTextBox3.IsEnabled = true;
             this.siticoneTextBox3.Location = new System.Drawing.Point(30, 192);
             this.siticoneTextBox3.Name = "siticoneTextBox3";
-            this.siticoneTextBox3.PlaceholderColor = System.Drawing.Color.Gray;
-            this.siticoneTextBox3.PlaceholderText = "Enter text here...";
+            this.siticoneTextBox3.PasswordChar = ' ';
+            this.siticoneTextBox3.PlaceholderColor = System.Drawing.Color.Red;
+            this.siticoneTextBox3.PlaceholderText = "Vui lòng nhập email...";
             this.siticoneTextBox3.ReadOnlyBorderColor1 = System.Drawing.Color.LightGray;
             this.siticoneTextBox3.ReadOnlyBorderColor2 = System.Drawing.Color.LightGray;
             this.siticoneTextBox3.ReadOnlyFillColor1 = System.Drawing.Color.WhiteSmoke;
@@ -994,8 +999,9 @@
             this.siticoneTextBox4.IsEnabled = true;
             this.siticoneTextBox4.Location = new System.Drawing.Point(30, 132);
             this.siticoneTextBox4.Name = "siticoneTextBox4";
-            this.siticoneTextBox4.PlaceholderColor = System.Drawing.Color.Gray;
-            this.siticoneTextBox4.PlaceholderText = "Enter text here...";
+            this.siticoneTextBox4.PasswordChar = ' ';
+            this.siticoneTextBox4.PlaceholderColor = System.Drawing.Color.Red;
+            this.siticoneTextBox4.PlaceholderText = "Vui lòng nhập họ tên...";
             this.siticoneTextBox4.ReadOnlyBorderColor1 = System.Drawing.Color.LightGray;
             this.siticoneTextBox4.ReadOnlyBorderColor2 = System.Drawing.Color.LightGray;
             this.siticoneTextBox4.ReadOnlyFillColor1 = System.Drawing.Color.WhiteSmoke;
@@ -1143,7 +1149,7 @@
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label lbldn;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cmb_VTro;
         private SiticoneNetFrameworkUI.SiticoneTextBox siticoneTextBox7;
         private SiticoneNetFrameworkUI.SiticoneTextBox siticoneTextBox6;
         private SiticoneNetFrameworkUI.SiticoneTextBox siticoneTextBox5;

@@ -16,7 +16,7 @@ namespace TiemVaiLucCode
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form_TC());
+            Application.Run(new Frm_DangNhap());
         }
     }
 }
