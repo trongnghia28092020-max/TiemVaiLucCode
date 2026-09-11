@@ -182,30 +182,50 @@ namespace TiemVaiLucCode
             // Giả sử mình đang dùng Entity Framework (vì mình thấy mình có tạo class Models.TaiKhoan)
             try
             {
-                // LƯU Ý: Thay "Tên_DbContext_Của_Mình" bằng tên file DbContext thực tế trong project của mình nha
                 using (var db = new TaiKhoanContext())
                 {
-                    // Truy vấn kiểm tra: 
-                    // (Tên đăng nhập == taiKhoan HOẶC Email == taiKhoan) VÀ Mật khẩu == matKhau VÀ Vai trò == vaiTro
+                    // BƯỚC 1: Chỉ kiểm tra Tên đăng nhập/Email VÀ Mật khẩu thôi nha
                     var user = db.TaiKhoans.FirstOrDefault(t =>
                         (t.TenDangNhap == taiKhoan || t.Email == taiKhoan) &&
-                        t.MatKhau == matKhau &&
-                        t.VaiTro == vaiTro);
+                        t.MatKhau == matKhau);
 
                     if (user != null)
                     {
-                        // Đăng nhập thành công!
-                        MessageBox.Show($"Đăng nhập thành công! Chào mừng {user.HoTen} nha ❤️", "Tuyệt vời", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        // BƯỚC 2: Đúng tài khoản, đúng pass rồi -> Kiểm tra tiếp Vai trò
+                        if (user.VaiTro == vaiTro)
+                        {
+                            // Mọi thứ hoàn hảo -> Đăng nhập thành công!
+                            MessageBox.Show($"Đăng nhập thành công! Chào mừng {user.HoTen} nha ❤️", "Tuyệt vời", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-                        // Code chuyển form (ẩn form đăng nhập, mở form hệ thống)
-                        this.Hide();
-                        Frm_TrangChu_Admin frmTrangChu = new Frm_TrangChu_Admin();
-                        frmTrangChu.Show();
+                            // Ẩn form đăng nhập
+                            this.Hide();
+
+                            // Chia luồng giao diện
+                            if (user.VaiTro == "Admin")
+                            {
+                                Frm_TrangChu_Admin frmAdmin = new Frm_TrangChu_Admin();
+                                frmAdmin.Show();
+                            }
+                            else if (user.VaiTro == "Khách Hàng")
+                            {
+                                Form_TC frmKhachHang = new Form_TC();
+                                frmKhachHang.Show();
+                            }
+                        }
+                        else
+                        {
+                            // Bắt lỗi rành rành: Đúng pass nhưng chọn sai vai trò
+                            MessageBox.Show($"Mình đang chọn nhầm vai trò đăng nhập rồi! Mình chọn lại cho chuẩn nha.", 
+                                "Sai vai trò nè", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                            cmb_VaiTro.Focus(); // Nhảy con trỏ về ô vai trò cho người ta sửa luôn
+                            TaoMaCaptchaMoi();
+                        }
                     }
                     else
                     {
-                        // Đăng nhập thất bại do sai 1 trong 3 thông tin
-                        MessageBox.Show("Tài khoản, email, mật khẩu hoặc vai trò chưa chính xác. Mình kiểm tra lại nhé!", "Lỗi đăng nhập", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        // BƯỚC 3: Xử lý khi sai tài khoản hoặc sai pass
+                        MessageBox.Show("Email, Tên đăng nhập hoặc mật khẩu chưa chính xác rồi, " +
+                            "mình kiểm tra lại xíu nha!", "Đăng nhập thất bại", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
                 }
             }
@@ -213,6 +233,7 @@ namespace TiemVaiLucCode
             {
                 MessageBox.Show("Có lỗi khi kết nối dữ liệu nè: " + ex.Message, "Lỗi hệ thống", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+            
 
         }
 
@@ -330,7 +351,7 @@ namespace TiemVaiLucCode
                     db.SaveChanges();
 
                     MessageBox.Show("Đăng ký thành công mỹ mãn! Chào mừng mình đến với Tiệm Vải Lực Code nha ❤️", "Thành công", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
+                    LamMoiTrangDangKy();
                     // Đăng ký xong thì tự động lật tấm thẻ về mặt Đăng Nhập cho người ta login luôn
                     pnlCard_DangNhap.BringToFront();
 
@@ -343,6 +364,28 @@ namespace TiemVaiLucCode
             {
                 MessageBox.Show("Có lỗi lúc lưu dữ liệu rồi: " + ex.Message, "Lỗi hệ thống", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+        private void LamMoiTrangDangKy()
+        {
+            // 1. Trả lại chữ mặc định ban đầu cho các ô nhập
+            txt_HoTen.Text = "Họ và Tên";
+            txt_Email.Text = "Email";
+            txt_SoDT.Text = "Số Điện Thoại";
+            txt_MatKhau_DK.Text = "Mật Khẩu";
+            txt_XacNhanMK_DK.Text = "Xác Nhận Mật Khẩu";
+
+            // 2. Xóa ô chọn vai trò
+            cmb_VTro.SelectedIndex = -1;
+            cmb_VTro.Text = "";
+
+            // 3. Reset luôn 2 con mắt về trạng thái nhắm mắt (EyeSlash)
+            txt_MatKhau_DK.UseSystemPasswordChar = true;
+            ipb_IconEye1.IconChar = FontAwesome.Sharp.IconChar.EyeSlash;
+            ipb_IconEye1.IconColor = Color.Gray;
+
+            txt_XacNhanMK_DK.UseSystemPasswordChar = true;
+            ipb_IconEye2.IconChar = FontAwesome.Sharp.IconChar.EyeSlash;
+            ipb_IconEye2.IconColor = Color.Gray;
         }
     }
 }

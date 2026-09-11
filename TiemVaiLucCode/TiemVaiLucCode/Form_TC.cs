@@ -92,5 +92,38 @@ namespace TiemVaiLucCode
             OpenChildForm(new Form_GioHang());
 
         }
+
+        private void DangXuat_ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Frm_DangNhap frmDangNhap = new Frm_DangNhap();
+            frmDangNhap.Show();
+            this.Hide();
+        }
+
+        private void TrungTamTroGiup_ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            // Cấu hình nội dung và tiêu đề
+            string thongBao = "Để được hỗ trợ nhanh nhất, vui lòng gọi đến số hotline của chúng tôi:\n\n" +
+                              "                             0354455312\n\n" +
+                              "Bạn có muốn kết nối cuộc gọi ngay bây giờ không?";
+
+            string tieuDe = "Hotline (Đường dây nóng)";
+
+            // Gọi hộp thoại MessageBox
+            DialogResult ketQua = MessageBox.Show(thongBao, tieuDe, MessageBoxButtons.YesNo, MessageBoxIcon.Information);
+
+            // Xử lý khi bấm nút
+            if (ketQua == DialogResult.Yes)
+            {
+                // Tương đương nút "Gọi"
+                MessageBox.Show("Đang kết nối đến tổng đài 0354455312...", "Đang gọi", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+            }
+            // Nếu bấm "No" thì hộp thoại tự tắt (tương đương nút Quay lại)
+        }
+
+        private void DieuKhoanDieuKien_ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

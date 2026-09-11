@@ -48,6 +48,8 @@
             this.label1 = new System.Windows.Forms.Label();
             this.pnlCardChinh = new System.Windows.Forms.Panel();
             this.pnlCard_DangKy = new SiticoneNetFrameworkUI.SiticonePanel();
+            this.ipb_IconEye2 = new FontAwesome.Sharp.IconPictureBox();
+            this.ipb_IconEye1 = new FontAwesome.Sharp.IconPictureBox();
             this.cmb_VTro = new System.Windows.Forms.ComboBox();
             this.txt_XacNhanMK_DK = new SiticoneNetFrameworkUI.SiticoneTextBox();
             this.txt_MatKhau_DK = new SiticoneNetFrameworkUI.SiticoneTextBox();
@@ -63,8 +65,6 @@
             this.label7 = new System.Windows.Forms.Label();
             this.lbldn = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.ipb_IconEye1 = new FontAwesome.Sharp.IconPictureBox();
-            this.ipb_IconEye2 = new FontAwesome.Sharp.IconPictureBox();
             this.pnlCard_DangNhap.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ipb_IconMat)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptb_TaoMaMoi)).BeginInit();
@@ -72,9 +72,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.pnlCardChinh.SuspendLayout();
             this.pnlCard_DangKy.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ipb_IconEye1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ipb_IconEye2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ipb_IconEye1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // pnlCard_DangNhap
@@ -495,7 +495,7 @@
             this.txt_DangNhap.SolidBorderHoverColor = System.Drawing.Color.Gray;
             this.txt_DangNhap.SolidFillColor = System.Drawing.Color.White;
             this.txt_DangNhap.TabIndex = 7;
-            this.txt_DangNhap.Text = "Email/Tên đăng nhập";
+            this.txt_DangNhap.Text = "Email/tên đăng nhập";
             this.txt_DangNhap.TextPadding = new System.Windows.Forms.Padding(16, 0, 6, 0);
             this.txt_DangNhap.ValidationErrorMessage = "Invalid input.";
             this.txt_DangNhap.ValidationFunction = null;
@@ -570,8 +570,8 @@
             // 
             // pnlCardChinh
             // 
-            this.pnlCardChinh.Controls.Add(this.pnlCard_DangKy);
             this.pnlCardChinh.Controls.Add(this.pnlCard_DangNhap);
+            this.pnlCardChinh.Controls.Add(this.pnlCard_DangKy);
             this.pnlCardChinh.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pnlCardChinh.Location = new System.Drawing.Point(445, 27);
             this.pnlCardChinh.Name = "pnlCardChinh";
@@ -638,6 +638,36 @@
             this.pnlCard_DangKy.UsePatternTexture = false;
             this.pnlCard_DangKy.UseRadialGradient = false;
             // 
+            // ipb_IconEye2
+            // 
+            this.ipb_IconEye2.BackColor = System.Drawing.Color.Transparent;
+            this.ipb_IconEye2.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.ipb_IconEye2.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.ipb_IconEye2.IconColor = System.Drawing.SystemColors.ControlText;
+            this.ipb_IconEye2.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.ipb_IconEye2.IconSize = 30;
+            this.ipb_IconEye2.Location = new System.Drawing.Point(298, 433);
+            this.ipb_IconEye2.Name = "ipb_IconEye2";
+            this.ipb_IconEye2.Size = new System.Drawing.Size(30, 30);
+            this.ipb_IconEye2.TabIndex = 17;
+            this.ipb_IconEye2.TabStop = false;
+            this.ipb_IconEye2.Click += new System.EventHandler(this.ipb_IconEye2_Click);
+            // 
+            // ipb_IconEye1
+            // 
+            this.ipb_IconEye1.BackColor = System.Drawing.Color.Transparent;
+            this.ipb_IconEye1.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.ipb_IconEye1.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.ipb_IconEye1.IconColor = System.Drawing.SystemColors.ControlText;
+            this.ipb_IconEye1.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.ipb_IconEye1.IconSize = 30;
+            this.ipb_IconEye1.Location = new System.Drawing.Point(298, 366);
+            this.ipb_IconEye1.Name = "ipb_IconEye1";
+            this.ipb_IconEye1.Size = new System.Drawing.Size(30, 30);
+            this.ipb_IconEye1.TabIndex = 16;
+            this.ipb_IconEye1.TabStop = false;
+            this.ipb_IconEye1.Click += new System.EventHandler(this.ipb_IconEye1_Click);
+            // 
             // cmb_VTro
             // 
             this.cmb_VTro.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -681,8 +711,8 @@
             this.txt_XacNhanMK_DK.EnableDropShadow = false;
             this.txt_XacNhanMK_DK.FillColor1 = System.Drawing.Color.White;
             this.txt_XacNhanMK_DK.FillColor2 = System.Drawing.Color.White;
-            this.txt_XacNhanMK_DK.Font = new System.Drawing.Font("Segoe UI", 9.5F);
-            this.txt_XacNhanMK_DK.ForeColor = System.Drawing.Color.DimGray;
+            this.txt_XacNhanMK_DK.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_XacNhanMK_DK.ForeColor = System.Drawing.Color.Black;
             this.txt_XacNhanMK_DK.HoverBorderColor1 = System.Drawing.Color.Gray;
             this.txt_XacNhanMK_DK.HoverBorderColor2 = System.Drawing.Color.Gray;
             this.txt_XacNhanMK_DK.IsEnabled = true;
@@ -742,8 +772,8 @@
             this.txt_MatKhau_DK.EnableDropShadow = false;
             this.txt_MatKhau_DK.FillColor1 = System.Drawing.Color.White;
             this.txt_MatKhau_DK.FillColor2 = System.Drawing.Color.White;
-            this.txt_MatKhau_DK.Font = new System.Drawing.Font("Segoe UI", 9.5F);
-            this.txt_MatKhau_DK.ForeColor = System.Drawing.Color.DimGray;
+            this.txt_MatKhau_DK.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_MatKhau_DK.ForeColor = System.Drawing.Color.Black;
             this.txt_MatKhau_DK.HoverBorderColor1 = System.Drawing.Color.Gray;
             this.txt_MatKhau_DK.HoverBorderColor2 = System.Drawing.Color.Gray;
             this.txt_MatKhau_DK.IsEnabled = true;
@@ -803,8 +833,8 @@
             this.txt_SoDT.EnableDropShadow = false;
             this.txt_SoDT.FillColor1 = System.Drawing.Color.White;
             this.txt_SoDT.FillColor2 = System.Drawing.Color.White;
-            this.txt_SoDT.Font = new System.Drawing.Font("Segoe UI", 9.5F);
-            this.txt_SoDT.ForeColor = System.Drawing.Color.DimGray;
+            this.txt_SoDT.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_SoDT.ForeColor = System.Drawing.Color.Black;
             this.txt_SoDT.HoverBorderColor1 = System.Drawing.Color.Gray;
             this.txt_SoDT.HoverBorderColor2 = System.Drawing.Color.Gray;
             this.txt_SoDT.IsEnabled = true;
@@ -941,8 +971,8 @@
             this.txt_Email.EnableDropShadow = false;
             this.txt_Email.FillColor1 = System.Drawing.Color.White;
             this.txt_Email.FillColor2 = System.Drawing.Color.White;
-            this.txt_Email.Font = new System.Drawing.Font("Segoe UI", 9.5F);
-            this.txt_Email.ForeColor = System.Drawing.Color.DimGray;
+            this.txt_Email.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_Email.ForeColor = System.Drawing.Color.Black;
             this.txt_Email.HoverBorderColor1 = System.Drawing.Color.Gray;
             this.txt_Email.HoverBorderColor2 = System.Drawing.Color.Gray;
             this.txt_Email.IsEnabled = true;
@@ -1002,8 +1032,8 @@
             this.txt_HoTen.EnableDropShadow = false;
             this.txt_HoTen.FillColor1 = System.Drawing.Color.White;
             this.txt_HoTen.FillColor2 = System.Drawing.Color.White;
-            this.txt_HoTen.Font = new System.Drawing.Font("Segoe UI", 9.5F);
-            this.txt_HoTen.ForeColor = System.Drawing.Color.DimGray;
+            this.txt_HoTen.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_HoTen.ForeColor = System.Drawing.Color.Black;
             this.txt_HoTen.HoverBorderColor1 = System.Drawing.Color.Gray;
             this.txt_HoTen.HoverBorderColor2 = System.Drawing.Color.Gray;
             this.txt_HoTen.IsEnabled = true;
@@ -1105,44 +1135,14 @@
             this.panel1.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(403, 688);
+            this.panel1.Size = new System.Drawing.Size(403, 725);
             this.panel1.TabIndex = 0;
-            // 
-            // ipb_IconEye1
-            // 
-            this.ipb_IconEye1.BackColor = System.Drawing.Color.Transparent;
-            this.ipb_IconEye1.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.ipb_IconEye1.IconChar = FontAwesome.Sharp.IconChar.None;
-            this.ipb_IconEye1.IconColor = System.Drawing.SystemColors.ControlText;
-            this.ipb_IconEye1.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.ipb_IconEye1.IconSize = 30;
-            this.ipb_IconEye1.Location = new System.Drawing.Point(298, 366);
-            this.ipb_IconEye1.Name = "ipb_IconEye1";
-            this.ipb_IconEye1.Size = new System.Drawing.Size(30, 30);
-            this.ipb_IconEye1.TabIndex = 16;
-            this.ipb_IconEye1.TabStop = false;
-            this.ipb_IconEye1.Click += new System.EventHandler(this.ipb_IconEye1_Click);
-            // 
-            // ipb_IconEye2
-            // 
-            this.ipb_IconEye2.BackColor = System.Drawing.Color.Transparent;
-            this.ipb_IconEye2.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.ipb_IconEye2.IconChar = FontAwesome.Sharp.IconChar.None;
-            this.ipb_IconEye2.IconColor = System.Drawing.SystemColors.ControlText;
-            this.ipb_IconEye2.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.ipb_IconEye2.IconSize = 30;
-            this.ipb_IconEye2.Location = new System.Drawing.Point(298, 433);
-            this.ipb_IconEye2.Name = "ipb_IconEye2";
-            this.ipb_IconEye2.Size = new System.Drawing.Size(30, 30);
-            this.ipb_IconEye2.TabIndex = 17;
-            this.ipb_IconEye2.TabStop = false;
-            this.ipb_IconEye2.Click += new System.EventHandler(this.ipb_IconEye2_Click);
             // 
             // Frm_DangNhap
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(878, 675);
+            this.ClientSize = new System.Drawing.Size(878, 719);
             this.Controls.Add(this.pnlCardChinh);
             this.Controls.Add(this.panel1);
             this.Name = "Frm_DangNhap";
@@ -1157,9 +1157,9 @@
             this.pnlCardChinh.ResumeLayout(false);
             this.pnlCard_DangKy.ResumeLayout(false);
             this.pnlCard_DangKy.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ipb_IconEye1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ipb_IconEye2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ipb_IconEye1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
 
         }
