@@ -233,6 +233,12 @@
     <Compile Include="Frm_TT_KhachHang.Designer.cs">
       <DependentUpon>Frm_TT_KhachHang.cs</DependentUpon>
     </Compile>
+    <Compile Include="Frm_ĐKhoan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_ĐKhoan.Designer.cs">
+      <DependentUpon>Frm_ĐKhoan.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\202608140345430_InitialCreate.cs" />
     <Compile Include="Migrations\202608140345430_InitialCreate.Designer.cs">
       <DependentUpon>202608140345430_InitialCreate.cs</DependentUpon>
@@ -261,6 +267,8 @@
     <Compile Include="Models\TaiKhoanContext.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <None Include="Resources\d838c3b573f1de371427824b4b3b0f4f%282%29.jpg" />
+    <None Include="Resources\d838c3b573f1de371427824b4b3b0f4f%281%29.jpg" />
     <None Include="Resources\Untitled-5%283%29.png" />
     <None Include="Resources\screen2.png" />
     <None Include="Resources\screen1.png" />
@@ -345,6 +353,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Frm_TT_KhachHang.resx">
       <DependentUpon>Frm_TT_KhachHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_ĐKhoan.resx">
+      <DependentUpon>Frm_ĐKhoan.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202608140345430_InitialCreate.resx">
       <DependentUpon>202608140345430_InitialCreate.cs</DependentUpon>

@@ -1,0 +1,155 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="richTextBox1.Text" xml:space="preserve">
+    <value>ĐIỀU KHOẢN VÀ ĐIỀU KIỆN SỬ DỤNG 
+Website: Tiệm Vải Lực Code
+Ngày hiệu lực: Ngày 17 tháng 08 năm 2026.
+Chào mừng bạn đến với Tiệm Vải Lực Code! Việc bạn truy cập và mua sắm tại website của chúng tôi đồng nghĩa với việc bạn đã đọc, hiểu và đồng ý với các điều khoản dưới 
+đây. Xin vui lòng đọc kỹ nhé!
+Điều 1. Định nghĩa và Diễn giải
+"Tiệm Vải Lực Code": Là website thương mại điện tử chuyên cung cấp các loại vải chất lượng cao do chúng tôi sở hữu và vận hành. "Người dùng": Là những cá nhân, tổ chức 
+truy cập vào website, thực hiện các thao tác tham khảo thông tin hoặc mua sắm sản phẩm. "Sản phẩm": Là các mặt hàng vải vóc, phụ liệu may mặc và các hàng hóa khác
+được trưng bày, bán trên website Tiệm Vải Lực Code.
+
+Điều 2. Những quy định chung
+Các điều khoản này là thỏa thuận pháp lý giữa bạn và Tiệm Vải Lực Code. Bằng việc sử dụng trang web, bạn cam kết tuân thủ mọi quy định được nêu tại đây. Tiệm Vải Lực Code 
+có quyền thay đổi, chỉnh sửa, thêm hoặc lược bỏ bất kỳ phần nào trong Điều Khoản và Điều Kiện này vào bất cứ lúc nào mà không cần thông báo trước. Các thay đổi sẽ có hiệu
+lực ngay khi được đăng tải trên trang web. Nếu bạn tiếp tục sử dụng web sau khi có thay đổi, điều đó có nghĩa là bạn chấp nhận những thay đổi đó.
+
+Điều 3. Chính sách tài khoản người dùng
+Để trải nghiệm mua sắm tốt nhất, bạn có thể đăng ký tài khoản trên website. Bạn cần cung cấp thông tin chính xác, đầy đủ và tự chịu trách nhiệm cập nhật thông tin khi có thay đổi.
+Bạn có trách nhiệm bảo mật mật khẩu và tài khoản của mình. Mọi hoạt động diễn ra dưới tài khoản của bạn sẽ do bạn chịu trách nhiệm hoàn toàn. Nếu Tiệm Vải Lực Code phát hiện 
+tài khoản của bạn có dấu hiệu gian lận, phá hoại hoặc vi phạm pháp luật, chúng tôi có quyền khóa hoặc xóa tài khoản vĩnh viễn mà không cần báo trước.
+
+Điều 4. Chính sách giao hàng
+Phạm vi giao hàng: Tiệm Vải Lực Code hỗ trợ giao hàng tận nơi trên toàn quốc.
+Thời gian giao hàng: Thời gian giao hàng dự kiến sẽ được thông báo cụ thể khi bạn chốt đơn (thường từ 2-5 ngày làm việc tùy khu vực). Tuy nhiên, đôi khi có thể trễ chút xíu do thời 
+tiết hoặc các yếu tố khách quan mong khách hàng thông cảm.
+Phí vận chuyển: Phí vận chuyển sẽ được tính toán dựa trên khối lượng đơn hàng và địa chỉ nhận hàng của bạn. Phí này sẽ hiển thị rõ ràng trước khi bạn hoàn tất thanh toán.
+Kiểm hàng: Bạn vui lòng kiểm tra kỹ tình trạng gói hàng và số lượng vải trước khi ký nhận. Nếu có bất kỳ vấn đề gì (rách, ướt, sai mẫu), hãy liên hệ ngay với hotline của chúng tôi để 
+được giải quyết nha.
+
+Điều 5. Phương thức thanh toán
+Tiệm Vải Lực Code cung cấp nhiều hình thức thanh toán linh hoạt để bạn dễ dàng lựa chọn:
+Thanh toán khi nhận hàng (COD): Bạn nhận hàng, kiểm tra ưng ý rồi mới thanh toán tiền mặt cho shipper.
+Thanh toán chuyển khoản ngân hàng: Chuyển khoản trực tiếp vào tài khoản ngân hàng của Tiệm Vải Lực Code (Thông tin số tài khoản sẽ được cung cấp ở bước thanh toán). Đơn hàng 
+sẽ được xử lý ngay sau khi chúng tôi nhận được tiền.</value>
+  </data>
+</root>
