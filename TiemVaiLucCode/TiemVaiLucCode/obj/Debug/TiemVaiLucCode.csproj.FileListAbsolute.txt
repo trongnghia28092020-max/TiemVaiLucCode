@@ -211,3 +211,5 @@ D:\TrongNghia\NAM HOC 25-26\HK3\C#\TiemVaiLucCode\TiemVaiLucCode\TiemVaiLucCode\
 D:\TrongNghia\NAM HOC 25-26\HK3\C#\TiemVaiLucCode\TiemVaiLucCode\TiemVaiLucCode\obj\Debug\TiemVaiLucCode.pdb
 D:\HK3_2026\C#\TiemVaiLucCode\TiemVaiLucCode\TiemVaiLucCode\bin\Debug\Guna.UI2.dll
 D:\HK3_2026\C#\TiemVaiLucCode\TiemVaiLucCode\TiemVaiLucCode\obj\Debug\TiemVaiLucCode.Frm_ĐKhoan.resources
+D:\TrongNghia\NAM HOC 25-26\HK3\C#\TiemVaiLucCode\TiemVaiLucCode\TiemVaiLucCode\bin\Debug\System.ValueTuple.dll
+D:\TrongNghia\NAM HOC 25-26\HK3\C#\TiemVaiLucCode\TiemVaiLucCode\TiemVaiLucCode\obj\Debug\TiemVaiLucCode.Frm_ĐKhoan.resources

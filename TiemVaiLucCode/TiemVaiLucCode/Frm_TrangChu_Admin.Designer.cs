@@ -134,13 +134,13 @@
             this.siticoneLabel4.Name = "siticoneLabel4";
             this.siticoneLabel4.Size = new System.Drawing.Size(137, 46);
             this.siticoneLabel4.TabIndex = 0;
-            this.siticoneLabel4.Text = "Khách Hàng";
+            this.siticoneLabel4.Text = "Sản Phẩm";
             this.siticoneLabel4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // pictureBox4
             // 
             this.pictureBox4.Dock = System.Windows.Forms.DockStyle.Left;
-            this.pictureBox4.Image = global::TiemVaiLucCode.Properties.Resources.man_15647384;
+            this.pictureBox4.Image = global::TiemVaiLucCode.Properties.Resources.best_product_10112502;
             this.pictureBox4.Location = new System.Drawing.Point(0, 0);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(48, 46);

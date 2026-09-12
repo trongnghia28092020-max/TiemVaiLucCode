@@ -19,7 +19,7 @@ namespace TiemVaiLucCode.Properties {
     // class via a tool like ResGen or Visual Studio.
     // To add or remove a member, edit your .ResX file then rerun ResGen
     // with the /str option, or rebuild your VS project.
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "17.0.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "18.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     internal class Resources {
@@ -163,6 +163,16 @@ namespace TiemVaiLucCode.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _4 {
+            get {
+                object obj = ResourceManager.GetObject("4", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _4e6df7f7145753d6ac80565ddc17dde1_1_ {
             get {
                 object obj = ResourceManager.GetObject("4e6df7f7145753d6ac80565ddc17dde1(1)", resourceCulture);
@@ -236,6 +246,16 @@ namespace TiemVaiLucCode.Properties {
         internal static System.Drawing.Bitmap apps_11319676 {
             get {
                 object obj = ResourceManager.GetObject("apps_11319676", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap best_product_10112502 {
+            get {
+                object obj = ResourceManager.GetObject("best-product_10112502", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

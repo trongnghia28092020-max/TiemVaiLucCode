@@ -191,6 +191,12 @@
     <Compile Include="Frm_BanHang.Designer.cs">
       <DependentUpon>Frm_BanHang.cs</DependentUpon>
     </Compile>
+    <Compile Include="Frm_Card_SanPham.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Card_SanPham.Designer.cs">
+      <DependentUpon>Frm_Card_SanPham.cs</DependentUpon>
+    </Compile>
     <Compile Include="Frm_DangNhap.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -267,6 +273,13 @@
     <Compile Include="Models\TaiKhoanContext.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TiemVaiDBDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TiemVaiDBDataSet.xsd</DependentUpon>
+    </Compile>
+    <None Include="Resources\best-product_10112502.png" />
+    <None Include="Resources\4.jpg" />
     <None Include="Resources\d838c3b573f1de371427824b4b3b0f4f%282%29.jpg" />
     <None Include="Resources\d838c3b573f1de371427824b4b3b0f4f%281%29.jpg" />
     <None Include="Resources\Untitled-5%283%29.png" />
@@ -333,6 +346,9 @@
     <EmbeddedResource Include="Frm_BanHang.resx">
       <DependentUpon>Frm_BanHang.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Card_SanPham.resx">
+      <DependentUpon>Frm_Card_SanPham.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Frm_DangNhap.resx">
       <DependentUpon>Frm_DangNhap.cs</DependentUpon>
     </EmbeddedResource>
@@ -394,6 +410,17 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="TiemVaiDBDataSet.xsc">
+      <DependentUpon>TiemVaiDBDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="TiemVaiDBDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TiemVaiDBDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TiemVaiDBDataSet.xss">
+      <DependentUpon>TiemVaiDBDataSet.xsd</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

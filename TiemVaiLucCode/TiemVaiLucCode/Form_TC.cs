@@ -123,7 +123,7 @@ namespace TiemVaiLucCode
 
         private void DieuKhoanDieuKien_ToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            OpenChildForm(new Frm_ĐKhoan());
         }
     }
 }

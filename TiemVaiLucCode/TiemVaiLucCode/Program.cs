@@ -16,7 +16,7 @@ namespace TiemVaiLucCode
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Frm_ĐKhoan());
+            Application.Run(new Frm_TrangChu_Admin());
         }
     }
 }

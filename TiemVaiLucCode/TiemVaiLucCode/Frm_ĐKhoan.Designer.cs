@@ -32,8 +32,8 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label33 = new System.Windows.Forms.Label();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.label33 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -63,10 +63,21 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.LightYellow;
             this.panel1.Controls.Add(this.richTextBox1);
-            this.panel1.Location = new System.Drawing.Point(42, 130);
+            this.panel1.Location = new System.Drawing.Point(52, 143);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1195, 706);
+            this.panel1.Size = new System.Drawing.Size(1195, 517);
             this.panel1.TabIndex = 18;
+            // 
+            // richTextBox1
+            // 
+            this.richTextBox1.BackColor = System.Drawing.Color.LightGoldenrodYellow;
+            this.richTextBox1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.richTextBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.richTextBox1.Location = new System.Drawing.Point(16, 28);
+            this.richTextBox1.Name = "richTextBox1";
+            this.richTextBox1.Size = new System.Drawing.Size(1160, 635);
+            this.richTextBox1.TabIndex = 2;
+            this.richTextBox1.Text = resources.GetString("richTextBox1.Text");
             // 
             // label33
             // 
@@ -80,22 +91,11 @@
             this.label33.TabIndex = 60;
             this.label33.Text = "_Tiệm vải Lực Code_";
             // 
-            // richTextBox1
-            // 
-            this.richTextBox1.BackColor = System.Drawing.Color.LightGoldenrodYellow;
-            this.richTextBox1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.richTextBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.richTextBox1.Location = new System.Drawing.Point(16, 28);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(1160, 635);
-            this.richTextBox1.TabIndex = 2;
-            this.richTextBox1.Text = resources.GetString("richTextBox1.Text");
-            // 
             // Frm_ĐKhoan
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1280, 875);
+            this.ClientSize = new System.Drawing.Size(1280, 699);
             this.Controls.Add(this.label33);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label1);
