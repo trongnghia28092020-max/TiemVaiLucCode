@@ -10,7 +10,7 @@ namespace TiemVaiLucCode.Models
     public class DanhMuc
     {
         [Key]
-        public int DanhMucId { get; set; }
+        public int MaDanhMuc { get; set; }
 
         [Required]
         [StringLength(100)]

@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "D:\\TrongNghia\\NAM HOC 25-26\\HK3\\C#\\TiemVaiLucCode\\TiemVaiLucCode\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3B53399B-D810-489D-A863-3E70C3BE2551}|TiemVaiLucCode\\TiemVaiLucCode.csproj|d:\\trongnghia\\nam hoc 25-26\\hk3\\c#\\tiemvailuccode\\tiemvailuccode\\tiemvailuccode\\frm_card_khachhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{3B53399B-D810-489D-A863-3E70C3BE2551}|TiemVaiLucCode\\TiemVaiLucCode.csproj|solutionrelative:tiemvailuccode\\frm_card_khachhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{3B53399B-D810-489D-A863-3E70C3BE2551}|TiemVaiLucCode\\TiemVaiLucCode.csproj|D:\\TrongNghia\\NAM HOC 25-26\\HK3\\C#\\TiemVaiLucCode\\TiemVaiLucCode\\tiemvailuccode\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3B53399B-D810-489D-A863-3E70C3BE2551}|TiemVaiLucCode\\TiemVaiLucCode.csproj|solutionrelative:tiemvailuccode\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3B53399B-D810-489D-A863-3E70C3BE2551}|TiemVaiLucCode\\TiemVaiLucCode.csproj|d:\\trongnghia\\nam hoc 25-26\\hk3\\c#\\tiemvailuccode\\tiemvailuccode\\tiemvailuccode\\frm_trangchu_admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{3B53399B-D810-489D-A863-3E70C3BE2551}|TiemVaiLucCode\\TiemVaiLucCode.csproj|solutionrelative:tiemvailuccode\\frm_trangchu_admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3B53399B-D810-489D-A863-3E70C3BE2551}|TiemVaiLucCode\\TiemVaiLucCode.csproj|D:\\TrongNghia\\NAM HOC 25-26\\HK3\\C#\\TiemVaiLucCode\\TiemVaiLucCode\\tiemvailuccode\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3B53399B-D810-489D-A863-3E70C3BE2551}|TiemVaiLucCode\\TiemVaiLucCode.csproj|solutionrelative:tiemvailuccode\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3B53399B-D810-489D-A863-3E70C3BE2551}|TiemVaiLucCode\\TiemVaiLucCode.csproj|d:\\trongnghia\\nam hoc 25-26\\hk3\\c#\\tiemvailuccode\\tiemvailuccode\\tiemvailuccode\\frm_dangnhap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{3B53399B-D810-489D-A863-3E70C3BE2551}|TiemVaiLucCode\\TiemVaiLucCode.csproj|solutionrelative:tiemvailuccode\\frm_dangnhap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -30,14 +30,14 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Frm_Card_KhachHang.cs [Design]",
-              "DocumentMoniker": "D:\\TrongNghia\\NAM HOC 25-26\\HK3\\C#\\TiemVaiLucCode\\TiemVaiLucCode\\TiemVaiLucCode\\Frm_Card_KhachHang.cs",
-              "RelativeDocumentMoniker": "TiemVaiLucCode\\Frm_Card_KhachHang.cs",
-              "ToolTip": "D:\\TrongNghia\\NAM HOC 25-26\\HK3\\C#\\TiemVaiLucCode\\TiemVaiLucCode\\TiemVaiLucCode\\Frm_Card_KhachHang.cs [Design]",
-              "RelativeToolTip": "TiemVaiLucCode\\Frm_Card_KhachHang.cs [Design]",
+              "DocumentIndex": 2,
+              "Title": "Frm_DangNhap.cs [Design]",
+              "DocumentMoniker": "D:\\TrongNghia\\NAM HOC 25-26\\HK3\\C#\\TiemVaiLucCode\\TiemVaiLucCode\\TiemVaiLucCode\\Frm_DangNhap.cs",
+              "RelativeDocumentMoniker": "TiemVaiLucCode\\Frm_DangNhap.cs",
+              "ToolTip": "D:\\TrongNghia\\NAM HOC 25-26\\HK3\\C#\\TiemVaiLucCode\\TiemVaiLucCode\\TiemVaiLucCode\\Frm_DangNhap.cs [Design]",
+              "RelativeToolTip": "TiemVaiLucCode\\Frm_DangNhap.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-12T07:28:45.761Z",
+              "WhenOpened": "2026-09-13T12:05:23.663Z",
               "EditorCaption": " [Design]"
             },
             {
@@ -49,20 +49,21 @@
               "ToolTip": "D:\\TrongNghia\\NAM HOC 25-26\\HK3\\C#\\TiemVaiLucCode\\TiemVaiLucCode\\TiemVaiLucCode\\Frm_TrangChu_Admin.cs [Design]",
               "RelativeToolTip": "TiemVaiLucCode\\Frm_TrangChu_Admin.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-12T06:34:09.167Z",
+              "WhenOpened": "2026-09-13T12:01:54.667Z",
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\TrongNghia\\NAM HOC 25-26\\HK3\\C#\\TiemVaiLucCode\\TiemVaiLucCode\\TiemVaiLucCode\\Program.cs",
               "RelativeDocumentMoniker": "TiemVaiLucCode\\Program.cs",
-              "ToolTip": "D:\\TrongNghia\\NAM HOC 25-26\\HK3\\C#\\TiemVaiLucCode\\TiemVaiLucCode\\TiemVaiLucCode\\Program.cs",
-              "RelativeToolTip": "TiemVaiLucCode\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAyAAAAAAAAAA==",
+              "ToolTip": "D:\\TrongNghia\\NAM HOC 25-26\\HK3\\C#\\TiemVaiLucCode\\TiemVaiLucCode\\TiemVaiLucCode\\Program.cs*",
+              "RelativeToolTip": "TiemVaiLucCode\\Program.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-11T12:23:08.191Z"
+              "WhenOpened": "2026-09-11T12:23:08.191Z",
+              "EditorCaption": ""
             }
           ]
         }

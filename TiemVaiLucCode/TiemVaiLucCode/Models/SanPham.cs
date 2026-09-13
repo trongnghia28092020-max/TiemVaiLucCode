@@ -11,7 +11,7 @@ namespace TiemVaiLucCode.Models
     public class SanPham
     {
         [Key]
-        public int SanPhamId { get; set; }
+        public int MaSanPham { get; set; }
 
         [Required]
         [StringLength(150)]

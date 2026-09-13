@@ -709,12 +709,14 @@
             // 
             // Frm_TrangChu_Admin
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.ClientSize = new System.Drawing.Size(1342, 679);
             this.Controls.Add(this.pnl_ManHinhChinh);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximumSize = new System.Drawing.Size(1360, 726);
+            this.MinimumSize = new System.Drawing.Size(1360, 726);
             this.Name = "Frm_TrangChu_Admin";
             this.Text = "Frm_TrangChu_Admin";
             this.panel1.ResumeLayout(false);

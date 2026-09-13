@@ -199,10 +199,6 @@ D:\TrongNghia\NAM HOC 25-26\HK3\C#\TiemVaiLucCode\TiemVaiLucCode\TiemVaiLucCode\
 D:\TrongNghia\NAM HOC 25-26\HK3\C#\TiemVaiLucCode\TiemVaiLucCode\TiemVaiLucCode\obj\Debug\TiemVaiLucCode.Frm_QuenMK.resources
 D:\TrongNghia\NAM HOC 25-26\HK3\C#\TiemVaiLucCode\TiemVaiLucCode\TiemVaiLucCode\obj\Debug\TiemVaiLucCode.Frm_TrangChu_Admin.resources
 D:\TrongNghia\NAM HOC 25-26\HK3\C#\TiemVaiLucCode\TiemVaiLucCode\TiemVaiLucCode\obj\Debug\TiemVaiLucCode.Frm_TT_KhachHang.resources
-D:\TrongNghia\NAM HOC 25-26\HK3\C#\TiemVaiLucCode\TiemVaiLucCode\TiemVaiLucCode\obj\Debug\TiemVaiLucCode.Migrations.InitialCreate.resources
-D:\TrongNghia\NAM HOC 25-26\HK3\C#\TiemVaiLucCode\TiemVaiLucCode\TiemVaiLucCode\obj\Debug\TiemVaiLucCode.Migrations.InitialCreate1.resources
-D:\TrongNghia\NAM HOC 25-26\HK3\C#\TiemVaiLucCode\TiemVaiLucCode\TiemVaiLucCode\obj\Debug\TiemVaiLucCode.Migrations.ThemBangDonHangVaChiTiet.resources
-D:\TrongNghia\NAM HOC 25-26\HK3\C#\TiemVaiLucCode\TiemVaiLucCode\TiemVaiLucCode\obj\Debug\TiemVaiLucCode.Migrations.ThemBangNhanVien.resources
 D:\TrongNghia\NAM HOC 25-26\HK3\C#\TiemVaiLucCode\TiemVaiLucCode\TiemVaiLucCode\obj\Debug\TiemVaiLucCode.Properties.Resources.resources
 D:\TrongNghia\NAM HOC 25-26\HK3\C#\TiemVaiLucCode\TiemVaiLucCode\TiemVaiLucCode\obj\Debug\TiemVaiLucCode.csproj.GenerateResource.cache
 D:\TrongNghia\NAM HOC 25-26\HK3\C#\TiemVaiLucCode\TiemVaiLucCode\TiemVaiLucCode\obj\Debug\TiemVaiLucCode.csproj.CoreCompileInputs.cache
@@ -213,3 +209,5 @@ D:\HK3_2026\C#\TiemVaiLucCode\TiemVaiLucCode\TiemVaiLucCode\bin\Debug\Guna.UI2.d
 D:\HK3_2026\C#\TiemVaiLucCode\TiemVaiLucCode\TiemVaiLucCode\obj\Debug\TiemVaiLucCode.Frm_ĐKhoan.resources
 D:\TrongNghia\NAM HOC 25-26\HK3\C#\TiemVaiLucCode\TiemVaiLucCode\TiemVaiLucCode\bin\Debug\System.ValueTuple.dll
 D:\TrongNghia\NAM HOC 25-26\HK3\C#\TiemVaiLucCode\TiemVaiLucCode\TiemVaiLucCode\obj\Debug\TiemVaiLucCode.Frm_ĐKhoan.resources
+D:\TrongNghia\NAM HOC 25-26\HK3\C#\TiemVaiLucCode\TiemVaiLucCode\TiemVaiLucCode\obj\Debug\TiemVaiLucCode.Frm_Card_SanPham.resources
+D:\TrongNghia\NAM HOC 25-26\HK3\C#\TiemVaiLucCode\TiemVaiLucCode\TiemVaiLucCode\obj\Debug\TiemVaiLucCode.Migrations.InitialCreate.resources

@@ -245,21 +245,9 @@
     <Compile Include="Frm_ĐKhoan.Designer.cs">
       <DependentUpon>Frm_ĐKhoan.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202608140345430_InitialCreate.cs" />
-    <Compile Include="Migrations\202608140345430_InitialCreate.Designer.cs">
-      <DependentUpon>202608140345430_InitialCreate.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202608140359446_InitialCreate1.cs" />
-    <Compile Include="Migrations\202608140359446_InitialCreate1.Designer.cs">
-      <DependentUpon>202608140359446_InitialCreate1.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202608140436195_ThemBangDonHangVaChiTiet.cs" />
-    <Compile Include="Migrations\202608140436195_ThemBangDonHangVaChiTiet.Designer.cs">
-      <DependentUpon>202608140436195_ThemBangDonHangVaChiTiet.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202608140446497_ThemBangNhanVien.cs" />
-    <Compile Include="Migrations\202608140446497_ThemBangNhanVien.Designer.cs">
-      <DependentUpon>202608140446497_ThemBangNhanVien.cs</DependentUpon>
+    <Compile Include="Migrations\202609131151470_InitialCreate.cs" />
+    <Compile Include="Migrations\202609131151470_InitialCreate.Designer.cs">
+      <DependentUpon>202609131151470_InitialCreate.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Model1.cs" />
@@ -277,6 +265,11 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>TiemVaiDBDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="TiemVaiDBDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TiemVaiDBDataSet1.xsd</DependentUpon>
     </Compile>
     <None Include="Resources\best-product_10112502.png" />
     <None Include="Resources\4.jpg" />
@@ -373,17 +366,8 @@
     <EmbeddedResource Include="Frm_ĐKhoan.resx">
       <DependentUpon>Frm_ĐKhoan.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202608140345430_InitialCreate.resx">
-      <DependentUpon>202608140345430_InitialCreate.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202608140359446_InitialCreate1.resx">
-      <DependentUpon>202608140359446_InitialCreate1.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202608140436195_ThemBangDonHangVaChiTiet.resx">
-      <DependentUpon>202608140436195_ThemBangDonHangVaChiTiet.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202608140446497_ThemBangNhanVien.resx">
-      <DependentUpon>202608140446497_ThemBangNhanVien.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202609131151470_InitialCreate.resx">
+      <DependentUpon>202609131151470_InitialCreate.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -420,6 +404,17 @@
     </None>
     <None Include="TiemVaiDBDataSet.xss">
       <DependentUpon>TiemVaiDBDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="TiemVaiDBDataSet1.xsc">
+      <DependentUpon>TiemVaiDBDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="TiemVaiDBDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TiemVaiDBDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TiemVaiDBDataSet1.xss">
+      <DependentUpon>TiemVaiDBDataSet1.xsd</DependentUpon>
     </None>
   </ItemGroup>
   <ItemGroup>

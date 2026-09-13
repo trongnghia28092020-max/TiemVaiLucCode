@@ -14,9 +14,9 @@ namespace TiemVaiLucCode.Models
         public int ChiTietDonHangId { get; set; }
 
         [Required]
-        public int DonHangId { get; set; }
+        public int MaDonHang { get; set; }
 
-        [ForeignKey("DonHangId")]
+        [ForeignKey("MaDonHang")]
         public virtual DonHang DonHang { get; set; }
 
         [Required]

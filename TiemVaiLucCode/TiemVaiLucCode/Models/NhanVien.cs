@@ -11,7 +11,7 @@ namespace TiemVaiLucCode.Models
     public class NhanVien
     {
         [Key]
-        public int NhanVienId { get; set; }
+        public int MaNhanVien { get; set; }
 
         
         public int TaiKhoanId { get; set; }

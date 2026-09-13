@@ -27,6 +27,10 @@ namespace TiemVaiLucCode
 
         private void Frm_Card_SanPham_Load(object sender, EventArgs e)
         {
+            // TODO: This line of code loads data into the 'tiemVaiDBDataSet1.SanPhams' table. You can move, or remove it, as needed.
+            this.sanPhamsTableAdapter1.Fill(this.tiemVaiDBDataSet1.SanPhams);
+            // TODO: This line of code loads data into the 'tiemVaiDBDataSet1.DonHangs' table. You can move, or remove it, as needed.
+            this.donHangsTableAdapter.Fill(this.tiemVaiDBDataSet1.DonHangs);
             // TODO: This line of code loads data into the 'tiemVaiDBDataSet.SanPhams' table. You can move, or remove it, as needed.
             this.sanPhamsTableAdapter.Fill(this.tiemVaiDBDataSet.SanPhams);
 

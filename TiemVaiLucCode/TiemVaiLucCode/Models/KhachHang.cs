@@ -11,7 +11,7 @@ namespace TiemVaiLucCode.Models
     public class KhachHang
     {
             [Key]
-            public int KhachHangId { get; set; }
+            public int MaKhachHang { get; set; }
 
             public int? TaiKhoanId { get; set; }
 

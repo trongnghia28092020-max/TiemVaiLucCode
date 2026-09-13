@@ -11,12 +11,12 @@ namespace TiemVaiLucCode.Models
     public class DonHang
     {
         [Key]
-        public int DonHangId { get; set; }
+        public int MaDonHang { get; set; }
 
         [Required]
-        public int KhachHangId { get; set; } 
+        public int MaKhachHang { get; set; } 
 
-        [ForeignKey("KhachHangId")]
+        [ForeignKey("MaKhachHang")]
         public virtual KhachHang KhachHang { get; set; }
 
         public DateTime NgayDat { get; set; } = DateTime.Now;
