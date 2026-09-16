@@ -113,6 +113,16 @@ namespace TiemVaiLucCode.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _2 {
+            get {
+                object obj = ResourceManager.GetObject("2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _20b6e79a5fea0ff4d20c5eedca9a4b15_1_ {
             get {
                 object obj = ResourceManager.GetObject("20b6e79a5fea0ff4d20c5eedca9a4b15(1)", resourceCulture);

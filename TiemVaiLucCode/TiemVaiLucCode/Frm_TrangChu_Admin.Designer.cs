@@ -31,7 +31,7 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.panel7 = new System.Windows.Forms.Panel();
+            this.Card_SanPham = new System.Windows.Forms.Panel();
             this.siticoneLabel4 = new SiticoneNetFrameworkUI.SiticoneLabel();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.panel6 = new System.Windows.Forms.Panel();
@@ -40,7 +40,7 @@
             this.panel5 = new System.Windows.Forms.Panel();
             this.siticoneLabel2 = new SiticoneNetFrameworkUI.SiticoneLabel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.panel4 = new System.Windows.Forms.Panel();
+            this.Card_TongQuan = new System.Windows.Forms.Panel();
             this.siticoneLabel1 = new SiticoneNetFrameworkUI.SiticoneLabel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -60,13 +60,13 @@
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             this.tableLayoutPanel1.SuspendLayout();
-            this.panel7.SuspendLayout();
+            this.Card_SanPham.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.panel6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            this.panel4.SuspendLayout();
+            this.Card_TongQuan.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.pnl_ManHinhChinh.SuspendLayout();
             this.pnl_Card_TongQuan.SuspendLayout();
@@ -102,10 +102,10 @@
             this.tableLayoutPanel1.BackColor = System.Drawing.Color.Transparent;
             this.tableLayoutPanel1.ColumnCount = 1;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.Controls.Add(this.panel7, 0, 1);
+            this.tableLayoutPanel1.Controls.Add(this.Card_SanPham, 0, 1);
             this.tableLayoutPanel1.Controls.Add(this.panel6, 0, 2);
             this.tableLayoutPanel1.Controls.Add(this.panel5, 0, 3);
-            this.tableLayoutPanel1.Controls.Add(this.panel4, 0, 0);
+            this.tableLayoutPanel1.Controls.Add(this.Card_TongQuan, 0, 0);
             this.tableLayoutPanel1.Location = new System.Drawing.Point(12, 266);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 4;
@@ -116,23 +116,23 @@
             this.tableLayoutPanel1.Size = new System.Drawing.Size(191, 279);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
-            // panel7
+            // Card_SanPham
             // 
-            this.panel7.BackColor = System.Drawing.Color.White;
-            this.panel7.Controls.Add(this.siticoneLabel4);
-            this.panel7.Controls.Add(this.pictureBox4);
-            this.panel7.Location = new System.Drawing.Point(3, 72);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(185, 46);
-            this.panel7.TabIndex = 8;
+            this.Card_SanPham.BackColor = System.Drawing.Color.White;
+            this.Card_SanPham.Controls.Add(this.siticoneLabel4);
+            this.Card_SanPham.Controls.Add(this.pictureBox4);
+            this.Card_SanPham.Location = new System.Drawing.Point(3, 72);
+            this.Card_SanPham.Name = "Card_SanPham";
+            this.Card_SanPham.Size = new System.Drawing.Size(185, 46);
+            this.Card_SanPham.TabIndex = 8;
+            this.Card_SanPham.Click += new System.EventHandler(this.Card_SanPham_Click);
             // 
             // siticoneLabel4
             // 
-            this.siticoneLabel4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.siticoneLabel4.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.siticoneLabel4.Location = new System.Drawing.Point(48, 0);
+            this.siticoneLabel4.Location = new System.Drawing.Point(54, 5);
             this.siticoneLabel4.Name = "siticoneLabel4";
-            this.siticoneLabel4.Size = new System.Drawing.Size(137, 46);
+            this.siticoneLabel4.Size = new System.Drawing.Size(118, 33);
             this.siticoneLabel4.TabIndex = 0;
             this.siticoneLabel4.Text = "Sản Phẩm";
             this.siticoneLabel4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -210,15 +210,16 @@
             this.pictureBox2.TabIndex = 1;
             this.pictureBox2.TabStop = false;
             // 
-            // panel4
+            // Card_TongQuan
             // 
-            this.panel4.BackColor = System.Drawing.Color.White;
-            this.panel4.Controls.Add(this.siticoneLabel1);
-            this.panel4.Controls.Add(this.pictureBox1);
-            this.panel4.Location = new System.Drawing.Point(3, 3);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(185, 46);
-            this.panel4.TabIndex = 3;
+            this.Card_TongQuan.BackColor = System.Drawing.Color.White;
+            this.Card_TongQuan.Controls.Add(this.siticoneLabel1);
+            this.Card_TongQuan.Controls.Add(this.pictureBox1);
+            this.Card_TongQuan.Location = new System.Drawing.Point(3, 3);
+            this.Card_TongQuan.Name = "Card_TongQuan";
+            this.Card_TongQuan.Size = new System.Drawing.Size(185, 46);
+            this.Card_TongQuan.TabIndex = 3;
+            this.Card_TongQuan.Click += new System.EventHandler(this.Card_TongQuan_Click);
             // 
             // siticoneLabel1
             // 
@@ -709,7 +710,8 @@
             // 
             // Frm_TrangChu_Admin
             // 
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1342, 679);
             this.Controls.Add(this.pnl_ManHinhChinh);
             this.Controls.Add(this.panel2);
@@ -722,13 +724,13 @@
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             this.tableLayoutPanel1.ResumeLayout(false);
-            this.panel7.ResumeLayout(false);
+            this.Card_SanPham.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.panel6.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.panel5.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            this.panel4.ResumeLayout(false);
+            this.Card_TongQuan.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.pnl_ManHinhChinh.ResumeLayout(false);
             this.pnl_Card_TongQuan.ResumeLayout(false);
@@ -747,10 +749,10 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel pnl_ManHinhChinh;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
-        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Panel Card_TongQuan;
         private SiticoneNetFrameworkUI.SiticoneLabel siticoneLabel1;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Panel panel7;
+        private System.Windows.Forms.Panel Card_SanPham;
         private SiticoneNetFrameworkUI.SiticoneLabel siticoneLabel4;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.Panel panel6;

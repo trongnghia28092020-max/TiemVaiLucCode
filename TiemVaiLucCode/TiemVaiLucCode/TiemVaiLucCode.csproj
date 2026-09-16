@@ -271,6 +271,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>TiemVaiDBDataSet1.xsd</DependentUpon>
     </Compile>
+    <None Include="Resources\2.jpg" />
     <None Include="Resources\best-product_10112502.png" />
     <None Include="Resources\4.jpg" />
     <None Include="Resources\d838c3b573f1de371427824b4b3b0f4f%282%29.jpg" />
