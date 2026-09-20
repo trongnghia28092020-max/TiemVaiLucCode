@@ -1943,7 +1943,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::TiemVaiLucCode.Properties.Resources.LUA_SATIN_1__1_1;
-            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Location = new System.Drawing.Point(0, -4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(171, 103);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;

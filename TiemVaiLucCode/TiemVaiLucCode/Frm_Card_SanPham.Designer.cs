@@ -77,6 +77,8 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.Color_Vai = new System.Windows.Forms.ColorDialog();
             this.siticoneButton1 = new SiticoneNetFrameworkUI.SiticoneButton();
+            this.siticoneButton2 = new SiticoneNetFrameworkUI.SiticoneButton();
+            this.siticoneButton3 = new SiticoneNetFrameworkUI.SiticoneButton();
             maSanPhamLabel = new System.Windows.Forms.Label();
             tenSanPhamLabel = new System.Windows.Forms.Label();
             giaBanLabel = new System.Windows.Forms.Label();
@@ -402,7 +404,7 @@
             this.sanPhamsBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
             this.sanPhamsBindingNavigator.Name = "sanPhamsBindingNavigator";
             this.sanPhamsBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.sanPhamsBindingNavigator.Size = new System.Drawing.Size(1099, 31);
+            this.sanPhamsBindingNavigator.Size = new System.Drawing.Size(1099, 27);
             this.sanPhamsBindingNavigator.TabIndex = 21;
             this.sanPhamsBindingNavigator.Text = "bindingNavigator1";
             // 
@@ -412,7 +414,7 @@
             this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
             this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
             this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(29, 28);
+            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(29, 24);
             this.bindingNavigatorAddNewItem.Text = "Add new";
             // 
             // bindingNavigatorCountItem
@@ -720,7 +722,7 @@
             this.siticoneButton1.ShadowOffset = new System.Drawing.Point(0, 2);
             this.siticoneButton1.ShakeDuration = 500;
             this.siticoneButton1.ShakeIntensity = 5;
-            this.siticoneButton1.Size = new System.Drawing.Size(164, 37);
+            this.siticoneButton1.Size = new System.Drawing.Size(142, 37);
             this.siticoneButton1.TabIndex = 38;
             this.siticoneButton1.Text = "Thêm Sản Phẩm";
             this.siticoneButton1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -729,12 +731,166 @@
             this.siticoneButton1.UseAdvancedRendering = true;
             this.siticoneButton1.UseParticles = false;
             // 
+            // siticoneButton2
+            // 
+            this.siticoneButton2.AccessibleDescription = "The default button control that accept input though the mouse, touch and keyboard" +
+    "";
+            this.siticoneButton2.AccessibleName = "Xóa Bỏ";
+            this.siticoneButton2.AutoSizeBasedOnText = false;
+            this.siticoneButton2.BackColor = System.Drawing.Color.Transparent;
+            this.siticoneButton2.BadgeBackColor = System.Drawing.Color.Black;
+            this.siticoneButton2.BadgeFont = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Bold);
+            this.siticoneButton2.BadgeValue = 0;
+            this.siticoneButton2.BadgeValueForeColor = System.Drawing.Color.White;
+            this.siticoneButton2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(216)))), ((int)(((byte)(220)))));
+            this.siticoneButton2.BorderWidth = 1;
+            this.siticoneButton2.ButtonBackColor = System.Drawing.Color.Red;
+            this.siticoneButton2.ButtonImage = null;
+            this.siticoneButton2.ButtonTextLeftPadding = 0;
+            this.siticoneButton2.CanBeep = true;
+            this.siticoneButton2.CanGlow = false;
+            this.siticoneButton2.CanShake = true;
+            this.siticoneButton2.ContextMenuStripEx = null;
+            this.siticoneButton2.CornerRadiusBottomLeft = 10;
+            this.siticoneButton2.CornerRadiusBottomRight = 10;
+            this.siticoneButton2.CornerRadiusTopLeft = 10;
+            this.siticoneButton2.CornerRadiusTopRight = 10;
+            this.siticoneButton2.CustomCursor = System.Windows.Forms.Cursors.Default;
+            this.siticoneButton2.DisabledTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(150)))), ((int)(((byte)(150)))));
+            this.siticoneButton2.EnableLongPress = false;
+            this.siticoneButton2.EnableRippleEffect = true;
+            this.siticoneButton2.EnableShadow = false;
+            this.siticoneButton2.EnableTextWrapping = false;
+            this.siticoneButton2.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.siticoneButton2.GlowColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.siticoneButton2.GlowIntensity = 100;
+            this.siticoneButton2.GlowRadius = 20F;
+            this.siticoneButton2.GradientBackground = false;
+            this.siticoneButton2.GradientColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(227)))), ((int)(((byte)(64)))));
+            this.siticoneButton2.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical;
+            this.siticoneButton2.HintText = null;
+            this.siticoneButton2.HoverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.siticoneButton2.HoverFontStyle = System.Drawing.FontStyle.Regular;
+            this.siticoneButton2.HoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.siticoneButton2.HoverTransitionDuration = 140;
+            this.siticoneButton2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.siticoneButton2.ImagePadding = 5;
+            this.siticoneButton2.ImageSize = new System.Drawing.Size(16, 16);
+            this.siticoneButton2.IsRadial = false;
+            this.siticoneButton2.IsReadOnly = false;
+            this.siticoneButton2.IsToggleButton = false;
+            this.siticoneButton2.IsToggled = false;
+            this.siticoneButton2.Location = new System.Drawing.Point(224, 233);
+            this.siticoneButton2.LongPressDurationMS = 1000;
+            this.siticoneButton2.Name = "siticoneButton2";
+            this.siticoneButton2.NormalFontStyle = System.Drawing.FontStyle.Regular;
+            this.siticoneButton2.ParticleColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
+            this.siticoneButton2.ParticleCount = 15;
+            this.siticoneButton2.PressAnimationScale = 0.97F;
+            this.siticoneButton2.PressedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(227)))), ((int)(((byte)(230)))));
+            this.siticoneButton2.PressedFontStyle = System.Drawing.FontStyle.Regular;
+            this.siticoneButton2.PressTransitionDuration = 90;
+            this.siticoneButton2.ReadOnlyTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(100)))), ((int)(((byte)(100)))));
+            this.siticoneButton2.RippleColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.siticoneButton2.RippleRadiusMultiplier = 0.6F;
+            this.siticoneButton2.ShadowBlur = 5;
+            this.siticoneButton2.ShadowColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.siticoneButton2.ShadowOffset = new System.Drawing.Point(0, 2);
+            this.siticoneButton2.ShakeDuration = 500;
+            this.siticoneButton2.ShakeIntensity = 5;
+            this.siticoneButton2.Size = new System.Drawing.Size(103, 37);
+            this.siticoneButton2.TabIndex = 39;
+            this.siticoneButton2.Text = "Xóa Bỏ";
+            this.siticoneButton2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.siticoneButton2.TextColor = System.Drawing.Color.White;
+            this.siticoneButton2.TooltipText = null;
+            this.siticoneButton2.UseAdvancedRendering = true;
+            this.siticoneButton2.UseParticles = false;
+            // 
+            // siticoneButton3
+            // 
+            this.siticoneButton3.AccessibleDescription = "The default button control that accept input though the mouse, touch and keyboard" +
+    "";
+            this.siticoneButton3.AccessibleName = "Làm Mới";
+            this.siticoneButton3.AutoSizeBasedOnText = false;
+            this.siticoneButton3.BackColor = System.Drawing.Color.Transparent;
+            this.siticoneButton3.BadgeBackColor = System.Drawing.Color.Black;
+            this.siticoneButton3.BadgeFont = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Bold);
+            this.siticoneButton3.BadgeValue = 0;
+            this.siticoneButton3.BadgeValueForeColor = System.Drawing.Color.White;
+            this.siticoneButton3.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(216)))), ((int)(((byte)(220)))));
+            this.siticoneButton3.BorderWidth = 1;
+            this.siticoneButton3.ButtonBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.siticoneButton3.ButtonImage = null;
+            this.siticoneButton3.ButtonTextLeftPadding = 0;
+            this.siticoneButton3.CanBeep = true;
+            this.siticoneButton3.CanGlow = false;
+            this.siticoneButton3.CanShake = true;
+            this.siticoneButton3.ContextMenuStripEx = null;
+            this.siticoneButton3.CornerRadiusBottomLeft = 10;
+            this.siticoneButton3.CornerRadiusBottomRight = 10;
+            this.siticoneButton3.CornerRadiusTopLeft = 10;
+            this.siticoneButton3.CornerRadiusTopRight = 10;
+            this.siticoneButton3.CustomCursor = System.Windows.Forms.Cursors.Default;
+            this.siticoneButton3.DisabledTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(150)))), ((int)(((byte)(150)))));
+            this.siticoneButton3.EnableLongPress = false;
+            this.siticoneButton3.EnableRippleEffect = true;
+            this.siticoneButton3.EnableShadow = false;
+            this.siticoneButton3.EnableTextWrapping = false;
+            this.siticoneButton3.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.siticoneButton3.GlowColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.siticoneButton3.GlowIntensity = 100;
+            this.siticoneButton3.GlowRadius = 20F;
+            this.siticoneButton3.GradientBackground = false;
+            this.siticoneButton3.GradientColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(227)))), ((int)(((byte)(64)))));
+            this.siticoneButton3.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical;
+            this.siticoneButton3.HintText = null;
+            this.siticoneButton3.HoverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.siticoneButton3.HoverFontStyle = System.Drawing.FontStyle.Regular;
+            this.siticoneButton3.HoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.siticoneButton3.HoverTransitionDuration = 140;
+            this.siticoneButton3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.siticoneButton3.ImagePadding = 5;
+            this.siticoneButton3.ImageSize = new System.Drawing.Size(16, 16);
+            this.siticoneButton3.IsRadial = false;
+            this.siticoneButton3.IsReadOnly = false;
+            this.siticoneButton3.IsToggleButton = false;
+            this.siticoneButton3.IsToggled = false;
+            this.siticoneButton3.Location = new System.Drawing.Point(368, 233);
+            this.siticoneButton3.LongPressDurationMS = 1000;
+            this.siticoneButton3.Name = "siticoneButton3";
+            this.siticoneButton3.NormalFontStyle = System.Drawing.FontStyle.Regular;
+            this.siticoneButton3.ParticleColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
+            this.siticoneButton3.ParticleCount = 15;
+            this.siticoneButton3.PressAnimationScale = 0.97F;
+            this.siticoneButton3.PressedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(227)))), ((int)(((byte)(230)))));
+            this.siticoneButton3.PressedFontStyle = System.Drawing.FontStyle.Regular;
+            this.siticoneButton3.PressTransitionDuration = 90;
+            this.siticoneButton3.ReadOnlyTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(100)))), ((int)(((byte)(100)))));
+            this.siticoneButton3.RippleColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.siticoneButton3.RippleRadiusMultiplier = 0.6F;
+            this.siticoneButton3.ShadowBlur = 5;
+            this.siticoneButton3.ShadowColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.siticoneButton3.ShadowOffset = new System.Drawing.Point(0, 2);
+            this.siticoneButton3.ShakeDuration = 500;
+            this.siticoneButton3.ShakeIntensity = 5;
+            this.siticoneButton3.Size = new System.Drawing.Size(103, 37);
+            this.siticoneButton3.TabIndex = 40;
+            this.siticoneButton3.Text = "Làm Mới";
+            this.siticoneButton3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.siticoneButton3.TextColor = System.Drawing.Color.White;
+            this.siticoneButton3.TooltipText = null;
+            this.siticoneButton3.UseAdvancedRendering = true;
+            this.siticoneButton3.UseParticles = false;
+            // 
             // Frm_Card_SanPham
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1099, 600);
+            this.Controls.Add(this.siticoneButton3);
+            this.Controls.Add(this.siticoneButton2);
             this.Controls.Add(this.siticoneButton1);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(maSanPhamLabel);
@@ -813,5 +969,7 @@
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.ColorDialog Color_Vai;
         private SiticoneNetFrameworkUI.SiticoneButton siticoneButton1;
+        private SiticoneNetFrameworkUI.SiticoneButton siticoneButton2;
+        private SiticoneNetFrameworkUI.SiticoneButton siticoneButton3;
     }
 }
