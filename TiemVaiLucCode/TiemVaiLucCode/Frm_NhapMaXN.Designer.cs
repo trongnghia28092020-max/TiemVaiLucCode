@@ -107,7 +107,7 @@
             // 
             this.lbl_QuayLai.AutoSize = true;
             this.lbl_QuayLai.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.lbl_QuayLai.Location = new System.Drawing.Point(201, 390);
+            this.lbl_QuayLai.Location = new System.Drawing.Point(204, 415);
             this.lbl_QuayLai.Name = "lbl_QuayLai";
             this.lbl_QuayLai.Size = new System.Drawing.Size(72, 16);
             this.lbl_QuayLai.TabIndex = 12;
@@ -613,6 +613,8 @@
             this.ClientSize = new System.Drawing.Size(962, 598);
             this.Controls.Add(this.siticonePanel1);
             this.Controls.Add(this.panel1);
+            this.MaximumSize = new System.Drawing.Size(980, 645);
+            this.MinimumSize = new System.Drawing.Size(980, 645);
             this.Name = "Frm_NhapMaXN";
             this.Text = "Frm_NhapMaXN";
             this.siticonePanel1.ResumeLayout(false);

@@ -18,6 +18,7 @@ namespace TiemVaiLucCode.Models
         public DbSet<DonHang> DonHangs { get; set; }
         public DbSet<ChiTietDonHang> ChiTietDonHangs { get; set; }
         public DbSet<NhanVien> NhanViens { get; set; }
+        public DbSet<HoaDon> HoaDons { get; set; }
 
     }
 }

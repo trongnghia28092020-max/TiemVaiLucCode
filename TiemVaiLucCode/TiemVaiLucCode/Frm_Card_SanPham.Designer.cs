@@ -38,27 +38,18 @@
             System.Windows.Forms.Label hinhAnhLabel;
             System.Windows.Forms.Label danhMucIdLabel;
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Frm_Card_SanPham));
-            this.ptb_HinhAnh = new System.Windows.Forms.PictureBox();
             this.btn_ChonAnh = new SiticoneNetFrameworkUI.SiticoneButton();
-            this.ptb_MauSac = new System.Windows.Forms.PictureBox();
             this.btn_ChonMau = new SiticoneNetFrameworkUI.SiticoneButton();
             this.tiemVaiDBDataSet1 = new TiemVaiLucCode.TiemVaiDBDataSet1();
             this.sanPhamsBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.sanPhamsTableAdapter = new TiemVaiLucCode.TiemVaiDBDataSet1TableAdapters.SanPhamsTableAdapter();
             this.tableAdapterManager = new TiemVaiLucCode.TiemVaiDBDataSet1TableAdapters.TableAdapterManager();
             this.sanPhamsBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
-            this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
-            this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorMovePreviousItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator = new System.Windows.Forms.ToolStripSeparator();
             this.bindingNavigatorPositionItem = new System.Windows.Forms.ToolStripTextBox();
             this.bindingNavigatorSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-            this.bindingNavigatorMoveNextItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.sanPhamsBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
             this.sanPhamsDataGridView = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -79,6 +70,15 @@
             this.siticoneButton1 = new SiticoneNetFrameworkUI.SiticoneButton();
             this.siticoneButton2 = new SiticoneNetFrameworkUI.SiticoneButton();
             this.siticoneButton3 = new SiticoneNetFrameworkUI.SiticoneButton();
+            this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorMovePreviousItem = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorMoveNextItem = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
+            this.sanPhamsBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
+            this.ptb_MauSac = new System.Windows.Forms.PictureBox();
+            this.ptb_HinhAnh = new System.Windows.Forms.PictureBox();
             maSanPhamLabel = new System.Windows.Forms.Label();
             tenSanPhamLabel = new System.Windows.Forms.Label();
             giaBanLabel = new System.Windows.Forms.Label();
@@ -87,14 +87,14 @@
             chatLieuLabel = new System.Windows.Forms.Label();
             hinhAnhLabel = new System.Windows.Forms.Label();
             danhMucIdLabel = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.ptb_HinhAnh)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ptb_MauSac)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tiemVaiDBDataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.sanPhamsBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.sanPhamsBindingNavigator)).BeginInit();
             this.sanPhamsBindingNavigator.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.sanPhamsDataGridView)).BeginInit();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ptb_MauSac)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptb_HinhAnh)).BeginInit();
             this.SuspendLayout();
             // 
             // maSanPhamLabel
@@ -178,16 +178,6 @@
             danhMucIdLabel.TabIndex = 35;
             danhMucIdLabel.Text = "Mã Danh Mục";
             // 
-            // ptb_HinhAnh
-            // 
-            this.ptb_HinhAnh.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.ptb_HinhAnh.Location = new System.Drawing.Point(803, 151);
-            this.ptb_HinhAnh.Name = "ptb_HinhAnh";
-            this.ptb_HinhAnh.Size = new System.Drawing.Size(100, 100);
-            this.ptb_HinhAnh.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.ptb_HinhAnh.TabIndex = 17;
-            this.ptb_HinhAnh.TabStop = false;
-            // 
             // btn_ChonAnh
             // 
             this.btn_ChonAnh.AccessibleDescription = "The default button control that accept input though the mouse, touch and keyboard" +
@@ -263,15 +253,6 @@
             this.btn_ChonAnh.TooltipText = null;
             this.btn_ChonAnh.UseAdvancedRendering = true;
             this.btn_ChonAnh.UseParticles = false;
-            // 
-            // ptb_MauSac
-            // 
-            this.ptb_MauSac.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.ptb_MauSac.Location = new System.Drawing.Point(240, 113);
-            this.ptb_MauSac.Name = "ptb_MauSac";
-            this.ptb_MauSac.Size = new System.Drawing.Size(61, 42);
-            this.ptb_MauSac.TabIndex = 19;
-            this.ptb_MauSac.TabStop = false;
             // 
             // btn_ChonMau
             // 
@@ -404,57 +385,21 @@
             this.sanPhamsBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
             this.sanPhamsBindingNavigator.Name = "sanPhamsBindingNavigator";
             this.sanPhamsBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.sanPhamsBindingNavigator.Size = new System.Drawing.Size(1099, 27);
+            this.sanPhamsBindingNavigator.Size = new System.Drawing.Size(1099, 31);
             this.sanPhamsBindingNavigator.TabIndex = 21;
             this.sanPhamsBindingNavigator.Text = "bindingNavigator1";
-            // 
-            // bindingNavigatorAddNewItem
-            // 
-            this.bindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
-            this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
-            this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(29, 24);
-            this.bindingNavigatorAddNewItem.Text = "Add new";
             // 
             // bindingNavigatorCountItem
             // 
             this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
-            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(45, 28);
+            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(45, 24);
             this.bindingNavigatorCountItem.Text = "of {0}";
             this.bindingNavigatorCountItem.ToolTipText = "Total number of items";
-            // 
-            // bindingNavigatorDeleteItem
-            // 
-            this.bindingNavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
-            this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
-            this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(29, 28);
-            this.bindingNavigatorDeleteItem.Text = "Delete";
-            // 
-            // bindingNavigatorMoveFirstItem
-            // 
-            this.bindingNavigatorMoveFirstItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorMoveFirstItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveFirstItem.Image")));
-            this.bindingNavigatorMoveFirstItem.Name = "bindingNavigatorMoveFirstItem";
-            this.bindingNavigatorMoveFirstItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveFirstItem.Size = new System.Drawing.Size(29, 28);
-            this.bindingNavigatorMoveFirstItem.Text = "Move first";
-            // 
-            // bindingNavigatorMovePreviousItem
-            // 
-            this.bindingNavigatorMovePreviousItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorMovePreviousItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMovePreviousItem.Image")));
-            this.bindingNavigatorMovePreviousItem.Name = "bindingNavigatorMovePreviousItem";
-            this.bindingNavigatorMovePreviousItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMovePreviousItem.Size = new System.Drawing.Size(29, 28);
-            this.bindingNavigatorMovePreviousItem.Text = "Move previous";
             // 
             // bindingNavigatorSeparator
             // 
             this.bindingNavigatorSeparator.Name = "bindingNavigatorSeparator";
-            this.bindingNavigatorSeparator.Size = new System.Drawing.Size(6, 31);
+            this.bindingNavigatorSeparator.Size = new System.Drawing.Size(6, 27);
             // 
             // bindingNavigatorPositionItem
             // 
@@ -469,39 +414,12 @@
             // bindingNavigatorSeparator1
             // 
             this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator1";
-            this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 31);
-            // 
-            // bindingNavigatorMoveNextItem
-            // 
-            this.bindingNavigatorMoveNextItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorMoveNextItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveNextItem.Image")));
-            this.bindingNavigatorMoveNextItem.Name = "bindingNavigatorMoveNextItem";
-            this.bindingNavigatorMoveNextItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(29, 28);
-            this.bindingNavigatorMoveNextItem.Text = "Move next";
-            // 
-            // bindingNavigatorMoveLastItem
-            // 
-            this.bindingNavigatorMoveLastItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorMoveLastItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveLastItem.Image")));
-            this.bindingNavigatorMoveLastItem.Name = "bindingNavigatorMoveLastItem";
-            this.bindingNavigatorMoveLastItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(29, 28);
-            this.bindingNavigatorMoveLastItem.Text = "Move last";
+            this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 27);
             // 
             // bindingNavigatorSeparator2
             // 
             this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator2";
-            this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 31);
-            // 
-            // sanPhamsBindingNavigatorSaveItem
-            // 
-            this.sanPhamsBindingNavigatorSaveItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.sanPhamsBindingNavigatorSaveItem.Image = ((System.Drawing.Image)(resources.GetObject("sanPhamsBindingNavigatorSaveItem.Image")));
-            this.sanPhamsBindingNavigatorSaveItem.Name = "sanPhamsBindingNavigatorSaveItem";
-            this.sanPhamsBindingNavigatorSaveItem.Size = new System.Drawing.Size(29, 28);
-            this.sanPhamsBindingNavigatorSaveItem.Text = "Save Data";
-            this.sanPhamsBindingNavigatorSaveItem.Click += new System.EventHandler(this.sanPhamsBindingNavigatorSaveItem_Click_1);
+            this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 27);
             // 
             // sanPhamsDataGridView
             // 
@@ -883,6 +801,88 @@
             this.siticoneButton3.UseAdvancedRendering = true;
             this.siticoneButton3.UseParticles = false;
             // 
+            // bindingNavigatorAddNewItem
+            // 
+            this.bindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
+            this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
+            this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(29, 28);
+            this.bindingNavigatorAddNewItem.Text = "Add new";
+            // 
+            // bindingNavigatorDeleteItem
+            // 
+            this.bindingNavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
+            this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
+            this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(29, 24);
+            this.bindingNavigatorDeleteItem.Text = "Delete";
+            // 
+            // bindingNavigatorMoveFirstItem
+            // 
+            this.bindingNavigatorMoveFirstItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorMoveFirstItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveFirstItem.Image")));
+            this.bindingNavigatorMoveFirstItem.Name = "bindingNavigatorMoveFirstItem";
+            this.bindingNavigatorMoveFirstItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorMoveFirstItem.Size = new System.Drawing.Size(29, 24);
+            this.bindingNavigatorMoveFirstItem.Text = "Move first";
+            // 
+            // bindingNavigatorMovePreviousItem
+            // 
+            this.bindingNavigatorMovePreviousItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorMovePreviousItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMovePreviousItem.Image")));
+            this.bindingNavigatorMovePreviousItem.Name = "bindingNavigatorMovePreviousItem";
+            this.bindingNavigatorMovePreviousItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorMovePreviousItem.Size = new System.Drawing.Size(29, 24);
+            this.bindingNavigatorMovePreviousItem.Text = "Move previous";
+            // 
+            // bindingNavigatorMoveNextItem
+            // 
+            this.bindingNavigatorMoveNextItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorMoveNextItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveNextItem.Image")));
+            this.bindingNavigatorMoveNextItem.Name = "bindingNavigatorMoveNextItem";
+            this.bindingNavigatorMoveNextItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(29, 24);
+            this.bindingNavigatorMoveNextItem.Text = "Move next";
+            // 
+            // bindingNavigatorMoveLastItem
+            // 
+            this.bindingNavigatorMoveLastItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorMoveLastItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveLastItem.Image")));
+            this.bindingNavigatorMoveLastItem.Name = "bindingNavigatorMoveLastItem";
+            this.bindingNavigatorMoveLastItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(29, 24);
+            this.bindingNavigatorMoveLastItem.Text = "Move last";
+            // 
+            // sanPhamsBindingNavigatorSaveItem
+            // 
+            this.sanPhamsBindingNavigatorSaveItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.sanPhamsBindingNavigatorSaveItem.Image = ((System.Drawing.Image)(resources.GetObject("sanPhamsBindingNavigatorSaveItem.Image")));
+            this.sanPhamsBindingNavigatorSaveItem.Name = "sanPhamsBindingNavigatorSaveItem";
+            this.sanPhamsBindingNavigatorSaveItem.Size = new System.Drawing.Size(29, 24);
+            this.sanPhamsBindingNavigatorSaveItem.Text = "Save Data";
+            this.sanPhamsBindingNavigatorSaveItem.Click += new System.EventHandler(this.sanPhamsBindingNavigatorSaveItem_Click_1);
+            // 
+            // ptb_MauSac
+            // 
+            this.ptb_MauSac.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.ptb_MauSac.Location = new System.Drawing.Point(240, 113);
+            this.ptb_MauSac.Name = "ptb_MauSac";
+            this.ptb_MauSac.Size = new System.Drawing.Size(61, 42);
+            this.ptb_MauSac.TabIndex = 19;
+            this.ptb_MauSac.TabStop = false;
+            // 
+            // ptb_HinhAnh
+            // 
+            this.ptb_HinhAnh.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.ptb_HinhAnh.Location = new System.Drawing.Point(803, 151);
+            this.ptb_HinhAnh.Name = "ptb_HinhAnh";
+            this.ptb_HinhAnh.Size = new System.Drawing.Size(100, 100);
+            this.ptb_HinhAnh.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.ptb_HinhAnh.TabIndex = 17;
+            this.ptb_HinhAnh.TabStop = false;
+            // 
             // Frm_Card_SanPham
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -915,8 +915,6 @@
             this.Name = "Frm_Card_SanPham";
             this.Text = "Frm_Card_SanPham";
             this.Load += new System.EventHandler(this.Frm_Card_SanPham_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.ptb_HinhAnh)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ptb_MauSac)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tiemVaiDBDataSet1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.sanPhamsBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.sanPhamsBindingNavigator)).EndInit();
@@ -924,6 +922,8 @@
             this.sanPhamsBindingNavigator.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.sanPhamsDataGridView)).EndInit();
             this.groupBox1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.ptb_MauSac)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptb_HinhAnh)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

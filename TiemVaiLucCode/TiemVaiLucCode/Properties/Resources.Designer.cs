@@ -943,6 +943,16 @@ namespace TiemVaiLucCode.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap smart_contracts_1442117 {
+            get {
+                object obj = ResourceManager.GetObject("smart-contracts_1442117", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap thun_1_ {
             get {
                 object obj = ResourceManager.GetObject("thun(1)", resourceCulture);

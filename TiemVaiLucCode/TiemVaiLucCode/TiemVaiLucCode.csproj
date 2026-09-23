@@ -191,6 +191,18 @@
     <Compile Include="Frm_BanHang.Designer.cs">
       <DependentUpon>Frm_BanHang.cs</DependentUpon>
     </Compile>
+    <Compile Include="Frm_Card_DonHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Card_DonHang.Designer.cs">
+      <DependentUpon>Frm_Card_DonHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Card_HoaDon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Card_HoaDon.Designer.cs">
+      <DependentUpon>Frm_Card_HoaDon.cs</DependentUpon>
+    </Compile>
     <Compile Include="Frm_Card_SanPham.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -249,11 +261,16 @@
     <Compile Include="Migrations\202609131151470_InitialCreate.Designer.cs">
       <DependentUpon>202609131151470_InitialCreate.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202609230909347_ThemBangHoaDon.cs" />
+    <Compile Include="Migrations\202609230909347_ThemBangHoaDon.Designer.cs">
+      <DependentUpon>202609230909347_ThemBangHoaDon.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Model1.cs" />
     <Compile Include="Models\ChiTietDonHang.cs" />
     <Compile Include="Models\DanhMuc.cs" />
     <Compile Include="Models\DonHang.cs" />
+    <Compile Include="Models\HoaDon.cs" />
     <Compile Include="Models\KhachHang.cs" />
     <Compile Include="Models\NhanVien.cs" />
     <Compile Include="Models\SanPham.cs" />
@@ -271,6 +288,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>TiemVaiDBDataSet1.xsd</DependentUpon>
     </Compile>
+    <Compile Include="TiemVaiDBDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TiemVaiDBDataSet2.xsd</DependentUpon>
+    </Compile>
+    <None Include="Resources\smart-contracts_1442117.png" />
     <None Include="Resources\2.jpg" />
     <None Include="Resources\best-product_10112502.png" />
     <None Include="Resources\4.jpg" />
@@ -340,6 +363,12 @@
     <EmbeddedResource Include="Frm_BanHang.resx">
       <DependentUpon>Frm_BanHang.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Card_DonHang.resx">
+      <DependentUpon>Frm_Card_DonHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Card_HoaDon.resx">
+      <DependentUpon>Frm_Card_HoaDon.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Frm_Card_SanPham.resx">
       <DependentUpon>Frm_Card_SanPham.cs</DependentUpon>
     </EmbeddedResource>
@@ -369,6 +398,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202609131151470_InitialCreate.resx">
       <DependentUpon>202609131151470_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202609230909347_ThemBangHoaDon.resx">
+      <DependentUpon>202609230909347_ThemBangHoaDon.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -416,6 +448,17 @@
     </None>
     <None Include="TiemVaiDBDataSet1.xss">
       <DependentUpon>TiemVaiDBDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="TiemVaiDBDataSet2.xsc">
+      <DependentUpon>TiemVaiDBDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="TiemVaiDBDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TiemVaiDBDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TiemVaiDBDataSet2.xss">
+      <DependentUpon>TiemVaiDBDataSet2.xsd</DependentUpon>
     </None>
   </ItemGroup>
   <ItemGroup>

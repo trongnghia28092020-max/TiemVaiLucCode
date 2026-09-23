@@ -62,5 +62,10 @@ namespace TiemVaiLucCode
                 formDangMo = null;  // Xóa trí nhớ, đánh dấu là sân khấu đang trống
             }
         }
+
+        private void pnl_DonHang_Click(object sender, EventArgs e)
+        {
+            Mo_Card_ChildFrom(new Frm_Card_DonHang());
+        }
     }
 }

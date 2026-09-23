@@ -253,6 +253,8 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.MaximumSize = new System.Drawing.Size(576, 695);
+            this.MinimumSize = new System.Drawing.Size(576, 695);
             this.Name = "Frm_QuenMK";
             this.Text = "Frm_QuenMK";
             this.Load += new System.EventHandler(this.Frm_QuenMK_Load);

@@ -29,14 +29,14 @@
         private void InitializeComponent()
         {
             this.siticonePanel1 = new SiticoneNetFrameworkUI.SiticonePanel();
+            this.lbl_QuayLaiDN = new System.Windows.Forms.Label();
+            this.btn_UpdateMK = new SiticoneNetFrameworkUI.SiticoneButton();
             this.txt_XacNhanMK = new SiticoneNetFrameworkUI.SiticoneTextBox();
             this.txt_NhapMK = new SiticoneNetFrameworkUI.SiticoneTextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.btn_UpdateMK = new SiticoneNetFrameworkUI.SiticoneButton();
-            this.lbl_QuayLaiDN = new System.Windows.Forms.Label();
             this.siticonePanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -92,6 +92,96 @@
             this.siticonePanel1.UseMultiGradient = false;
             this.siticonePanel1.UsePatternTexture = false;
             this.siticonePanel1.UseRadialGradient = false;
+            // 
+            // lbl_QuayLaiDN
+            // 
+            this.lbl_QuayLaiDN.AutoSize = true;
+            this.lbl_QuayLaiDN.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lbl_QuayLaiDN.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_QuayLaiDN.ForeColor = System.Drawing.Color.Peru;
+            this.lbl_QuayLaiDN.Location = new System.Drawing.Point(136, 448);
+            this.lbl_QuayLaiDN.Name = "lbl_QuayLaiDN";
+            this.lbl_QuayLaiDN.Size = new System.Drawing.Size(148, 16);
+            this.lbl_QuayLaiDN.TabIndex = 7;
+            this.lbl_QuayLaiDN.Text = "Quay lại Đăng nhập";
+            this.lbl_QuayLaiDN.Click += new System.EventHandler(this.lbl_QuayLaiDN_Click);
+            // 
+            // btn_UpdateMK
+            // 
+            this.btn_UpdateMK.AccessibleDescription = "The default button control that accept input though the mouse, touch and keyboard" +
+    "";
+            this.btn_UpdateMK.AccessibleName = "Cập nhật lại Mật Khẩu ";
+            this.btn_UpdateMK.AutoSizeBasedOnText = false;
+            this.btn_UpdateMK.BackColor = System.Drawing.Color.Transparent;
+            this.btn_UpdateMK.BadgeBackColor = System.Drawing.Color.Black;
+            this.btn_UpdateMK.BadgeFont = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Bold);
+            this.btn_UpdateMK.BadgeValue = 0;
+            this.btn_UpdateMK.BadgeValueForeColor = System.Drawing.Color.White;
+            this.btn_UpdateMK.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(216)))), ((int)(((byte)(220)))));
+            this.btn_UpdateMK.BorderWidth = 1;
+            this.btn_UpdateMK.ButtonBackColor = System.Drawing.Color.Cyan;
+            this.btn_UpdateMK.ButtonImage = null;
+            this.btn_UpdateMK.ButtonTextLeftPadding = 0;
+            this.btn_UpdateMK.CanBeep = true;
+            this.btn_UpdateMK.CanGlow = false;
+            this.btn_UpdateMK.CanShake = true;
+            this.btn_UpdateMK.ContextMenuStripEx = null;
+            this.btn_UpdateMK.CornerRadiusBottomLeft = 20;
+            this.btn_UpdateMK.CornerRadiusBottomRight = 20;
+            this.btn_UpdateMK.CornerRadiusTopLeft = 20;
+            this.btn_UpdateMK.CornerRadiusTopRight = 20;
+            this.btn_UpdateMK.CustomCursor = System.Windows.Forms.Cursors.Default;
+            this.btn_UpdateMK.DisabledTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(150)))), ((int)(((byte)(150)))));
+            this.btn_UpdateMK.EnableLongPress = false;
+            this.btn_UpdateMK.EnableRippleEffect = true;
+            this.btn_UpdateMK.EnableShadow = false;
+            this.btn_UpdateMK.EnableTextWrapping = false;
+            this.btn_UpdateMK.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F);
+            this.btn_UpdateMK.GlowColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.btn_UpdateMK.GlowIntensity = 100;
+            this.btn_UpdateMK.GlowRadius = 20F;
+            this.btn_UpdateMK.GradientBackground = false;
+            this.btn_UpdateMK.GradientColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(227)))), ((int)(((byte)(64)))));
+            this.btn_UpdateMK.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical;
+            this.btn_UpdateMK.HintText = null;
+            this.btn_UpdateMK.HoverBackColor = System.Drawing.Color.LightSeaGreen;
+            this.btn_UpdateMK.HoverFontStyle = System.Drawing.FontStyle.Regular;
+            this.btn_UpdateMK.HoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btn_UpdateMK.HoverTransitionDuration = 140;
+            this.btn_UpdateMK.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_UpdateMK.ImagePadding = 5;
+            this.btn_UpdateMK.ImageSize = new System.Drawing.Size(16, 16);
+            this.btn_UpdateMK.IsRadial = false;
+            this.btn_UpdateMK.IsReadOnly = false;
+            this.btn_UpdateMK.IsToggleButton = false;
+            this.btn_UpdateMK.IsToggled = false;
+            this.btn_UpdateMK.Location = new System.Drawing.Point(37, 384);
+            this.btn_UpdateMK.LongPressDurationMS = 1000;
+            this.btn_UpdateMK.Name = "btn_UpdateMK";
+            this.btn_UpdateMK.NormalFontStyle = System.Drawing.FontStyle.Regular;
+            this.btn_UpdateMK.ParticleColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
+            this.btn_UpdateMK.ParticleCount = 15;
+            this.btn_UpdateMK.PressAnimationScale = 1F;
+            this.btn_UpdateMK.PressedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(227)))), ((int)(((byte)(230)))));
+            this.btn_UpdateMK.PressedFontStyle = System.Drawing.FontStyle.Regular;
+            this.btn_UpdateMK.PressTransitionDuration = 90;
+            this.btn_UpdateMK.ReadOnlyTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(100)))), ((int)(((byte)(100)))));
+            this.btn_UpdateMK.RippleColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btn_UpdateMK.RippleRadiusMultiplier = 0.6F;
+            this.btn_UpdateMK.ShadowBlur = 5;
+            this.btn_UpdateMK.ShadowColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btn_UpdateMK.ShadowOffset = new System.Drawing.Point(0, 2);
+            this.btn_UpdateMK.ShakeDuration = 500;
+            this.btn_UpdateMK.ShakeIntensity = 5;
+            this.btn_UpdateMK.Size = new System.Drawing.Size(351, 50);
+            this.btn_UpdateMK.TabIndex = 6;
+            this.btn_UpdateMK.Text = "Cập nhật lại Mật Khẩu ";
+            this.btn_UpdateMK.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btn_UpdateMK.TextColor = System.Drawing.Color.Black;
+            this.btn_UpdateMK.TooltipText = null;
+            this.btn_UpdateMK.UseAdvancedRendering = true;
+            this.btn_UpdateMK.UseParticles = false;
+            this.btn_UpdateMK.Click += new System.EventHandler(this.btn_UpdateMK_Click);
             // 
             // txt_XacNhanMK
             // 
@@ -256,96 +346,6 @@
             this.label1.Text = "Đặt lại mật khẩu mới";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // btn_UpdateMK
-            // 
-            this.btn_UpdateMK.AccessibleDescription = "The default button control that accept input though the mouse, touch and keyboard" +
-    "";
-            this.btn_UpdateMK.AccessibleName = "Cập nhật lại Mật Khẩu ";
-            this.btn_UpdateMK.AutoSizeBasedOnText = false;
-            this.btn_UpdateMK.BackColor = System.Drawing.Color.Transparent;
-            this.btn_UpdateMK.BadgeBackColor = System.Drawing.Color.Black;
-            this.btn_UpdateMK.BadgeFont = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Bold);
-            this.btn_UpdateMK.BadgeValue = 0;
-            this.btn_UpdateMK.BadgeValueForeColor = System.Drawing.Color.White;
-            this.btn_UpdateMK.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(216)))), ((int)(((byte)(220)))));
-            this.btn_UpdateMK.BorderWidth = 1;
-            this.btn_UpdateMK.ButtonBackColor = System.Drawing.Color.Cyan;
-            this.btn_UpdateMK.ButtonImage = null;
-            this.btn_UpdateMK.ButtonTextLeftPadding = 0;
-            this.btn_UpdateMK.CanBeep = true;
-            this.btn_UpdateMK.CanGlow = false;
-            this.btn_UpdateMK.CanShake = true;
-            this.btn_UpdateMK.ContextMenuStripEx = null;
-            this.btn_UpdateMK.CornerRadiusBottomLeft = 20;
-            this.btn_UpdateMK.CornerRadiusBottomRight = 20;
-            this.btn_UpdateMK.CornerRadiusTopLeft = 20;
-            this.btn_UpdateMK.CornerRadiusTopRight = 20;
-            this.btn_UpdateMK.CustomCursor = System.Windows.Forms.Cursors.Default;
-            this.btn_UpdateMK.DisabledTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(150)))), ((int)(((byte)(150)))));
-            this.btn_UpdateMK.EnableLongPress = false;
-            this.btn_UpdateMK.EnableRippleEffect = true;
-            this.btn_UpdateMK.EnableShadow = false;
-            this.btn_UpdateMK.EnableTextWrapping = false;
-            this.btn_UpdateMK.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F);
-            this.btn_UpdateMK.GlowColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.btn_UpdateMK.GlowIntensity = 100;
-            this.btn_UpdateMK.GlowRadius = 20F;
-            this.btn_UpdateMK.GradientBackground = false;
-            this.btn_UpdateMK.GradientColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(227)))), ((int)(((byte)(64)))));
-            this.btn_UpdateMK.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical;
-            this.btn_UpdateMK.HintText = null;
-            this.btn_UpdateMK.HoverBackColor = System.Drawing.Color.LightSeaGreen;
-            this.btn_UpdateMK.HoverFontStyle = System.Drawing.FontStyle.Regular;
-            this.btn_UpdateMK.HoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.btn_UpdateMK.HoverTransitionDuration = 140;
-            this.btn_UpdateMK.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_UpdateMK.ImagePadding = 5;
-            this.btn_UpdateMK.ImageSize = new System.Drawing.Size(16, 16);
-            this.btn_UpdateMK.IsRadial = false;
-            this.btn_UpdateMK.IsReadOnly = false;
-            this.btn_UpdateMK.IsToggleButton = false;
-            this.btn_UpdateMK.IsToggled = false;
-            this.btn_UpdateMK.Location = new System.Drawing.Point(37, 384);
-            this.btn_UpdateMK.LongPressDurationMS = 1000;
-            this.btn_UpdateMK.Name = "btn_UpdateMK";
-            this.btn_UpdateMK.NormalFontStyle = System.Drawing.FontStyle.Regular;
-            this.btn_UpdateMK.ParticleColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
-            this.btn_UpdateMK.ParticleCount = 15;
-            this.btn_UpdateMK.PressAnimationScale = 1F;
-            this.btn_UpdateMK.PressedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(227)))), ((int)(((byte)(230)))));
-            this.btn_UpdateMK.PressedFontStyle = System.Drawing.FontStyle.Regular;
-            this.btn_UpdateMK.PressTransitionDuration = 90;
-            this.btn_UpdateMK.ReadOnlyTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(100)))), ((int)(((byte)(100)))));
-            this.btn_UpdateMK.RippleColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.btn_UpdateMK.RippleRadiusMultiplier = 0.6F;
-            this.btn_UpdateMK.ShadowBlur = 5;
-            this.btn_UpdateMK.ShadowColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.btn_UpdateMK.ShadowOffset = new System.Drawing.Point(0, 2);
-            this.btn_UpdateMK.ShakeDuration = 500;
-            this.btn_UpdateMK.ShakeIntensity = 5;
-            this.btn_UpdateMK.Size = new System.Drawing.Size(351, 50);
-            this.btn_UpdateMK.TabIndex = 6;
-            this.btn_UpdateMK.Text = "Cập nhật lại Mật Khẩu ";
-            this.btn_UpdateMK.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btn_UpdateMK.TextColor = System.Drawing.Color.Black;
-            this.btn_UpdateMK.TooltipText = null;
-            this.btn_UpdateMK.UseAdvancedRendering = true;
-            this.btn_UpdateMK.UseParticles = false;
-            this.btn_UpdateMK.Click += new System.EventHandler(this.btn_UpdateMK_Click);
-            // 
-            // lbl_QuayLaiDN
-            // 
-            this.lbl_QuayLaiDN.AutoSize = true;
-            this.lbl_QuayLaiDN.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.lbl_QuayLaiDN.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_QuayLaiDN.ForeColor = System.Drawing.Color.Peru;
-            this.lbl_QuayLaiDN.Location = new System.Drawing.Point(136, 448);
-            this.lbl_QuayLaiDN.Name = "lbl_QuayLaiDN";
-            this.lbl_QuayLaiDN.Size = new System.Drawing.Size(142, 16);
-            this.lbl_QuayLaiDN.TabIndex = 7;
-            this.lbl_QuayLaiDN.Text = "Quay lại Đăng nhập";
-            this.lbl_QuayLaiDN.Click += new System.EventHandler(this.lbl_QuayLaiDN_Click);
-            // 
             // Frm_DatMK
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -354,6 +354,8 @@
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(514, 683);
             this.Controls.Add(this.siticonePanel1);
+            this.MaximumSize = new System.Drawing.Size(532, 730);
+            this.MinimumSize = new System.Drawing.Size(532, 730);
             this.Name = "Frm_DatMK";
             this.Text = "Frm_DatMK";
             this.siticonePanel1.ResumeLayout(false);
