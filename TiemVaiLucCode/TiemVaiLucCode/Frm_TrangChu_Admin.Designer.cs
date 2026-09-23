@@ -29,15 +29,20 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.Card_SanPham = new System.Windows.Forms.Panel();
             this.siticoneLabel4 = new SiticoneNetFrameworkUI.SiticoneLabel();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pnl_DonHang = new System.Windows.Forms.Panel();
             this.siticoneLabel3 = new SiticoneNetFrameworkUI.SiticoneLabel();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.siticoneLabel2 = new SiticoneNetFrameworkUI.SiticoneLabel();
+            this.pnl_HoaDon = new SiticoneNetFrameworkUI.SiticoneLabel();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.Card_TongQuan = new System.Windows.Forms.Panel();
             this.siticoneLabel1 = new SiticoneNetFrameworkUI.SiticoneLabel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.pnl_ManHinhChinh = new System.Windows.Forms.Panel();
             this.pnl_Card_TongQuan = new System.Windows.Forms.Panel();
@@ -52,27 +57,28 @@
             this.txt_DonHang = new SiticoneNetFrameworkUI.SiticoneTextBox();
             this.siticonePanel6 = new SiticoneNetFrameworkUI.SiticonePanel();
             this.siticonePanel5 = new SiticoneNetFrameworkUI.SiticonePanel();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.siticoneTextBox1 = new SiticoneNetFrameworkUI.SiticoneTextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.siticoneTextBox2 = new SiticoneNetFrameworkUI.SiticoneTextBox();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             this.tableLayoutPanel1.SuspendLayout();
             this.Card_SanPham.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.pnl_DonHang.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.panel5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.Card_TongQuan.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.pnl_ManHinhChinh.SuspendLayout();
             this.pnl_Card_TongQuan.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.siticonePanel1.SuspendLayout();
+            this.siticonePanel3.SuspendLayout();
+            this.siticonePanel4.SuspendLayout();
             this.siticonePanel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -86,6 +92,16 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(225, 679);
             this.panel1.TabIndex = 0;
+            // 
+            // pictureBox6
+            // 
+            this.pictureBox6.Image = global::TiemVaiLucCode.Properties.Resources.screen;
+            this.pictureBox6.Location = new System.Drawing.Point(56, 32);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(100, 100);
+            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox6.TabIndex = 1;
+            this.pictureBox6.TabStop = false;
             // 
             // tableLayoutPanel1
             // 
@@ -127,6 +143,17 @@
             this.siticoneLabel4.Text = "Sản Phẩm";
             this.siticoneLabel4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Dock = System.Windows.Forms.DockStyle.Left;
+            this.pictureBox4.Image = global::TiemVaiLucCode.Properties.Resources.best_product_10112502;
+            this.pictureBox4.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(48, 46);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox4.TabIndex = 1;
+            this.pictureBox4.TabStop = false;
+            // 
             // pnl_DonHang
             // 
             this.pnl_DonHang.BackColor = System.Drawing.Color.White;
@@ -148,25 +175,47 @@
             this.siticoneLabel3.Text = "Đơn Hàng";
             this.siticoneLabel3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = global::TiemVaiLucCode.Properties.Resources.shopping_cart_2037547;
+            this.pictureBox3.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(48, 48);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox3.TabIndex = 1;
+            this.pictureBox3.TabStop = false;
+            // 
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.White;
-            this.panel5.Controls.Add(this.siticoneLabel2);
+            this.panel5.Controls.Add(this.pnl_HoaDon);
             this.panel5.Controls.Add(this.pictureBox2);
             this.panel5.Location = new System.Drawing.Point(3, 210);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(185, 44);
             this.panel5.TabIndex = 6;
             // 
-            // siticoneLabel2
+            // pnl_HoaDon
             // 
-            this.siticoneLabel2.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.siticoneLabel2.Location = new System.Drawing.Point(48, 0);
-            this.siticoneLabel2.Name = "siticoneLabel2";
-            this.siticoneLabel2.Size = new System.Drawing.Size(137, 44);
-            this.siticoneLabel2.TabIndex = 0;
-            this.siticoneLabel2.Text = "Hóa Đơn";
-            this.siticoneLabel2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.pnl_HoaDon.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.pnl_HoaDon.Location = new System.Drawing.Point(48, 0);
+            this.pnl_HoaDon.Name = "pnl_HoaDon";
+            this.pnl_HoaDon.Size = new System.Drawing.Size(137, 44);
+            this.pnl_HoaDon.TabIndex = 0;
+            this.pnl_HoaDon.Text = "Hóa Đơn";
+            this.pnl_HoaDon.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.pnl_HoaDon.Click += new System.EventHandler(this.pnl_HoaDon_Click);
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Dock = System.Windows.Forms.DockStyle.Left;
+            this.pictureBox2.Image = global::TiemVaiLucCode.Properties.Resources.smart_contracts_1442117;
+            this.pictureBox2.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(48, 44);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 1;
+            this.pictureBox2.TabStop = false;
             // 
             // Card_TongQuan
             // 
@@ -188,6 +237,16 @@
             this.siticoneLabel1.TabIndex = 0;
             this.siticoneLabel1.Text = "Tổng quan";
             this.siticoneLabel1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::TiemVaiLucCode.Properties.Resources.apps_11319676;
+            this.pictureBox1.Location = new System.Drawing.Point(3, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(45, 44);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
             // 
             // panel2
             // 
@@ -371,6 +430,8 @@
             this.siticonePanel3.BorderGradientEndColor = System.Drawing.Color.Purple;
             this.siticonePanel3.BorderGradientStartColor = System.Drawing.Color.Blue;
             this.siticonePanel3.BorderThickness = 2F;
+            this.siticonePanel3.Controls.Add(this.label3);
+            this.siticonePanel3.Controls.Add(this.siticoneTextBox1);
             this.siticonePanel3.CornerRadiusBottomLeft = 20F;
             this.siticonePanel3.CornerRadiusBottomRight = 20F;
             this.siticonePanel3.CornerRadiusTopLeft = 20F;
@@ -416,6 +477,8 @@
             this.siticonePanel4.BorderGradientEndColor = System.Drawing.Color.Purple;
             this.siticonePanel4.BorderGradientStartColor = System.Drawing.Color.Blue;
             this.siticonePanel4.BorderThickness = 2F;
+            this.siticonePanel4.Controls.Add(this.label4);
+            this.siticonePanel4.Controls.Add(this.siticoneTextBox2);
             this.siticonePanel4.CornerRadiusBottomLeft = 20F;
             this.siticonePanel4.CornerRadiusBottomRight = 20F;
             this.siticonePanel4.CornerRadiusTopLeft = 20F;
@@ -656,57 +719,145 @@
             this.siticonePanel5.UsePatternTexture = false;
             this.siticonePanel5.UseRadialGradient = false;
             // 
-            // pictureBox6
+            // label3
             // 
-            this.pictureBox6.Image = global::TiemVaiLucCode.Properties.Resources.screen;
-            this.pictureBox6.Location = new System.Drawing.Point(56, 32);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(100, 100);
-            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox6.TabIndex = 1;
-            this.pictureBox6.TabStop = false;
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(31, 15);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(113, 23);
+            this.label3.TabIndex = 4;
+            this.label3.Text = "SẢN PHẨM";
             // 
-            // pictureBox4
+            // siticoneTextBox1
             // 
-            this.pictureBox4.Dock = System.Windows.Forms.DockStyle.Left;
-            this.pictureBox4.Image = global::TiemVaiLucCode.Properties.Resources.best_product_10112502;
-            this.pictureBox4.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(48, 46);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox4.TabIndex = 1;
-            this.pictureBox4.TabStop = false;
+            this.siticoneTextBox1.AccessibleDescription = "A customizable text input field.";
+            this.siticoneTextBox1.AccessibleName = "Text Box";
+            this.siticoneTextBox1.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
+            this.siticoneTextBox1.BackColor = System.Drawing.Color.Transparent;
+            this.siticoneTextBox1.BlinkCount = 3;
+            this.siticoneTextBox1.BlinkShadow = false;
+            this.siticoneTextBox1.BorderColor1 = System.Drawing.Color.LightSlateGray;
+            this.siticoneTextBox1.BorderColor2 = System.Drawing.Color.LightSlateGray;
+            this.siticoneTextBox1.BorderFocusColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(77)))), ((int)(((byte)(255)))));
+            this.siticoneTextBox1.BorderFocusColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(77)))), ((int)(((byte)(255)))));
+            this.siticoneTextBox1.CanShake = true;
+            this.siticoneTextBox1.ContinuousBlink = false;
+            this.siticoneTextBox1.CornerRadiusBottomLeft = 10;
+            this.siticoneTextBox1.CornerRadiusBottomRight = 10;
+            this.siticoneTextBox1.CornerRadiusTopLeft = 10;
+            this.siticoneTextBox1.CornerRadiusTopRight = 10;
+            this.siticoneTextBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.siticoneTextBox1.CursorBlinkRate = 500;
+            this.siticoneTextBox1.CursorColor = System.Drawing.Color.Black;
+            this.siticoneTextBox1.CursorHeight = 26;
+            this.siticoneTextBox1.CursorOffset = 0;
+            this.siticoneTextBox1.CursorStyle = SiticoneNetFrameworkUI.Helpers.DrawingStyle.SiticoneDrawingStyle.Solid;
+            this.siticoneTextBox1.CursorWidth = 1;
+            this.siticoneTextBox1.DisabledBackColor = System.Drawing.Color.WhiteSmoke;
+            this.siticoneTextBox1.DisabledBorderColor = System.Drawing.Color.LightGray;
+            this.siticoneTextBox1.DisabledTextColor = System.Drawing.Color.Gray;
+            this.siticoneTextBox1.Enabled = false;
+            this.siticoneTextBox1.EnableDropShadow = false;
+            this.siticoneTextBox1.FillColor1 = System.Drawing.Color.White;
+            this.siticoneTextBox1.FillColor2 = System.Drawing.Color.White;
+            this.siticoneTextBox1.Font = new System.Drawing.Font("Segoe UI", 9.5F);
+            this.siticoneTextBox1.ForeColor = System.Drawing.Color.DimGray;
+            this.siticoneTextBox1.HoverBorderColor1 = System.Drawing.Color.Gray;
+            this.siticoneTextBox1.HoverBorderColor2 = System.Drawing.Color.Gray;
+            this.siticoneTextBox1.IsEnabled = true;
+            this.siticoneTextBox1.Location = new System.Drawing.Point(35, 62);
+            this.siticoneTextBox1.Name = "siticoneTextBox1";
+            this.siticoneTextBox1.PlaceholderColor = System.Drawing.Color.Gray;
+            this.siticoneTextBox1.PlaceholderText = " ";
+            this.siticoneTextBox1.ReadOnlyBorderColor1 = System.Drawing.Color.LightGray;
+            this.siticoneTextBox1.ReadOnlyBorderColor2 = System.Drawing.Color.LightGray;
+            this.siticoneTextBox1.ReadOnlyFillColor1 = System.Drawing.Color.WhiteSmoke;
+            this.siticoneTextBox1.ReadOnlyFillColor2 = System.Drawing.Color.WhiteSmoke;
+            this.siticoneTextBox1.ReadOnlyPlaceholderColor = System.Drawing.Color.DarkGray;
+            this.siticoneTextBox1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(77)))), ((int)(((byte)(255)))));
+            this.siticoneTextBox1.ShadowAnimationDuration = 1;
+            this.siticoneTextBox1.ShadowBlur = 10;
+            this.siticoneTextBox1.ShadowColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.siticoneTextBox1.Size = new System.Drawing.Size(203, 40);
+            this.siticoneTextBox1.SolidBorderColor = System.Drawing.Color.LightSlateGray;
+            this.siticoneTextBox1.SolidBorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(77)))), ((int)(((byte)(255)))));
+            this.siticoneTextBox1.SolidBorderHoverColor = System.Drawing.Color.Gray;
+            this.siticoneTextBox1.SolidFillColor = System.Drawing.Color.White;
+            this.siticoneTextBox1.TabIndex = 5;
+            this.siticoneTextBox1.TextPadding = new System.Windows.Forms.Padding(16, 0, 6, 0);
+            this.siticoneTextBox1.ValidationErrorMessage = "Invalid input.";
+            this.siticoneTextBox1.ValidationFunction = null;
             // 
-            // pictureBox3
+            // label4
             // 
-            this.pictureBox3.Image = global::TiemVaiLucCode.Properties.Resources.shopping_cart_2037547;
-            this.pictureBox3.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(48, 48);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox3.TabIndex = 1;
-            this.pictureBox3.TabStop = false;
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(31, 15);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(103, 23);
+            this.label4.TabIndex = 4;
+            this.label4.Text = "HÓA ĐƠN";
             // 
-            // pictureBox2
+            // siticoneTextBox2
             // 
-            this.pictureBox2.Dock = System.Windows.Forms.DockStyle.Left;
-            this.pictureBox2.Image = global::TiemVaiLucCode.Properties.Resources.smart_contracts_1442117;
-            this.pictureBox2.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(48, 44);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 1;
-            this.pictureBox2.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::TiemVaiLucCode.Properties.Resources.apps_11319676;
-            this.pictureBox1.Location = new System.Drawing.Point(3, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(45, 44);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
+            this.siticoneTextBox2.AccessibleDescription = "A customizable text input field.";
+            this.siticoneTextBox2.AccessibleName = "Text Box";
+            this.siticoneTextBox2.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
+            this.siticoneTextBox2.BackColor = System.Drawing.Color.Transparent;
+            this.siticoneTextBox2.BlinkCount = 3;
+            this.siticoneTextBox2.BlinkShadow = false;
+            this.siticoneTextBox2.BorderColor1 = System.Drawing.Color.LightSlateGray;
+            this.siticoneTextBox2.BorderColor2 = System.Drawing.Color.LightSlateGray;
+            this.siticoneTextBox2.BorderFocusColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(77)))), ((int)(((byte)(255)))));
+            this.siticoneTextBox2.BorderFocusColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(77)))), ((int)(((byte)(255)))));
+            this.siticoneTextBox2.CanShake = true;
+            this.siticoneTextBox2.ContinuousBlink = false;
+            this.siticoneTextBox2.CornerRadiusBottomLeft = 10;
+            this.siticoneTextBox2.CornerRadiusBottomRight = 10;
+            this.siticoneTextBox2.CornerRadiusTopLeft = 10;
+            this.siticoneTextBox2.CornerRadiusTopRight = 10;
+            this.siticoneTextBox2.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.siticoneTextBox2.CursorBlinkRate = 500;
+            this.siticoneTextBox2.CursorColor = System.Drawing.Color.Black;
+            this.siticoneTextBox2.CursorHeight = 26;
+            this.siticoneTextBox2.CursorOffset = 0;
+            this.siticoneTextBox2.CursorStyle = SiticoneNetFrameworkUI.Helpers.DrawingStyle.SiticoneDrawingStyle.Solid;
+            this.siticoneTextBox2.CursorWidth = 1;
+            this.siticoneTextBox2.DisabledBackColor = System.Drawing.Color.WhiteSmoke;
+            this.siticoneTextBox2.DisabledBorderColor = System.Drawing.Color.LightGray;
+            this.siticoneTextBox2.DisabledTextColor = System.Drawing.Color.Gray;
+            this.siticoneTextBox2.Enabled = false;
+            this.siticoneTextBox2.EnableDropShadow = false;
+            this.siticoneTextBox2.FillColor1 = System.Drawing.Color.White;
+            this.siticoneTextBox2.FillColor2 = System.Drawing.Color.White;
+            this.siticoneTextBox2.Font = new System.Drawing.Font("Segoe UI", 9.5F);
+            this.siticoneTextBox2.ForeColor = System.Drawing.Color.DimGray;
+            this.siticoneTextBox2.HoverBorderColor1 = System.Drawing.Color.Gray;
+            this.siticoneTextBox2.HoverBorderColor2 = System.Drawing.Color.Gray;
+            this.siticoneTextBox2.IsEnabled = true;
+            this.siticoneTextBox2.Location = new System.Drawing.Point(35, 62);
+            this.siticoneTextBox2.Name = "siticoneTextBox2";
+            this.siticoneTextBox2.PlaceholderColor = System.Drawing.Color.Gray;
+            this.siticoneTextBox2.PlaceholderText = " ";
+            this.siticoneTextBox2.ReadOnlyBorderColor1 = System.Drawing.Color.LightGray;
+            this.siticoneTextBox2.ReadOnlyBorderColor2 = System.Drawing.Color.LightGray;
+            this.siticoneTextBox2.ReadOnlyFillColor1 = System.Drawing.Color.WhiteSmoke;
+            this.siticoneTextBox2.ReadOnlyFillColor2 = System.Drawing.Color.WhiteSmoke;
+            this.siticoneTextBox2.ReadOnlyPlaceholderColor = System.Drawing.Color.DarkGray;
+            this.siticoneTextBox2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(77)))), ((int)(((byte)(255)))));
+            this.siticoneTextBox2.ShadowAnimationDuration = 1;
+            this.siticoneTextBox2.ShadowBlur = 10;
+            this.siticoneTextBox2.ShadowColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.siticoneTextBox2.Size = new System.Drawing.Size(203, 40);
+            this.siticoneTextBox2.SolidBorderColor = System.Drawing.Color.LightSlateGray;
+            this.siticoneTextBox2.SolidBorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(77)))), ((int)(((byte)(255)))));
+            this.siticoneTextBox2.SolidBorderHoverColor = System.Drawing.Color.Gray;
+            this.siticoneTextBox2.SolidFillColor = System.Drawing.Color.White;
+            this.siticoneTextBox2.TabIndex = 5;
+            this.siticoneTextBox2.TextPadding = new System.Windows.Forms.Padding(16, 0, 6, 0);
+            this.siticoneTextBox2.ValidationErrorMessage = "Invalid input.";
+            this.siticoneTextBox2.ValidationFunction = null;
             // 
             // Frm_TrangChu_Admin
             // 
@@ -722,23 +873,27 @@
             this.Name = "Frm_TrangChu_Admin";
             this.Text = "Frm_TrangChu_Admin";
             this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             this.tableLayoutPanel1.ResumeLayout(false);
             this.Card_SanPham.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.pnl_DonHang.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.panel5.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.Card_TongQuan.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.pnl_ManHinhChinh.ResumeLayout(false);
             this.pnl_Card_TongQuan.ResumeLayout(false);
             this.tableLayoutPanel2.ResumeLayout(false);
             this.siticonePanel1.ResumeLayout(false);
             this.siticonePanel1.PerformLayout();
+            this.siticonePanel3.ResumeLayout(false);
+            this.siticonePanel3.PerformLayout();
+            this.siticonePanel4.ResumeLayout(false);
+            this.siticonePanel4.PerformLayout();
             this.siticonePanel2.ResumeLayout(false);
             this.siticonePanel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -759,7 +914,7 @@
         private SiticoneNetFrameworkUI.SiticoneLabel siticoneLabel3;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Panel panel5;
-        private SiticoneNetFrameworkUI.SiticoneLabel siticoneLabel2;
+        private SiticoneNetFrameworkUI.SiticoneLabel pnl_HoaDon;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Panel pnl_Card_TongQuan;
         private SiticoneNetFrameworkUI.SiticonePanel siticonePanel6;
@@ -774,5 +929,9 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
         private System.Windows.Forms.PictureBox pictureBox6;
+        private System.Windows.Forms.Label label3;
+        private SiticoneNetFrameworkUI.SiticoneTextBox siticoneTextBox1;
+        private System.Windows.Forms.Label label4;
+        private SiticoneNetFrameworkUI.SiticoneTextBox siticoneTextBox2;
     }
 }

@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 using System.Windows.Forms;
+using TiemVaiLucCode.Models;
 
 namespace TiemVaiLucCode
 {
@@ -19,8 +20,48 @@ namespace TiemVaiLucCode
         public Frm_TrangChu_Admin()
         {
             InitializeComponent();
+            CapNhatThongKe(); // Cập nhật thống kê khi form được khởi tạo
         }
 
+        // --- HÀM TÍNH TOÁN & CẬP NHẬT 4 Ô THỐNG KÊ ---
+        private void CapNhatThongKe()
+        {
+            try
+            {
+                using (var db = new TaiKhoanContext())
+                {
+                    DateTime homNay = DateTime.Now;
+
+                    // 1. CỘNG DOANH THU HÔM NAY: 
+                    // Lọc những hóa đơn có trạng thái "Đã Thanh Toán" và lập trong ngày hôm nay
+                    var doanhThu = db.HoaDons
+                        .Where(hd => hd.TrangThaiThanhToan == "Đã Thanh Toán"
+                                  && hd.NgayLap.Year == homNay.Year
+                                  && hd.NgayLap.Month == homNay.Month
+                                  && hd.NgayLap.Day == homNay.Day)
+                        .Sum(hd => (decimal?)hd.TongTienThanhToan) ?? 0;
+
+                    txt_DoanhThu.Text = doanhThu.ToString("N0") + " VNĐ"; // Định dạng tiền có dấu phẩy
+
+                    // 2. ĐẾM SỐ ĐƠN HÀNG: Khách đặt bao nhiêu thì đếm bấy nhiêu
+                    int soDonHang = db.DonHangs.Count();
+                    txt_DonHang.Text = soDonHang.ToString();
+
+                    // 3. ĐẾM SỐ SẢN PHẨM: Đổ vào siticoneTextBox1
+                    int soSanPham = db.SanPhams.Count();
+                    siticoneTextBox1.Text = soSanPham.ToString();
+
+                    // 4. ĐẾM SỐ HÓA ĐƠN: Đổ vào siticoneTextBox2
+                    int soHoaDon = db.HoaDons.Count();
+                    siticoneTextBox2.Text = soHoaDon.ToString();
+                }
+            }
+            catch (Exception ex)
+            {
+                // Bắt lỗi nhẹ lỡ CSDL chưa có dữ liệu để chương trình không bị văng
+                Console.WriteLine("Lỗi thống kê: " + ex.Message);
+            }
+        }
         private void Mo_Card_ChildFrom(Form childForm)
         {
             // Nếu có form nào đang mở thì đóng nó lại
@@ -61,11 +102,19 @@ namespace TiemVaiLucCode
                 formDangMo.Close(); // Có thì đóng cửa đuổi ẻm xuống
                 formDangMo = null;  // Xóa trí nhớ, đánh dấu là sân khấu đang trống
             }
+            CapNhatThongKe();
         }
 
         private void pnl_DonHang_Click(object sender, EventArgs e)
         {
             Mo_Card_ChildFrom(new Frm_Card_DonHang());
         }
+
+        private void pnl_HoaDon_Click(object sender, EventArgs e)
+        {
+            Mo_Card_ChildFrom(new Frm_Card_HoaDon());
+        }
+
+        
     }
 }

@@ -29,20 +29,27 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Frm_Card_DonHang));
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.tiemVaiDBDataSet1 = new TiemVaiLucCode.TiemVaiDBDataSet1();
             this.chiTietDonHangsBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.chiTietDonHangsTableAdapter = new TiemVaiLucCode.TiemVaiDBDataSet1TableAdapters.ChiTietDonHangsTableAdapter();
             this.tableAdapterManager = new TiemVaiLucCode.TiemVaiDBDataSet1TableAdapters.TableAdapterManager();
             this.chiTietDonHangsBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
+            this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
+            this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorMovePreviousItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator = new System.Windows.Forms.ToolStripSeparator();
             this.bindingNavigatorPositionItem = new System.Windows.Forms.ToolStripTextBox();
-            this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
             this.bindingNavigatorSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+            this.bindingNavigatorMoveNextItem = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
+            this.chiTietDonHangsBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
             this.chiTietDonHangsDataGridView = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -50,15 +57,8 @@
             this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label1 = new System.Windows.Forms.Label();
-            this.siticoneButton1 = new SiticoneNetFrameworkUI.SiticoneButton();
-            this.siticoneTextBox1 = new SiticoneNetFrameworkUI.SiticoneTextBox();
-            this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorMovePreviousItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorMoveNextItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
-            this.chiTietDonHangsBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
+            this.btn_lamMoi = new SiticoneNetFrameworkUI.SiticoneButton();
+            this.txt_TimKiem = new SiticoneNetFrameworkUI.SiticoneTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.tiemVaiDBDataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chiTietDonHangsBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chiTietDonHangsBindingNavigator)).BeginInit();
@@ -120,9 +120,52 @@
             this.chiTietDonHangsBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
             this.chiTietDonHangsBindingNavigator.Name = "chiTietDonHangsBindingNavigator";
             this.chiTietDonHangsBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.chiTietDonHangsBindingNavigator.Size = new System.Drawing.Size(1099, 31);
+            this.chiTietDonHangsBindingNavigator.Size = new System.Drawing.Size(1099, 27);
             this.chiTietDonHangsBindingNavigator.TabIndex = 0;
             this.chiTietDonHangsBindingNavigator.Text = "bindingNavigator1";
+            // 
+            // bindingNavigatorAddNewItem
+            // 
+            this.bindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
+            this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
+            this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(29, 24);
+            this.bindingNavigatorAddNewItem.Text = "Add new";
+            // 
+            // bindingNavigatorCountItem
+            // 
+            this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
+            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(45, 24);
+            this.bindingNavigatorCountItem.Text = "of {0}";
+            this.bindingNavigatorCountItem.ToolTipText = "Total number of items";
+            // 
+            // bindingNavigatorDeleteItem
+            // 
+            this.bindingNavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
+            this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
+            this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(29, 24);
+            this.bindingNavigatorDeleteItem.Text = "Delete";
+            // 
+            // bindingNavigatorMoveFirstItem
+            // 
+            this.bindingNavigatorMoveFirstItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorMoveFirstItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveFirstItem.Image")));
+            this.bindingNavigatorMoveFirstItem.Name = "bindingNavigatorMoveFirstItem";
+            this.bindingNavigatorMoveFirstItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorMoveFirstItem.Size = new System.Drawing.Size(29, 24);
+            this.bindingNavigatorMoveFirstItem.Text = "Move first";
+            // 
+            // bindingNavigatorMovePreviousItem
+            // 
+            this.bindingNavigatorMovePreviousItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorMovePreviousItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMovePreviousItem.Image")));
+            this.bindingNavigatorMovePreviousItem.Name = "bindingNavigatorMovePreviousItem";
+            this.bindingNavigatorMovePreviousItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorMovePreviousItem.Size = new System.Drawing.Size(29, 24);
+            this.bindingNavigatorMovePreviousItem.Text = "Move previous";
             // 
             // bindingNavigatorSeparator
             // 
@@ -139,34 +182,54 @@
             this.bindingNavigatorPositionItem.Text = "0";
             this.bindingNavigatorPositionItem.ToolTipText = "Current position";
             // 
-            // bindingNavigatorCountItem
-            // 
-            this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
-            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(45, 24);
-            this.bindingNavigatorCountItem.Text = "of {0}";
-            this.bindingNavigatorCountItem.ToolTipText = "Total number of items";
-            // 
             // bindingNavigatorSeparator1
             // 
-            this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator";
+            this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator1";
             this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 27);
+            // 
+            // bindingNavigatorMoveNextItem
+            // 
+            this.bindingNavigatorMoveNextItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorMoveNextItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveNextItem.Image")));
+            this.bindingNavigatorMoveNextItem.Name = "bindingNavigatorMoveNextItem";
+            this.bindingNavigatorMoveNextItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(29, 24);
+            this.bindingNavigatorMoveNextItem.Text = "Move next";
+            // 
+            // bindingNavigatorMoveLastItem
+            // 
+            this.bindingNavigatorMoveLastItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorMoveLastItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveLastItem.Image")));
+            this.bindingNavigatorMoveLastItem.Name = "bindingNavigatorMoveLastItem";
+            this.bindingNavigatorMoveLastItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(29, 24);
+            this.bindingNavigatorMoveLastItem.Text = "Move last";
             // 
             // bindingNavigatorSeparator2
             // 
-            this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator";
+            this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator2";
             this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 27);
+            // 
+            // chiTietDonHangsBindingNavigatorSaveItem
+            // 
+            this.chiTietDonHangsBindingNavigatorSaveItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.chiTietDonHangsBindingNavigatorSaveItem.Image = ((System.Drawing.Image)(resources.GetObject("chiTietDonHangsBindingNavigatorSaveItem.Image")));
+            this.chiTietDonHangsBindingNavigatorSaveItem.Name = "chiTietDonHangsBindingNavigatorSaveItem";
+            this.chiTietDonHangsBindingNavigatorSaveItem.Size = new System.Drawing.Size(29, 24);
+            this.chiTietDonHangsBindingNavigatorSaveItem.Text = "Save Data";
+            this.chiTietDonHangsBindingNavigatorSaveItem.Click += new System.EventHandler(this.chiTietDonHangsBindingNavigatorSaveItem_Click);
             // 
             // chiTietDonHangsDataGridView
             // 
             this.chiTietDonHangsDataGridView.AutoGenerateColumns = false;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.chiTietDonHangsDataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.chiTietDonHangsDataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.chiTietDonHangsDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.chiTietDonHangsDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn1,
@@ -175,27 +238,27 @@
             this.dataGridViewTextBoxColumn4,
             this.dataGridViewTextBoxColumn5});
             this.chiTietDonHangsDataGridView.DataSource = this.chiTietDonHangsBindingSource;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.chiTietDonHangsDataGridView.DefaultCellStyle = dataGridViewCellStyle5;
-            this.chiTietDonHangsDataGridView.Location = new System.Drawing.Point(39, 119);
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.chiTietDonHangsDataGridView.DefaultCellStyle = dataGridViewCellStyle2;
+            this.chiTietDonHangsDataGridView.Location = new System.Drawing.Point(65, 134);
             this.chiTietDonHangsDataGridView.Name = "chiTietDonHangsDataGridView";
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.chiTietDonHangsDataGridView.RowHeadersDefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.chiTietDonHangsDataGridView.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.chiTietDonHangsDataGridView.RowHeadersWidth = 51;
             this.chiTietDonHangsDataGridView.RowTemplate.Height = 24;
-            this.chiTietDonHangsDataGridView.Size = new System.Drawing.Size(988, 448);
+            this.chiTietDonHangsDataGridView.Size = new System.Drawing.Size(936, 436);
             this.chiTietDonHangsDataGridView.TabIndex = 1;
             // 
             // dataGridViewTextBoxColumn1
@@ -249,211 +312,150 @@
             this.label1.TabIndex = 2;
             this.label1.Text = "QUẢN LÝ ĐƠN HÀNG";
             // 
-            // siticoneButton1
+            // btn_lamMoi
             // 
-            this.siticoneButton1.AccessibleDescription = "The default button control that accept input though the mouse, touch and keyboard" +
+            this.btn_lamMoi.AccessibleDescription = "The default button control that accept input though the mouse, touch and keyboard" +
     "";
-            this.siticoneButton1.AccessibleName = "Làm mới";
-            this.siticoneButton1.AutoSizeBasedOnText = false;
-            this.siticoneButton1.BackColor = System.Drawing.Color.Transparent;
-            this.siticoneButton1.BadgeBackColor = System.Drawing.Color.Black;
-            this.siticoneButton1.BadgeFont = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Bold);
-            this.siticoneButton1.BadgeValue = 0;
-            this.siticoneButton1.BadgeValueForeColor = System.Drawing.Color.White;
-            this.siticoneButton1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(216)))), ((int)(((byte)(220)))));
-            this.siticoneButton1.BorderWidth = 1;
-            this.siticoneButton1.ButtonBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.siticoneButton1.ButtonImage = null;
-            this.siticoneButton1.ButtonTextLeftPadding = 0;
-            this.siticoneButton1.CanBeep = true;
-            this.siticoneButton1.CanGlow = false;
-            this.siticoneButton1.CanShake = true;
-            this.siticoneButton1.ContextMenuStripEx = null;
-            this.siticoneButton1.CornerRadiusBottomLeft = 10;
-            this.siticoneButton1.CornerRadiusBottomRight = 10;
-            this.siticoneButton1.CornerRadiusTopLeft = 10;
-            this.siticoneButton1.CornerRadiusTopRight = 10;
-            this.siticoneButton1.CustomCursor = System.Windows.Forms.Cursors.Default;
-            this.siticoneButton1.DisabledTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(150)))), ((int)(((byte)(150)))));
-            this.siticoneButton1.EnableLongPress = false;
-            this.siticoneButton1.EnableRippleEffect = true;
-            this.siticoneButton1.EnableShadow = false;
-            this.siticoneButton1.EnableTextWrapping = false;
-            this.siticoneButton1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.siticoneButton1.GlowColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.siticoneButton1.GlowIntensity = 100;
-            this.siticoneButton1.GlowRadius = 20F;
-            this.siticoneButton1.GradientBackground = false;
-            this.siticoneButton1.GradientColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(227)))), ((int)(((byte)(64)))));
-            this.siticoneButton1.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical;
-            this.siticoneButton1.HintText = null;
-            this.siticoneButton1.HoverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.siticoneButton1.HoverFontStyle = System.Drawing.FontStyle.Regular;
-            this.siticoneButton1.HoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.siticoneButton1.HoverTransitionDuration = 140;
-            this.siticoneButton1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.siticoneButton1.ImagePadding = 5;
-            this.siticoneButton1.ImageSize = new System.Drawing.Size(16, 16);
-            this.siticoneButton1.IsRadial = false;
-            this.siticoneButton1.IsReadOnly = false;
-            this.siticoneButton1.IsToggleButton = false;
-            this.siticoneButton1.IsToggled = false;
-            this.siticoneButton1.Location = new System.Drawing.Point(897, 50);
-            this.siticoneButton1.LongPressDurationMS = 1000;
-            this.siticoneButton1.Name = "siticoneButton1";
-            this.siticoneButton1.NormalFontStyle = System.Drawing.FontStyle.Regular;
-            this.siticoneButton1.ParticleColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
-            this.siticoneButton1.ParticleCount = 15;
-            this.siticoneButton1.PressAnimationScale = 0.97F;
-            this.siticoneButton1.PressedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(227)))), ((int)(((byte)(230)))));
-            this.siticoneButton1.PressedFontStyle = System.Drawing.FontStyle.Regular;
-            this.siticoneButton1.PressTransitionDuration = 90;
-            this.siticoneButton1.ReadOnlyTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(100)))), ((int)(((byte)(100)))));
-            this.siticoneButton1.RippleColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.siticoneButton1.RippleRadiusMultiplier = 0.6F;
-            this.siticoneButton1.ShadowBlur = 5;
-            this.siticoneButton1.ShadowColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.siticoneButton1.ShadowOffset = new System.Drawing.Point(0, 2);
-            this.siticoneButton1.ShakeDuration = 500;
-            this.siticoneButton1.ShakeIntensity = 5;
-            this.siticoneButton1.Size = new System.Drawing.Size(130, 35);
-            this.siticoneButton1.TabIndex = 3;
-            this.siticoneButton1.Text = "Làm mới";
-            this.siticoneButton1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.siticoneButton1.TextColor = System.Drawing.Color.White;
-            this.siticoneButton1.TooltipText = null;
-            this.siticoneButton1.UseAdvancedRendering = true;
-            this.siticoneButton1.UseParticles = false;
+            this.btn_lamMoi.AccessibleName = "Làm mới";
+            this.btn_lamMoi.AutoSizeBasedOnText = false;
+            this.btn_lamMoi.BackColor = System.Drawing.Color.Transparent;
+            this.btn_lamMoi.BadgeBackColor = System.Drawing.Color.Black;
+            this.btn_lamMoi.BadgeFont = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Bold);
+            this.btn_lamMoi.BadgeValue = 0;
+            this.btn_lamMoi.BadgeValueForeColor = System.Drawing.Color.White;
+            this.btn_lamMoi.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(216)))), ((int)(((byte)(220)))));
+            this.btn_lamMoi.BorderWidth = 1;
+            this.btn_lamMoi.ButtonBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.btn_lamMoi.ButtonImage = null;
+            this.btn_lamMoi.ButtonTextLeftPadding = 0;
+            this.btn_lamMoi.CanBeep = true;
+            this.btn_lamMoi.CanGlow = false;
+            this.btn_lamMoi.CanShake = true;
+            this.btn_lamMoi.ContextMenuStripEx = null;
+            this.btn_lamMoi.CornerRadiusBottomLeft = 10;
+            this.btn_lamMoi.CornerRadiusBottomRight = 10;
+            this.btn_lamMoi.CornerRadiusTopLeft = 10;
+            this.btn_lamMoi.CornerRadiusTopRight = 10;
+            this.btn_lamMoi.CustomCursor = System.Windows.Forms.Cursors.Default;
+            this.btn_lamMoi.DisabledTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(150)))), ((int)(((byte)(150)))));
+            this.btn_lamMoi.EnableLongPress = false;
+            this.btn_lamMoi.EnableRippleEffect = true;
+            this.btn_lamMoi.EnableShadow = false;
+            this.btn_lamMoi.EnableTextWrapping = false;
+            this.btn_lamMoi.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_lamMoi.GlowColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.btn_lamMoi.GlowIntensity = 100;
+            this.btn_lamMoi.GlowRadius = 20F;
+            this.btn_lamMoi.GradientBackground = false;
+            this.btn_lamMoi.GradientColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(227)))), ((int)(((byte)(64)))));
+            this.btn_lamMoi.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical;
+            this.btn_lamMoi.HintText = null;
+            this.btn_lamMoi.HoverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.btn_lamMoi.HoverFontStyle = System.Drawing.FontStyle.Regular;
+            this.btn_lamMoi.HoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btn_lamMoi.HoverTransitionDuration = 140;
+            this.btn_lamMoi.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_lamMoi.ImagePadding = 5;
+            this.btn_lamMoi.ImageSize = new System.Drawing.Size(16, 16);
+            this.btn_lamMoi.IsRadial = false;
+            this.btn_lamMoi.IsReadOnly = false;
+            this.btn_lamMoi.IsToggleButton = false;
+            this.btn_lamMoi.IsToggled = false;
+            this.btn_lamMoi.Location = new System.Drawing.Point(897, 50);
+            this.btn_lamMoi.LongPressDurationMS = 1000;
+            this.btn_lamMoi.Name = "btn_lamMoi";
+            this.btn_lamMoi.NormalFontStyle = System.Drawing.FontStyle.Regular;
+            this.btn_lamMoi.ParticleColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
+            this.btn_lamMoi.ParticleCount = 15;
+            this.btn_lamMoi.PressAnimationScale = 0.97F;
+            this.btn_lamMoi.PressedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(227)))), ((int)(((byte)(230)))));
+            this.btn_lamMoi.PressedFontStyle = System.Drawing.FontStyle.Regular;
+            this.btn_lamMoi.PressTransitionDuration = 90;
+            this.btn_lamMoi.ReadOnlyTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(100)))), ((int)(((byte)(100)))));
+            this.btn_lamMoi.RippleColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btn_lamMoi.RippleRadiusMultiplier = 0.6F;
+            this.btn_lamMoi.ShadowBlur = 5;
+            this.btn_lamMoi.ShadowColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btn_lamMoi.ShadowOffset = new System.Drawing.Point(0, 2);
+            this.btn_lamMoi.ShakeDuration = 500;
+            this.btn_lamMoi.ShakeIntensity = 5;
+            this.btn_lamMoi.Size = new System.Drawing.Size(130, 35);
+            this.btn_lamMoi.TabIndex = 3;
+            this.btn_lamMoi.Text = "Làm mới";
+            this.btn_lamMoi.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btn_lamMoi.TextColor = System.Drawing.Color.White;
+            this.btn_lamMoi.TooltipText = null;
+            this.btn_lamMoi.UseAdvancedRendering = true;
+            this.btn_lamMoi.UseParticles = false;
+            this.btn_lamMoi.Click += new System.EventHandler(this.btn_lamMoi_Click);
             // 
-            // siticoneTextBox1
+            // txt_TimKiem
             // 
-            this.siticoneTextBox1.AccessibleDescription = "A customizable text input field.";
-            this.siticoneTextBox1.AccessibleName = "Text Box";
-            this.siticoneTextBox1.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
-            this.siticoneTextBox1.BackColor = System.Drawing.Color.Transparent;
-            this.siticoneTextBox1.BlinkCount = 3;
-            this.siticoneTextBox1.BlinkShadow = false;
-            this.siticoneTextBox1.BorderColor1 = System.Drawing.Color.LightSlateGray;
-            this.siticoneTextBox1.BorderColor2 = System.Drawing.Color.LightSlateGray;
-            this.siticoneTextBox1.BorderFocusColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(77)))), ((int)(((byte)(255)))));
-            this.siticoneTextBox1.BorderFocusColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(77)))), ((int)(((byte)(255)))));
-            this.siticoneTextBox1.CanShake = true;
-            this.siticoneTextBox1.ContinuousBlink = false;
-            this.siticoneTextBox1.CornerRadiusBottomLeft = 20;
-            this.siticoneTextBox1.CornerRadiusBottomRight = 20;
-            this.siticoneTextBox1.CornerRadiusTopLeft = 20;
-            this.siticoneTextBox1.CornerRadiusTopRight = 20;
-            this.siticoneTextBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.siticoneTextBox1.CursorBlinkRate = 500;
-            this.siticoneTextBox1.CursorColor = System.Drawing.Color.Black;
-            this.siticoneTextBox1.CursorHeight = 26;
-            this.siticoneTextBox1.CursorOffset = 0;
-            this.siticoneTextBox1.CursorStyle = SiticoneNetFrameworkUI.Helpers.DrawingStyle.SiticoneDrawingStyle.Solid;
-            this.siticoneTextBox1.CursorWidth = 1;
-            this.siticoneTextBox1.DisabledBackColor = System.Drawing.Color.WhiteSmoke;
-            this.siticoneTextBox1.DisabledBorderColor = System.Drawing.Color.LightGray;
-            this.siticoneTextBox1.DisabledTextColor = System.Drawing.Color.Gray;
-            this.siticoneTextBox1.EnableDropShadow = false;
-            this.siticoneTextBox1.FillColor1 = System.Drawing.Color.White;
-            this.siticoneTextBox1.FillColor2 = System.Drawing.Color.White;
-            this.siticoneTextBox1.Font = new System.Drawing.Font("Segoe UI", 9.5F);
-            this.siticoneTextBox1.ForeColor = System.Drawing.Color.Black;
-            this.siticoneTextBox1.HoverBorderColor1 = System.Drawing.Color.Gray;
-            this.siticoneTextBox1.HoverBorderColor2 = System.Drawing.Color.Gray;
-            this.siticoneTextBox1.IsEnabled = true;
-            this.siticoneTextBox1.Location = new System.Drawing.Point(376, 50);
-            this.siticoneTextBox1.Name = "siticoneTextBox1";
-            this.siticoneTextBox1.PlaceholderColor = System.Drawing.Color.Gray;
-            this.siticoneTextBox1.PlaceholderText = "Nhập thông tin tiềm kiếm...";
-            this.siticoneTextBox1.ReadOnlyBorderColor1 = System.Drawing.Color.LightGray;
-            this.siticoneTextBox1.ReadOnlyBorderColor2 = System.Drawing.Color.LightGray;
-            this.siticoneTextBox1.ReadOnlyFillColor1 = System.Drawing.Color.WhiteSmoke;
-            this.siticoneTextBox1.ReadOnlyFillColor2 = System.Drawing.Color.WhiteSmoke;
-            this.siticoneTextBox1.ReadOnlyPlaceholderColor = System.Drawing.Color.DarkGray;
-            this.siticoneTextBox1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(77)))), ((int)(((byte)(255)))));
-            this.siticoneTextBox1.ShadowAnimationDuration = 1;
-            this.siticoneTextBox1.ShadowBlur = 10;
-            this.siticoneTextBox1.ShadowColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.siticoneTextBox1.Size = new System.Drawing.Size(515, 35);
-            this.siticoneTextBox1.SolidBorderColor = System.Drawing.Color.LightSlateGray;
-            this.siticoneTextBox1.SolidBorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(77)))), ((int)(((byte)(255)))));
-            this.siticoneTextBox1.SolidBorderHoverColor = System.Drawing.Color.Gray;
-            this.siticoneTextBox1.SolidFillColor = System.Drawing.Color.White;
-            this.siticoneTextBox1.TabIndex = 4;
-            this.siticoneTextBox1.TextPadding = new System.Windows.Forms.Padding(16, 0, 6, 0);
-            this.siticoneTextBox1.ValidationErrorMessage = "Invalid input.";
-            this.siticoneTextBox1.ValidationFunction = null;
-            // 
-            // bindingNavigatorAddNewItem
-            // 
-            this.bindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
-            this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
-            this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(29, 28);
-            this.bindingNavigatorAddNewItem.Text = "Add new";
-            // 
-            // bindingNavigatorDeleteItem
-            // 
-            this.bindingNavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
-            this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
-            this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(29, 24);
-            this.bindingNavigatorDeleteItem.Text = "Delete";
-            // 
-            // bindingNavigatorMoveFirstItem
-            // 
-            this.bindingNavigatorMoveFirstItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorMoveFirstItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveFirstItem.Image")));
-            this.bindingNavigatorMoveFirstItem.Name = "bindingNavigatorMoveFirstItem";
-            this.bindingNavigatorMoveFirstItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveFirstItem.Size = new System.Drawing.Size(29, 24);
-            this.bindingNavigatorMoveFirstItem.Text = "Move first";
-            // 
-            // bindingNavigatorMovePreviousItem
-            // 
-            this.bindingNavigatorMovePreviousItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorMovePreviousItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMovePreviousItem.Image")));
-            this.bindingNavigatorMovePreviousItem.Name = "bindingNavigatorMovePreviousItem";
-            this.bindingNavigatorMovePreviousItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMovePreviousItem.Size = new System.Drawing.Size(29, 24);
-            this.bindingNavigatorMovePreviousItem.Text = "Move previous";
-            // 
-            // bindingNavigatorMoveNextItem
-            // 
-            this.bindingNavigatorMoveNextItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorMoveNextItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveNextItem.Image")));
-            this.bindingNavigatorMoveNextItem.Name = "bindingNavigatorMoveNextItem";
-            this.bindingNavigatorMoveNextItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(29, 24);
-            this.bindingNavigatorMoveNextItem.Text = "Move next";
-            // 
-            // bindingNavigatorMoveLastItem
-            // 
-            this.bindingNavigatorMoveLastItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorMoveLastItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveLastItem.Image")));
-            this.bindingNavigatorMoveLastItem.Name = "bindingNavigatorMoveLastItem";
-            this.bindingNavigatorMoveLastItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(29, 24);
-            this.bindingNavigatorMoveLastItem.Text = "Move last";
-            // 
-            // chiTietDonHangsBindingNavigatorSaveItem
-            // 
-            this.chiTietDonHangsBindingNavigatorSaveItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.chiTietDonHangsBindingNavigatorSaveItem.Image = ((System.Drawing.Image)(resources.GetObject("chiTietDonHangsBindingNavigatorSaveItem.Image")));
-            this.chiTietDonHangsBindingNavigatorSaveItem.Name = "chiTietDonHangsBindingNavigatorSaveItem";
-            this.chiTietDonHangsBindingNavigatorSaveItem.Size = new System.Drawing.Size(29, 24);
-            this.chiTietDonHangsBindingNavigatorSaveItem.Text = "Save Data";
-            this.chiTietDonHangsBindingNavigatorSaveItem.Click += new System.EventHandler(this.chiTietDonHangsBindingNavigatorSaveItem_Click);
+            this.txt_TimKiem.AccessibleDescription = "A customizable text input field.";
+            this.txt_TimKiem.AccessibleName = "Text Box";
+            this.txt_TimKiem.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
+            this.txt_TimKiem.BackColor = System.Drawing.Color.Transparent;
+            this.txt_TimKiem.BlinkCount = 3;
+            this.txt_TimKiem.BlinkShadow = false;
+            this.txt_TimKiem.BorderColor1 = System.Drawing.Color.LightSlateGray;
+            this.txt_TimKiem.BorderColor2 = System.Drawing.Color.LightSlateGray;
+            this.txt_TimKiem.BorderFocusColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(77)))), ((int)(((byte)(255)))));
+            this.txt_TimKiem.BorderFocusColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(77)))), ((int)(((byte)(255)))));
+            this.txt_TimKiem.CanShake = true;
+            this.txt_TimKiem.ContinuousBlink = false;
+            this.txt_TimKiem.CornerRadiusBottomLeft = 20;
+            this.txt_TimKiem.CornerRadiusBottomRight = 20;
+            this.txt_TimKiem.CornerRadiusTopLeft = 20;
+            this.txt_TimKiem.CornerRadiusTopRight = 20;
+            this.txt_TimKiem.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txt_TimKiem.CursorBlinkRate = 500;
+            this.txt_TimKiem.CursorColor = System.Drawing.Color.Black;
+            this.txt_TimKiem.CursorHeight = 26;
+            this.txt_TimKiem.CursorOffset = 0;
+            this.txt_TimKiem.CursorStyle = SiticoneNetFrameworkUI.Helpers.DrawingStyle.SiticoneDrawingStyle.Solid;
+            this.txt_TimKiem.CursorWidth = 1;
+            this.txt_TimKiem.DisabledBackColor = System.Drawing.Color.WhiteSmoke;
+            this.txt_TimKiem.DisabledBorderColor = System.Drawing.Color.LightGray;
+            this.txt_TimKiem.DisabledTextColor = System.Drawing.Color.Gray;
+            this.txt_TimKiem.EnableDropShadow = false;
+            this.txt_TimKiem.FillColor1 = System.Drawing.Color.White;
+            this.txt_TimKiem.FillColor2 = System.Drawing.Color.White;
+            this.txt_TimKiem.Font = new System.Drawing.Font("Segoe UI", 9.5F);
+            this.txt_TimKiem.ForeColor = System.Drawing.Color.Black;
+            this.txt_TimKiem.HoverBorderColor1 = System.Drawing.Color.Gray;
+            this.txt_TimKiem.HoverBorderColor2 = System.Drawing.Color.Gray;
+            this.txt_TimKiem.IsEnabled = true;
+            this.txt_TimKiem.Location = new System.Drawing.Point(376, 50);
+            this.txt_TimKiem.Name = "txt_TimKiem";
+            this.txt_TimKiem.PlaceholderColor = System.Drawing.Color.Gray;
+            this.txt_TimKiem.PlaceholderText = "Nhập thông tin tiềm kiếm...";
+            this.txt_TimKiem.ReadOnlyBorderColor1 = System.Drawing.Color.LightGray;
+            this.txt_TimKiem.ReadOnlyBorderColor2 = System.Drawing.Color.LightGray;
+            this.txt_TimKiem.ReadOnlyFillColor1 = System.Drawing.Color.WhiteSmoke;
+            this.txt_TimKiem.ReadOnlyFillColor2 = System.Drawing.Color.WhiteSmoke;
+            this.txt_TimKiem.ReadOnlyPlaceholderColor = System.Drawing.Color.DarkGray;
+            this.txt_TimKiem.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(77)))), ((int)(((byte)(255)))));
+            this.txt_TimKiem.ShadowAnimationDuration = 1;
+            this.txt_TimKiem.ShadowBlur = 10;
+            this.txt_TimKiem.ShadowColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.txt_TimKiem.Size = new System.Drawing.Size(515, 35);
+            this.txt_TimKiem.SolidBorderColor = System.Drawing.Color.LightSlateGray;
+            this.txt_TimKiem.SolidBorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(77)))), ((int)(((byte)(255)))));
+            this.txt_TimKiem.SolidBorderHoverColor = System.Drawing.Color.Gray;
+            this.txt_TimKiem.SolidFillColor = System.Drawing.Color.White;
+            this.txt_TimKiem.TabIndex = 4;
+            this.txt_TimKiem.TextPadding = new System.Windows.Forms.Padding(16, 0, 6, 0);
+            this.txt_TimKiem.ValidationErrorMessage = "Invalid input.";
+            this.txt_TimKiem.ValidationFunction = null;
+            this.txt_TimKiem.TextChanged += new System.EventHandler(this.txt_TimKiem_TextChanged);
             // 
             // Frm_Card_DonHang
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1099, 600);
-            this.Controls.Add(this.siticoneTextBox1);
-            this.Controls.Add(this.siticoneButton1);
+            this.Controls.Add(this.txt_TimKiem);
+            this.Controls.Add(this.btn_lamMoi);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.chiTietDonHangsDataGridView);
             this.Controls.Add(this.chiTietDonHangsBindingNavigator);
@@ -497,7 +499,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
         private System.Windows.Forms.Label label1;
-        private SiticoneNetFrameworkUI.SiticoneButton siticoneButton1;
-        private SiticoneNetFrameworkUI.SiticoneTextBox siticoneTextBox1;
+        private SiticoneNetFrameworkUI.SiticoneButton btn_lamMoi;
+        private SiticoneNetFrameworkUI.SiticoneTextBox txt_TimKiem;
     }
 }

@@ -357,5 +357,33 @@ namespace TiemVaiLucCode
                 }
             }
         }
+
+        private void txt_timKiem_TextChanged(object sender, EventArgs e)
+        {
+            // Lấy chữ người dùng vừa gõ (chuyển hết về chữ thường để dễ so sánh)
+            string tuKhoa = txt_timKiem.Text.Trim().ToLower();
+
+            using (var db = new TaiKhoanContext())
+            {
+                // Nếu ô tìm kiếm rỗng thì load lại toàn bộ dữ liệu ban đầu
+                if (string.IsNullOrEmpty(tuKhoa))
+                {
+                    hoaDonDataGridView.DataSource = db.HoaDons.ToList();
+                }
+                else
+                {
+                    // Lọc dữ liệu: Nếu Mã HĐ, Mã Đơn Hàng, hoặc Trạng Thái có chứa từ khóa thì lấy ra
+                    var ketQua = db.HoaDons.Where(hd =>
+                        hd.MaHoaDon.ToString().Contains(tuKhoa) ||
+                        hd.MaDonHang.ToString().Contains(tuKhoa) ||
+                        hd.TrangThaiThanhToan.ToLower().Contains(tuKhoa) ||
+                        hd.PhuongThucThanhToan.ToLower().Contains(tuKhoa)
+                    ).ToList();
+
+                    // Đổ kết quả vừa lọc được lên bảng
+                    hoaDonDataGridView.DataSource = ketQua;
+                }
+            }
+        }
     }
 }

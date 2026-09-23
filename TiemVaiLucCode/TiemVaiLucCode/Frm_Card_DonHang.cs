@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SiticoneNetFrameworkUI;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -7,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using TiemVaiLucCode.Models;
 
 namespace TiemVaiLucCode
 {
@@ -27,9 +29,53 @@ namespace TiemVaiLucCode
 
         private void Frm_Card_DonHang_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'tiemVaiDBDataSet1.ChiTietDonHangs' table. You can move, or remove it, as needed.
-            this.chiTietDonHangsTableAdapter.Fill(this.tiemVaiDBDataSet1.ChiTietDonHangs);
+            LoadData();
 
+        }
+        private void LoadData()
+        {
+            using (var db = new TaiKhoanContext()) // Nếu context tên khác thì mình đổi lại nha
+            {
+                // Lấy dữ liệu gán vào DataGridView
+                chiTietDonHangsDataGridView.DataSource = db.ChiTietDonHangs.ToList();
+            }
+        }
+
+        private void txt_TimKiem_TextChanged(object sender, EventArgs e)
+        {
+            string tuKhoa = txt_TimKiem.Text.Trim().ToLower();
+
+            using (var db = new TaiKhoanContext())
+            {
+                if (string.IsNullOrEmpty(tuKhoa))
+                {
+                    // Trống thì load toàn bộ lại
+                    chiTietDonHangsDataGridView.DataSource = db.ChiTietDonHangs.ToList();
+                }
+                else
+                {
+                    // Lọc theo Mã Đơn Hàng, Mã Sản Phẩm hoặc ID Chi tiết
+                    var ketQua = db.ChiTietDonHangs.Where(ct =>
+                        ct.MaDonHang.ToString().Contains(tuKhoa) ||
+                        ct.SanPhamId.ToString().Contains(tuKhoa) ||
+                        ct.ChiTietDonHangId.ToString().Contains(tuKhoa)
+                    ).ToList();
+
+                    // Đổ lên DataGridView
+                    chiTietDonHangsDataGridView.DataSource = ketQua;
+                }
+            }
+        }
+
+        private void btn_lamMoi_Click(object sender, EventArgs e)
+        {
+            txt_TimKiem.Clear();
+
+            // 2. Gọi lại hàm LoadData để cập nhật lỡ có đơn hàng mới vừa được khách đặt
+            LoadData();
+
+            // 3. Đưa con trỏ chuột nhấp nháy lại vào ô tìm kiếm cho tiện
+            txt_TimKiem.Focus();
         }
     }
 }
