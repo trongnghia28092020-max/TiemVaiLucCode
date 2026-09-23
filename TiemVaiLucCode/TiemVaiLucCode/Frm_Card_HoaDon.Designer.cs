@@ -29,8 +29,6 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Frm_Card_HoaDon));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.Label maHoaDonLabel;
             System.Windows.Forms.Label maDonHangLabel;
             System.Windows.Forms.Label nhanVienIdLabel;
@@ -39,22 +37,26 @@
             System.Windows.Forms.Label phuongThucThanhToanLabel;
             System.Windows.Forms.Label trangThaiThanhToanLabel;
             System.Windows.Forms.Label ghiChuLabel;
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Frm_Card_HoaDon));
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
             this.tiemVaiDBDataSet2 = new TiemVaiLucCode.TiemVaiDBDataSet2();
             this.hoaDonBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.hoaDonTableAdapter = new TiemVaiLucCode.TiemVaiDBDataSet2TableAdapters.HoaDonTableAdapter();
             this.tableAdapterManager = new TiemVaiLucCode.TiemVaiDBDataSet2TableAdapters.TableAdapterManager();
             this.hoaDonBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
+            this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
+            this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMovePreviousItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator = new System.Windows.Forms.ToolStripSeparator();
             this.bindingNavigatorPositionItem = new System.Windows.Forms.ToolStripTextBox();
-            this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
             this.bindingNavigatorSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.bindingNavigatorMoveNextItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
             this.hoaDonBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
             this.hoaDonDataGridView = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -72,10 +74,11 @@
             this.ngayLapDateTimePicker = new System.Windows.Forms.DateTimePicker();
             this.txt_tongTienThanhToan = new System.Windows.Forms.TextBox();
             this.ghiChuTextBox = new System.Windows.Forms.TextBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cmb_PTTT = new System.Windows.Forms.ComboBox();
             this.cmb_TrangThaiTT = new System.Windows.Forms.ComboBox();
             this.btn_InHD = new SiticoneNetFrameworkUI.SiticoneButton();
             this.btn_XuatHD = new SiticoneNetFrameworkUI.SiticoneButton();
+            this.btn_CapNhatHD = new SiticoneNetFrameworkUI.SiticoneButton();
             maHoaDonLabel = new System.Windows.Forms.Label();
             maDonHangLabel = new System.Windows.Forms.Label();
             nhanVienIdLabel = new System.Windows.Forms.Label();
@@ -90,6 +93,86 @@
             this.hoaDonBindingNavigator.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.hoaDonDataGridView)).BeginInit();
             this.SuspendLayout();
+            // 
+            // maHoaDonLabel
+            // 
+            maHoaDonLabel.AutoSize = true;
+            maHoaDonLabel.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            maHoaDonLabel.Location = new System.Drawing.Point(18, 93);
+            maHoaDonLabel.Name = "maHoaDonLabel";
+            maHoaDonLabel.Size = new System.Drawing.Size(101, 19);
+            maHoaDonLabel.TabIndex = 3;
+            maHoaDonLabel.Text = "Ma Hoa Don:";
+            // 
+            // maDonHangLabel
+            // 
+            maDonHangLabel.AutoSize = true;
+            maDonHangLabel.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            maDonHangLabel.Location = new System.Drawing.Point(601, 96);
+            maDonHangLabel.Name = "maDonHangLabel";
+            maDonHangLabel.Size = new System.Drawing.Size(108, 19);
+            maDonHangLabel.TabIndex = 5;
+            maDonHangLabel.Text = "Ma Don Hang:";
+            // 
+            // nhanVienIdLabel
+            // 
+            nhanVienIdLabel.AutoSize = true;
+            nhanVienIdLabel.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            nhanVienIdLabel.Location = new System.Drawing.Point(18, 136);
+            nhanVienIdLabel.Name = "nhanVienIdLabel";
+            nhanVienIdLabel.Size = new System.Drawing.Size(101, 19);
+            nhanVienIdLabel.TabIndex = 7;
+            nhanVienIdLabel.Text = "Nhan Vien Id:";
+            // 
+            // ngayLapLabel
+            // 
+            ngayLapLabel.AutoSize = true;
+            ngayLapLabel.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            ngayLapLabel.Location = new System.Drawing.Point(601, 137);
+            ngayLapLabel.Name = "ngayLapLabel";
+            ngayLapLabel.Size = new System.Drawing.Size(78, 19);
+            ngayLapLabel.TabIndex = 9;
+            ngayLapLabel.Text = "Ngay Lap:";
+            // 
+            // tongTienThanhToanLabel
+            // 
+            tongTienThanhToanLabel.AutoSize = true;
+            tongTienThanhToanLabel.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            tongTienThanhToanLabel.Location = new System.Drawing.Point(18, 181);
+            tongTienThanhToanLabel.Name = "tongTienThanhToanLabel";
+            tongTienThanhToanLabel.Size = new System.Drawing.Size(160, 19);
+            tongTienThanhToanLabel.TabIndex = 11;
+            tongTienThanhToanLabel.Text = "Tong Tien Thanh Toan:";
+            // 
+            // phuongThucThanhToanLabel
+            // 
+            phuongThucThanhToanLabel.AutoSize = true;
+            phuongThucThanhToanLabel.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            phuongThucThanhToanLabel.Location = new System.Drawing.Point(601, 181);
+            phuongThucThanhToanLabel.Name = "phuongThucThanhToanLabel";
+            phuongThucThanhToanLabel.Size = new System.Drawing.Size(182, 19);
+            phuongThucThanhToanLabel.TabIndex = 13;
+            phuongThucThanhToanLabel.Text = "Phuong Thuc Thanh Toan:";
+            // 
+            // trangThaiThanhToanLabel
+            // 
+            trangThaiThanhToanLabel.AutoSize = true;
+            trangThaiThanhToanLabel.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            trangThaiThanhToanLabel.Location = new System.Drawing.Point(18, 219);
+            trangThaiThanhToanLabel.Name = "trangThaiThanhToanLabel";
+            trangThaiThanhToanLabel.Size = new System.Drawing.Size(164, 19);
+            trangThaiThanhToanLabel.TabIndex = 15;
+            trangThaiThanhToanLabel.Text = "Trang Thai Thanh Toan:";
+            // 
+            // ghiChuLabel
+            // 
+            ghiChuLabel.AutoSize = true;
+            ghiChuLabel.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            ghiChuLabel.Location = new System.Drawing.Point(601, 222);
+            ghiChuLabel.Name = "ghiChuLabel";
+            ghiChuLabel.Size = new System.Drawing.Size(70, 19);
+            ghiChuLabel.TabIndex = 17;
+            ghiChuLabel.Text = "Ghi Chu:";
             // 
             // tiemVaiDBDataSet2
             // 
@@ -146,9 +229,34 @@
             this.hoaDonBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
             this.hoaDonBindingNavigator.Name = "hoaDonBindingNavigator";
             this.hoaDonBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.hoaDonBindingNavigator.Size = new System.Drawing.Size(1099, 27);
+            this.hoaDonBindingNavigator.Size = new System.Drawing.Size(1099, 31);
             this.hoaDonBindingNavigator.TabIndex = 0;
             this.hoaDonBindingNavigator.Text = "bindingNavigator1";
+            // 
+            // bindingNavigatorAddNewItem
+            // 
+            this.bindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
+            this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
+            this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(29, 28);
+            this.bindingNavigatorAddNewItem.Text = "Add new";
+            // 
+            // bindingNavigatorCountItem
+            // 
+            this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
+            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(45, 24);
+            this.bindingNavigatorCountItem.Text = "of {0}";
+            this.bindingNavigatorCountItem.ToolTipText = "Total number of items";
+            // 
+            // bindingNavigatorDeleteItem
+            // 
+            this.bindingNavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
+            this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
+            this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(29, 24);
+            this.bindingNavigatorDeleteItem.Text = "Delete";
             // 
             // bindingNavigatorMoveFirstItem
             // 
@@ -183,16 +291,9 @@
             this.bindingNavigatorPositionItem.Text = "0";
             this.bindingNavigatorPositionItem.ToolTipText = "Current position";
             // 
-            // bindingNavigatorCountItem
-            // 
-            this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
-            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(45, 24);
-            this.bindingNavigatorCountItem.Text = "of {0}";
-            this.bindingNavigatorCountItem.ToolTipText = "Total number of items";
-            // 
             // bindingNavigatorSeparator1
             // 
-            this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator";
+            this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator1";
             this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 27);
             // 
             // bindingNavigatorMoveNextItem
@@ -215,26 +316,8 @@
             // 
             // bindingNavigatorSeparator2
             // 
-            this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator";
+            this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator2";
             this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 27);
-            // 
-            // bindingNavigatorAddNewItem
-            // 
-            this.bindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
-            this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
-            this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(29, 24);
-            this.bindingNavigatorAddNewItem.Text = "Add new";
-            // 
-            // bindingNavigatorDeleteItem
-            // 
-            this.bindingNavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
-            this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
-            this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(29, 24);
-            this.bindingNavigatorDeleteItem.Text = "Delete";
             // 
             // hoaDonBindingNavigatorSaveItem
             // 
@@ -248,14 +331,14 @@
             // hoaDonDataGridView
             // 
             this.hoaDonDataGridView.AutoGenerateColumns = false;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.hoaDonDataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle13.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle13.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle13.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle13.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle13.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle13.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.hoaDonDataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle13;
             this.hoaDonDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.hoaDonDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn1,
@@ -267,12 +350,29 @@
             this.dataGridViewTextBoxColumn7,
             this.dataGridViewTextBoxColumn8});
             this.hoaDonDataGridView.DataSource = this.hoaDonBindingSource;
+            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle14.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle14.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle14.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle14.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle14.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.hoaDonDataGridView.DefaultCellStyle = dataGridViewCellStyle14;
             this.hoaDonDataGridView.Location = new System.Drawing.Point(21, 273);
             this.hoaDonDataGridView.Name = "hoaDonDataGridView";
+            dataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle15.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle15.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle15.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle15.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle15.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle15.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.hoaDonDataGridView.RowHeadersDefaultCellStyle = dataGridViewCellStyle15;
             this.hoaDonDataGridView.RowHeadersWidth = 51;
             this.hoaDonDataGridView.RowTemplate.Height = 24;
             this.hoaDonDataGridView.Size = new System.Drawing.Size(1058, 315);
             this.hoaDonDataGridView.TabIndex = 1;
+            this.hoaDonDataGridView.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.hoaDonDataGridView_CellClick);
             // 
             // dataGridViewTextBoxColumn1
             // 
@@ -399,161 +499,81 @@
             this.txt_timKiem.ValidationErrorMessage = "Invalid input.";
             this.txt_timKiem.ValidationFunction = null;
             // 
-            // maHoaDonLabel
-            // 
-            maHoaDonLabel.AutoSize = true;
-            maHoaDonLabel.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            maHoaDonLabel.Location = new System.Drawing.Point(18, 93);
-            maHoaDonLabel.Name = "maHoaDonLabel";
-            maHoaDonLabel.Size = new System.Drawing.Size(101, 19);
-            maHoaDonLabel.TabIndex = 3;
-            maHoaDonLabel.Text = "Ma Hoa Don:";
-            // 
             // txt_maHoaDon
             // 
             this.txt_maHoaDon.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.hoaDonBindingSource, "MaHoaDon", true));
             this.txt_maHoaDon.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_maHoaDon.Location = new System.Drawing.Point(189, 90);
+            this.txt_maHoaDon.Location = new System.Drawing.Point(251, 88);
             this.txt_maHoaDon.Name = "txt_maHoaDon";
-            this.txt_maHoaDon.Size = new System.Drawing.Size(200, 27);
+            this.txt_maHoaDon.Size = new System.Drawing.Size(240, 27);
             this.txt_maHoaDon.TabIndex = 4;
-            // 
-            // maDonHangLabel
-            // 
-            maDonHangLabel.AutoSize = true;
-            maDonHangLabel.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            maDonHangLabel.Location = new System.Drawing.Point(691, 96);
-            maDonHangLabel.Name = "maDonHangLabel";
-            maDonHangLabel.Size = new System.Drawing.Size(108, 19);
-            maDonHangLabel.TabIndex = 5;
-            maDonHangLabel.Text = "Ma Don Hang:";
             // 
             // txt_maDonHang
             // 
             this.txt_maDonHang.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.hoaDonBindingSource, "MaDonHang", true));
             this.txt_maDonHang.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_maDonHang.Location = new System.Drawing.Point(879, 93);
+            this.txt_maDonHang.Location = new System.Drawing.Point(821, 93);
             this.txt_maDonHang.Name = "txt_maDonHang";
-            this.txt_maDonHang.Size = new System.Drawing.Size(200, 27);
+            this.txt_maDonHang.Size = new System.Drawing.Size(258, 27);
             this.txt_maDonHang.TabIndex = 6;
-            // 
-            // nhanVienIdLabel
-            // 
-            nhanVienIdLabel.AutoSize = true;
-            nhanVienIdLabel.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            nhanVienIdLabel.Location = new System.Drawing.Point(18, 136);
-            nhanVienIdLabel.Name = "nhanVienIdLabel";
-            nhanVienIdLabel.Size = new System.Drawing.Size(101, 19);
-            nhanVienIdLabel.TabIndex = 7;
-            nhanVienIdLabel.Text = "Nhan Vien Id:";
             // 
             // txt_nhanVienId
             // 
             this.txt_nhanVienId.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.hoaDonBindingSource, "NhanVienId", true));
             this.txt_nhanVienId.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_nhanVienId.Location = new System.Drawing.Point(189, 133);
+            this.txt_nhanVienId.Location = new System.Drawing.Point(251, 131);
             this.txt_nhanVienId.Name = "txt_nhanVienId";
-            this.txt_nhanVienId.Size = new System.Drawing.Size(200, 27);
+            this.txt_nhanVienId.Size = new System.Drawing.Size(240, 27);
             this.txt_nhanVienId.TabIndex = 8;
-            // 
-            // ngayLapLabel
-            // 
-            ngayLapLabel.AutoSize = true;
-            ngayLapLabel.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            ngayLapLabel.Location = new System.Drawing.Point(691, 137);
-            ngayLapLabel.Name = "ngayLapLabel";
-            ngayLapLabel.Size = new System.Drawing.Size(78, 19);
-            ngayLapLabel.TabIndex = 9;
-            ngayLapLabel.Text = "Ngay Lap:";
             // 
             // ngayLapDateTimePicker
             // 
             this.ngayLapDateTimePicker.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.hoaDonBindingSource, "NgayLap", true));
             this.ngayLapDateTimePicker.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ngayLapDateTimePicker.Location = new System.Drawing.Point(879, 133);
+            this.ngayLapDateTimePicker.Location = new System.Drawing.Point(821, 133);
             this.ngayLapDateTimePicker.Name = "ngayLapDateTimePicker";
-            this.ngayLapDateTimePicker.Size = new System.Drawing.Size(200, 27);
+            this.ngayLapDateTimePicker.Size = new System.Drawing.Size(258, 27);
             this.ngayLapDateTimePicker.TabIndex = 10;
-            // 
-            // tongTienThanhToanLabel
-            // 
-            tongTienThanhToanLabel.AutoSize = true;
-            tongTienThanhToanLabel.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            tongTienThanhToanLabel.Location = new System.Drawing.Point(18, 181);
-            tongTienThanhToanLabel.Name = "tongTienThanhToanLabel";
-            tongTienThanhToanLabel.Size = new System.Drawing.Size(160, 19);
-            tongTienThanhToanLabel.TabIndex = 11;
-            tongTienThanhToanLabel.Text = "Tong Tien Thanh Toan:";
             // 
             // txt_tongTienThanhToan
             // 
             this.txt_tongTienThanhToan.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.hoaDonBindingSource, "TongTienThanhToan", true));
             this.txt_tongTienThanhToan.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_tongTienThanhToan.Location = new System.Drawing.Point(189, 178);
+            this.txt_tongTienThanhToan.Location = new System.Drawing.Point(251, 176);
             this.txt_tongTienThanhToan.Name = "txt_tongTienThanhToan";
-            this.txt_tongTienThanhToan.Size = new System.Drawing.Size(200, 27);
+            this.txt_tongTienThanhToan.Size = new System.Drawing.Size(240, 27);
             this.txt_tongTienThanhToan.TabIndex = 12;
-            // 
-            // phuongThucThanhToanLabel
-            // 
-            phuongThucThanhToanLabel.AutoSize = true;
-            phuongThucThanhToanLabel.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            phuongThucThanhToanLabel.Location = new System.Drawing.Point(691, 181);
-            phuongThucThanhToanLabel.Name = "phuongThucThanhToanLabel";
-            phuongThucThanhToanLabel.Size = new System.Drawing.Size(182, 19);
-            phuongThucThanhToanLabel.TabIndex = 13;
-            phuongThucThanhToanLabel.Text = "Phuong Thuc Thanh Toan:";
-            // 
-            // trangThaiThanhToanLabel
-            // 
-            trangThaiThanhToanLabel.AutoSize = true;
-            trangThaiThanhToanLabel.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            trangThaiThanhToanLabel.Location = new System.Drawing.Point(18, 219);
-            trangThaiThanhToanLabel.Name = "trangThaiThanhToanLabel";
-            trangThaiThanhToanLabel.Size = new System.Drawing.Size(164, 19);
-            trangThaiThanhToanLabel.TabIndex = 15;
-            trangThaiThanhToanLabel.Text = "Trang Thai Thanh Toan:";
-            // 
-            // ghiChuLabel
-            // 
-            ghiChuLabel.AutoSize = true;
-            ghiChuLabel.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            ghiChuLabel.Location = new System.Drawing.Point(691, 222);
-            ghiChuLabel.Name = "ghiChuLabel";
-            ghiChuLabel.Size = new System.Drawing.Size(70, 19);
-            ghiChuLabel.TabIndex = 17;
-            ghiChuLabel.Text = "Ghi Chu:";
             // 
             // ghiChuTextBox
             // 
             this.ghiChuTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.hoaDonBindingSource, "GhiChu", true));
             this.ghiChuTextBox.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ghiChuTextBox.Location = new System.Drawing.Point(879, 219);
+            this.ghiChuTextBox.Location = new System.Drawing.Point(821, 219);
             this.ghiChuTextBox.Name = "ghiChuTextBox";
-            this.ghiChuTextBox.Size = new System.Drawing.Size(200, 27);
+            this.ghiChuTextBox.Size = new System.Drawing.Size(258, 27);
             this.ghiChuTextBox.TabIndex = 18;
             // 
-            // comboBox1
+            // cmb_PTTT
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
-            "Đã Thanh Toán",
-            "Chờ Thanh Toán",
-            "Đã Hủy"});
-            this.comboBox1.Location = new System.Drawing.Point(879, 178);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(200, 24);
-            this.comboBox1.TabIndex = 19;
+            this.cmb_PTTT.FormattingEnabled = true;
+            this.cmb_PTTT.Items.AddRange(new object[] {
+            "Tiền mặt",
+            "Chuyển Khoản"});
+            this.cmb_PTTT.Location = new System.Drawing.Point(821, 178);
+            this.cmb_PTTT.Name = "cmb_PTTT";
+            this.cmb_PTTT.Size = new System.Drawing.Size(258, 24);
+            this.cmb_PTTT.TabIndex = 19;
             // 
             // cmb_TrangThaiTT
             // 
             this.cmb_TrangThaiTT.FormattingEnabled = true;
             this.cmb_TrangThaiTT.Items.AddRange(new object[] {
-            "Tiềm Mặt",
-            "Chuyển Khoản"});
-            this.cmb_TrangThaiTT.Location = new System.Drawing.Point(189, 218);
+            "Đã Thanh Toán",
+            "Chờ Thanh Toán",
+            "Đã Hủy"});
+            this.cmb_TrangThaiTT.Location = new System.Drawing.Point(251, 216);
             this.cmb_TrangThaiTT.Name = "cmb_TrangThaiTT";
-            this.cmb_TrangThaiTT.Size = new System.Drawing.Size(200, 24);
+            this.cmb_TrangThaiTT.Size = new System.Drawing.Size(240, 24);
             this.cmb_TrangThaiTT.TabIndex = 20;
             // 
             // btn_InHD
@@ -605,7 +625,7 @@
             this.btn_InHD.IsReadOnly = false;
             this.btn_InHD.IsToggleButton = false;
             this.btn_InHD.IsToggled = false;
-            this.btn_InHD.Location = new System.Drawing.Point(670, 31);
+            this.btn_InHD.Location = new System.Drawing.Point(790, 30);
             this.btn_InHD.LongPressDurationMS = 1000;
             this.btn_InHD.Name = "btn_InHD";
             this.btn_InHD.NormalFontStyle = System.Drawing.FontStyle.Regular;
@@ -623,7 +643,7 @@
             this.btn_InHD.ShadowOffset = new System.Drawing.Point(0, 2);
             this.btn_InHD.ShakeDuration = 500;
             this.btn_InHD.ShakeIntensity = 5;
-            this.btn_InHD.Size = new System.Drawing.Size(190, 40);
+            this.btn_InHD.Size = new System.Drawing.Size(135, 40);
             this.btn_InHD.TabIndex = 21;
             this.btn_InHD.Text = "In Hóa Đơn";
             this.btn_InHD.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -631,6 +651,7 @@
             this.btn_InHD.TooltipText = null;
             this.btn_InHD.UseAdvancedRendering = true;
             this.btn_InHD.UseParticles = false;
+            this.btn_InHD.Click += new System.EventHandler(this.btn_InHD_Click);
             // 
             // btn_XuatHD
             // 
@@ -681,7 +702,7 @@
             this.btn_XuatHD.IsReadOnly = false;
             this.btn_XuatHD.IsToggleButton = false;
             this.btn_XuatHD.IsToggled = false;
-            this.btn_XuatHD.Location = new System.Drawing.Point(889, 30);
+            this.btn_XuatHD.Location = new System.Drawing.Point(944, 30);
             this.btn_XuatHD.LongPressDurationMS = 1000;
             this.btn_XuatHD.Name = "btn_XuatHD";
             this.btn_XuatHD.NormalFontStyle = System.Drawing.FontStyle.Regular;
@@ -699,7 +720,7 @@
             this.btn_XuatHD.ShadowOffset = new System.Drawing.Point(0, 2);
             this.btn_XuatHD.ShakeDuration = 500;
             this.btn_XuatHD.ShakeIntensity = 5;
-            this.btn_XuatHD.Size = new System.Drawing.Size(190, 40);
+            this.btn_XuatHD.Size = new System.Drawing.Size(135, 40);
             this.btn_XuatHD.TabIndex = 22;
             this.btn_XuatHD.Text = "Xuất Hóa Đơn";
             this.btn_XuatHD.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -707,6 +728,84 @@
             this.btn_XuatHD.TooltipText = null;
             this.btn_XuatHD.UseAdvancedRendering = true;
             this.btn_XuatHD.UseParticles = false;
+            this.btn_XuatHD.Click += new System.EventHandler(this.btn_XuatHD_Click);
+            // 
+            // btn_CapNhatHD
+            // 
+            this.btn_CapNhatHD.AccessibleDescription = "The default button control that accept input though the mouse, touch and keyboard" +
+    "";
+            this.btn_CapNhatHD.AccessibleName = "Cập Nhật Đơn";
+            this.btn_CapNhatHD.AutoSizeBasedOnText = false;
+            this.btn_CapNhatHD.BackColor = System.Drawing.Color.Transparent;
+            this.btn_CapNhatHD.BadgeBackColor = System.Drawing.Color.Black;
+            this.btn_CapNhatHD.BadgeFont = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Bold);
+            this.btn_CapNhatHD.BadgeValue = 0;
+            this.btn_CapNhatHD.BadgeValueForeColor = System.Drawing.Color.White;
+            this.btn_CapNhatHD.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(216)))), ((int)(((byte)(220)))));
+            this.btn_CapNhatHD.BorderWidth = 1;
+            this.btn_CapNhatHD.ButtonBackColor = System.Drawing.Color.CornflowerBlue;
+            this.btn_CapNhatHD.ButtonImage = null;
+            this.btn_CapNhatHD.ButtonTextLeftPadding = 0;
+            this.btn_CapNhatHD.CanBeep = true;
+            this.btn_CapNhatHD.CanGlow = false;
+            this.btn_CapNhatHD.CanShake = true;
+            this.btn_CapNhatHD.ContextMenuStripEx = null;
+            this.btn_CapNhatHD.CornerRadiusBottomLeft = 6;
+            this.btn_CapNhatHD.CornerRadiusBottomRight = 6;
+            this.btn_CapNhatHD.CornerRadiusTopLeft = 6;
+            this.btn_CapNhatHD.CornerRadiusTopRight = 6;
+            this.btn_CapNhatHD.CustomCursor = System.Windows.Forms.Cursors.Default;
+            this.btn_CapNhatHD.DisabledTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(150)))), ((int)(((byte)(150)))));
+            this.btn_CapNhatHD.EnableLongPress = false;
+            this.btn_CapNhatHD.EnableRippleEffect = true;
+            this.btn_CapNhatHD.EnableShadow = false;
+            this.btn_CapNhatHD.EnableTextWrapping = false;
+            this.btn_CapNhatHD.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F);
+            this.btn_CapNhatHD.GlowColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.btn_CapNhatHD.GlowIntensity = 100;
+            this.btn_CapNhatHD.GlowRadius = 20F;
+            this.btn_CapNhatHD.GradientBackground = false;
+            this.btn_CapNhatHD.GradientColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(227)))), ((int)(((byte)(64)))));
+            this.btn_CapNhatHD.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical;
+            this.btn_CapNhatHD.HintText = null;
+            this.btn_CapNhatHD.HoverBackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btn_CapNhatHD.HoverFontStyle = System.Drawing.FontStyle.Regular;
+            this.btn_CapNhatHD.HoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btn_CapNhatHD.HoverTransitionDuration = 140;
+            this.btn_CapNhatHD.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_CapNhatHD.ImagePadding = 5;
+            this.btn_CapNhatHD.ImageSize = new System.Drawing.Size(16, 16);
+            this.btn_CapNhatHD.IsRadial = false;
+            this.btn_CapNhatHD.IsReadOnly = false;
+            this.btn_CapNhatHD.IsToggleButton = false;
+            this.btn_CapNhatHD.IsToggled = false;
+            this.btn_CapNhatHD.Location = new System.Drawing.Point(633, 30);
+            this.btn_CapNhatHD.LongPressDurationMS = 1000;
+            this.btn_CapNhatHD.Name = "btn_CapNhatHD";
+            this.btn_CapNhatHD.NormalFontStyle = System.Drawing.FontStyle.Regular;
+            this.btn_CapNhatHD.ParticleColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
+            this.btn_CapNhatHD.ParticleCount = 15;
+            this.btn_CapNhatHD.PressAnimationScale = 0.97F;
+            this.btn_CapNhatHD.PressedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(227)))), ((int)(((byte)(230)))));
+            this.btn_CapNhatHD.PressedFontStyle = System.Drawing.FontStyle.Regular;
+            this.btn_CapNhatHD.PressTransitionDuration = 90;
+            this.btn_CapNhatHD.ReadOnlyTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(100)))), ((int)(((byte)(100)))));
+            this.btn_CapNhatHD.RippleColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btn_CapNhatHD.RippleRadiusMultiplier = 0.6F;
+            this.btn_CapNhatHD.ShadowBlur = 5;
+            this.btn_CapNhatHD.ShadowColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btn_CapNhatHD.ShadowOffset = new System.Drawing.Point(0, 2);
+            this.btn_CapNhatHD.ShakeDuration = 500;
+            this.btn_CapNhatHD.ShakeIntensity = 5;
+            this.btn_CapNhatHD.Size = new System.Drawing.Size(135, 40);
+            this.btn_CapNhatHD.TabIndex = 23;
+            this.btn_CapNhatHD.Text = "Cập Nhật Đơn";
+            this.btn_CapNhatHD.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btn_CapNhatHD.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btn_CapNhatHD.TooltipText = null;
+            this.btn_CapNhatHD.UseAdvancedRendering = true;
+            this.btn_CapNhatHD.UseParticles = false;
+            this.btn_CapNhatHD.Click += new System.EventHandler(this.btn_CapNhatHD_Click);
             // 
             // Frm_Card_HoaDon
             // 
@@ -714,10 +813,11 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.ClientSize = new System.Drawing.Size(1099, 600);
+            this.Controls.Add(this.btn_CapNhatHD);
             this.Controls.Add(this.btn_XuatHD);
             this.Controls.Add(this.btn_InHD);
             this.Controls.Add(this.cmb_TrangThaiTT);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.cmb_PTTT);
             this.Controls.Add(maHoaDonLabel);
             this.Controls.Add(this.txt_maHoaDon);
             this.Controls.Add(maDonHangLabel);
@@ -786,9 +886,10 @@
         private System.Windows.Forms.DateTimePicker ngayLapDateTimePicker;
         private System.Windows.Forms.TextBox txt_tongTienThanhToan;
         private System.Windows.Forms.TextBox ghiChuTextBox;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cmb_PTTT;
         private System.Windows.Forms.ComboBox cmb_TrangThaiTT;
         private SiticoneNetFrameworkUI.SiticoneButton btn_InHD;
         private SiticoneNetFrameworkUI.SiticoneButton btn_XuatHD;
+        private SiticoneNetFrameworkUI.SiticoneButton btn_CapNhatHD;
     }
 }

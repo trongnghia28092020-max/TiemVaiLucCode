@@ -45,11 +45,18 @@
             this.sanPhamsTableAdapter = new TiemVaiLucCode.TiemVaiDBDataSet1TableAdapters.SanPhamsTableAdapter();
             this.tableAdapterManager = new TiemVaiLucCode.TiemVaiDBDataSet1TableAdapters.TableAdapterManager();
             this.sanPhamsBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
+            this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
+            this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorMovePreviousItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator = new System.Windows.Forms.ToolStripSeparator();
             this.bindingNavigatorPositionItem = new System.Windows.Forms.ToolStripTextBox();
             this.bindingNavigatorSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+            this.bindingNavigatorMoveNextItem = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
+            this.sanPhamsBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
             this.sanPhamsDataGridView = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -59,24 +66,17 @@
             this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.maSanPhamTextBox = new System.Windows.Forms.TextBox();
-            this.tenSanPhamTextBox = new System.Windows.Forms.TextBox();
-            this.giaBanTextBox = new System.Windows.Forms.TextBox();
-            this.soLuongTonTextBox = new System.Windows.Forms.TextBox();
-            this.chatLieuTextBox = new System.Windows.Forms.TextBox();
-            this.danhMucIdTextBox = new System.Windows.Forms.TextBox();
+            this.txt_maSanPham = new System.Windows.Forms.TextBox();
+            this.txt_tenSanPham = new System.Windows.Forms.TextBox();
+            this.txt_giaBan = new System.Windows.Forms.TextBox();
+            this.txt_soLuongTon = new System.Windows.Forms.TextBox();
+            this.txt_chatLieu = new System.Windows.Forms.TextBox();
+            this.txt_danhMucId = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.Color_Vai = new System.Windows.Forms.ColorDialog();
-            this.siticoneButton1 = new SiticoneNetFrameworkUI.SiticoneButton();
-            this.siticoneButton2 = new SiticoneNetFrameworkUI.SiticoneButton();
-            this.siticoneButton3 = new SiticoneNetFrameworkUI.SiticoneButton();
-            this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorMovePreviousItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorMoveNextItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
-            this.sanPhamsBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
+            this.btn_ThemSP = new SiticoneNetFrameworkUI.SiticoneButton();
+            this.btn_XoaBo = new SiticoneNetFrameworkUI.SiticoneButton();
+            this.btn_LamMoi = new SiticoneNetFrameworkUI.SiticoneButton();
             this.ptb_MauSac = new System.Windows.Forms.PictureBox();
             this.ptb_HinhAnh = new System.Windows.Forms.PictureBox();
             maSanPhamLabel = new System.Windows.Forms.Label();
@@ -385,9 +385,18 @@
             this.sanPhamsBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
             this.sanPhamsBindingNavigator.Name = "sanPhamsBindingNavigator";
             this.sanPhamsBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.sanPhamsBindingNavigator.Size = new System.Drawing.Size(1099, 31);
+            this.sanPhamsBindingNavigator.Size = new System.Drawing.Size(1099, 27);
             this.sanPhamsBindingNavigator.TabIndex = 21;
             this.sanPhamsBindingNavigator.Text = "bindingNavigator1";
+            // 
+            // bindingNavigatorAddNewItem
+            // 
+            this.bindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
+            this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
+            this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(29, 24);
+            this.bindingNavigatorAddNewItem.Text = "Add new";
             // 
             // bindingNavigatorCountItem
             // 
@@ -395,6 +404,33 @@
             this.bindingNavigatorCountItem.Size = new System.Drawing.Size(45, 24);
             this.bindingNavigatorCountItem.Text = "of {0}";
             this.bindingNavigatorCountItem.ToolTipText = "Total number of items";
+            // 
+            // bindingNavigatorDeleteItem
+            // 
+            this.bindingNavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
+            this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
+            this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(29, 24);
+            this.bindingNavigatorDeleteItem.Text = "Delete";
+            // 
+            // bindingNavigatorMoveFirstItem
+            // 
+            this.bindingNavigatorMoveFirstItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorMoveFirstItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveFirstItem.Image")));
+            this.bindingNavigatorMoveFirstItem.Name = "bindingNavigatorMoveFirstItem";
+            this.bindingNavigatorMoveFirstItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorMoveFirstItem.Size = new System.Drawing.Size(29, 24);
+            this.bindingNavigatorMoveFirstItem.Text = "Move first";
+            // 
+            // bindingNavigatorMovePreviousItem
+            // 
+            this.bindingNavigatorMovePreviousItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorMovePreviousItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMovePreviousItem.Image")));
+            this.bindingNavigatorMovePreviousItem.Name = "bindingNavigatorMovePreviousItem";
+            this.bindingNavigatorMovePreviousItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorMovePreviousItem.Size = new System.Drawing.Size(29, 24);
+            this.bindingNavigatorMovePreviousItem.Text = "Move previous";
             // 
             // bindingNavigatorSeparator
             // 
@@ -416,10 +452,37 @@
             this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator1";
             this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 27);
             // 
+            // bindingNavigatorMoveNextItem
+            // 
+            this.bindingNavigatorMoveNextItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorMoveNextItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveNextItem.Image")));
+            this.bindingNavigatorMoveNextItem.Name = "bindingNavigatorMoveNextItem";
+            this.bindingNavigatorMoveNextItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(29, 24);
+            this.bindingNavigatorMoveNextItem.Text = "Move next";
+            // 
+            // bindingNavigatorMoveLastItem
+            // 
+            this.bindingNavigatorMoveLastItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorMoveLastItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveLastItem.Image")));
+            this.bindingNavigatorMoveLastItem.Name = "bindingNavigatorMoveLastItem";
+            this.bindingNavigatorMoveLastItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(29, 24);
+            this.bindingNavigatorMoveLastItem.Text = "Move last";
+            // 
             // bindingNavigatorSeparator2
             // 
             this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator2";
             this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 27);
+            // 
+            // sanPhamsBindingNavigatorSaveItem
+            // 
+            this.sanPhamsBindingNavigatorSaveItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.sanPhamsBindingNavigatorSaveItem.Image = ((System.Drawing.Image)(resources.GetObject("sanPhamsBindingNavigatorSaveItem.Image")));
+            this.sanPhamsBindingNavigatorSaveItem.Name = "sanPhamsBindingNavigatorSaveItem";
+            this.sanPhamsBindingNavigatorSaveItem.Size = new System.Drawing.Size(29, 24);
+            this.sanPhamsBindingNavigatorSaveItem.Text = "Save Data";
+            this.sanPhamsBindingNavigatorSaveItem.Click += new System.EventHandler(this.sanPhamsBindingNavigatorSaveItem_Click_1);
             // 
             // sanPhamsDataGridView
             // 
@@ -441,6 +504,7 @@
             this.sanPhamsDataGridView.RowTemplate.Height = 24;
             this.sanPhamsDataGridView.Size = new System.Drawing.Size(1026, 246);
             this.sanPhamsDataGridView.TabIndex = 21;
+            this.sanPhamsDataGridView.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.sanPhamsDataGridView_CellClick);
             // 
             // dataGridViewTextBoxColumn1
             // 
@@ -507,60 +571,60 @@
             this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
             this.dataGridViewTextBoxColumn8.Width = 125;
             // 
-            // maSanPhamTextBox
+            // txt_maSanPham
             // 
-            this.maSanPhamTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.sanPhamsBindingSource, "MaSanPham", true));
-            this.maSanPhamTextBox.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.maSanPhamTextBox.Location = new System.Drawing.Point(240, 44);
-            this.maSanPhamTextBox.Name = "maSanPhamTextBox";
-            this.maSanPhamTextBox.Size = new System.Drawing.Size(231, 27);
-            this.maSanPhamTextBox.TabIndex = 22;
-            this.maSanPhamTextBox.TextChanged += new System.EventHandler(this.maSanPhamTextBox_TextChanged);
+            this.txt_maSanPham.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.sanPhamsBindingSource, "MaSanPham", true));
+            this.txt_maSanPham.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_maSanPham.Location = new System.Drawing.Point(240, 44);
+            this.txt_maSanPham.Name = "txt_maSanPham";
+            this.txt_maSanPham.Size = new System.Drawing.Size(231, 27);
+            this.txt_maSanPham.TabIndex = 22;
+            this.txt_maSanPham.TextChanged += new System.EventHandler(this.maSanPhamTextBox_TextChanged);
             // 
-            // tenSanPhamTextBox
+            // txt_tenSanPham
             // 
-            this.tenSanPhamTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.sanPhamsBindingSource, "TenSanPham", true));
-            this.tenSanPhamTextBox.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tenSanPhamTextBox.Location = new System.Drawing.Point(803, 44);
-            this.tenSanPhamTextBox.Name = "tenSanPhamTextBox";
-            this.tenSanPhamTextBox.Size = new System.Drawing.Size(231, 27);
-            this.tenSanPhamTextBox.TabIndex = 24;
+            this.txt_tenSanPham.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.sanPhamsBindingSource, "TenSanPham", true));
+            this.txt_tenSanPham.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_tenSanPham.Location = new System.Drawing.Point(803, 44);
+            this.txt_tenSanPham.Name = "txt_tenSanPham";
+            this.txt_tenSanPham.Size = new System.Drawing.Size(231, 27);
+            this.txt_tenSanPham.TabIndex = 24;
             // 
-            // giaBanTextBox
+            // txt_giaBan
             // 
-            this.giaBanTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.sanPhamsBindingSource, "GiaBan", true));
-            this.giaBanTextBox.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.giaBanTextBox.Location = new System.Drawing.Point(240, 78);
-            this.giaBanTextBox.Name = "giaBanTextBox";
-            this.giaBanTextBox.Size = new System.Drawing.Size(231, 27);
-            this.giaBanTextBox.TabIndex = 26;
+            this.txt_giaBan.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.sanPhamsBindingSource, "GiaBan", true));
+            this.txt_giaBan.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_giaBan.Location = new System.Drawing.Point(240, 78);
+            this.txt_giaBan.Name = "txt_giaBan";
+            this.txt_giaBan.Size = new System.Drawing.Size(231, 27);
+            this.txt_giaBan.TabIndex = 26;
             // 
-            // soLuongTonTextBox
+            // txt_soLuongTon
             // 
-            this.soLuongTonTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.sanPhamsBindingSource, "SoLuongTon", true));
-            this.soLuongTonTextBox.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.soLuongTonTextBox.Location = new System.Drawing.Point(803, 81);
-            this.soLuongTonTextBox.Name = "soLuongTonTextBox";
-            this.soLuongTonTextBox.Size = new System.Drawing.Size(231, 27);
-            this.soLuongTonTextBox.TabIndex = 28;
+            this.txt_soLuongTon.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.sanPhamsBindingSource, "SoLuongTon", true));
+            this.txt_soLuongTon.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_soLuongTon.Location = new System.Drawing.Point(803, 81);
+            this.txt_soLuongTon.Name = "txt_soLuongTon";
+            this.txt_soLuongTon.Size = new System.Drawing.Size(231, 27);
+            this.txt_soLuongTon.TabIndex = 28;
             // 
-            // chatLieuTextBox
+            // txt_chatLieu
             // 
-            this.chatLieuTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.sanPhamsBindingSource, "ChatLieu", true));
-            this.chatLieuTextBox.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chatLieuTextBox.Location = new System.Drawing.Point(803, 118);
-            this.chatLieuTextBox.Name = "chatLieuTextBox";
-            this.chatLieuTextBox.Size = new System.Drawing.Size(231, 27);
-            this.chatLieuTextBox.TabIndex = 32;
+            this.txt_chatLieu.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.sanPhamsBindingSource, "ChatLieu", true));
+            this.txt_chatLieu.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_chatLieu.Location = new System.Drawing.Point(803, 118);
+            this.txt_chatLieu.Name = "txt_chatLieu";
+            this.txt_chatLieu.Size = new System.Drawing.Size(231, 27);
+            this.txt_chatLieu.TabIndex = 32;
             // 
-            // danhMucIdTextBox
+            // txt_danhMucId
             // 
-            this.danhMucIdTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.sanPhamsBindingSource, "DanhMucId", true));
-            this.danhMucIdTextBox.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.danhMucIdTextBox.Location = new System.Drawing.Point(240, 177);
-            this.danhMucIdTextBox.Name = "danhMucIdTextBox";
-            this.danhMucIdTextBox.Size = new System.Drawing.Size(231, 27);
-            this.danhMucIdTextBox.TabIndex = 36;
+            this.txt_danhMucId.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.sanPhamsBindingSource, "DanhMucId", true));
+            this.txt_danhMucId.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_danhMucId.Location = new System.Drawing.Point(240, 177);
+            this.txt_danhMucId.Name = "txt_danhMucId";
+            this.txt_danhMucId.Size = new System.Drawing.Size(231, 27);
+            this.txt_danhMucId.TabIndex = 36;
             // 
             // groupBox1
             // 
@@ -573,296 +637,236 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "BẢNG THÔNG TIN SẢN PHẨM";
             // 
-            // siticoneButton1
+            // btn_ThemSP
             // 
-            this.siticoneButton1.AccessibleDescription = "The default button control that accept input though the mouse, touch and keyboard" +
+            this.btn_ThemSP.AccessibleDescription = "The default button control that accept input though the mouse, touch and keyboard" +
     "";
-            this.siticoneButton1.AccessibleName = "Thêm Sản Phẩm";
-            this.siticoneButton1.AutoSizeBasedOnText = false;
-            this.siticoneButton1.BackColor = System.Drawing.Color.Transparent;
-            this.siticoneButton1.BadgeBackColor = System.Drawing.Color.Black;
-            this.siticoneButton1.BadgeFont = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Bold);
-            this.siticoneButton1.BadgeValue = 0;
-            this.siticoneButton1.BadgeValueForeColor = System.Drawing.Color.White;
-            this.siticoneButton1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(216)))), ((int)(((byte)(220)))));
-            this.siticoneButton1.BorderWidth = 1;
-            this.siticoneButton1.ButtonBackColor = System.Drawing.Color.SteelBlue;
-            this.siticoneButton1.ButtonImage = null;
-            this.siticoneButton1.ButtonTextLeftPadding = 0;
-            this.siticoneButton1.CanBeep = true;
-            this.siticoneButton1.CanGlow = false;
-            this.siticoneButton1.CanShake = true;
-            this.siticoneButton1.ContextMenuStripEx = null;
-            this.siticoneButton1.CornerRadiusBottomLeft = 10;
-            this.siticoneButton1.CornerRadiusBottomRight = 10;
-            this.siticoneButton1.CornerRadiusTopLeft = 10;
-            this.siticoneButton1.CornerRadiusTopRight = 10;
-            this.siticoneButton1.CustomCursor = System.Windows.Forms.Cursors.Default;
-            this.siticoneButton1.DisabledTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(150)))), ((int)(((byte)(150)))));
-            this.siticoneButton1.EnableLongPress = false;
-            this.siticoneButton1.EnableRippleEffect = true;
-            this.siticoneButton1.EnableShadow = false;
-            this.siticoneButton1.EnableTextWrapping = false;
-            this.siticoneButton1.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.siticoneButton1.GlowColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.siticoneButton1.GlowIntensity = 100;
-            this.siticoneButton1.GlowRadius = 20F;
-            this.siticoneButton1.GradientBackground = false;
-            this.siticoneButton1.GradientColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(227)))), ((int)(((byte)(64)))));
-            this.siticoneButton1.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical;
-            this.siticoneButton1.HintText = null;
-            this.siticoneButton1.HoverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.siticoneButton1.HoverFontStyle = System.Drawing.FontStyle.Regular;
-            this.siticoneButton1.HoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.siticoneButton1.HoverTransitionDuration = 140;
-            this.siticoneButton1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.siticoneButton1.ImagePadding = 5;
-            this.siticoneButton1.ImageSize = new System.Drawing.Size(16, 16);
-            this.siticoneButton1.IsRadial = false;
-            this.siticoneButton1.IsReadOnly = false;
-            this.siticoneButton1.IsToggleButton = false;
-            this.siticoneButton1.IsToggled = false;
-            this.siticoneButton1.Location = new System.Drawing.Point(43, 233);
-            this.siticoneButton1.LongPressDurationMS = 1000;
-            this.siticoneButton1.Name = "siticoneButton1";
-            this.siticoneButton1.NormalFontStyle = System.Drawing.FontStyle.Regular;
-            this.siticoneButton1.ParticleColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
-            this.siticoneButton1.ParticleCount = 15;
-            this.siticoneButton1.PressAnimationScale = 0.97F;
-            this.siticoneButton1.PressedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(227)))), ((int)(((byte)(230)))));
-            this.siticoneButton1.PressedFontStyle = System.Drawing.FontStyle.Regular;
-            this.siticoneButton1.PressTransitionDuration = 90;
-            this.siticoneButton1.ReadOnlyTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(100)))), ((int)(((byte)(100)))));
-            this.siticoneButton1.RippleColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.siticoneButton1.RippleRadiusMultiplier = 0.6F;
-            this.siticoneButton1.ShadowBlur = 5;
-            this.siticoneButton1.ShadowColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.siticoneButton1.ShadowOffset = new System.Drawing.Point(0, 2);
-            this.siticoneButton1.ShakeDuration = 500;
-            this.siticoneButton1.ShakeIntensity = 5;
-            this.siticoneButton1.Size = new System.Drawing.Size(142, 37);
-            this.siticoneButton1.TabIndex = 38;
-            this.siticoneButton1.Text = "Thêm Sản Phẩm";
-            this.siticoneButton1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.siticoneButton1.TextColor = System.Drawing.Color.White;
-            this.siticoneButton1.TooltipText = null;
-            this.siticoneButton1.UseAdvancedRendering = true;
-            this.siticoneButton1.UseParticles = false;
+            this.btn_ThemSP.AccessibleName = "Thêm Sản Phẩm";
+            this.btn_ThemSP.AutoSizeBasedOnText = false;
+            this.btn_ThemSP.BackColor = System.Drawing.Color.Transparent;
+            this.btn_ThemSP.BadgeBackColor = System.Drawing.Color.Black;
+            this.btn_ThemSP.BadgeFont = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Bold);
+            this.btn_ThemSP.BadgeValue = 0;
+            this.btn_ThemSP.BadgeValueForeColor = System.Drawing.Color.White;
+            this.btn_ThemSP.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(216)))), ((int)(((byte)(220)))));
+            this.btn_ThemSP.BorderWidth = 1;
+            this.btn_ThemSP.ButtonBackColor = System.Drawing.Color.SteelBlue;
+            this.btn_ThemSP.ButtonImage = null;
+            this.btn_ThemSP.ButtonTextLeftPadding = 0;
+            this.btn_ThemSP.CanBeep = true;
+            this.btn_ThemSP.CanGlow = false;
+            this.btn_ThemSP.CanShake = true;
+            this.btn_ThemSP.ContextMenuStripEx = null;
+            this.btn_ThemSP.CornerRadiusBottomLeft = 10;
+            this.btn_ThemSP.CornerRadiusBottomRight = 10;
+            this.btn_ThemSP.CornerRadiusTopLeft = 10;
+            this.btn_ThemSP.CornerRadiusTopRight = 10;
+            this.btn_ThemSP.CustomCursor = System.Windows.Forms.Cursors.Default;
+            this.btn_ThemSP.DisabledTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(150)))), ((int)(((byte)(150)))));
+            this.btn_ThemSP.EnableLongPress = false;
+            this.btn_ThemSP.EnableRippleEffect = true;
+            this.btn_ThemSP.EnableShadow = false;
+            this.btn_ThemSP.EnableTextWrapping = false;
+            this.btn_ThemSP.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_ThemSP.GlowColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.btn_ThemSP.GlowIntensity = 100;
+            this.btn_ThemSP.GlowRadius = 20F;
+            this.btn_ThemSP.GradientBackground = false;
+            this.btn_ThemSP.GradientColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(227)))), ((int)(((byte)(64)))));
+            this.btn_ThemSP.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical;
+            this.btn_ThemSP.HintText = null;
+            this.btn_ThemSP.HoverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.btn_ThemSP.HoverFontStyle = System.Drawing.FontStyle.Regular;
+            this.btn_ThemSP.HoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btn_ThemSP.HoverTransitionDuration = 140;
+            this.btn_ThemSP.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_ThemSP.ImagePadding = 5;
+            this.btn_ThemSP.ImageSize = new System.Drawing.Size(16, 16);
+            this.btn_ThemSP.IsRadial = false;
+            this.btn_ThemSP.IsReadOnly = false;
+            this.btn_ThemSP.IsToggleButton = false;
+            this.btn_ThemSP.IsToggled = false;
+            this.btn_ThemSP.Location = new System.Drawing.Point(43, 233);
+            this.btn_ThemSP.LongPressDurationMS = 1000;
+            this.btn_ThemSP.Name = "btn_ThemSP";
+            this.btn_ThemSP.NormalFontStyle = System.Drawing.FontStyle.Regular;
+            this.btn_ThemSP.ParticleColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
+            this.btn_ThemSP.ParticleCount = 15;
+            this.btn_ThemSP.PressAnimationScale = 0.97F;
+            this.btn_ThemSP.PressedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(227)))), ((int)(((byte)(230)))));
+            this.btn_ThemSP.PressedFontStyle = System.Drawing.FontStyle.Regular;
+            this.btn_ThemSP.PressTransitionDuration = 90;
+            this.btn_ThemSP.ReadOnlyTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(100)))), ((int)(((byte)(100)))));
+            this.btn_ThemSP.RippleColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btn_ThemSP.RippleRadiusMultiplier = 0.6F;
+            this.btn_ThemSP.ShadowBlur = 5;
+            this.btn_ThemSP.ShadowColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btn_ThemSP.ShadowOffset = new System.Drawing.Point(0, 2);
+            this.btn_ThemSP.ShakeDuration = 500;
+            this.btn_ThemSP.ShakeIntensity = 5;
+            this.btn_ThemSP.Size = new System.Drawing.Size(157, 37);
+            this.btn_ThemSP.TabIndex = 38;
+            this.btn_ThemSP.Text = "Thêm Sản Phẩm";
+            this.btn_ThemSP.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btn_ThemSP.TextColor = System.Drawing.Color.White;
+            this.btn_ThemSP.TooltipText = null;
+            this.btn_ThemSP.UseAdvancedRendering = true;
+            this.btn_ThemSP.UseParticles = false;
+            this.btn_ThemSP.Click += new System.EventHandler(this.btn_ThemSP_Click);
             // 
-            // siticoneButton2
+            // btn_XoaBo
             // 
-            this.siticoneButton2.AccessibleDescription = "The default button control that accept input though the mouse, touch and keyboard" +
+            this.btn_XoaBo.AccessibleDescription = "The default button control that accept input though the mouse, touch and keyboard" +
     "";
-            this.siticoneButton2.AccessibleName = "Xóa Bỏ";
-            this.siticoneButton2.AutoSizeBasedOnText = false;
-            this.siticoneButton2.BackColor = System.Drawing.Color.Transparent;
-            this.siticoneButton2.BadgeBackColor = System.Drawing.Color.Black;
-            this.siticoneButton2.BadgeFont = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Bold);
-            this.siticoneButton2.BadgeValue = 0;
-            this.siticoneButton2.BadgeValueForeColor = System.Drawing.Color.White;
-            this.siticoneButton2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(216)))), ((int)(((byte)(220)))));
-            this.siticoneButton2.BorderWidth = 1;
-            this.siticoneButton2.ButtonBackColor = System.Drawing.Color.Red;
-            this.siticoneButton2.ButtonImage = null;
-            this.siticoneButton2.ButtonTextLeftPadding = 0;
-            this.siticoneButton2.CanBeep = true;
-            this.siticoneButton2.CanGlow = false;
-            this.siticoneButton2.CanShake = true;
-            this.siticoneButton2.ContextMenuStripEx = null;
-            this.siticoneButton2.CornerRadiusBottomLeft = 10;
-            this.siticoneButton2.CornerRadiusBottomRight = 10;
-            this.siticoneButton2.CornerRadiusTopLeft = 10;
-            this.siticoneButton2.CornerRadiusTopRight = 10;
-            this.siticoneButton2.CustomCursor = System.Windows.Forms.Cursors.Default;
-            this.siticoneButton2.DisabledTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(150)))), ((int)(((byte)(150)))));
-            this.siticoneButton2.EnableLongPress = false;
-            this.siticoneButton2.EnableRippleEffect = true;
-            this.siticoneButton2.EnableShadow = false;
-            this.siticoneButton2.EnableTextWrapping = false;
-            this.siticoneButton2.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.siticoneButton2.GlowColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.siticoneButton2.GlowIntensity = 100;
-            this.siticoneButton2.GlowRadius = 20F;
-            this.siticoneButton2.GradientBackground = false;
-            this.siticoneButton2.GradientColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(227)))), ((int)(((byte)(64)))));
-            this.siticoneButton2.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical;
-            this.siticoneButton2.HintText = null;
-            this.siticoneButton2.HoverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.siticoneButton2.HoverFontStyle = System.Drawing.FontStyle.Regular;
-            this.siticoneButton2.HoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.siticoneButton2.HoverTransitionDuration = 140;
-            this.siticoneButton2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.siticoneButton2.ImagePadding = 5;
-            this.siticoneButton2.ImageSize = new System.Drawing.Size(16, 16);
-            this.siticoneButton2.IsRadial = false;
-            this.siticoneButton2.IsReadOnly = false;
-            this.siticoneButton2.IsToggleButton = false;
-            this.siticoneButton2.IsToggled = false;
-            this.siticoneButton2.Location = new System.Drawing.Point(224, 233);
-            this.siticoneButton2.LongPressDurationMS = 1000;
-            this.siticoneButton2.Name = "siticoneButton2";
-            this.siticoneButton2.NormalFontStyle = System.Drawing.FontStyle.Regular;
-            this.siticoneButton2.ParticleColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
-            this.siticoneButton2.ParticleCount = 15;
-            this.siticoneButton2.PressAnimationScale = 0.97F;
-            this.siticoneButton2.PressedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(227)))), ((int)(((byte)(230)))));
-            this.siticoneButton2.PressedFontStyle = System.Drawing.FontStyle.Regular;
-            this.siticoneButton2.PressTransitionDuration = 90;
-            this.siticoneButton2.ReadOnlyTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(100)))), ((int)(((byte)(100)))));
-            this.siticoneButton2.RippleColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.siticoneButton2.RippleRadiusMultiplier = 0.6F;
-            this.siticoneButton2.ShadowBlur = 5;
-            this.siticoneButton2.ShadowColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.siticoneButton2.ShadowOffset = new System.Drawing.Point(0, 2);
-            this.siticoneButton2.ShakeDuration = 500;
-            this.siticoneButton2.ShakeIntensity = 5;
-            this.siticoneButton2.Size = new System.Drawing.Size(103, 37);
-            this.siticoneButton2.TabIndex = 39;
-            this.siticoneButton2.Text = "Xóa Bỏ";
-            this.siticoneButton2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.siticoneButton2.TextColor = System.Drawing.Color.White;
-            this.siticoneButton2.TooltipText = null;
-            this.siticoneButton2.UseAdvancedRendering = true;
-            this.siticoneButton2.UseParticles = false;
+            this.btn_XoaBo.AccessibleName = "Xóa Bỏ";
+            this.btn_XoaBo.AutoSizeBasedOnText = false;
+            this.btn_XoaBo.BackColor = System.Drawing.Color.Transparent;
+            this.btn_XoaBo.BadgeBackColor = System.Drawing.Color.Black;
+            this.btn_XoaBo.BadgeFont = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Bold);
+            this.btn_XoaBo.BadgeValue = 0;
+            this.btn_XoaBo.BadgeValueForeColor = System.Drawing.Color.White;
+            this.btn_XoaBo.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(216)))), ((int)(((byte)(220)))));
+            this.btn_XoaBo.BorderWidth = 1;
+            this.btn_XoaBo.ButtonBackColor = System.Drawing.Color.Red;
+            this.btn_XoaBo.ButtonImage = null;
+            this.btn_XoaBo.ButtonTextLeftPadding = 0;
+            this.btn_XoaBo.CanBeep = true;
+            this.btn_XoaBo.CanGlow = false;
+            this.btn_XoaBo.CanShake = true;
+            this.btn_XoaBo.ContextMenuStripEx = null;
+            this.btn_XoaBo.CornerRadiusBottomLeft = 10;
+            this.btn_XoaBo.CornerRadiusBottomRight = 10;
+            this.btn_XoaBo.CornerRadiusTopLeft = 10;
+            this.btn_XoaBo.CornerRadiusTopRight = 10;
+            this.btn_XoaBo.CustomCursor = System.Windows.Forms.Cursors.Default;
+            this.btn_XoaBo.DisabledTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(150)))), ((int)(((byte)(150)))));
+            this.btn_XoaBo.EnableLongPress = false;
+            this.btn_XoaBo.EnableRippleEffect = true;
+            this.btn_XoaBo.EnableShadow = false;
+            this.btn_XoaBo.EnableTextWrapping = false;
+            this.btn_XoaBo.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_XoaBo.GlowColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.btn_XoaBo.GlowIntensity = 100;
+            this.btn_XoaBo.GlowRadius = 20F;
+            this.btn_XoaBo.GradientBackground = false;
+            this.btn_XoaBo.GradientColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(227)))), ((int)(((byte)(64)))));
+            this.btn_XoaBo.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical;
+            this.btn_XoaBo.HintText = null;
+            this.btn_XoaBo.HoverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btn_XoaBo.HoverFontStyle = System.Drawing.FontStyle.Regular;
+            this.btn_XoaBo.HoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btn_XoaBo.HoverTransitionDuration = 140;
+            this.btn_XoaBo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_XoaBo.ImagePadding = 5;
+            this.btn_XoaBo.ImageSize = new System.Drawing.Size(16, 16);
+            this.btn_XoaBo.IsRadial = false;
+            this.btn_XoaBo.IsReadOnly = false;
+            this.btn_XoaBo.IsToggleButton = false;
+            this.btn_XoaBo.IsToggled = false;
+            this.btn_XoaBo.Location = new System.Drawing.Point(224, 233);
+            this.btn_XoaBo.LongPressDurationMS = 1000;
+            this.btn_XoaBo.Name = "btn_XoaBo";
+            this.btn_XoaBo.NormalFontStyle = System.Drawing.FontStyle.Regular;
+            this.btn_XoaBo.ParticleColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
+            this.btn_XoaBo.ParticleCount = 15;
+            this.btn_XoaBo.PressAnimationScale = 0.97F;
+            this.btn_XoaBo.PressedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(227)))), ((int)(((byte)(230)))));
+            this.btn_XoaBo.PressedFontStyle = System.Drawing.FontStyle.Regular;
+            this.btn_XoaBo.PressTransitionDuration = 90;
+            this.btn_XoaBo.ReadOnlyTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(100)))), ((int)(((byte)(100)))));
+            this.btn_XoaBo.RippleColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btn_XoaBo.RippleRadiusMultiplier = 0.6F;
+            this.btn_XoaBo.ShadowBlur = 5;
+            this.btn_XoaBo.ShadowColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btn_XoaBo.ShadowOffset = new System.Drawing.Point(0, 2);
+            this.btn_XoaBo.ShakeDuration = 500;
+            this.btn_XoaBo.ShakeIntensity = 5;
+            this.btn_XoaBo.Size = new System.Drawing.Size(103, 37);
+            this.btn_XoaBo.TabIndex = 39;
+            this.btn_XoaBo.Text = "Xóa Bỏ";
+            this.btn_XoaBo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btn_XoaBo.TextColor = System.Drawing.Color.White;
+            this.btn_XoaBo.TooltipText = null;
+            this.btn_XoaBo.UseAdvancedRendering = true;
+            this.btn_XoaBo.UseParticles = false;
+            this.btn_XoaBo.Click += new System.EventHandler(this.btn_XoaBo_Click);
             // 
-            // siticoneButton3
+            // btn_LamMoi
             // 
-            this.siticoneButton3.AccessibleDescription = "The default button control that accept input though the mouse, touch and keyboard" +
+            this.btn_LamMoi.AccessibleDescription = "The default button control that accept input though the mouse, touch and keyboard" +
     "";
-            this.siticoneButton3.AccessibleName = "Làm Mới";
-            this.siticoneButton3.AutoSizeBasedOnText = false;
-            this.siticoneButton3.BackColor = System.Drawing.Color.Transparent;
-            this.siticoneButton3.BadgeBackColor = System.Drawing.Color.Black;
-            this.siticoneButton3.BadgeFont = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Bold);
-            this.siticoneButton3.BadgeValue = 0;
-            this.siticoneButton3.BadgeValueForeColor = System.Drawing.Color.White;
-            this.siticoneButton3.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(216)))), ((int)(((byte)(220)))));
-            this.siticoneButton3.BorderWidth = 1;
-            this.siticoneButton3.ButtonBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.siticoneButton3.ButtonImage = null;
-            this.siticoneButton3.ButtonTextLeftPadding = 0;
-            this.siticoneButton3.CanBeep = true;
-            this.siticoneButton3.CanGlow = false;
-            this.siticoneButton3.CanShake = true;
-            this.siticoneButton3.ContextMenuStripEx = null;
-            this.siticoneButton3.CornerRadiusBottomLeft = 10;
-            this.siticoneButton3.CornerRadiusBottomRight = 10;
-            this.siticoneButton3.CornerRadiusTopLeft = 10;
-            this.siticoneButton3.CornerRadiusTopRight = 10;
-            this.siticoneButton3.CustomCursor = System.Windows.Forms.Cursors.Default;
-            this.siticoneButton3.DisabledTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(150)))), ((int)(((byte)(150)))));
-            this.siticoneButton3.EnableLongPress = false;
-            this.siticoneButton3.EnableRippleEffect = true;
-            this.siticoneButton3.EnableShadow = false;
-            this.siticoneButton3.EnableTextWrapping = false;
-            this.siticoneButton3.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.siticoneButton3.GlowColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.siticoneButton3.GlowIntensity = 100;
-            this.siticoneButton3.GlowRadius = 20F;
-            this.siticoneButton3.GradientBackground = false;
-            this.siticoneButton3.GradientColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(227)))), ((int)(((byte)(64)))));
-            this.siticoneButton3.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical;
-            this.siticoneButton3.HintText = null;
-            this.siticoneButton3.HoverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.siticoneButton3.HoverFontStyle = System.Drawing.FontStyle.Regular;
-            this.siticoneButton3.HoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.siticoneButton3.HoverTransitionDuration = 140;
-            this.siticoneButton3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.siticoneButton3.ImagePadding = 5;
-            this.siticoneButton3.ImageSize = new System.Drawing.Size(16, 16);
-            this.siticoneButton3.IsRadial = false;
-            this.siticoneButton3.IsReadOnly = false;
-            this.siticoneButton3.IsToggleButton = false;
-            this.siticoneButton3.IsToggled = false;
-            this.siticoneButton3.Location = new System.Drawing.Point(368, 233);
-            this.siticoneButton3.LongPressDurationMS = 1000;
-            this.siticoneButton3.Name = "siticoneButton3";
-            this.siticoneButton3.NormalFontStyle = System.Drawing.FontStyle.Regular;
-            this.siticoneButton3.ParticleColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
-            this.siticoneButton3.ParticleCount = 15;
-            this.siticoneButton3.PressAnimationScale = 0.97F;
-            this.siticoneButton3.PressedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(227)))), ((int)(((byte)(230)))));
-            this.siticoneButton3.PressedFontStyle = System.Drawing.FontStyle.Regular;
-            this.siticoneButton3.PressTransitionDuration = 90;
-            this.siticoneButton3.ReadOnlyTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(100)))), ((int)(((byte)(100)))));
-            this.siticoneButton3.RippleColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.siticoneButton3.RippleRadiusMultiplier = 0.6F;
-            this.siticoneButton3.ShadowBlur = 5;
-            this.siticoneButton3.ShadowColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.siticoneButton3.ShadowOffset = new System.Drawing.Point(0, 2);
-            this.siticoneButton3.ShakeDuration = 500;
-            this.siticoneButton3.ShakeIntensity = 5;
-            this.siticoneButton3.Size = new System.Drawing.Size(103, 37);
-            this.siticoneButton3.TabIndex = 40;
-            this.siticoneButton3.Text = "Làm Mới";
-            this.siticoneButton3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.siticoneButton3.TextColor = System.Drawing.Color.White;
-            this.siticoneButton3.TooltipText = null;
-            this.siticoneButton3.UseAdvancedRendering = true;
-            this.siticoneButton3.UseParticles = false;
-            // 
-            // bindingNavigatorAddNewItem
-            // 
-            this.bindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
-            this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
-            this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(29, 28);
-            this.bindingNavigatorAddNewItem.Text = "Add new";
-            // 
-            // bindingNavigatorDeleteItem
-            // 
-            this.bindingNavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
-            this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
-            this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(29, 24);
-            this.bindingNavigatorDeleteItem.Text = "Delete";
-            // 
-            // bindingNavigatorMoveFirstItem
-            // 
-            this.bindingNavigatorMoveFirstItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorMoveFirstItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveFirstItem.Image")));
-            this.bindingNavigatorMoveFirstItem.Name = "bindingNavigatorMoveFirstItem";
-            this.bindingNavigatorMoveFirstItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveFirstItem.Size = new System.Drawing.Size(29, 24);
-            this.bindingNavigatorMoveFirstItem.Text = "Move first";
-            // 
-            // bindingNavigatorMovePreviousItem
-            // 
-            this.bindingNavigatorMovePreviousItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorMovePreviousItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMovePreviousItem.Image")));
-            this.bindingNavigatorMovePreviousItem.Name = "bindingNavigatorMovePreviousItem";
-            this.bindingNavigatorMovePreviousItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMovePreviousItem.Size = new System.Drawing.Size(29, 24);
-            this.bindingNavigatorMovePreviousItem.Text = "Move previous";
-            // 
-            // bindingNavigatorMoveNextItem
-            // 
-            this.bindingNavigatorMoveNextItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorMoveNextItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveNextItem.Image")));
-            this.bindingNavigatorMoveNextItem.Name = "bindingNavigatorMoveNextItem";
-            this.bindingNavigatorMoveNextItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(29, 24);
-            this.bindingNavigatorMoveNextItem.Text = "Move next";
-            // 
-            // bindingNavigatorMoveLastItem
-            // 
-            this.bindingNavigatorMoveLastItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorMoveLastItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveLastItem.Image")));
-            this.bindingNavigatorMoveLastItem.Name = "bindingNavigatorMoveLastItem";
-            this.bindingNavigatorMoveLastItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(29, 24);
-            this.bindingNavigatorMoveLastItem.Text = "Move last";
-            // 
-            // sanPhamsBindingNavigatorSaveItem
-            // 
-            this.sanPhamsBindingNavigatorSaveItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.sanPhamsBindingNavigatorSaveItem.Image = ((System.Drawing.Image)(resources.GetObject("sanPhamsBindingNavigatorSaveItem.Image")));
-            this.sanPhamsBindingNavigatorSaveItem.Name = "sanPhamsBindingNavigatorSaveItem";
-            this.sanPhamsBindingNavigatorSaveItem.Size = new System.Drawing.Size(29, 24);
-            this.sanPhamsBindingNavigatorSaveItem.Text = "Save Data";
-            this.sanPhamsBindingNavigatorSaveItem.Click += new System.EventHandler(this.sanPhamsBindingNavigatorSaveItem_Click_1);
+            this.btn_LamMoi.AccessibleName = "Làm Mới";
+            this.btn_LamMoi.AutoSizeBasedOnText = false;
+            this.btn_LamMoi.BackColor = System.Drawing.Color.Transparent;
+            this.btn_LamMoi.BadgeBackColor = System.Drawing.Color.Black;
+            this.btn_LamMoi.BadgeFont = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Bold);
+            this.btn_LamMoi.BadgeValue = 0;
+            this.btn_LamMoi.BadgeValueForeColor = System.Drawing.Color.White;
+            this.btn_LamMoi.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(216)))), ((int)(((byte)(220)))));
+            this.btn_LamMoi.BorderWidth = 1;
+            this.btn_LamMoi.ButtonBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.btn_LamMoi.ButtonImage = null;
+            this.btn_LamMoi.ButtonTextLeftPadding = 0;
+            this.btn_LamMoi.CanBeep = true;
+            this.btn_LamMoi.CanGlow = false;
+            this.btn_LamMoi.CanShake = true;
+            this.btn_LamMoi.ContextMenuStripEx = null;
+            this.btn_LamMoi.CornerRadiusBottomLeft = 10;
+            this.btn_LamMoi.CornerRadiusBottomRight = 10;
+            this.btn_LamMoi.CornerRadiusTopLeft = 10;
+            this.btn_LamMoi.CornerRadiusTopRight = 10;
+            this.btn_LamMoi.CustomCursor = System.Windows.Forms.Cursors.Default;
+            this.btn_LamMoi.DisabledTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(150)))), ((int)(((byte)(150)))));
+            this.btn_LamMoi.EnableLongPress = false;
+            this.btn_LamMoi.EnableRippleEffect = true;
+            this.btn_LamMoi.EnableShadow = false;
+            this.btn_LamMoi.EnableTextWrapping = false;
+            this.btn_LamMoi.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_LamMoi.GlowColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.btn_LamMoi.GlowIntensity = 100;
+            this.btn_LamMoi.GlowRadius = 20F;
+            this.btn_LamMoi.GradientBackground = false;
+            this.btn_LamMoi.GradientColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(227)))), ((int)(((byte)(64)))));
+            this.btn_LamMoi.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical;
+            this.btn_LamMoi.HintText = null;
+            this.btn_LamMoi.HoverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.btn_LamMoi.HoverFontStyle = System.Drawing.FontStyle.Regular;
+            this.btn_LamMoi.HoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btn_LamMoi.HoverTransitionDuration = 140;
+            this.btn_LamMoi.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_LamMoi.ImagePadding = 5;
+            this.btn_LamMoi.ImageSize = new System.Drawing.Size(16, 16);
+            this.btn_LamMoi.IsRadial = false;
+            this.btn_LamMoi.IsReadOnly = false;
+            this.btn_LamMoi.IsToggleButton = false;
+            this.btn_LamMoi.IsToggled = false;
+            this.btn_LamMoi.Location = new System.Drawing.Point(368, 233);
+            this.btn_LamMoi.LongPressDurationMS = 1000;
+            this.btn_LamMoi.Name = "btn_LamMoi";
+            this.btn_LamMoi.NormalFontStyle = System.Drawing.FontStyle.Regular;
+            this.btn_LamMoi.ParticleColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
+            this.btn_LamMoi.ParticleCount = 15;
+            this.btn_LamMoi.PressAnimationScale = 0.97F;
+            this.btn_LamMoi.PressedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(227)))), ((int)(((byte)(230)))));
+            this.btn_LamMoi.PressedFontStyle = System.Drawing.FontStyle.Regular;
+            this.btn_LamMoi.PressTransitionDuration = 90;
+            this.btn_LamMoi.ReadOnlyTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(100)))), ((int)(((byte)(100)))));
+            this.btn_LamMoi.RippleColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btn_LamMoi.RippleRadiusMultiplier = 0.6F;
+            this.btn_LamMoi.ShadowBlur = 5;
+            this.btn_LamMoi.ShadowColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btn_LamMoi.ShadowOffset = new System.Drawing.Point(0, 2);
+            this.btn_LamMoi.ShakeDuration = 500;
+            this.btn_LamMoi.ShakeIntensity = 5;
+            this.btn_LamMoi.Size = new System.Drawing.Size(103, 37);
+            this.btn_LamMoi.TabIndex = 40;
+            this.btn_LamMoi.Text = "Làm Mới";
+            this.btn_LamMoi.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btn_LamMoi.TextColor = System.Drawing.Color.White;
+            this.btn_LamMoi.TooltipText = null;
+            this.btn_LamMoi.UseAdvancedRendering = true;
+            this.btn_LamMoi.UseParticles = false;
+            this.btn_LamMoi.Click += new System.EventHandler(this.btn_LamMoi_Click);
             // 
             // ptb_MauSac
             // 
@@ -889,24 +893,24 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1099, 600);
-            this.Controls.Add(this.siticoneButton3);
-            this.Controls.Add(this.siticoneButton2);
-            this.Controls.Add(this.siticoneButton1);
+            this.Controls.Add(this.btn_LamMoi);
+            this.Controls.Add(this.btn_XoaBo);
+            this.Controls.Add(this.btn_ThemSP);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(maSanPhamLabel);
-            this.Controls.Add(this.maSanPhamTextBox);
+            this.Controls.Add(this.txt_maSanPham);
             this.Controls.Add(tenSanPhamLabel);
-            this.Controls.Add(this.tenSanPhamTextBox);
+            this.Controls.Add(this.txt_tenSanPham);
             this.Controls.Add(giaBanLabel);
-            this.Controls.Add(this.giaBanTextBox);
+            this.Controls.Add(this.txt_giaBan);
             this.Controls.Add(soLuongTonLabel);
-            this.Controls.Add(this.soLuongTonTextBox);
+            this.Controls.Add(this.txt_soLuongTon);
             this.Controls.Add(mauSacLabel);
             this.Controls.Add(chatLieuLabel);
-            this.Controls.Add(this.chatLieuTextBox);
+            this.Controls.Add(this.txt_chatLieu);
             this.Controls.Add(hinhAnhLabel);
             this.Controls.Add(danhMucIdLabel);
-            this.Controls.Add(this.danhMucIdTextBox);
+            this.Controls.Add(this.txt_danhMucId);
             this.Controls.Add(this.sanPhamsBindingNavigator);
             this.Controls.Add(this.btn_ChonMau);
             this.Controls.Add(this.ptb_MauSac);
@@ -960,16 +964,16 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn7;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn8;
-        private System.Windows.Forms.TextBox maSanPhamTextBox;
-        private System.Windows.Forms.TextBox tenSanPhamTextBox;
-        private System.Windows.Forms.TextBox giaBanTextBox;
-        private System.Windows.Forms.TextBox soLuongTonTextBox;
-        private System.Windows.Forms.TextBox chatLieuTextBox;
-        private System.Windows.Forms.TextBox danhMucIdTextBox;
+        private System.Windows.Forms.TextBox txt_maSanPham;
+        private System.Windows.Forms.TextBox txt_tenSanPham;
+        private System.Windows.Forms.TextBox txt_giaBan;
+        private System.Windows.Forms.TextBox txt_soLuongTon;
+        private System.Windows.Forms.TextBox txt_chatLieu;
+        private System.Windows.Forms.TextBox txt_danhMucId;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.ColorDialog Color_Vai;
-        private SiticoneNetFrameworkUI.SiticoneButton siticoneButton1;
-        private SiticoneNetFrameworkUI.SiticoneButton siticoneButton2;
-        private SiticoneNetFrameworkUI.SiticoneButton siticoneButton3;
+        private SiticoneNetFrameworkUI.SiticoneButton btn_ThemSP;
+        private SiticoneNetFrameworkUI.SiticoneButton btn_XoaBo;
+        private SiticoneNetFrameworkUI.SiticoneButton btn_LamMoi;
     }
 }
