@@ -696,7 +696,7 @@
             this.pictureBox16.Size = new System.Drawing.Size(171, 103);
             this.pictureBox16.TabIndex = 4;
             this.pictureBox16.TabStop = false;
-            this.pictureBox16.Click += new System.EventHandler(this.pictureBox16_Click);
+//            this.pictureBox16.Click += new System.EventHandler(this.pictureBox16_Click);
             // 
             // button21
             // 
@@ -723,7 +723,7 @@
             this.panel17.Name = "panel17";
             this.panel17.Size = new System.Drawing.Size(171, 222);
             this.panel17.TabIndex = 33;
-            this.panel17.Paint += new System.Windows.Forms.PaintEventHandler(this.panel17_Paint);
+//            this.panel17.Paint += new System.Windows.Forms.PaintEventHandler(this.panel17_Paint);
             // 
             // comboBox21
             // 
@@ -754,7 +754,7 @@
             this.numericUpDown21.Name = "numericUpDown21";
             this.numericUpDown21.Size = new System.Drawing.Size(58, 30);
             this.numericUpDown21.TabIndex = 70;
-            this.numericUpDown21.ValueChanged += new System.EventHandler(this.numericUpDown21_ValueChanged);
+//            this.numericUpDown21.ValueChanged += new System.EventHandler(this.numericUpDown21_ValueChanged);
             // 
             // label31
             // 
@@ -775,7 +775,7 @@
             this.pictureBox15.Size = new System.Drawing.Size(171, 103);
             this.pictureBox15.TabIndex = 4;
             this.pictureBox15.TabStop = false;
-            this.pictureBox15.Click += new System.EventHandler(this.pictureBox15_Click);
+//            this.pictureBox15.Click += new System.EventHandler(this.pictureBox15_Click);
             // 
             // button22
             // 
@@ -788,7 +788,7 @@
             this.button22.TabIndex = 69;
             this.button22.Text = "+ Thêm";
             this.button22.UseVisualStyleBackColor = false;
-            this.button22.Click += new System.EventHandler(this.button22_Click);
+//            this.button22.Click += new System.EventHandler(this.button22_Click);
             // 
             // panel15
             // 
@@ -1386,7 +1386,7 @@
             this.label2.Size = new System.Drawing.Size(77, 19);
             this.label2.TabIndex = 54;
             this.label2.Text = "80.000/m";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
+//            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // numericUpDown11
             // 
@@ -1406,7 +1406,7 @@
             this.label3.Size = new System.Drawing.Size(130, 23);
             this.label3.TabIndex = 53;
             this.label3.Text = "Vải tuyết mưa";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
+//            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // pictureBox5
             // 
@@ -1961,6 +1961,7 @@
             this.button14.TabIndex = 47;
             this.button14.Text = "+ Thêm";
             this.button14.UseVisualStyleBackColor = false;
+            this.button14.Click += new System.EventHandler(this.button14_Click);
             // 
             // pictureBox9
             // 
@@ -1979,6 +1980,7 @@
             this.Controls.Add(this.panel1);
             this.Name = "Frm_BanHang";
             this.Text = "Frm_BanHang";
+//            this.Load += new System.EventHandler(this.Frm_BanHang_Load);
             this.panel21.ResumeLayout(false);
             this.panel21.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown17)).EndInit();

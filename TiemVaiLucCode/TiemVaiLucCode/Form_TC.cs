@@ -125,5 +125,10 @@ namespace TiemVaiLucCode
         {
             OpenChildForm(new Frm_ĐKhoan());
         }
+
+        private void bÁOCÁOCÁNHÂNToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new Frm_LichSu());
+        }
     }
 }

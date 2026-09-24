@@ -21,5 +21,10 @@ namespace TiemVaiLucCode
         {
 
         }
+
+        private void Frm_LichSu_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -115,6 +115,9 @@ namespace TiemVaiLucCode
             Mo_Card_ChildFrom(new Frm_Card_HoaDon());
         }
 
-        
+        private void Frm_TrangChu_Admin_Load(object sender, EventArgs e)
+        {
+            
+        }
     }
 }

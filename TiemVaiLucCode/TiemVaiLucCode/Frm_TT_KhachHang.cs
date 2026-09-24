@@ -51,5 +51,10 @@ namespace TiemVaiLucCode
         {
 
         }
+
+        private void Frm_TT_KhachHang_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

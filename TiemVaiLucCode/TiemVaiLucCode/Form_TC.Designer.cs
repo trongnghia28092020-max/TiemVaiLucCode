@@ -179,6 +179,7 @@
             this.bÁOCÁOCÁNHÂNToolStripMenuItem.Name = "bÁOCÁOCÁNHÂNToolStripMenuItem";
             this.bÁOCÁOCÁNHÂNToolStripMenuItem.Size = new System.Drawing.Size(209, 27);
             this.bÁOCÁOCÁNHÂNToolStripMenuItem.Text = "LỊCH SỬ MUA HÀNG";
+            this.bÁOCÁOCÁNHÂNToolStripMenuItem.Click += new System.EventHandler(this.bÁOCÁOCÁNHÂNToolStripMenuItem_Click);
             // 
             // GioHang_ToolStripMenuItem
             // 
