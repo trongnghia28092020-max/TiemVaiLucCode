@@ -385,5 +385,22 @@ namespace TiemVaiLucCode
                 }
             }
         }
+
+        private void hoaDonDataGridView_CellFormatting(object sender, DataGridViewCellFormattingEventArgs e)
+        {
+            // Trang điểm cho cột Mã Đơn Hàng
+            if (hoaDonDataGridView.Columns[e.ColumnIndex].DataPropertyName == "MaDonHang" && e.Value != null)
+            {
+                e.Value = "DH" + e.Value.ToString();
+                e.FormattingApplied = true;
+            }
+
+            // Trang điểm thêm cho cột Mã Hóa Đơn (Thêm chữ HD)
+            if (hoaDonDataGridView.Columns[e.ColumnIndex].DataPropertyName == "MaHoaDon" && e.Value != null)
+            {
+                e.Value = "HD" + e.Value.ToString();
+                e.FormattingApplied = true;
+            }
+        }
     }
 }

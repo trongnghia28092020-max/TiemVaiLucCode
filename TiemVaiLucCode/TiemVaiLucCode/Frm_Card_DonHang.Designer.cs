@@ -260,6 +260,7 @@
             this.chiTietDonHangsDataGridView.RowTemplate.Height = 24;
             this.chiTietDonHangsDataGridView.Size = new System.Drawing.Size(936, 436);
             this.chiTietDonHangsDataGridView.TabIndex = 1;
+            this.chiTietDonHangsDataGridView.CellFormatting += new System.Windows.Forms.DataGridViewCellFormattingEventHandler(this.chiTietDonHangsDataGridView_CellFormatting);
             // 
             // dataGridViewTextBoxColumn1
             // 

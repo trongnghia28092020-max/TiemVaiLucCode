@@ -77,5 +77,16 @@ namespace TiemVaiLucCode
             // 3. Đưa con trỏ chuột nhấp nháy lại vào ô tìm kiếm cho tiện
             txt_TimKiem.Focus();
         }
+
+        private void chiTietDonHangsDataGridView_CellFormatting(object sender, DataGridViewCellFormattingEventArgs e)
+        {
+            // Kiểm tra xem đang vẽ dữ liệu ở cột "MaDonHang" đúng không
+            if (chiTietDonHangsDataGridView.Columns[e.ColumnIndex].DataPropertyName == "MaDonHang" && e.Value != null)
+            {
+                // Gắn thêm chữ DH đằng trước con số thật
+                e.Value = "DH" + e.Value.ToString();
+                e.FormattingApplied = true; // Báo cho hệ thống biết là "Tui trang điểm xong rồi nha"
+            }
+        }
     }
 }

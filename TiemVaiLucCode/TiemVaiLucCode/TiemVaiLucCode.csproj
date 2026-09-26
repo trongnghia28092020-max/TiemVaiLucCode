@@ -265,6 +265,10 @@
     <Compile Include="Migrations\202609230909347_ThemBangHoaDon.Designer.cs">
       <DependentUpon>202609230909347_ThemBangHoaDon.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202609260732459_UpdateIdentityDonHang.cs" />
+    <Compile Include="Migrations\202609260732459_UpdateIdentityDonHang.Designer.cs">
+      <DependentUpon>202609260732459_UpdateIdentityDonHang.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Model1.cs" />
     <Compile Include="Models\ChiTietDonHang.cs" />
@@ -404,6 +408,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202609230909347_ThemBangHoaDon.resx">
       <DependentUpon>202609230909347_ThemBangHoaDon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202609260732459_UpdateIdentityDonHang.resx">
+      <DependentUpon>202609260732459_UpdateIdentityDonHang.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

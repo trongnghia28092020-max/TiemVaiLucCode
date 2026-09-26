@@ -28,13 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel2 = new System.Windows.Forms.Panel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.lblKH = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label6 = new System.Windows.Forms.Label();
+            this.txtNgayMua = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.txtDiaChi = new System.Windows.Forms.TextBox();
@@ -51,17 +52,18 @@
             this.button1 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.label7 = new System.Windows.Forms.Label();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.txtTongTien = new System.Windows.Forms.TextBox();
-            this.label8 = new System.Windows.Forms.Label();
             this.clstt = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cldongia = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.clsoluong = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.clmau = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.clthanhtien = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.txtNgayMua = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.txtTongTien = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.txt_MaDH = new System.Windows.Forms.TextBox();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel1.SuspendLayout();
@@ -106,6 +108,8 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Khaki;
+            this.panel1.Controls.Add(this.label9);
+            this.panel1.Controls.Add(this.txt_MaDH);
             this.panel1.Controls.Add(this.comboBox1);
             this.panel1.Controls.Add(this.label6);
             this.panel1.Controls.Add(this.txtNgayMua);
@@ -144,6 +148,14 @@
             this.label6.Size = new System.Drawing.Size(212, 23);
             this.label6.TabIndex = 10;
             this.label6.Text = "Phương thức thanh toán";
+            // 
+            // txtNgayMua
+            // 
+            this.txtNgayMua.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNgayMua.Location = new System.Drawing.Point(113, 260);
+            this.txtNgayMua.Name = "txtNgayMua";
+            this.txtNgayMua.Size = new System.Drawing.Size(415, 30);
+            this.txtNgayMua.TabIndex = 9;
             // 
             // label5
             // 
@@ -238,7 +250,7 @@
             this.txtMaKH.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtMaKH.Location = new System.Drawing.Point(113, 31);
             this.txtMaKH.Name = "txtMaKH";
-            this.txtMaKH.Size = new System.Drawing.Size(415, 30);
+            this.txtMaKH.Size = new System.Drawing.Size(192, 30);
             this.txtMaKH.TabIndex = 0;
             // 
             // panel3
@@ -304,14 +316,14 @@
             // 
             this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView1.BackgroundColor = System.Drawing.Color.PaleGoldenrod;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.clstt,
@@ -326,6 +338,42 @@
             this.dataGridView1.RowTemplate.Height = 24;
             this.dataGridView1.Size = new System.Drawing.Size(649, 405);
             this.dataGridView1.TabIndex = 37;
+            // 
+            // clstt
+            // 
+            this.clstt.HeaderText = "STT";
+            this.clstt.MinimumWidth = 6;
+            this.clstt.Name = "clstt";
+            // 
+            // Column1
+            // 
+            this.Column1.HeaderText = "Tên sản phẩm";
+            this.Column1.MinimumWidth = 6;
+            this.Column1.Name = "Column1";
+            // 
+            // cldongia
+            // 
+            this.cldongia.HeaderText = "Đơn giá";
+            this.cldongia.MinimumWidth = 6;
+            this.cldongia.Name = "cldongia";
+            // 
+            // clsoluong
+            // 
+            this.clsoluong.HeaderText = "Số Lượng";
+            this.clsoluong.MinimumWidth = 6;
+            this.clsoluong.Name = "clsoluong";
+            // 
+            // clmau
+            // 
+            this.clmau.HeaderText = "Màu sắc";
+            this.clmau.MinimumWidth = 6;
+            this.clmau.Name = "clmau";
+            // 
+            // clthanhtien
+            // 
+            this.clthanhtien.HeaderText = "Thành tiền";
+            this.clthanhtien.MinimumWidth = 6;
+            this.clthanhtien.Name = "clthanhtien";
             // 
             // label7
             // 
@@ -369,49 +417,24 @@
             this.label8.TabIndex = 0;
             this.label8.Text = "TỔNG TIỀN:";
             // 
-            // clstt
+            // label9
             // 
-            this.clstt.HeaderText = "STT";
-            this.clstt.MinimumWidth = 6;
-            this.clstt.Name = "clstt";
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.Color.DarkGreen;
+            this.label9.Location = new System.Drawing.Point(327, 6);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(119, 23);
+            this.label9.TabIndex = 13;
+            this.label9.Text = "Mã đơn hàng";
             // 
-            // Column1
+            // txt_MaDH
             // 
-            this.Column1.HeaderText = "Tên sản phẩm";
-            this.Column1.MinimumWidth = 6;
-            this.Column1.Name = "Column1";
-            // 
-            // cldongia
-            // 
-            this.cldongia.HeaderText = "Đơn giá";
-            this.cldongia.MinimumWidth = 6;
-            this.cldongia.Name = "cldongia";
-            // 
-            // clsoluong
-            // 
-            this.clsoluong.HeaderText = "Số Lượng";
-            this.clsoluong.MinimumWidth = 6;
-            this.clsoluong.Name = "clsoluong";
-            // 
-            // clmau
-            // 
-            this.clmau.HeaderText = "Màu sắc";
-            this.clmau.MinimumWidth = 6;
-            this.clmau.Name = "clmau";
-            // 
-            // clthanhtien
-            // 
-            this.clthanhtien.HeaderText = "Thành tiền";
-            this.clthanhtien.MinimumWidth = 6;
-            this.clthanhtien.Name = "clthanhtien";
-            // 
-            // txtNgayMua
-            // 
-            this.txtNgayMua.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNgayMua.Location = new System.Drawing.Point(113, 260);
-            this.txtNgayMua.Name = "txtNgayMua";
-            this.txtNgayMua.Size = new System.Drawing.Size(415, 30);
-            this.txtNgayMua.TabIndex = 9;
+            this.txt_MaDH.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_MaDH.Location = new System.Drawing.Point(331, 31);
+            this.txt_MaDH.Name = "txt_MaDH";
+            this.txt_MaDH.Size = new System.Drawing.Size(197, 30);
+            this.txt_MaDH.TabIndex = 12;
             // 
             // Frm_TT_KhachHang
             // 
@@ -479,5 +502,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn clmau;
         private System.Windows.Forms.DataGridViewTextBoxColumn clthanhtien;
         private System.Windows.Forms.TextBox txtNgayMua;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.TextBox txt_MaDH;
     }
 }

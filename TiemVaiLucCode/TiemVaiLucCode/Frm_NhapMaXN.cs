@@ -149,5 +149,10 @@ namespace TiemVaiLucCode
             frmDatMK.Show();
             this.Close();
         }
+
+        private void Frm_NhapMaXN_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

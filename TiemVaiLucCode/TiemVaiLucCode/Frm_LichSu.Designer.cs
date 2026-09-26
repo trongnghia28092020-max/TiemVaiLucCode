@@ -33,13 +33,13 @@
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label5 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cmb_TrangThai = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.label2 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btn_timKiem = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.clstt = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -77,13 +77,13 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.LavenderBlush;
             this.panel1.Controls.Add(this.label5);
-            this.panel1.Controls.Add(this.comboBox1);
+            this.panel1.Controls.Add(this.cmb_TrangThai);
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.dateTimePicker2);
             this.panel1.Controls.Add(this.dateTimePicker1);
             this.panel1.Controls.Add(this.label2);
-            this.panel1.Controls.Add(this.button1);
+            this.panel1.Controls.Add(this.btn_timKiem);
             this.panel1.Controls.Add(this.textBox1);
             this.panel1.Location = new System.Drawing.Point(17, 54);
             this.panel1.Name = "panel1";
@@ -102,14 +102,15 @@
             this.label5.Text = "Trạng thái";
             this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
-            // comboBox1
+            // cmb_TrangThai
             // 
-            this.comboBox1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(984, 33);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(225, 30);
-            this.comboBox1.TabIndex = 44;
+            this.cmb_TrangThai.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmb_TrangThai.FormattingEnabled = true;
+            this.cmb_TrangThai.Location = new System.Drawing.Point(984, 33);
+            this.cmb_TrangThai.Name = "cmb_TrangThai";
+            this.cmb_TrangThai.Size = new System.Drawing.Size(225, 30);
+            this.cmb_TrangThai.TabIndex = 44;
+            this.cmb_TrangThai.SelectedIndexChanged += new System.EventHandler(this.cmb_TrangThai_SelectedIndexChanged);
             // 
             // label4
             // 
@@ -160,16 +161,17 @@
             this.label2.TabIndex = 39;
             this.label2.Text = "Tìm kiếm";
             // 
-            // button1
+            // btn_timKiem
             // 
-            this.button1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.button1.Location = new System.Drawing.Point(257, 34);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(41, 30);
-            this.button1.TabIndex = 13;
-            this.button1.Text = "🔍";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btn_timKiem.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_timKiem.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btn_timKiem.Location = new System.Drawing.Point(257, 34);
+            this.btn_timKiem.Name = "btn_timKiem";
+            this.btn_timKiem.Size = new System.Drawing.Size(41, 30);
+            this.btn_timKiem.TabIndex = 13;
+            this.btn_timKiem.Text = "🔍";
+            this.btn_timKiem.UseVisualStyleBackColor = true;
+            this.btn_timKiem.Click += new System.EventHandler(this.btn_timKiem_Click);
             // 
             // textBox1
             // 
@@ -262,14 +264,14 @@
         private System.Windows.Forms.PictureBox pictureBox9;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btn_timKiem;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.DateTimePicker dateTimePicker2;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cmb_TrangThai;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.DataGridViewTextBoxColumn clstt;

@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Drawing;
 using System.Linq;
 using System.Windows.Forms;
 using System.Windows.Forms.DataVisualization.Charting;
@@ -14,6 +16,35 @@ namespace TiemVaiLucCode
         public Frm_TT_KhachHang()
         {
             InitializeComponent();
+        }
+
+        private void LamMoiTrangThanhToan()
+        {
+            // 1. Dọn dẹp ô nhập liệu khách hàng
+            txtTenKH.Clear();
+            txtSDT.Clear();
+            txtDiaChi.Clear();
+
+            // 2. Trả ngày mua và phương thức thanh toán về mặc định
+            txtNgayMua.Text = DateTime.Now.ToString("dd/MM/yyyy");
+            if (comboBox1.Items.Count > 0)
+            {
+                comboBox1.SelectedIndex = 0;
+            }
+
+            // 3. Quét sạch giỏ hàng và cập nhật lại bảng hiển thị (trống trơn)
+            GioHangManager.XoaTatCa();
+            LoadGioHang();
+
+            // 4. Tính toán sẵn Mã Khách Hàng và Mã Đơn Hàng cho người mua tiếp theo
+            using (var db = new TaiKhoanContext())
+            {
+                int maKHLonNhat = db.KhachHangs.Any() ? db.KhachHangs.Max(k => k.MaKhachHang) : 0;
+                txtMaKH.Text = (maKHLonNhat + 1).ToString();
+
+                int maDHLonNhat = db.DonHangs.Any() ? db.DonHangs.Max(d => d.MaDonHang) : 0;
+                txt_MaDH.Text = (maDHLonNhat + 1).ToString();
+            }
         }
 
         // =====================================================
@@ -53,11 +84,9 @@ namespace TiemVaiLucCode
         private void Frm_TT_KhachHang_Load(object sender, EventArgs e)
         {
             LoadGioHang();
-
-            // Ngày mua
+            // Hiển thị ngày mua mặc định là ngày hiện tại
             txtNgayMua.Text = DateTime.Now.ToString("dd/MM/yyyy");
-
-            // Phương thức thanh toán
+            //  Hiển thị phương thức thanh toán mặc định là "Tiền mặt"
             comboBox1.Items.Clear();
 
             comboBox1.Items.Add("Tiền mặt");
@@ -65,6 +94,24 @@ namespace TiemVaiLucCode
             comboBox1.Items.Add("Thanh toán khi nhận hàng");
 
             comboBox1.SelectedIndex = 0;
+
+            // Khóa 2 ô mã lại, tô màu xám cho đẹp
+            txtMaKH.ReadOnly = true;
+            txtMaKH.BackColor = Color.LightGray;
+
+            txt_MaDH.ReadOnly = true;
+            txt_MaDH.BackColor = Color.LightGray;
+
+            using (var db = new TaiKhoanContext())
+            {
+                // 1. Tính mã Khách Hàng tiếp theo
+                int maKHLonNhat = db.KhachHangs.Any() ? db.KhachHangs.Max(k => k.MaKhachHang) : 0;
+                txtMaKH.Text = (maKHLonNhat + 1).ToString();
+
+                // 2. Tính mã Đơn Hàng tiếp theo
+                int maDHLonNhat = db.DonHangs.Any() ? db.DonHangs.Max(d => d.MaDonHang) : 0;
+                txt_MaDH.Text = (maDHLonNhat + 1).ToString();
+            }
         }
 
 
@@ -167,16 +214,12 @@ namespace TiemVaiLucCode
                 }
 
                 // =====================================================
-                // 6. KẾT NỐI DATABASE
+                // 6. KẾT NỐI DATABASE (LUỒNG CHUẨN ENTITY FRAMEWORK)
                 // =====================================================
                 using (var db = new TaiKhoanContext())
                 {
-                    // =================================================
-                    // 7. TÌM / TẠO KHÁCH HÀNG
-                    // =================================================
-                    var khachHang = db.KhachHangs
-                        .FirstOrDefault(x => x.SoDienThoai == txtSDT.Text.Trim());
-
+                    // 7. KHÁCH HÀNG (Lưu trước để lấy mã KH chuẩn)
+                    var khachHang = db.KhachHangs.FirstOrDefault(x => x.SoDienThoai == txtSDT.Text.Trim());
                     if (khachHang == null)
                     {
                         khachHang = new KhachHang
@@ -185,138 +228,86 @@ namespace TiemVaiLucCode
                             SoDienThoai = txtSDT.Text.Trim(),
                             DiaChi = txtDiaChi.Text.Trim()
                         };
-
                         db.KhachHangs.Add(khachHang);
-
-                        // Lưu để SQL tạo MaKhachHang
-                        db.SaveChanges();
                     }
                     else
                     {
-                        // Cập nhật thông tin nếu khách hàng đã tồn tại
                         khachHang.HoTenKhachHang = txtTenKH.Text.Trim();
                         khachHang.DiaChi = txtDiaChi.Text.Trim();
-
-                        db.SaveChanges();
                     }
+                    db.SaveChanges(); // Chốt lưu Khách Hàng
 
-                    // =================================================
-                    // 8. KIỂM TRA TỒN KHO
-                    // =================================================
+                    // 8. KIỂM TRA TỒN KHO LẦN CUỐI
                     foreach (GioHangItem item in GioHangManager.DanhSach)
                     {
-                        var sanPham = db.SanPhams
-                            .FirstOrDefault(x => x.MaSanPham == item.SanPhamId);
-
-                        if (sanPham == null)
+                        var spCheck = db.SanPhams.FirstOrDefault(x => x.MaSanPham == item.SanPhamId);
+                        if (spCheck == null || item.SoLuongMet > spCheck.SoLuongTon)
                         {
-                            MessageBox.Show(
-                                "Không tìm thấy sản phẩm:\n" +
-                                item.TenSanPham,
-                                "Lỗi",
-                                MessageBoxButtons.OK,
-                                MessageBoxIcon.Error);
-
-                            return;
-                        }
-
-                        if (item.SoLuongMet > sanPham.SoLuongTon)
-                        {
-                            MessageBox.Show(
-                                "Không đủ số lượng trong kho!\n\n" +
-                                "Sản phẩm: " + sanPham.TenSanPham + "\n" +
-                                "Tồn kho: " + sanPham.SoLuongTon + " mét\n" +
-                                "Bạn mua: " + item.SoLuongMet + " mét",
-                                "Không đủ hàng",
-                                MessageBoxButtons.OK,
-                                MessageBoxIcon.Warning);
-
+                            MessageBox.Show($"Không đủ hàng cho sản phẩm: {item.TenSanPham}", "Lỗi Kho", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                             return;
                         }
                     }
 
-                    // =================================================
-                    // 9. TẠO ĐƠN HÀNG TRƯỚC
-                    // =================================================
-                    var donHang = new DonHang
+                    // 9. TẠO ĐƠN HÀNG (TUYỆT ĐỐI KHÔNG GÁN MaDonHang - ĐỂ EF TỰ LO)
+                    var donHangMoi = new DonHang
                     {
                         MaKhachHang = khachHang.MaKhachHang,
-                        DiaChiGiaoHang = txtDiaChi.Text.Trim()
+                        DiaChiGiaoHang = txtDiaChi.Text.Trim(),
+                        TongTien = tongTien,
+                        TrangThai = "Hoàn Thành",
+                        SoDienThoaiNhan = txtSDT.Text.Trim(),
+                        NgayDat = DateTime.Now,
+                        ChiTietDonHangs = new List<ChiTietDonHang>() // Khởi tạo giỏ chứa chi tiết
                     };
 
-                    db.DonHangs.Add(donHang);
-
-                    // RẤT QUAN TRỌNG
-                    // Lưu DonHang trước để SQL tạo MaDonHang
-                    db.SaveChanges();
-
-                    // Lúc này:
-                    // donHang.MaDonHang đã có giá trị
-                    int maDonHang = donHang.MaDonHang;
-
-                    // =================================================
-                    // 10. TẠO CHI TIẾT ĐƠN HÀNG
-                    // =================================================
+                    // 10. TẠO CHI TIẾT & TRỪ KHO
                     foreach (GioHangItem item in GioHangManager.DanhSach)
                     {
-                        var chiTiet = new ChiTietDonHang
+                        // Nhét thẳng chi tiết vào giỏ của Đơn Hàng (KHÔNG cần gán ID MaDonHang)
+                        donHangMoi.ChiTietDonHangs.Add(new ChiTietDonHang
                         {
-                            MaDonHang = maDonHang,
                             SanPhamId = item.SanPhamId,
                             SoLuongMet = item.SoLuongMet,
                             DonGia = item.DonGia
-                        };
+                        });
 
-                        db.ChiTietDonHangs.Add(chiTiet);
+                        // Trừ tồn kho
+                        var sanPham = db.SanPhams.FirstOrDefault(x => x.MaSanPham == item.SanPhamId);
+                        if (sanPham != null) sanPham.SoLuongTon -= item.SoLuongMet;
                     }
 
-                    // =================================================
                     // 11. TẠO HÓA ĐƠN
-                    // =================================================
-                    var hoaDon = new HoaDon
+                    var hoaDonMoi = new HoaDon
                     {
-                        MaDonHang = maDonHang,
+                        DonHang = donHangMoi, // QUAN TRỌNG: Gắn nguyên đối tượng Đơn Hàng vào Hóa Đơn
                         NgayLap = DateTime.Now,
                         TongTienThanhToan = tongTien,
-                        TrangThaiThanhToan = "Đã Thanh Toán"
+                        TrangThaiThanhToan = "Đã Thanh Toán",
+                        PhuongThucThanhToan = comboBox1.Text
                     };
 
-                    db.HoaDons.Add(hoaDon);
+                    // 12. THÊM HÓA ĐƠN VÀ LƯU 1 LẦN DUY NHẤT
+                    db.HoaDons.Add(hoaDonMoi);
 
-                    // =================================================
-                    // 12. TRỪ TỒN KHO
-                    // =================================================
-                    foreach (GioHangItem item in GioHangManager.DanhSach)
-                    {
-                        var sanPham = db.SanPhams
-                            .FirstOrDefault(x => x.MaSanPham == item.SanPhamId);
-
-                        if (sanPham != null)
-                        {
-                            sanPham.SoLuongTon -= item.SoLuongMet;
-                        }
-                    }
-
-                    // =================================================
-                    // 13. LƯU TẤT CẢ
-                    // =================================================
+                    // EF sẽ tự động lưu Đơn Hàng -> Lấy ID tự sinh -> Lưu Chi tiết -> Lưu Hóa Đơn
                     db.SaveChanges();
 
-                    // Lưu mã hóa đơn để nút IN HÓA ĐƠN sử dụng
-                    maHoaDonCuoi = hoaDon.MaHoaDon;
-
+                    maHoaDonCuoi = hoaDonMoi.MaHoaDon;
                     daThanhToan = true;
+
+                    // 13. Tự động lấy mã đơn hàng EF vừa sinh ra cộng thêm 1 để hiển thị sẵn cho đơn sau
+                    txt_MaDH.Text = (donHangMoi.MaDonHang + 1).ToString();
                 }
 
                 // =====================================================
                 // 14. XÓA GIỎ HÀNG
                 // =====================================================
-                GioHangManager.XoaTatCa();
+                LamMoiTrangThanhToan();
 
                 // =====================================================
                 // 15. HIỂN THỊ GIỎ HÀNG TRỐNG
                 // =====================================================
-                LoadGioHang();
+                LamMoiTrangThanhToan();
 
                 // =====================================================
                 // 16. THÔNG BÁO
@@ -332,6 +323,7 @@ namespace TiemVaiLucCode
                     "Thanh toán thành công",
                     MessageBoxButtons.OK,
                     MessageBoxIcon.Information);
+                LamMoiTrangThanhToan();
             }
             catch (Exception ex)
             {
@@ -412,8 +404,6 @@ namespace TiemVaiLucCode
 
         private void button2_Click(object sender, EventArgs e)
         {
-        
-
             try
             {
                 // ==========================================
@@ -510,98 +500,90 @@ namespace TiemVaiLucCode
                     return;
                 }
 
-                // ==========================================
-                // 7. KẾT NỐI DATABASE
-                // ==========================================
+                // =====================================================
+                // 6. KẾT NỐI DATABASE VÀ LƯU 1 LẦN DUY NHẤT
+                // =====================================================
                 using (var db = new TaiKhoanContext())
                 {
-                    // ==========================================
+                    // 7. KHÁCH HÀNG (Tìm cũ hoặc tạo mới)
+                    var khachHang = db.KhachHangs.FirstOrDefault(x => x.SoDienThoai == txtSDT.Text.Trim());
+                    if (khachHang == null)
+                    {
+                        khachHang = new KhachHang
+                        {
+                            HoTenKhachHang = txtTenKH.Text.Trim(),
+                            SoDienThoai = txtSDT.Text.Trim(),
+                            DiaChi = txtDiaChi.Text.Trim()
+                        };
+                        db.KhachHangs.Add(khachHang);
+                        db.SaveChanges(); // Chốt lưu Khách Hàng để CSDL cấp mã
+                    }
+                    else
+                    {
+                        khachHang.HoTenKhachHang = txtTenKH.Text.Trim();
+                        khachHang.DiaChi = txtDiaChi.Text.Trim();
+                        db.SaveChanges();
+                    }
+
                     // 8. KIỂM TRA TỒN KHO LẦN CUỐI
-                    // ==========================================
                     foreach (GioHangItem item in GioHangManager.DanhSach)
                     {
-                        var sanPham = db.SanPhams
-                            .FirstOrDefault(x =>
-                                x.MaSanPham == item.SanPhamId);
-
-                        if (sanPham == null)
+                        var spCheck = db.SanPhams.FirstOrDefault(x => x.MaSanPham == item.SanPhamId);
+                        if (spCheck == null || item.SoLuongMet > spCheck.SoLuongTon)
                         {
-                            MessageBox.Show(
-                                "Không tìm thấy sản phẩm:\n" +
-                                item.TenSanPham,
-                                "Lỗi",
-                                MessageBoxButtons.OK,
-                                MessageBoxIcon.Error);
-
-                            return;
-                        }
-
-                        if (item.SoLuongMet > sanPham.SoLuongTon)
-                        {
-                            MessageBox.Show(
-                                "Không đủ số lượng trong kho!\n\n" +
-                                "Sản phẩm: " + sanPham.TenSanPham + "\n" +
-                                "Tồn kho: " + sanPham.SoLuongTon + " mét\n" +
-                                "Bạn mua: " + item.SoLuongMet + " mét",
-                                "Không đủ hàng",
-                                MessageBoxButtons.OK,
-                                MessageBoxIcon.Warning);
-
+                            MessageBox.Show($"Không đủ hàng cho sản phẩm: {item.TenSanPham}", "Lỗi Kho", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                             return;
                         }
                     }
 
-                    // ==========================================
-                    // 9. TẠO HÓA ĐƠN
-                    // ==========================================
-                    var hoaDon = new HoaDon
+                    // 9. TẠO ĐƠN HÀNG (TUYỆT ĐỐI KHÔNG GÁN MaDonHang - ĐỂ HỆ THỐNG TỰ LO)
+                    var donHangMoi = new DonHang
                     {
-                        NgayLap = DateTime.Now,
-                        TongTienThanhToan = tongTien,
-                        TrangThaiThanhToan = "Đã Thanh Toán"
+                        MaKhachHang = khachHang.MaKhachHang,
+                        DiaChiGiaoHang = txtDiaChi.Text.Trim(),
+                        TongTien = tongTien,
+                        TrangThai = "Hoàn Thành",
+                        SoDienThoaiNhan = txtSDT.Text.Trim(),
+                        NgayDat = DateTime.Now,
+                        ChiTietDonHangs = new List<ChiTietDonHang>() // Khởi tạo giỏ chứa chi tiết
                     };
 
-                    db.HoaDons.Add(hoaDon);
-
-                    // ==========================================
-                    // 10. TRỪ SỐ LƯỢNG TỒN KHO
-                    // ==========================================
+                    // 10. NHÉT CHI TIẾT & TRỪ KHO
                     foreach (GioHangItem item in GioHangManager.DanhSach)
                     {
-                        var sanPham = db.SanPhams
-                            .FirstOrDefault(x =>
-                                x.MaSanPham == item.SanPhamId);
-
-                        if (sanPham != null)
+                        // Bỏ thẳng Chi tiết vào giỏ của Đơn Hàng (KHÔNG cần gán ID MaDonHang)
+                        donHangMoi.ChiTietDonHangs.Add(new ChiTietDonHang
                         {
-                            sanPham.SoLuongTon -= item.SoLuongMet;
-                        }
+                            SanPhamId = item.SanPhamId,
+                            SoLuongMet = item.SoLuongMet,
+                            DonGia = item.DonGia
+                        });
+
+                        var sanPham = db.SanPhams.FirstOrDefault(x => x.MaSanPham == item.SanPhamId);
+                        if (sanPham != null) sanPham.SoLuongTon -= item.SoLuongMet;
                     }
 
-                    // ==========================================
-                    // 11. LƯU DATABASE
-                    // ==========================================
-                    db.SaveChanges();
-                    maHoaDonCuoi = hoaDon.MaHoaDon;
+                    // 11. TẠO HÓA ĐƠN VÀ LIÊN KẾT CHẶT VỚI ĐƠN HÀNG
+                    var hoaDonMoi = new HoaDon
+                    {
+                        DonHang = donHangMoi, // BÍ QUYẾT: Gán nguyên object Đơn Hàng vào đây!
+                        NgayLap = DateTime.Now,
+                        TongTienThanhToan = tongTien,
+                        TrangThaiThanhToan = "Đã Thanh Toán",
+                        PhuongThucThanhToan = comboBox1.Text
+                    };
+
+                    // 12. THÊM HÓA ĐƠN VÀ LƯU TẤT CẢ (1 NHÁT DUY NHẤT)
+                    db.HoaDons.Add(hoaDonMoi);
+                    db.SaveChanges(); // Hệ thống sẽ tự động cấp mã Đơn Hàng và móc nối chính xác 100%
+
+                    // Lưu thông tin để lát in Bill
+                    maHoaDonCuoi = hoaDonMoi.MaHoaDon;
                     daThanhToan = true;
+
+                    // 13. Tự động mồi ô mã Đơn Hàng trên giao diện cho đơn tiếp theo
+                    txt_MaDH.Text = (donHangMoi.MaDonHang + 1).ToString();
                 }
-
-                // ==========================================
-                // 12. XÓA GIỎ HÀNG
-                // ==========================================
-                GioHangManager.XoaTatCa();
-
-                // ==========================================
-                // 13. THÔNG BÁO THÀNH CÔNG
-                // ==========================================
-                MessageBox.Show(
-                    "THANH TOÁN THÀNH CÔNG!\n\n" +
-                    "Khách hàng: " + txtTenKH.Text + "\n" +
-                    "Tổng tiền: " + tongTien.ToString("N0") + " VNĐ\n\n" +
-                    "Số lượng trong kho đã được cập nhật.",
-                    "Thanh toán thành công",
-                    MessageBoxButtons.OK,
-                    MessageBoxIcon.Information);
 
                 // ==========================================
                 // 14. HIỂN THỊ GIỎ HÀNG TRỐNG

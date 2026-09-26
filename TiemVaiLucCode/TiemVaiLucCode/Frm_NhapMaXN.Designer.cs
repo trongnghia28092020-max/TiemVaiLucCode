@@ -617,6 +617,7 @@
             this.MinimumSize = new System.Drawing.Size(980, 645);
             this.Name = "Frm_NhapMaXN";
             this.Text = "Frm_NhapMaXN";
+            this.Load += new System.EventHandler(this.Frm_NhapMaXN_Load);
             this.siticonePanel1.ResumeLayout(false);
             this.siticonePanel1.PerformLayout();
             this.ResumeLayout(false);
