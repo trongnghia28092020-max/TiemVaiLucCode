@@ -21,6 +21,9 @@ namespace TiemVaiLucCode
 
         private void Form_TC_Load(object sender, EventArgs e)
         {
+            // Đảm bảo pnl_Chinh luôn tự động co giãn ôm trọn cửa sổ
+            pnl_Chinh.Dock = DockStyle.Fill;
+            pnl_Chinh.BringToFront();
 
         }
 

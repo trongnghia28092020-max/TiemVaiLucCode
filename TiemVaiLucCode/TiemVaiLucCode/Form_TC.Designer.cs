@@ -149,7 +149,7 @@
             this.DangXuat_ToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1298, 31);
+            this.menuStrip1.Size = new System.Drawing.Size(1307, 31);
             this.menuStrip1.TabIndex = 5;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -849,7 +849,7 @@
             this.pnl_Chinh.Controls.Add(this.pictureBox9);
             this.pnl_Chinh.Location = new System.Drawing.Point(0, 33);
             this.pnl_Chinh.Name = "pnl_Chinh";
-            this.pnl_Chinh.Size = new System.Drawing.Size(1298, 746);
+            this.pnl_Chinh.Size = new System.Drawing.Size(1307, 746);
             this.pnl_Chinh.TabIndex = 44;
             // 
             // pictureBox1
@@ -866,7 +866,7 @@
             this.pictureBox9.Image = global::TiemVaiLucCode.Properties.Resources.e2d5dbf16b2bf4a2556004b9f3704d2e_3_;
             this.pictureBox9.Location = new System.Drawing.Point(0, 0);
             this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(1295, 746);
+            this.pictureBox9.Size = new System.Drawing.Size(1307, 746);
             this.pictureBox9.TabIndex = 35;
             this.pictureBox9.TabStop = false;
             this.pictureBox9.Click += new System.EventHandler(this.pictureBox9_Click);
@@ -881,7 +881,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1298, 782);
+            this.ClientSize = new System.Drawing.Size(1307, 782);
             this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.pnl_Chinh);
             this.Name = "Form_TC";

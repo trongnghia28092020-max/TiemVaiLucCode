@@ -559,6 +559,7 @@
             this.Controls.Add(this.pictureBox9);
             this.Name = "Form_GT";
             this.Text = "Form_GT";
+            this.Load += new System.EventHandler(this.Form_GT_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();

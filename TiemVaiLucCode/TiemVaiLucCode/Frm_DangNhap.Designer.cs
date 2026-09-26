@@ -570,8 +570,8 @@
             // 
             // pnlCardChinh
             // 
-            this.pnlCardChinh.Controls.Add(this.pnlCard_DangNhap);
             this.pnlCardChinh.Controls.Add(this.pnlCard_DangKy);
+            this.pnlCardChinh.Controls.Add(this.pnlCard_DangNhap);
             this.pnlCardChinh.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pnlCardChinh.Location = new System.Drawing.Point(445, 27);
             this.pnlCardChinh.Name = "pnlCardChinh";

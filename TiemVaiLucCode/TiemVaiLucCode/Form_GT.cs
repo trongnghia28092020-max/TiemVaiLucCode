@@ -36,5 +36,16 @@ namespace TiemVaiLucCode
         {
 
         }
+
+        private void Form_GT_Load(object sender, EventArgs e)
+        {
+           
+            pictureBox9.Dock = DockStyle.Fill;
+            pictureBox9.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox9.SendToBack(); // Đưa ảnh nền xuống đáy cùng
+
+            // 2. Neo khung nội dung để tự động co giãn theo màn hình
+            panel1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+        }
     }
 }

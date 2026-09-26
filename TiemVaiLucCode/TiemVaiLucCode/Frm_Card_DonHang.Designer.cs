@@ -246,7 +246,7 @@
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.chiTietDonHangsDataGridView.DefaultCellStyle = dataGridViewCellStyle2;
-            this.chiTietDonHangsDataGridView.Location = new System.Drawing.Point(65, 134);
+            this.chiTietDonHangsDataGridView.Location = new System.Drawing.Point(72, 132);
             this.chiTietDonHangsDataGridView.Name = "chiTietDonHangsDataGridView";
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
@@ -258,7 +258,7 @@
             this.chiTietDonHangsDataGridView.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.chiTietDonHangsDataGridView.RowHeadersWidth = 51;
             this.chiTietDonHangsDataGridView.RowTemplate.Height = 24;
-            this.chiTietDonHangsDataGridView.Size = new System.Drawing.Size(936, 436);
+            this.chiTietDonHangsDataGridView.Size = new System.Drawing.Size(902, 436);
             this.chiTietDonHangsDataGridView.TabIndex = 1;
             this.chiTietDonHangsDataGridView.CellFormatting += new System.Windows.Forms.DataGridViewCellFormattingEventHandler(this.chiTietDonHangsDataGridView_CellFormatting);
             // 
