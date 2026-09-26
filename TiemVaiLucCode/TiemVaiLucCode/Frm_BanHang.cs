@@ -11,35 +11,50 @@ namespace TiemVaiLucCode
         {
             InitializeComponent();
         }
-
-        private void button14_Click(object sender, EventArgs e)
+        private void ThemVaoGioHang(
+    string tenSanPham,
+    ComboBox comboMau,
+    NumericUpDown soLuong)
         {
+            // Kiểm tra màu
+            if (string.IsNullOrWhiteSpace(comboMau.Text))
+            {
+                MessageBox.Show(
+                    "Vui lòng chọn màu sắc!",
+                    "Thông báo",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Warning);
+
+                comboMau.Focus();
+                return;
+            }
+
+            // Kiểm tra số lượng
+            if (soLuong.Value <= 0)
+            {
+                MessageBox.Show(
+                    "Vui lòng chọn số lượng vải!",
+                    "Thông báo",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Warning);
+
+                soLuong.Focus();
+                return;
+            }
+
             try
             {
-                decimal soMet = numericUpDown7.Value;
-
-                if (soMet <= 0)
-                {
-                    MessageBox.Show(
-                        "Vui lòng chọn số mét vải muốn mua!",
-                        "Thông báo",
-                        MessageBoxButtons.OK,
-                        MessageBoxIcon.Warning);
-
-                    return;
-                }
-
                 using (var db = new TaiKhoanContext())
                 {
-                    
+                    // Tìm đúng loại vải được truyền vào
                     var sanPham = db.SanPhams
                         .FirstOrDefault(x =>
-                            x.TenSanPham == "Vải lụa satin");
+                            x.TenSanPham == tenSanPham);
 
                     if (sanPham == null)
                     {
                         MessageBox.Show(
-                            "Không tìm thấy sản phẩm \"Vải lụa satin\" trong cơ sở dữ liệu!",
+                            "Không tìm thấy sản phẩm:\n" + tenSanPham,
                             "Lỗi",
                             MessageBoxButtons.OK,
                             MessageBoxIcon.Error);
@@ -47,50 +62,61 @@ namespace TiemVaiLucCode
                         return;
                     }
 
-                    
+                    // Kiểm tra tồn kho
+                    if (soLuong.Value > sanPham.SoLuongTon)
+                    {
+                        MessageBox.Show(
+                            "Không đủ hàng!\n\n" +
+                            "Sản phẩm: " + sanPham.TenSanPham + "\n" +
+                            "Tồn kho: " + sanPham.SoLuongTon + " mét\n" +
+                            "Bạn muốn mua: " + soLuong.Value + " mét",
+                            "Thông báo",
+                            MessageBoxButtons.OK,
+                            MessageBoxIcon.Warning);
+
+                        return;
+                    }
+
+                    // Tạo sản phẩm trong giỏ
                     GioHangItem item = new GioHangItem
                     {
                         SanPhamId = sanPham.MaSanPham,
                         TenSanPham = sanPham.TenSanPham,
-                        MauSac = "Chưa chọn",
-                        SoLuongMet = soMet,
+                        MauSac = comboMau.Text,
+                        SoLuongMet = soLuong.Value,
                         DonGia = sanPham.GiaBan
                     };
 
-                    
+                    // Thêm vào giỏ
                     GioHangManager.Them(item);
                 }
 
-                
                 MessageBox.Show(
-                    "Đã thêm Vải lụa satin vào giỏ hàng!\n\n" +
-                    "Số lượng: " + soMet + " mét",
-                    "Thêm vào giỏ hàng",
+                    "Đã thêm " + tenSanPham +
+                    " vào giỏ hàng!\n\n" +
+                    "Màu: " + comboMau.Text + "\n" +
+                    "Số lượng: " + soLuong.Value + " mét",
+                    "Thành công",
                     MessageBoxButtons.OK,
                     MessageBoxIcon.Information);
 
-                
-                Form_GioHang gioHang = new Form_GioHang();
-
-                gioHang.ShowDialog();
-
-               
-                numericUpDown21.Value = 0;
+                // Sau khi thêm thì đưa số lượng về 0
+                soLuong.Value = 0;
             }
             catch (Exception ex)
             {
                 MessageBox.Show(
-                    "Đã xảy ra lỗi khi thêm sản phẩm vào giỏ hàng!\n\n" +
+                    "Có lỗi khi thêm sản phẩm:\n\n" +
                     ex.Message,
                     "Lỗi",
                     MessageBoxButtons.OK,
                     MessageBoxIcon.Error);
             }
         }
+        private void button14_Click(object sender, EventArgs e)
+        {
 
-        // =====================================================
-        // CÁC EVENT KHÁC CỦA FORM
-        // =====================================================
+        }
 
         private void button22_Click(object sender, EventArgs e)
         {
@@ -122,6 +148,61 @@ namespace TiemVaiLucCode
 
         private void Frm_BanHang_Load(object sender, EventArgs e)
         {
+        }
+
+        private void Frm_BanHang_Load_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void but1_Click(object sender, EventArgs e)
+        {
+            ThemVaoGioHang(
+        "Vải lụa satin",
+        cmbmausac,
+        numericUpDown7);
+        }
+
+        private void but2_Click(object sender, EventArgs e)
+        {
+            
+            ThemVaoGioHang(
+                "Vải chiffon",
+                cmb2,
+                numericUpDown6);
+        
+    }
+
+        private void but3_Click(object sender, EventArgs e)
+        {
+            ThemVaoGioHang(
+               "Vải kate",
+               cmb3,
+               numericUpDown5);
+        }
+
+        private void but4_Click(object sender, EventArgs e)
+        {
+            ThemVaoGioHang(
+               "Vải cotton 100%",
+               cmb4,
+               numericUpDown2);
+        }
+
+        private void but5_Click(object sender, EventArgs e)
+        {
+            ThemVaoGioHang(
+               "Vải gấm",
+               cmb5,
+               numericUpDown1);
+        }
+
+        private void but6_Click(object sender, EventArgs e)
+        {
+            ThemVaoGioHang(
+               "Vải ren",
+               cmb6,
+               numericUpDown3);
         }
     }
 }

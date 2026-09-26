@@ -15,6 +15,9 @@ namespace TiemVaiLucCode
 
         private void Form_GioHang_Load(object sender, EventArgs e)
         {
+            dataGridView1.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            dataGridView1.MultiSelect = false;
+
             LoadGioHang();
         }
 
@@ -31,6 +34,7 @@ namespace TiemVaiLucCode
             {
                 dataGridView1.Rows.Add(
                     stt,
+                    item.TenSanPham,
                     item.DonGia.ToString("N0"),
                     item.SoLuongMet,
                     item.MauSac,
@@ -46,7 +50,8 @@ namespace TiemVaiLucCode
         // ==========================================
         private void button2_Click(object sender, EventArgs e)
         {
-            if (dataGridView1.SelectedRows.Count == 0)
+            // Kiểm tra có dòng nào được chọn chưa
+            if (dataGridView1.CurrentRow == null)
             {
                 MessageBox.Show(
                     "Vui lòng chọn sản phẩm muốn xóa!",
@@ -57,20 +62,54 @@ namespace TiemVaiLucCode
                 return;
             }
 
-            int index = dataGridView1.SelectedRows[0].Index;
+            int index = dataGridView1.CurrentRow.Index;
 
-            if (index >= 0 &&
-                index < GioHangManager.DanhSach.Count)
+            // Kiểm tra index hợp lệ
+            if (index < 0 || index >= GioHangManager.DanhSach.Count)
             {
-                GioHangManager.DanhSach.RemoveAt(index);
+                MessageBox.Show(
+                    "Không xác định được sản phẩm cần xóa!",
+                    "Lỗi",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Error);
+
+                return;
             }
 
-            LoadGioHang();
+            // Lấy sản phẩm đang chọn
+            GioHangItem item = GioHangManager.DanhSach[index];
+
+            // Xác nhận
+            DialogResult result = MessageBox.Show(
+                "Bạn có chắc muốn xóa:\n\n" +
+                item.TenSanPham + "\n" +
+                "Màu: " + item.MauSac + "\n" +
+                "Số lượng: " + item.SoLuongMet + " mét",
+                "Xác nhận xóa",
+                MessageBoxButtons.YesNo,
+                MessageBoxIcon.Question);
+
+            if (result == DialogResult.Yes)
+            {
+                // Xóa khỏi danh sách giỏ hàng
+                GioHangManager.DanhSach.RemoveAt(index);
+
+                // Load lại DataGridView
+                LoadGioHang();
+
+                MessageBox.Show(
+                    "Đã xóa sản phẩm khỏi giỏ hàng!",
+                    "Thông báo",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Information);
+            }
         }
 
-        // ==========================================
-        // NÚT THANH TOÁN
-        // ==========================================
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
         private void button1_Click(object sender, EventArgs e)
         {
             if (GioHangManager.DanhSach.Count == 0)
@@ -84,22 +123,13 @@ namespace TiemVaiLucCode
                 return;
             }
 
-            decimal tongTien = GioHangManager.TongTien();
+            // Mở form thanh toán
+            Frm_TT_KhachHang frmThanhToan = new Frm_TT_KhachHang();
 
-            MessageBox.Show(
-                "Tổng tiền: " +
-                tongTien.ToString("N0") +
-                " VNĐ",
-                "Thanh toán",
-                MessageBoxButtons.OK,
-                MessageBoxIcon.Information);
+            frmThanhToan.ShowDialog();
 
-            // Bước tiếp theo sẽ mở Frm_TT_KhachHang
-        }
-
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
+            // Sau khi thanh toán xong thì cập nhật lại giỏ hàng
+            LoadGioHang();
         }
     }
     public class GioHangItem

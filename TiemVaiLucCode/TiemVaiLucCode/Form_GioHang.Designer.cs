@@ -32,6 +32,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.clstt = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cldongia = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.clsoluong = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.clmau = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -70,6 +71,7 @@
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.clstt,
+            this.Column1,
             this.cldongia,
             this.clsoluong,
             this.clmau,
@@ -87,6 +89,12 @@
             this.clstt.HeaderText = "STT";
             this.clstt.MinimumWidth = 6;
             this.clstt.Name = "clstt";
+            // 
+            // Column1
+            // 
+            this.Column1.HeaderText = "Tên sản phẩm";
+            this.Column1.MinimumWidth = 6;
+            this.Column1.Name = "Column1";
             // 
             // cldongia
             // 
@@ -174,6 +182,7 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.DataGridViewTextBoxColumn clstt;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn cldongia;
         private System.Windows.Forms.DataGridViewTextBoxColumn clsoluong;
         private System.Windows.Forms.DataGridViewTextBoxColumn clmau;
