@@ -28,6 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
@@ -59,8 +62,11 @@
             this.siticonePanel2 = new SiticoneNetFrameworkUI.SiticonePanel();
             this.label2 = new System.Windows.Forms.Label();
             this.txt_DonHang = new SiticoneNetFrameworkUI.SiticoneTextBox();
-            this.siticonePanel6 = new SiticoneNetFrameworkUI.SiticonePanel();
             this.siticonePanel5 = new SiticoneNetFrameworkUI.SiticonePanel();
+            this.label5 = new System.Windows.Forms.Label();
+            this.txt_TongDoanhThu = new SiticoneNetFrameworkUI.SiticoneTextBox();
+            this.chart_TongSPBanChay = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.cmb_ChonThang = new System.Windows.Forms.ComboBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             this.tableLayoutPanel1.SuspendLayout();
@@ -79,6 +85,8 @@
             this.siticonePanel3.SuspendLayout();
             this.siticonePanel4.SuspendLayout();
             this.siticonePanel2.SuspendLayout();
+            this.siticonePanel5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.chart_TongSPBanChay)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -273,7 +281,6 @@
             this.pnl_Card_TongQuan.BackgroundImage = global::TiemVaiLucCode.Properties.Resources._9;
             this.pnl_Card_TongQuan.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pnl_Card_TongQuan.Controls.Add(this.tableLayoutPanel2);
-            this.pnl_Card_TongQuan.Controls.Add(this.siticonePanel6);
             this.pnl_Card_TongQuan.Controls.Add(this.siticonePanel5);
             this.pnl_Card_TongQuan.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnl_Card_TongQuan.Location = new System.Drawing.Point(0, 0);
@@ -383,7 +390,7 @@
             this.txt_DoanhThu.FillColor1 = System.Drawing.Color.White;
             this.txt_DoanhThu.FillColor2 = System.Drawing.Color.White;
             this.txt_DoanhThu.Font = new System.Drawing.Font("Segoe UI", 9.5F);
-            this.txt_DoanhThu.ForeColor = System.Drawing.Color.DimGray;
+            this.txt_DoanhThu.ForeColor = System.Drawing.Color.Blue;
             this.txt_DoanhThu.HoverBorderColor1 = System.Drawing.Color.Gray;
             this.txt_DoanhThu.HoverBorderColor2 = System.Drawing.Color.Gray;
             this.txt_DoanhThu.IsEnabled = true;
@@ -510,7 +517,7 @@
             this.siticoneTextBox1.FillColor1 = System.Drawing.Color.White;
             this.siticoneTextBox1.FillColor2 = System.Drawing.Color.White;
             this.siticoneTextBox1.Font = new System.Drawing.Font("Segoe UI", 9.5F);
-            this.siticoneTextBox1.ForeColor = System.Drawing.Color.DimGray;
+            this.siticoneTextBox1.ForeColor = System.Drawing.Color.Blue;
             this.siticoneTextBox1.HoverBorderColor1 = System.Drawing.Color.Gray;
             this.siticoneTextBox1.HoverBorderColor2 = System.Drawing.Color.Gray;
             this.siticoneTextBox1.IsEnabled = true;
@@ -627,7 +634,7 @@
             this.siticoneTextBox2.FillColor1 = System.Drawing.Color.White;
             this.siticoneTextBox2.FillColor2 = System.Drawing.Color.White;
             this.siticoneTextBox2.Font = new System.Drawing.Font("Segoe UI", 9.5F);
-            this.siticoneTextBox2.ForeColor = System.Drawing.Color.DimGray;
+            this.siticoneTextBox2.ForeColor = System.Drawing.Color.Blue;
             this.siticoneTextBox2.HoverBorderColor1 = System.Drawing.Color.Gray;
             this.siticoneTextBox2.HoverBorderColor2 = System.Drawing.Color.Gray;
             this.siticoneTextBox2.IsEnabled = true;
@@ -744,7 +751,7 @@
             this.txt_DonHang.FillColor1 = System.Drawing.Color.White;
             this.txt_DonHang.FillColor2 = System.Drawing.Color.White;
             this.txt_DonHang.Font = new System.Drawing.Font("Segoe UI", 9.5F);
-            this.txt_DonHang.ForeColor = System.Drawing.Color.DimGray;
+            this.txt_DonHang.ForeColor = System.Drawing.Color.Blue;
             this.txt_DonHang.HoverBorderColor1 = System.Drawing.Color.Gray;
             this.txt_DonHang.HoverBorderColor2 = System.Drawing.Color.Gray;
             this.txt_DonHang.IsEnabled = true;
@@ -771,50 +778,6 @@
             this.txt_DonHang.ValidationErrorMessage = "Invalid input.";
             this.txt_DonHang.ValidationFunction = null;
             // 
-            // siticonePanel6
-            // 
-            this.siticonePanel6.AcrylicTintColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.siticonePanel6.BackColor = System.Drawing.Color.Transparent;
-            this.siticonePanel6.BorderAlignment = System.Drawing.Drawing2D.PenAlignment.Center;
-            this.siticonePanel6.BorderColor = System.Drawing.Color.Gray;
-            this.siticonePanel6.BorderDashPattern = null;
-            this.siticonePanel6.BorderGradientEndColor = System.Drawing.Color.Purple;
-            this.siticonePanel6.BorderGradientStartColor = System.Drawing.Color.Blue;
-            this.siticonePanel6.BorderThickness = 2F;
-            this.siticonePanel6.CornerRadiusBottomLeft = 20F;
-            this.siticonePanel6.CornerRadiusBottomRight = 20F;
-            this.siticonePanel6.CornerRadiusTopLeft = 20F;
-            this.siticonePanel6.CornerRadiusTopRight = 20F;
-            this.siticonePanel6.EnableAcrylicEffect = false;
-            this.siticonePanel6.EnableMicaEffect = false;
-            this.siticonePanel6.EnableRippleEffect = false;
-            this.siticonePanel6.FillColor = System.Drawing.Color.White;
-            this.siticonePanel6.GradientColors = new System.Drawing.Color[] {
-        System.Drawing.Color.White,
-        System.Drawing.Color.LightGray,
-        System.Drawing.Color.Gray};
-            this.siticonePanel6.GradientPositions = new float[] {
-        0F,
-        0.5F,
-        1F};
-            this.siticonePanel6.Location = new System.Drawing.Point(17, 537);
-            this.siticonePanel6.Name = "siticonePanel6";
-            this.siticonePanel6.PatternColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.siticonePanel6.PatternStyle = System.Drawing.Drawing2D.HatchStyle.LargeGrid;
-            this.siticonePanel6.RippleAlpha = 50;
-            this.siticonePanel6.RippleAlphaDecrement = 3;
-            this.siticonePanel6.RippleColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.siticonePanel6.RippleMaxSize = 600F;
-            this.siticonePanel6.RippleSpeed = 15F;
-            this.siticonePanel6.ShowBorder = true;
-            this.siticonePanel6.Size = new System.Drawing.Size(965, 315);
-            this.siticonePanel6.TabIndex = 9;
-            this.siticonePanel6.TabStop = true;
-            this.siticonePanel6.UseBorderGradient = false;
-            this.siticonePanel6.UseMultiGradient = false;
-            this.siticonePanel6.UsePatternTexture = false;
-            this.siticonePanel6.UseRadialGradient = false;
-            // 
             // siticonePanel5
             // 
             this.siticonePanel5.AcrylicTintColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
@@ -825,6 +788,10 @@
             this.siticonePanel5.BorderGradientEndColor = System.Drawing.Color.Purple;
             this.siticonePanel5.BorderGradientStartColor = System.Drawing.Color.Blue;
             this.siticonePanel5.BorderThickness = 2F;
+            this.siticonePanel5.Controls.Add(this.cmb_ChonThang);
+            this.siticonePanel5.Controls.Add(this.chart_TongSPBanChay);
+            this.siticonePanel5.Controls.Add(this.txt_TongDoanhThu);
+            this.siticonePanel5.Controls.Add(this.label5);
             this.siticonePanel5.CornerRadiusBottomLeft = 20F;
             this.siticonePanel5.CornerRadiusBottomRight = 20F;
             this.siticonePanel5.CornerRadiusTopLeft = 20F;
@@ -841,7 +808,7 @@
         0F,
         0.5F,
         1F};
-            this.siticonePanel5.Location = new System.Drawing.Point(17, 174);
+            this.siticonePanel5.Location = new System.Drawing.Point(17, 128);
             this.siticonePanel5.Name = "siticonePanel5";
             this.siticonePanel5.PatternColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.siticonePanel5.PatternStyle = System.Drawing.Drawing2D.HatchStyle.LargeGrid;
@@ -851,13 +818,125 @@
             this.siticonePanel5.RippleMaxSize = 600F;
             this.siticonePanel5.RippleSpeed = 15F;
             this.siticonePanel5.ShowBorder = true;
-            this.siticonePanel5.Size = new System.Drawing.Size(965, 346);
+            this.siticonePanel5.Size = new System.Drawing.Size(1064, 539);
             this.siticonePanel5.TabIndex = 8;
             this.siticonePanel5.TabStop = true;
             this.siticonePanel5.UseBorderGradient = false;
             this.siticonePanel5.UseMultiGradient = false;
             this.siticonePanel5.UsePatternTexture = false;
             this.siticonePanel5.UseRadialGradient = false;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(33, 39);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(271, 23);
+            this.label5.TabIndex = 1;
+            this.label5.Text = "TỔNG DOANH THU THÁNG";
+            // 
+            // txt_TongDoanhThu
+            // 
+            this.txt_TongDoanhThu.AccessibleDescription = "A customizable text input field.";
+            this.txt_TongDoanhThu.AccessibleName = "Text Box";
+            this.txt_TongDoanhThu.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
+            this.txt_TongDoanhThu.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txt_TongDoanhThu.BackColor = System.Drawing.Color.Transparent;
+            this.txt_TongDoanhThu.BlinkCount = 3;
+            this.txt_TongDoanhThu.BlinkShadow = false;
+            this.txt_TongDoanhThu.BorderColor1 = System.Drawing.Color.LightCyan;
+            this.txt_TongDoanhThu.BorderColor2 = System.Drawing.Color.LightCyan;
+            this.txt_TongDoanhThu.BorderFocusColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(77)))), ((int)(((byte)(255)))));
+            this.txt_TongDoanhThu.BorderFocusColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(77)))), ((int)(((byte)(255)))));
+            this.txt_TongDoanhThu.BorderSize = 2;
+            this.txt_TongDoanhThu.CanShake = true;
+            this.txt_TongDoanhThu.ContinuousBlink = false;
+            this.txt_TongDoanhThu.CornerRadiusBottomLeft = 10;
+            this.txt_TongDoanhThu.CornerRadiusBottomRight = 10;
+            this.txt_TongDoanhThu.CornerRadiusTopLeft = 10;
+            this.txt_TongDoanhThu.CornerRadiusTopRight = 10;
+            this.txt_TongDoanhThu.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txt_TongDoanhThu.CursorBlinkRate = 500;
+            this.txt_TongDoanhThu.CursorColor = System.Drawing.Color.Black;
+            this.txt_TongDoanhThu.CursorHeight = 26;
+            this.txt_TongDoanhThu.CursorOffset = 0;
+            this.txt_TongDoanhThu.CursorStyle = SiticoneNetFrameworkUI.Helpers.DrawingStyle.SiticoneDrawingStyle.Solid;
+            this.txt_TongDoanhThu.CursorWidth = 1;
+            this.txt_TongDoanhThu.DisabledBackColor = System.Drawing.Color.WhiteSmoke;
+            this.txt_TongDoanhThu.DisabledBorderColor = System.Drawing.Color.LightGray;
+            this.txt_TongDoanhThu.DisabledTextColor = System.Drawing.Color.Gray;
+            this.txt_TongDoanhThu.Enabled = false;
+            this.txt_TongDoanhThu.EnableDropShadow = false;
+            this.txt_TongDoanhThu.FillColor1 = System.Drawing.Color.White;
+            this.txt_TongDoanhThu.FillColor2 = System.Drawing.Color.White;
+            this.txt_TongDoanhThu.Font = new System.Drawing.Font("Segoe UI", 9.5F);
+            this.txt_TongDoanhThu.ForeColor = System.Drawing.Color.Red;
+            this.txt_TongDoanhThu.HoverBorderColor1 = System.Drawing.Color.Gray;
+            this.txt_TongDoanhThu.HoverBorderColor2 = System.Drawing.Color.Gray;
+            this.txt_TongDoanhThu.IsEnabled = true;
+            this.txt_TongDoanhThu.Location = new System.Drawing.Point(350, 26);
+            this.txt_TongDoanhThu.Name = "txt_TongDoanhThu";
+            this.txt_TongDoanhThu.PlaceholderColor = System.Drawing.Color.Red;
+            this.txt_TongDoanhThu.PlaceholderText = " ";
+            this.txt_TongDoanhThu.ReadOnlyBorderColor1 = System.Drawing.Color.LightGray;
+            this.txt_TongDoanhThu.ReadOnlyBorderColor2 = System.Drawing.Color.LightGray;
+            this.txt_TongDoanhThu.ReadOnlyFillColor1 = System.Drawing.Color.WhiteSmoke;
+            this.txt_TongDoanhThu.ReadOnlyFillColor2 = System.Drawing.Color.WhiteSmoke;
+            this.txt_TongDoanhThu.ReadOnlyPlaceholderColor = System.Drawing.Color.DarkGray;
+            this.txt_TongDoanhThu.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(77)))), ((int)(((byte)(255)))));
+            this.txt_TongDoanhThu.ShadowAnimationDuration = 1;
+            this.txt_TongDoanhThu.ShadowBlur = 10;
+            this.txt_TongDoanhThu.ShadowColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.txt_TongDoanhThu.Size = new System.Drawing.Size(359, 43);
+            this.txt_TongDoanhThu.SolidBorderColor = System.Drawing.Color.CornflowerBlue;
+            this.txt_TongDoanhThu.SolidBorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(77)))), ((int)(((byte)(255)))));
+            this.txt_TongDoanhThu.SolidBorderHoverColor = System.Drawing.Color.Gray;
+            this.txt_TongDoanhThu.SolidFillColor = System.Drawing.Color.White;
+            this.txt_TongDoanhThu.TabIndex = 2;
+            this.txt_TongDoanhThu.TextPadding = new System.Windows.Forms.Padding(11, 2, 11, 2);
+            this.txt_TongDoanhThu.ValidationErrorMessage = "Invalid input.";
+            this.txt_TongDoanhThu.ValidationFunction = null;
+            // 
+            // chart_TongSPBanChay
+            // 
+            chartArea2.Name = "ChartArea1";
+            this.chart_TongSPBanChay.ChartAreas.Add(chartArea2);
+            legend2.Name = "Legend1";
+            this.chart_TongSPBanChay.Legends.Add(legend2);
+            this.chart_TongSPBanChay.Location = new System.Drawing.Point(37, 112);
+            this.chart_TongSPBanChay.Name = "chart_TongSPBanChay";
+            series2.ChartArea = "ChartArea1";
+            series2.Legend = "Legend1";
+            series2.Name = "Series1";
+            this.chart_TongSPBanChay.Series.Add(series2);
+            this.chart_TongSPBanChay.Size = new System.Drawing.Size(979, 355);
+            this.chart_TongSPBanChay.TabIndex = 4;
+            this.chart_TongSPBanChay.Text = "chart1";
+            // 
+            // cmb_ChonThang
+            // 
+            this.cmb_ChonThang.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmb_ChonThang.FormattingEnabled = true;
+            this.cmb_ChonThang.Items.AddRange(new object[] {
+            "Tháng 1",
+            "Tháng 2",
+            "Tháng 3",
+            "Tháng 4",
+            "Tháng 5",
+            "Tháng 6",
+            "Tháng 7",
+            "Tháng 8",
+            "Tháng 9",
+            "Tháng 10",
+            "Tháng 11",
+            "Tháng 12"});
+            this.cmb_ChonThang.Location = new System.Drawing.Point(727, 33);
+            this.cmb_ChonThang.Name = "cmb_ChonThang";
+            this.cmb_ChonThang.Size = new System.Drawing.Size(289, 30);
+            this.cmb_ChonThang.TabIndex = 5;
+            this.cmb_ChonThang.SelectedIndexChanged += new System.EventHandler(this.cmb_ChonThang_SelectedIndexChanged);
             // 
             // Frm_TrangChu_Admin
             // 
@@ -895,6 +974,9 @@
             this.siticonePanel4.PerformLayout();
             this.siticonePanel2.ResumeLayout(false);
             this.siticonePanel2.PerformLayout();
+            this.siticonePanel5.ResumeLayout(false);
+            this.siticonePanel5.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.chart_TongSPBanChay)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -918,7 +1000,6 @@
         private SiticoneNetFrameworkUI.SiticoneLabel pnl_HoaDon;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Panel pnl_Card_TongQuan;
-        private SiticoneNetFrameworkUI.SiticonePanel siticonePanel6;
         private SiticoneNetFrameworkUI.SiticonePanel siticonePanel5;
         private SiticoneNetFrameworkUI.SiticonePanel siticonePanel4;
         private SiticoneNetFrameworkUI.SiticonePanel siticonePanel3;
@@ -934,5 +1015,9 @@
         private SiticoneNetFrameworkUI.SiticoneTextBox siticoneTextBox1;
         private System.Windows.Forms.Label label4;
         private SiticoneNetFrameworkUI.SiticoneTextBox siticoneTextBox2;
+        private System.Windows.Forms.Label label5;
+        private SiticoneNetFrameworkUI.SiticoneTextBox txt_TongDoanhThu;
+        private System.Windows.Forms.DataVisualization.Charting.Chart chart_TongSPBanChay;
+        private System.Windows.Forms.ComboBox cmb_ChonThang;
     }
 }

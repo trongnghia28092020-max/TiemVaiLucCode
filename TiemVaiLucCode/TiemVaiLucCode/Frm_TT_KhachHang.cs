@@ -27,9 +27,9 @@ namespace TiemVaiLucCode
 
             // 2. Trả ngày mua và phương thức thanh toán về mặc định
             txtNgayMua.Text = DateTime.Now.ToString("dd/MM/yyyy");
-            if (comboBox1.Items.Count > 0)
+            if (cmb_PTTT.Items.Count > 0)
             {
-                comboBox1.SelectedIndex = 0;
+                cmb_PTTT.SelectedIndex = 0;
             }
 
             // 3. Quét sạch giỏ hàng và cập nhật lại bảng hiển thị (trống trơn)
@@ -87,13 +87,13 @@ namespace TiemVaiLucCode
             // Hiển thị ngày mua mặc định là ngày hiện tại
             txtNgayMua.Text = DateTime.Now.ToString("dd/MM/yyyy");
             //  Hiển thị phương thức thanh toán mặc định là "Tiền mặt"
-            comboBox1.Items.Clear();
+            cmb_PTTT.Items.Clear();
 
-            comboBox1.Items.Add("Tiền mặt");
-            comboBox1.Items.Add("Chuyển khoản");
-            comboBox1.Items.Add("Thanh toán khi nhận hàng");
+            cmb_PTTT.Items.Add("Tiền mặt");
+            cmb_PTTT.Items.Add("Chuyển khoản");
+            cmb_PTTT.Items.Add("Thanh toán khi nhận hàng");
 
-            comboBox1.SelectedIndex = 0;
+            cmb_PTTT.SelectedIndex = 0;
 
             // Khóa 2 ô mã lại, tô màu xám cho đẹp
             txtMaKH.ReadOnly = true;
@@ -120,233 +120,7 @@ namespace TiemVaiLucCode
         // =====================================================
         private void siticoneButton1_Click(object sender, EventArgs e)
         {
-            try
-            {
-                // =====================================================
-                // 1. KIỂM TRA GIỎ HÀNG
-                // =====================================================
-                if (GioHangManager.DanhSach.Count == 0)
-                {
-                    MessageBox.Show(
-                        "Giỏ hàng đang trống!",
-                        "Thông báo",
-                        MessageBoxButtons.OK,
-                        MessageBoxIcon.Warning);
 
-                    return;
-                }
-
-                // =====================================================
-                // 2. KIỂM TRA THÔNG TIN KHÁCH HÀNG
-                // =====================================================
-                if (string.IsNullOrWhiteSpace(txtTenKH.Text))
-                {
-                    MessageBox.Show(
-                        "Vui lòng nhập tên khách hàng!",
-                        "Thông báo",
-                        MessageBoxButtons.OK,
-                        MessageBoxIcon.Warning);
-
-                    txtTenKH.Focus();
-                    return;
-                }
-
-                if (string.IsNullOrWhiteSpace(txtSDT.Text))
-                {
-                    MessageBox.Show(
-                        "Vui lòng nhập số điện thoại!",
-                        "Thông báo",
-                        MessageBoxButtons.OK,
-                        MessageBoxIcon.Warning);
-
-                    txtSDT.Focus();
-                    return;
-                }
-
-                if (string.IsNullOrWhiteSpace(txtDiaChi.Text))
-                {
-                    MessageBox.Show(
-                        "Vui lòng nhập địa chỉ!",
-                        "Thông báo",
-                        MessageBoxButtons.OK,
-                        MessageBoxIcon.Warning);
-
-                    txtDiaChi.Focus();
-                    return;
-                }
-
-                // =====================================================
-                // 3. KIỂM TRA PHƯƠNG THỨC THANH TOÁN
-                // =====================================================
-                if (string.IsNullOrWhiteSpace(comboBox1.Text))
-                {
-                    MessageBox.Show(
-                        "Vui lòng chọn phương thức thanh toán!",
-                        "Thông báo",
-                        MessageBoxButtons.OK,
-                        MessageBoxIcon.Warning);
-
-                    comboBox1.Focus();
-                    return;
-                }
-
-                // =====================================================
-                // 4. TÍNH TỔNG TIỀN
-                // =====================================================
-                decimal tongTien = GioHangManager.TongTien();
-
-                // =====================================================
-                // 5. XÁC NHẬN
-                // =====================================================
-                DialogResult xacNhan = MessageBox.Show(
-                    "Bạn có chắc chắn muốn thanh toán không?\n\n" +
-                    "Khách hàng: " + txtTenKH.Text + "\n" +
-                    "Số điện thoại: " + txtSDT.Text + "\n" +
-                    "Tổng tiền: " + tongTien.ToString("N0") + " VNĐ\n" +
-                    "Phương thức: " + comboBox1.Text,
-                    "Xác nhận thanh toán",
-                    MessageBoxButtons.YesNo,
-                    MessageBoxIcon.Question);
-
-                if (xacNhan != DialogResult.Yes)
-                {
-                    return;
-                }
-
-                // =====================================================
-                // 6. KẾT NỐI DATABASE (LUỒNG CHUẨN ENTITY FRAMEWORK)
-                // =====================================================
-                using (var db = new TaiKhoanContext())
-                {
-                    // 7. KHÁCH HÀNG (Lưu trước để lấy mã KH chuẩn)
-                    var khachHang = db.KhachHangs.FirstOrDefault(x => x.SoDienThoai == txtSDT.Text.Trim());
-                    if (khachHang == null)
-                    {
-                        khachHang = new KhachHang
-                        {
-                            HoTenKhachHang = txtTenKH.Text.Trim(),
-                            SoDienThoai = txtSDT.Text.Trim(),
-                            DiaChi = txtDiaChi.Text.Trim()
-                        };
-                        db.KhachHangs.Add(khachHang);
-                    }
-                    else
-                    {
-                        khachHang.HoTenKhachHang = txtTenKH.Text.Trim();
-                        khachHang.DiaChi = txtDiaChi.Text.Trim();
-                    }
-                    db.SaveChanges(); // Chốt lưu Khách Hàng
-
-                    // 8. KIỂM TRA TỒN KHO LẦN CUỐI
-                    foreach (GioHangItem item in GioHangManager.DanhSach)
-                    {
-                        var spCheck = db.SanPhams.FirstOrDefault(x => x.MaSanPham == item.SanPhamId);
-                        if (spCheck == null || item.SoLuongMet > spCheck.SoLuongTon)
-                        {
-                            MessageBox.Show($"Không đủ hàng cho sản phẩm: {item.TenSanPham}", "Lỗi Kho", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                            return;
-                        }
-                    }
-
-                    // 9. TẠO ĐƠN HÀNG (TUYỆT ĐỐI KHÔNG GÁN MaDonHang - ĐỂ EF TỰ LO)
-                    var donHangMoi = new DonHang
-                    {
-                        MaKhachHang = khachHang.MaKhachHang,
-                        DiaChiGiaoHang = txtDiaChi.Text.Trim(),
-                        TongTien = tongTien,
-                        TrangThai = "Hoàn Thành",
-                        SoDienThoaiNhan = txtSDT.Text.Trim(),
-                        NgayDat = DateTime.Now,
-                        ChiTietDonHangs = new List<ChiTietDonHang>() // Khởi tạo giỏ chứa chi tiết
-                    };
-
-                    // 10. TẠO CHI TIẾT & TRỪ KHO
-                    foreach (GioHangItem item in GioHangManager.DanhSach)
-                    {
-                        // Nhét thẳng chi tiết vào giỏ của Đơn Hàng (KHÔNG cần gán ID MaDonHang)
-                        donHangMoi.ChiTietDonHangs.Add(new ChiTietDonHang
-                        {
-                            SanPhamId = item.SanPhamId,
-                            SoLuongMet = item.SoLuongMet,
-                            DonGia = item.DonGia
-                        });
-
-                        // Trừ tồn kho
-                        var sanPham = db.SanPhams.FirstOrDefault(x => x.MaSanPham == item.SanPhamId);
-                        if (sanPham != null) sanPham.SoLuongTon -= item.SoLuongMet;
-                    }
-
-                    // 11. TẠO HÓA ĐƠN
-                    var hoaDonMoi = new HoaDon
-                    {
-                        DonHang = donHangMoi, // QUAN TRỌNG: Gắn nguyên đối tượng Đơn Hàng vào Hóa Đơn
-                        NgayLap = DateTime.Now,
-                        TongTienThanhToan = tongTien,
-                        TrangThaiThanhToan = "Đã Thanh Toán",
-                        PhuongThucThanhToan = comboBox1.Text
-                    };
-
-                    // 12. THÊM HÓA ĐƠN VÀ LƯU 1 LẦN DUY NHẤT
-                    db.HoaDons.Add(hoaDonMoi);
-
-                    // EF sẽ tự động lưu Đơn Hàng -> Lấy ID tự sinh -> Lưu Chi tiết -> Lưu Hóa Đơn
-                    db.SaveChanges();
-
-                    maHoaDonCuoi = hoaDonMoi.MaHoaDon;
-                    daThanhToan = true;
-
-                    // 13. Tự động lấy mã đơn hàng EF vừa sinh ra cộng thêm 1 để hiển thị sẵn cho đơn sau
-                    txt_MaDH.Text = (donHangMoi.MaDonHang + 1).ToString();
-                }
-
-                // =====================================================
-                // 14. XÓA GIỎ HÀNG
-                // =====================================================
-                LamMoiTrangThanhToan();
-
-                // =====================================================
-                // 15. HIỂN THỊ GIỎ HÀNG TRỐNG
-                // =====================================================
-                LamMoiTrangThanhToan();
-
-                // =====================================================
-                // 16. THÔNG BÁO
-                // =====================================================
-                MessageBox.Show(
-                    "THANH TOÁN THÀNH CÔNG!\n\n" +
-                    "Mã hóa đơn: " + maHoaDonCuoi + "\n" +
-                    "Mã đơn hàng: Đã tạo\n" +
-                    "Khách hàng: " + txtTenKH.Text + "\n" +
-                    "Phương thức: " + comboBox1.Text + "\n" +
-                    "Tổng tiền: " + tongTien.ToString("N0") + " VNĐ\n\n" +
-                    "Số lượng tồn kho đã được cập nhật.",
-                    "Thanh toán thành công",
-                    MessageBoxButtons.OK,
-                    MessageBoxIcon.Information);
-                LamMoiTrangThanhToan();
-            }
-            catch (Exception ex)
-            {
-                string loi = ex.Message;
-
-                if (ex.InnerException != null)
-                {
-                    loi += "\n\nINNER EXCEPTION:\n" +
-                           ex.InnerException.Message;
-
-                    if (ex.InnerException.InnerException != null)
-                    {
-                        loi += "\n\nCHI TIẾT:\n" +
-                               ex.InnerException.InnerException.Message;
-                    }
-                }
-
-                MessageBox.Show(
-                    loi,
-                    "Lỗi thanh toán",
-                    MessageBoxButtons.OK,
-                    MessageBoxIcon.Error);
-            }
         }
 
 
@@ -468,7 +242,7 @@ namespace TiemVaiLucCode
                 // ==========================================
                 // 5. KIỂM TRA PHƯƠNG THỨC THANH TOÁN
                 // ==========================================
-                if (string.IsNullOrWhiteSpace(comboBox1.Text))
+                if (string.IsNullOrWhiteSpace(cmb_PTTT.Text))
                 {
                     MessageBox.Show(
                         "Vui lòng chọn phương thức thanh toán!",
@@ -476,7 +250,7 @@ namespace TiemVaiLucCode
                         MessageBoxButtons.OK,
                         MessageBoxIcon.Warning);
 
-                    comboBox1.Focus();
+                    cmb_PTTT.Focus();
                     return;
                 }
 
@@ -490,7 +264,7 @@ namespace TiemVaiLucCode
                     "Khách hàng: " + txtTenKH.Text + "\n" +
                     "Số điện thoại: " + txtSDT.Text + "\n" +
                     "Tổng tiền: " + tongTien.ToString("N0") + " VNĐ\n" +
-                    "Thanh toán: " + comboBox1.Text,
+                    "Thanh toán: " + cmb_PTTT.Text,
                     "Xác nhận thanh toán",
                     MessageBoxButtons.YesNo,
                     MessageBoxIcon.Question);
@@ -498,6 +272,22 @@ namespace TiemVaiLucCode
                 if (xacNhan != DialogResult.Yes)
                 {
                     return;
+                }
+
+                // =====================================================
+                // MỚI: KIỂM TRA CHUYỂN KHOẢN VÀ BẬT FORM MÃ QR
+                // =====================================================
+                if (cmb_PTTT.Text == "Chuyển khoản")
+                {
+                    // Mở Form QR và truyền số tiền sang
+                    Frm_QRCode frmQR = new Frm_QRCode(tongTien);
+
+                    // Nếu khách bấm nút Hủy hoặc nhấn dấu X tắt ngang form QR
+                    if (frmQR.ShowDialog() != DialogResult.OK)
+                    {
+                        MessageBox.Show("Đã hủy thanh toán chuyển khoản!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        return; // Dừng lại, không chạy code lưu xuống CSDL bên dưới nữa
+                    }
                 }
 
                 // =====================================================
@@ -570,7 +360,7 @@ namespace TiemVaiLucCode
                         NgayLap = DateTime.Now,
                         TongTienThanhToan = tongTien,
                         TrangThaiThanhToan = "Đã Thanh Toán",
-                        PhuongThucThanhToan = comboBox1.Text
+                        PhuongThucThanhToan = cmb_PTTT.Text
                     };
 
                     // 12. THÊM HÓA ĐƠN VÀ LƯU TẤT CẢ (1 NHÁT DUY NHẤT)
@@ -588,7 +378,19 @@ namespace TiemVaiLucCode
                 // ==========================================
                 // 14. HIỂN THỊ GIỎ HÀNG TRỐNG
                 // ==========================================
-                LoadGioHang();
+                LamMoiTrangThanhToan();
+                MessageBox.Show(
+                    "THANH TOÁN THÀNH CÔNG!\n\n" +
+                    "Mã hóa đơn: " + maHoaDonCuoi + "\n" +
+                    "Mã đơn hàng: Đã tạo\n" +
+                    "Khách hàng: " + txtTenKH.Text + "\n" +
+                    "Phương thức: " + cmb_PTTT.Text + "\n" +
+                    "Tổng tiền: " + tongTien.ToString("N0") + " VNĐ\n\n" +
+                    "Số lượng tồn kho đã được cập nhật.",
+                    "Thanh toán thành công",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Information);
+                LamMoiTrangThanhToan();
             }
             catch (Exception ex)
             {
@@ -657,7 +459,7 @@ namespace TiemVaiLucCode
                         "Khách hàng: " + txtTenKH.Text + "\n" +
                         "Số điện thoại: " + txtSDT.Text + "\n" +
                         "Địa chỉ: " + txtDiaChi.Text + "\n" +
-                        "Phương thức: " + comboBox1.Text + "\n\n" +
+                        "Phương thức: " + cmb_PTTT.Text + "\n\n" +
 
                         "----------------------------------------\n" +
                         "TỔNG TIỀN: " +

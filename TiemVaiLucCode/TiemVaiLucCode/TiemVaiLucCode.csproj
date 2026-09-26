@@ -233,6 +233,12 @@
     <Compile Include="Frm_NhapMaXN.Designer.cs">
       <DependentUpon>Frm_NhapMaXN.cs</DependentUpon>
     </Compile>
+    <Compile Include="Frm_QRCode.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_QRCode.Designer.cs">
+      <DependentUpon>Frm_QRCode.cs</DependentUpon>
+    </Compile>
     <Compile Include="Frm_QuenMK.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -390,6 +396,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Frm_NhapMaXN.resx">
       <DependentUpon>Frm_NhapMaXN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_QRCode.resx">
+      <DependentUpon>Frm_QRCode.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Frm_QuenMK.resx">
       <DependentUpon>Frm_QuenMK.cs</DependentUpon>

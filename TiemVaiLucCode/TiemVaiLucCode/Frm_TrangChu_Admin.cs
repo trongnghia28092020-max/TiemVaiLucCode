@@ -9,6 +9,8 @@ using System.Threading.Tasks;
 
 using System.Windows.Forms;
 using TiemVaiLucCode.Models;
+using System.Windows.Forms.DataVisualization.Charting;
+
 
 namespace TiemVaiLucCode
 {
@@ -21,6 +23,7 @@ namespace TiemVaiLucCode
         {
             InitializeComponent();
             CapNhatThongKe(); // Cập nhật thống kê khi form được khởi tạo
+
         }
 
         // --- HÀM TÍNH TOÁN & CẬP NHẬT 4 Ô THỐNG KÊ ---
@@ -62,6 +65,85 @@ namespace TiemVaiLucCode
                 Console.WriteLine("Lỗi thống kê: " + ex.Message);
             }
         }
+
+        private void LoadChart_DoanhThuTheoSanPham()
+        {
+            try
+            {
+                using (var db = new TaiKhoanContext()) //
+                {
+                    // Lấy dữ liệu chi tiết đơn hàng, gom nhóm theo Tên sản phẩm và tính tổng tiền
+                    // (Giả định bảng ChiTietDonHangs có kết nối tới SanPham và có SoLuong, DonGia)
+                    var data = db.ChiTietDonHangs
+                                 .GroupBy(ct => ct.SanPham.TenSanPham)
+                                 .Select(g => new
+                                 {
+                                     TenSanPham = g.Key,
+                                     // Tính tổng doanh thu = Số lượng * Đơn giá
+                                     TongDoanhThu = g.Sum(x => x.SoLuongMet * x.DonGia)
+                                 })
+                                 .OrderByDescending(x => x.TongDoanhThu) // Sắp xếp giảm dần để đưa SP bán chạy lên đầu
+                                 .Take(5) // Chỉ lấy Top 5 sản phẩm bán chạy nhất để biểu đồ không bị rối
+                                 .ToList();
+
+                    // Làm sạch chart trước khi vẽ
+                    chart_TongSPBanChay.Series.Clear();
+                    chart_TongSPBanChay.Titles.Clear();
+
+                    // Thêm tiêu đề
+                    chart_TongSPBanChay.Titles.Add("Top 5 Sản Phẩm Có Doanh Thu Cao Nhất");
+                    chart_TongSPBanChay.Titles[0].Font = new Font("Times New Roman", 14, FontStyle.Bold);
+
+                    // Tạo Series mới dạng cột (Column) - nếu mình thích biểu đồ tròn thì đổi thành .Pie nha
+                    var series = chart_TongSPBanChay.Series.Add("DoanhThuSanPham");
+                    series.ChartType = SeriesChartType.Column;
+
+                    // Đổ dữ liệu vào Chart
+                    foreach (var item in data)
+                    {
+                        series.Points.AddXY(item.TenSanPham, item.TongDoanhThu);
+                    }
+
+                    // Hiển thị số tiền trực tiếp trên đầu mỗi cột
+                    series.IsValueShownAsLabel = true;
+                    series.LabelFormat = "{0:N0} đ"; // Định dạng tiền tệ có dấu phẩy
+
+                    // Trang trí thêm cho cột
+                    series.Palette = ChartColorPalette.Pastel;
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Lỗi vẽ biểu đồ: " + ex.Message);
+            }
+        }
+
+        private void TinhTongDoanhThuThang(int thang)
+        {
+            try
+            {
+                using (var db = new TaiKhoanContext())
+                {
+                    int namHienTai = DateTime.Now.Year;
+
+                    // Lọc hóa đơn "Đã Thanh Toán", đúng tháng được chọn và đúng năm hiện tại
+                    var doanhThuThang = db.HoaDons
+                        .Where(hd => hd.TrangThaiThanhToan == "Đã Thanh Toán"
+                                  && hd.NgayLap.Month == thang
+                                  && hd.NgayLap.Year == namHienTai)
+                        .Sum(hd => (decimal?)hd.TongTienThanhToan) ?? 0;
+
+                    // Hiển thị kết quả lên ô textbox
+                    txt_TongDoanhThu.Text = doanhThuThang.ToString("N0") + " VNĐ";
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Lỗi tính doanh thu tháng: " + ex.Message);
+                txt_TongDoanhThu.Text = "0 VNĐ";
+            }
+        }
+
         private void Mo_Card_ChildFrom(Form childForm)
         {
             // Nếu có form nào đang mở thì đóng nó lại
@@ -117,7 +199,17 @@ namespace TiemVaiLucCode
 
         private void Frm_TrangChu_Admin_Load(object sender, EventArgs e)
         {
-            
+            LoadChart_DoanhThuTheoSanPham();
+        }
+
+        private void cmb_ChonThang_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            // Lấy index của tháng được chọn (index bắt đầu từ 0 nên phải cộng thêm 1)
+            // Ví dụ: Chọn "Tháng 1" (index 0) => thang = 1
+            int thangDuocChon = cmb_ChonThang.SelectedIndex + 1;
+
+            // Gọi hàm tính tiền
+            TinhTongDoanhThuThang(thangDuocChon);
         }
     }
 }
