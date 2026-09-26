@@ -293,6 +293,9 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>TiemVaiDBDataSet2.xsd</DependentUpon>
     </Compile>
+    <None Include="Resources\7789d2416f38d6e84790431e9a5819f5.jpg" />
+    <None Include="Resources\ce3246965a780ea24a50067e9e36e146%281%291.jpg" />
+    <None Include="Resources\4efb9e5e0068839d7a764aac319c8777.jpg" />
     <None Include="Resources\smart-contracts_1442117.png" />
     <None Include="Resources\2.jpg" />
     <None Include="Resources\best-product_10112502.png" />

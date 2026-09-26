@@ -30,7 +30,6 @@
         {
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label1 = new System.Windows.Forms.Label();
-            this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.clstt = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cldongia = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -39,8 +38,9 @@
             this.clthanhtien = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
+            this.pictureBox9 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -54,15 +54,6 @@
             this.label1.Size = new System.Drawing.Size(243, 25);
             this.label1.TabIndex = 18;
             this.label1.Text = "GIỎ HÀNG CỦA BẠN";
-            // 
-            // pictureBox9
-            // 
-            this.pictureBox9.Image = global::TiemVaiLucCode.Properties.Resources.e2d5dbf16b2bf4a2556004b9f3704d2e_3_;
-            this.pictureBox9.Location = new System.Drawing.Point(-36, -80);
-            this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(1241, 769);
-            this.pictureBox9.TabIndex = 35;
-            this.pictureBox9.TabStop = false;
             // 
             // dataGridView1
             // 
@@ -147,6 +138,15 @@
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
+            // pictureBox9
+            // 
+            this.pictureBox9.Image = global::TiemVaiLucCode.Properties.Resources.e2d5dbf16b2bf4a2556004b9f3704d2e_3_;
+            this.pictureBox9.Location = new System.Drawing.Point(-36, -80);
+            this.pictureBox9.Name = "pictureBox9";
+            this.pictureBox9.Size = new System.Drawing.Size(1241, 769);
+            this.pictureBox9.TabIndex = 35;
+            this.pictureBox9.TabStop = false;
+            // 
             // Form_GioHang
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -160,8 +160,8 @@
             this.Name = "Form_GioHang";
             this.Text = "Form_GioHang";
             this.Load += new System.EventHandler(this.Form_GioHang_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

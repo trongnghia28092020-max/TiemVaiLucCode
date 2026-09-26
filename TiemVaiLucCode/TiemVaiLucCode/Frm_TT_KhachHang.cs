@@ -47,12 +47,12 @@ namespace TiemVaiLucCode
 
         }
 
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void Frm_TT_KhachHang_Load(object sender, EventArgs e)
         {
 
         }
 
-        private void Frm_TT_KhachHang_Load(object sender, EventArgs e)
+        private void siticoneButton2_Click(object sender, EventArgs e)
         {
 
         }
