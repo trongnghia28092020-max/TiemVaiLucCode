@@ -370,7 +370,7 @@
             // 
             this.llbl_QuenMK.AutoSize = true;
             this.llbl_QuenMK.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.llbl_QuenMK.Location = new System.Drawing.Point(200, 257);
+            this.llbl_QuenMK.Location = new System.Drawing.Point(211, 257);
             this.llbl_QuenMK.Name = "llbl_QuenMK";
             this.llbl_QuenMK.Size = new System.Drawing.Size(105, 17);
             this.llbl_QuenMK.TabIndex = 10;
@@ -1061,6 +1061,8 @@
             this.txt_HoTen.TextPadding = new System.Windows.Forms.Padding(16, 0, 6, 0);
             this.txt_HoTen.ValidationErrorMessage = "Invalid input.";
             this.txt_HoTen.ValidationFunction = null;
+            this.txt_HoTen.Enter += new System.EventHandler(this.txt_HoTen_Enter);
+            this.txt_HoTen.Leave += new System.EventHandler(this.txt_HoTen_Leave);
             // 
             // label5
             // 

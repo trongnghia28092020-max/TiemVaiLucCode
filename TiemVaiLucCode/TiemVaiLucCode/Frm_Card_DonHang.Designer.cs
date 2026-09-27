@@ -449,6 +449,7 @@
             this.txt_TimKiem.ValidationErrorMessage = "Invalid input.";
             this.txt_TimKiem.ValidationFunction = null;
             this.txt_TimKiem.TextChanged += new System.EventHandler(this.txt_TimKiem_TextChanged);
+            this.txt_TimKiem.Click += new System.EventHandler(this.txt_TimKiem_Click);
             // 
             // Frm_Card_DonHang
             // 

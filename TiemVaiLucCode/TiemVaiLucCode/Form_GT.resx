@@ -126,4 +126,7 @@ Dù bạn là người yêu thích may vá, thiết kế thời trang hay đơn 
 kiếm một loại vải phù hợp cho dự án của mình, Tiệm Vải Xinh luôn sẵn sàng đồng 
 hành và hỗ trợ bạn.</value>
   </data>
+  <metadata name="$this.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
 </root>

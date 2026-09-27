@@ -214,9 +214,21 @@ namespace TiemVaiLucCode
 
         private void lbl_DangXuat_Click(object sender, EventArgs e)
         {
-            Frm_DangNhap frmDangNhap = new Frm_DangNhap();
-            frmDangNhap.Show();
-            this.Hide();
+            // Hiển thị hộp thoại xác nhận
+            DialogResult ketQua = MessageBox.Show(
+                "Bạn có chắc chắn muốn đăng xuất khỏi hệ thống không?",
+                "Xác nhận đăng xuất",
+                MessageBoxButtons.YesNo,
+                MessageBoxIcon.Question
+            );
+
+            // Nếu người dùng chọn Yes thì mới thực hiện đăng xuất
+            if (ketQua == DialogResult.Yes)
+            {
+                Frm_DangNhap frmDangNhap = new Frm_DangNhap(); //[cite: 10]
+                frmDangNhap.Show(); //[cite: 10]
+                this.Hide(); //[cite: 10]
+            }
         }
     }
 }

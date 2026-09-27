@@ -333,7 +333,7 @@ namespace TiemVaiLucCode
                         return;
                     }
                     // Gán Tên đăng nhập mặc định là Email luôn để mốt dễ đăng nhập
-                    string tenDangNhap = email;
+                    string tenDangNhap = hoTen;
                     // Đóng gói thông tin thành 1 tài khoản mới
                     TaiKhoan taiKhoanMoi = new TaiKhoan()
                     {
@@ -386,6 +386,24 @@ namespace TiemVaiLucCode
             txt_XacNhanMK_DK.UseSystemPasswordChar = true;
             ipb_IconEye2.IconChar = FontAwesome.Sharp.IconChar.EyeSlash;
             ipb_IconEye2.IconColor = Color.Gray;
+        }
+
+        private void txt_HoTen_Enter(object sender, EventArgs e)
+        {
+            if (txt_DangNhap.Text == "Họ và Tên")
+            {
+                txt_DangNhap.Text = "";
+                txt_DangNhap.ForeColor = Color.Black;
+            }
+        }
+
+        private void txt_HoTen_Leave(object sender, EventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(txt_DangNhap.Text))
+            {
+                txt_DangNhap.Text = "Họ và Tên";
+                txt_DangNhap.ForeColor = Color.Gray;
+            }
         }
     }
 }

@@ -1,8 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Windows.Forms;
 //using System.Collections.Generic;
 using System.Linq;
+using System.Windows.Forms;
+using TiemVaiLucCode.Models;
 
 namespace TiemVaiLucCode
 {
@@ -15,8 +16,8 @@ namespace TiemVaiLucCode
 
         private void Form_GioHang_Load(object sender, EventArgs e)
         {
-            dataGridView1.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            dataGridView1.MultiSelect = false;
+            dataGridView_GioHang.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            dataGridView_GioHang.MultiSelect = false;
 
             LoadGioHang();
         }
@@ -26,13 +27,13 @@ namespace TiemVaiLucCode
         // ==========================================
         private void LoadGioHang()
         {
-            dataGridView1.Rows.Clear();
+            dataGridView_GioHang.Rows.Clear();
 
             int stt = 1;
 
             foreach (GioHangItem item in GioHangManager.DanhSach)
             {
-                dataGridView1.Rows.Add(
+                dataGridView_GioHang.Rows.Add(
                     stt,
                     item.TenSanPham,
                     item.DonGia.ToString("N0"),
@@ -51,7 +52,7 @@ namespace TiemVaiLucCode
         private void button2_Click(object sender, EventArgs e)
         {
             // Kiểm tra có dòng nào được chọn chưa
-            if (dataGridView1.CurrentRow == null)
+            if (dataGridView_GioHang.CurrentRow == null)
             {
                 MessageBox.Show(
                     "Vui lòng chọn sản phẩm muốn xóa!",
@@ -62,7 +63,7 @@ namespace TiemVaiLucCode
                 return;
             }
 
-            int index = dataGridView1.CurrentRow.Index;
+            int index = dataGridView_GioHang.CurrentRow.Index;
 
             // Kiểm tra index hợp lệ
             if (index < 0 || index >= GioHangManager.DanhSach.Count)
@@ -130,6 +131,32 @@ namespace TiemVaiLucCode
 
             // Sau khi thanh toán xong thì cập nhật lại giỏ hàng
             LoadGioHang();
+        }
+
+        private void txt_TimKiem_TextChanged(object sender, EventArgs e)
+        {
+            string tuKhoa = txt_TimKiem.Text.Trim().ToLower();
+
+            using (var db = new TaiKhoanContext())
+            {
+                if (string.IsNullOrEmpty(tuKhoa))
+                {
+                    // Trống thì load toàn bộ lại
+                    dataGridView_GioHang.DataSource = db.ChiTietDonHangs.ToList();
+                }
+                else
+                {
+                    // Lọc theo Mã Đơn Hàng, Mã Sản Phẩm hoặc ID Chi tiết
+                    var ketQua = db.ChiTietDonHangs.Where(ct =>
+                        ct.MaDonHang.ToString().Contains(tuKhoa) ||
+                        ct.SanPhamId.ToString().Contains(tuKhoa) ||
+                        ct.ChiTietDonHangId.ToString().Contains(tuKhoa)
+                    ).ToList();
+
+                    // Đổ lên DataGridView
+                    dataGridView_GioHang.DataSource = ketQua;
+                }
+            }
         }
     }
     public class GioHangItem

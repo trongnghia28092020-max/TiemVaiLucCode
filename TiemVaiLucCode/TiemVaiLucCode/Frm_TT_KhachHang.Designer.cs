@@ -28,8 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.lblKH = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label9 = new System.Windows.Forms.Label();
@@ -38,6 +39,7 @@
             this.label6 = new System.Windows.Forms.Label();
             this.txtNgayMua = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.txtDiaChi = new System.Windows.Forms.TextBox();
             this.txtSDT = new System.Windows.Forms.TextBox();
             this.txtTenKH = new System.Windows.Forms.TextBox();
@@ -61,16 +63,14 @@
             this.panel4 = new System.Windows.Forms.Panel();
             this.txtTongTien = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -80,10 +80,19 @@
             this.panel2.Controls.Add(this.pictureBox2);
             this.panel2.Controls.Add(this.lblKH);
             this.panel2.ForeColor = System.Drawing.Color.Black;
-            this.panel2.Location = new System.Drawing.Point(691, 65);
+            this.panel2.Location = new System.Drawing.Point(694, 108);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(397, 52);
             this.panel2.TabIndex = 12;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::TiemVaiLucCode.Properties.Resources._51879b9983492ff976872334545c0817_2_1;
+            this.pictureBox2.Location = new System.Drawing.Point(3, 3);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(49, 46);
+            this.pictureBox2.TabIndex = 1;
+            this.pictureBox2.TabStop = false;
             // 
             // lblKH
             // 
@@ -115,9 +124,9 @@
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.txtMaKH);
             this.panel1.ForeColor = System.Drawing.Color.Black;
-            this.panel1.Location = new System.Drawing.Point(691, 119);
+            this.panel1.Location = new System.Drawing.Point(694, 166);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(546, 351);
+            this.panel1.Size = new System.Drawing.Size(546, 393);
             this.panel1.TabIndex = 11;
             // 
             // label9
@@ -143,7 +152,7 @@
             // 
             this.cmb_PTTT.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmb_PTTT.FormattingEnabled = true;
-            this.cmb_PTTT.Location = new System.Drawing.Point(113, 313);
+            this.cmb_PTTT.Location = new System.Drawing.Point(113, 334);
             this.cmb_PTTT.Name = "cmb_PTTT";
             this.cmb_PTTT.Size = new System.Drawing.Size(415, 30);
             this.cmb_PTTT.TabIndex = 11;
@@ -153,7 +162,7 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.DarkGreen;
-            this.label6.Location = new System.Drawing.Point(109, 291);
+            this.label6.Location = new System.Drawing.Point(109, 312);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(212, 23);
             this.label6.TabIndex = 10;
@@ -162,7 +171,7 @@
             // txtNgayMua
             // 
             this.txtNgayMua.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNgayMua.Location = new System.Drawing.Point(113, 260);
+            this.txtNgayMua.Location = new System.Drawing.Point(113, 281);
             this.txtNgayMua.Name = "txtNgayMua";
             this.txtNgayMua.Size = new System.Drawing.Size(415, 30);
             this.txtNgayMua.TabIndex = 9;
@@ -172,16 +181,25 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.DarkGreen;
-            this.label5.Location = new System.Drawing.Point(109, 235);
+            this.label5.Location = new System.Drawing.Point(109, 256);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(94, 23);
             this.label5.TabIndex = 8;
             this.label5.Text = "Ngày mua";
             // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = global::TiemVaiLucCode.Properties.Resources._7789d2416f38d6e84790431e9a5819f5;
+            this.pictureBox3.Location = new System.Drawing.Point(7, 6);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(96, 372);
+            this.pictureBox3.TabIndex = 2;
+            this.pictureBox3.TabStop = false;
+            // 
             // txtDiaChi
             // 
             this.txtDiaChi.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDiaChi.Location = new System.Drawing.Point(113, 202);
+            this.txtDiaChi.Location = new System.Drawing.Point(113, 213);
             this.txtDiaChi.Name = "txtDiaChi";
             this.txtDiaChi.Size = new System.Drawing.Size(415, 30);
             this.txtDiaChi.TabIndex = 7;
@@ -207,7 +225,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.DarkGreen;
-            this.label4.Location = new System.Drawing.Point(109, 176);
+            this.label4.Location = new System.Drawing.Point(109, 187);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(68, 23);
             this.label4.TabIndex = 4;
@@ -260,7 +278,7 @@
             this.panel3.Controls.Add(this.button3);
             this.panel3.Controls.Add(this.button2);
             this.panel3.Controls.Add(this.button1);
-            this.panel3.Location = new System.Drawing.Point(691, 476);
+            this.panel3.Location = new System.Drawing.Point(694, 565);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(547, 103);
             this.panel3.TabIndex = 14;
@@ -308,14 +326,14 @@
             // 
             this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView1.BackgroundColor = System.Drawing.Color.PaleGoldenrod;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.clstt,
@@ -324,7 +342,7 @@
             this.clsoluong,
             this.clmau,
             this.clthanhtien});
-            this.dataGridView1.Location = new System.Drawing.Point(15, 65);
+            this.dataGridView1.Location = new System.Drawing.Point(18, 154);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
@@ -373,7 +391,7 @@
             this.label7.BackColor = System.Drawing.Color.Pink;
             this.label7.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.MediumVioletRed;
-            this.label7.Location = new System.Drawing.Point(12, 19);
+            this.label7.Location = new System.Drawing.Point(23, 52);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(217, 35);
             this.label7.TabIndex = 38;
@@ -384,7 +402,7 @@
             this.panel4.BackColor = System.Drawing.Color.Beige;
             this.panel4.Controls.Add(this.txtTongTien);
             this.panel4.Controls.Add(this.label8);
-            this.panel4.Location = new System.Drawing.Point(15, 476);
+            this.panel4.Location = new System.Drawing.Point(18, 565);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(649, 103);
             this.panel4.TabIndex = 15;
@@ -409,38 +427,20 @@
             this.label8.TabIndex = 0;
             this.label8.Text = "TỔNG TIỀN:";
             // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = global::TiemVaiLucCode.Properties.Resources._51879b9983492ff976872334545c0817_2_1;
-            this.pictureBox2.Location = new System.Drawing.Point(3, 3);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(49, 46);
-            this.pictureBox2.TabIndex = 1;
-            this.pictureBox2.TabStop = false;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = global::TiemVaiLucCode.Properties.Resources._7789d2416f38d6e84790431e9a5819f5;
-            this.pictureBox3.Location = new System.Drawing.Point(7, 6);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(96, 337);
-            this.pictureBox3.TabIndex = 2;
-            this.pictureBox3.TabStop = false;
-            // 
             // pictureBox1
             // 
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox1.Image = global::TiemVaiLucCode.Properties.Resources.n_1_;
-            this.pictureBox1.Location = new System.Drawing.Point(0, -6);
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1254, 634);
+            this.pictureBox1.Size = new System.Drawing.Size(1280, 699);
             this.pictureBox1.TabIndex = 10;
             this.pictureBox1.TabStop = false;
             // 
             // Frm_TT_KhachHang
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1250, 591);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            this.ClientSize = new System.Drawing.Size(1280, 699);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.dataGridView1);
@@ -448,19 +448,21 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.pictureBox1);
+            this.MaximumSize = new System.Drawing.Size(1298, 746);
+            this.MinimumSize = new System.Drawing.Size(1298, 746);
             this.Name = "Frm_TT_KhachHang";
             this.Text = "Frm_TT_KhachHang";
             this.Load += new System.EventHandler(this.Frm_TT_KhachHang_Load);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.panel3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

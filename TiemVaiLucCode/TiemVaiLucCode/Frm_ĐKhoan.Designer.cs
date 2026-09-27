@@ -75,7 +75,7 @@
             this.richTextBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.richTextBox1.Location = new System.Drawing.Point(16, 28);
             this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(1160, 635);
+            this.richTextBox1.Size = new System.Drawing.Size(1160, 476);
             this.richTextBox1.TabIndex = 2;
             this.richTextBox1.Text = resources.GetString("richTextBox1.Text");
             // 
@@ -93,13 +93,14 @@
             // 
             // Frm_ĐKhoan
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.ClientSize = new System.Drawing.Size(1280, 699);
             this.Controls.Add(this.label33);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
+            this.MaximumSize = new System.Drawing.Size(1298, 746);
+            this.MinimumSize = new System.Drawing.Size(1298, 746);
             this.Name = "Frm_ĐKhoan";
             this.Text = "Frm_ĐKhoan";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

@@ -88,5 +88,10 @@ namespace TiemVaiLucCode
                 e.FormattingApplied = true; // Báo cho hệ thống biết là "Tui trang điểm xong rồi nha"
             }
         }
+
+        private void txt_TimKiem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

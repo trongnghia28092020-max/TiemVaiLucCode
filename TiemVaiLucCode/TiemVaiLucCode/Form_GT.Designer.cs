@@ -552,11 +552,12 @@
             // 
             // Form_GT
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.ClientSize = new System.Drawing.Size(1280, 699);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.pictureBox9);
+            this.MaximumSize = new System.Drawing.Size(1298, 746);
+            this.MinimumSize = new System.Drawing.Size(1298, 746);
             this.Name = "Form_GT";
             this.Text = "Form_GT";
             this.Load += new System.EventHandler(this.Form_GT_Load);
