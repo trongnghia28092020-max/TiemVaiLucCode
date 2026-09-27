@@ -866,7 +866,7 @@
             this.pictureBox9.Image = global::TiemVaiLucCode.Properties.Resources.e2d5dbf16b2bf4a2556004b9f3704d2e_3_;
             this.pictureBox9.Location = new System.Drawing.Point(-12, 3);
             this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(1289, 746);
+            this.pictureBox9.Size = new System.Drawing.Size(1319, 746);
             this.pictureBox9.TabIndex = 35;
             this.pictureBox9.TabStop = false;
             this.pictureBox9.Click += new System.EventHandler(this.pictureBox9_Click);
