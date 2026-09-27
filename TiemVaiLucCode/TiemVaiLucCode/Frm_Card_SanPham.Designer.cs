@@ -889,8 +889,7 @@
             // 
             // Frm_Card_SanPham
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1099, 600);
             this.Controls.Add(this.btn_LamMoi);
@@ -916,6 +915,8 @@
             this.Controls.Add(this.ptb_MauSac);
             this.Controls.Add(this.btn_ChonAnh);
             this.Controls.Add(this.ptb_HinhAnh);
+            this.MaximumSize = new System.Drawing.Size(1117, 647);
+            this.MinimumSize = new System.Drawing.Size(1117, 647);
             this.Name = "Frm_Card_SanPham";
             this.Text = "Frm_Card_SanPham";
             this.Load += new System.EventHandler(this.Frm_Card_SanPham_Load);

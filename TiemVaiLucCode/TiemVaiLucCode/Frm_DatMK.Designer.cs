@@ -101,7 +101,7 @@
             this.lbl_QuayLaiDN.ForeColor = System.Drawing.Color.Peru;
             this.lbl_QuayLaiDN.Location = new System.Drawing.Point(136, 448);
             this.lbl_QuayLaiDN.Name = "lbl_QuayLaiDN";
-            this.lbl_QuayLaiDN.Size = new System.Drawing.Size(148, 16);
+            this.lbl_QuayLaiDN.Size = new System.Drawing.Size(142, 16);
             this.lbl_QuayLaiDN.TabIndex = 7;
             this.lbl_QuayLaiDN.Text = "Quay lại Đăng nhập";
             this.lbl_QuayLaiDN.Click += new System.EventHandler(this.lbl_QuayLaiDN_Click);
@@ -348,8 +348,7 @@
             // 
             // Frm_DatMK
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackgroundImage = global::TiemVaiLucCode.Properties.Resources.a_high_quality_professional_macro_photograph_of_stacked_premium_fabric_rolls;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(514, 683);

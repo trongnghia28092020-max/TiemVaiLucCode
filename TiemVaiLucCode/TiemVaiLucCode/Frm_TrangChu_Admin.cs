@@ -211,5 +211,12 @@ namespace TiemVaiLucCode
             // Gọi hàm tính tiền
             TinhTongDoanhThuThang(thangDuocChon);
         }
+
+        private void lbl_DangXuat_Click(object sender, EventArgs e)
+        {
+            Frm_DangNhap frmDangNhap = new Frm_DangNhap();
+            frmDangNhap.Show();
+            this.Hide();
+        }
     }
 }

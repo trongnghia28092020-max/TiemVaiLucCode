@@ -54,7 +54,7 @@
                 new TaiKhoan { ID = 1, TenDangNhap = "admin02", MatKhau = "123456", HoTen = "Bé Di", Email = "tranthuyduy2006@gmail.com", 
                     SoDienThoai = "0123456789", VaiTro = "Admin", NgayTao = DateTime.Now },
                 new TaiKhoan { ID = 2, TenDangNhap = "khach01", MatKhau = "123456", HoTen = "Bé Khách Hàng", Email = "khach@gmail.com", 
-                    SoDienThoai = "0987654321", VaiTro = "KhachHang", NgayTao = DateTime.Now }
+                    SoDienThoai = "0987654321", VaiTro = "Khách Hàng", NgayTao = DateTime.Now }
             );
 
             // 4. Thêm Nhân Viên (Liên kết với TaiKhoan ID = 1 ở trên)
