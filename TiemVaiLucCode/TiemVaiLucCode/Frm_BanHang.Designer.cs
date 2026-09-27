@@ -29,71 +29,55 @@
         private void InitializeComponent()
         {
             this.panel21 = new System.Windows.Forms.Panel();
-            this.comboBox17 = new System.Windows.Forms.ComboBox();
             this.label22 = new System.Windows.Forms.Label();
             this.numericUpDown17 = new System.Windows.Forms.NumericUpDown();
             this.label23 = new System.Windows.Forms.Label();
             this.pictureBox19 = new System.Windows.Forms.PictureBox();
             this.button18 = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.cmb6 = new System.Windows.Forms.ComboBox();
             this.label40 = new System.Windows.Forms.Label();
             this.numericUpDown3 = new System.Windows.Forms.NumericUpDown();
             this.label41 = new System.Windows.Forms.Label();
             this.pictureBox11 = new System.Windows.Forms.PictureBox();
             this.but6 = new System.Windows.Forms.Button();
             this.panel14 = new System.Windows.Forms.Panel();
-            this.comboBox7 = new System.Windows.Forms.ComboBox();
             this.label42 = new System.Windows.Forms.Label();
             this.numericUpDown4 = new System.Windows.Forms.NumericUpDown();
             this.label43 = new System.Windows.Forms.Label();
             this.pictureBox13 = new System.Windows.Forms.PictureBox();
             this.button4 = new System.Windows.Forms.Button();
             this.panel20 = new System.Windows.Forms.Panel();
-            this.comboBox18 = new System.Windows.Forms.ComboBox();
             this.label24 = new System.Windows.Forms.Label();
             this.numericUpDown18 = new System.Windows.Forms.NumericUpDown();
             this.label25 = new System.Windows.Forms.Label();
             this.pictureBox18 = new System.Windows.Forms.PictureBox();
             this.button19 = new System.Windows.Forms.Button();
             this.panel13 = new System.Windows.Forms.Panel();
-            this.comboBox13 = new System.Windows.Forms.ComboBox();
             this.label13 = new System.Windows.Forms.Label();
             this.numericUpDown9 = new System.Windows.Forms.NumericUpDown();
             this.label14 = new System.Windows.Forms.Label();
             this.pictureBox12 = new System.Windows.Forms.PictureBox();
             this.button7 = new System.Windows.Forms.Button();
             this.panel18 = new System.Windows.Forms.Panel();
-            this.comboBox20 = new System.Windows.Forms.ComboBox();
             this.label28 = new System.Windows.Forms.Label();
             this.numericUpDown20 = new System.Windows.Forms.NumericUpDown();
             this.label29 = new System.Windows.Forms.Label();
             this.pictureBox16 = new System.Windows.Forms.PictureBox();
             this.button21 = new System.Windows.Forms.Button();
             this.panel17 = new System.Windows.Forms.Panel();
-            this.comboBox21 = new System.Windows.Forms.ComboBox();
             this.label30 = new System.Windows.Forms.Label();
             this.numericUpDown21 = new System.Windows.Forms.NumericUpDown();
             this.label31 = new System.Windows.Forms.Label();
             this.pictureBox15 = new System.Windows.Forms.PictureBox();
             this.button22 = new System.Windows.Forms.Button();
             this.panel15 = new System.Windows.Forms.Panel();
-            this.comboBox14 = new System.Windows.Forms.ComboBox();
             this.label16 = new System.Windows.Forms.Label();
             this.numericUpDown8 = new System.Windows.Forms.NumericUpDown();
             this.label17 = new System.Windows.Forms.Label();
             this.pictureBox14 = new System.Windows.Forms.PictureBox();
             this.button6 = new System.Windows.Forms.Button();
-            this.panel19 = new System.Windows.Forms.Panel();
-            this.comboBox19 = new System.Windows.Forms.ComboBox();
-            this.label26 = new System.Windows.Forms.Label();
-            this.numericUpDown19 = new System.Windows.Forms.NumericUpDown();
-            this.label27 = new System.Windows.Forms.Label();
-            this.pictureBox17 = new System.Windows.Forms.PictureBox();
-            this.button20 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel22 = new System.Windows.Forms.Panel();
-            this.comboBox16 = new System.Windows.Forms.ComboBox();
             this.label20 = new System.Windows.Forms.Label();
             this.numericUpDown16 = new System.Windows.Forms.NumericUpDown();
             this.label21 = new System.Windows.Forms.Label();
@@ -102,21 +86,18 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel16 = new System.Windows.Forms.Panel();
             this.panel24 = new System.Windows.Forms.Panel();
-            this.cmb5 = new System.Windows.Forms.ComboBox();
             this.label38 = new System.Windows.Forms.Label();
             this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
             this.label39 = new System.Windows.Forms.Label();
             this.pictureBox22 = new System.Windows.Forms.PictureBox();
             this.but5 = new System.Windows.Forms.Button();
             this.panel23 = new System.Windows.Forms.Panel();
-            this.comboBox15 = new System.Windows.Forms.ComboBox();
             this.label18 = new System.Windows.Forms.Label();
             this.numericUpDown15 = new System.Windows.Forms.NumericUpDown();
             this.label19 = new System.Windows.Forms.Label();
             this.pictureBox21 = new System.Windows.Forms.PictureBox();
             this.button16 = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.comboBox12 = new System.Windows.Forms.ComboBox();
             this.label11 = new System.Windows.Forms.Label();
             this.numericUpDown10 = new System.Windows.Forms.NumericUpDown();
             this.label12 = new System.Windows.Forms.Label();
@@ -127,7 +108,6 @@
             this.cmbTatCa = new System.Windows.Forms.ComboBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.panel9 = new System.Windows.Forms.Panel();
-            this.comboBox11 = new System.Windows.Forms.ComboBox();
             this.label44 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.numericUpDown11 = new System.Windows.Forms.NumericUpDown();
@@ -135,42 +115,36 @@
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.button9 = new System.Windows.Forms.Button();
             this.panel8 = new System.Windows.Forms.Panel();
-            this.cmb4 = new System.Windows.Forms.ComboBox();
             this.label36 = new System.Windows.Forms.Label();
             this.numericUpDown2 = new System.Windows.Forms.NumericUpDown();
             this.label37 = new System.Windows.Forms.Label();
             this.but4 = new System.Windows.Forms.Button();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.panel10 = new System.Windows.Forms.Panel();
-            this.comboBox10 = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
             this.numericUpDown12 = new System.Windows.Forms.NumericUpDown();
             this.label5 = new System.Windows.Forms.Label();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.button11 = new System.Windows.Forms.Button();
             this.panel11 = new System.Windows.Forms.Panel();
-            this.comboBox9 = new System.Windows.Forms.ComboBox();
             this.label7 = new System.Windows.Forms.Label();
             this.numericUpDown13 = new System.Windows.Forms.NumericUpDown();
             this.label8 = new System.Windows.Forms.Label();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.button13 = new System.Windows.Forms.Button();
             this.panel7 = new System.Windows.Forms.Panel();
-            this.cmb3 = new System.Windows.Forms.ComboBox();
             this.label34 = new System.Windows.Forms.Label();
             this.numericUpDown5 = new System.Windows.Forms.NumericUpDown();
             this.label35 = new System.Windows.Forms.Label();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.but3 = new System.Windows.Forms.Button();
             this.panel12 = new System.Windows.Forms.Panel();
-            this.comboBox8 = new System.Windows.Forms.ComboBox();
             this.label9 = new System.Windows.Forms.Label();
             this.numericUpDown14 = new System.Windows.Forms.NumericUpDown();
             this.label10 = new System.Windows.Forms.Label();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.button15 = new System.Windows.Forms.Button();
             this.panel6 = new System.Windows.Forms.Panel();
-            this.cmb2 = new System.Windows.Forms.ComboBox();
             this.label32 = new System.Windows.Forms.Label();
             this.numericUpDown6 = new System.Windows.Forms.NumericUpDown();
             this.label33 = new System.Windows.Forms.Label();
@@ -184,6 +158,32 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.but1 = new System.Windows.Forms.Button();
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
+            this.cmb2 = new System.Windows.Forms.ComboBox();
+            this.cmb3 = new System.Windows.Forms.ComboBox();
+            this.cmb4 = new System.Windows.Forms.ComboBox();
+            this.cmb5 = new System.Windows.Forms.ComboBox();
+            this.cmb6 = new System.Windows.Forms.ComboBox();
+            this.comboBox6 = new System.Windows.Forms.ComboBox();
+            this.comboBox7 = new System.Windows.Forms.ComboBox();
+            this.comboBox8 = new System.Windows.Forms.ComboBox();
+            this.comboBox9 = new System.Windows.Forms.ComboBox();
+            this.comboBox10 = new System.Windows.Forms.ComboBox();
+            this.comboBox11 = new System.Windows.Forms.ComboBox();
+            this.comboBox12 = new System.Windows.Forms.ComboBox();
+            this.comboBox13 = new System.Windows.Forms.ComboBox();
+            this.button20 = new System.Windows.Forms.Button();
+            this.pictureBox17 = new System.Windows.Forms.PictureBox();
+            this.label27 = new System.Windows.Forms.Label();
+            this.numericUpDown19 = new System.Windows.Forms.NumericUpDown();
+            this.label26 = new System.Windows.Forms.Label();
+            this.panel19 = new System.Windows.Forms.Panel();
+            this.comboBox14 = new System.Windows.Forms.ComboBox();
+            this.comboBox15 = new System.Windows.Forms.ComboBox();
+            this.comboBox16 = new System.Windows.Forms.ComboBox();
+            this.comboBox17 = new System.Windows.Forms.ComboBox();
+            this.comboBox18 = new System.Windows.Forms.ComboBox();
+            this.comboBox19 = new System.Windows.Forms.ComboBox();
+            this.comboBox20 = new System.Windows.Forms.ComboBox();
             this.panel21.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown17)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox19)).BeginInit();
@@ -208,9 +208,6 @@
             this.panel15.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).BeginInit();
-            this.panel19.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown19)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox17)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel22.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown16)).BeginInit();
@@ -251,12 +248,15 @@
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox17)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown19)).BeginInit();
+            this.panel19.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel21
             // 
             this.panel21.BackColor = System.Drawing.Color.Honeydew;
-            this.panel21.Controls.Add(this.comboBox17);
+            this.panel21.Controls.Add(this.comboBox16);
             this.panel21.Controls.Add(this.label22);
             this.panel21.Controls.Add(this.numericUpDown17);
             this.panel21.Controls.Add(this.label23);
@@ -266,17 +266,6 @@
             this.panel21.Name = "panel21";
             this.panel21.Size = new System.Drawing.Size(171, 222);
             this.panel21.TabIndex = 29;
-            // 
-            // comboBox17
-            // 
-            this.comboBox17.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox17.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.comboBox17.FormattingEnabled = true;
-            this.comboBox17.Location = new System.Drawing.Point(15, 151);
-            this.comboBox17.Name = "comboBox17";
-            this.comboBox17.Size = new System.Drawing.Size(147, 28);
-            this.comboBox17.TabIndex = 65;
-            this.comboBox17.Text = "Màu sắc";
             // 
             // label22
             // 
@@ -343,17 +332,6 @@
             this.panel4.Size = new System.Drawing.Size(171, 222);
             this.panel4.TabIndex = 23;
             // 
-            // cmb6
-            // 
-            this.cmb6.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmb6.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.cmb6.FormattingEnabled = true;
-            this.cmb6.Location = new System.Drawing.Point(12, 151);
-            this.cmb6.Name = "cmb6";
-            this.cmb6.Size = new System.Drawing.Size(147, 28);
-            this.cmb6.TabIndex = 67;
-            this.cmb6.Text = "Màu sắc";
-            // 
             // label40
             // 
             this.label40.AutoSize = true;
@@ -409,7 +387,7 @@
             // panel14
             // 
             this.panel14.BackColor = System.Drawing.Color.Honeydew;
-            this.panel14.Controls.Add(this.comboBox7);
+            this.panel14.Controls.Add(this.comboBox6);
             this.panel14.Controls.Add(this.label42);
             this.panel14.Controls.Add(this.numericUpDown4);
             this.panel14.Controls.Add(this.label43);
@@ -419,17 +397,6 @@
             this.panel14.Name = "panel14";
             this.panel14.Size = new System.Drawing.Size(171, 222);
             this.panel14.TabIndex = 25;
-            // 
-            // comboBox7
-            // 
-            this.comboBox7.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox7.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.comboBox7.FormattingEnabled = true;
-            this.comboBox7.Location = new System.Drawing.Point(12, 150);
-            this.comboBox7.Name = "comboBox7";
-            this.comboBox7.Size = new System.Drawing.Size(147, 28);
-            this.comboBox7.TabIndex = 69;
-            this.comboBox7.Text = "Màu sắc";
             // 
             // label42
             // 
@@ -485,7 +452,7 @@
             // panel20
             // 
             this.panel20.BackColor = System.Drawing.Color.Honeydew;
-            this.panel20.Controls.Add(this.comboBox18);
+            this.panel20.Controls.Add(this.comboBox17);
             this.panel20.Controls.Add(this.label24);
             this.panel20.Controls.Add(this.numericUpDown18);
             this.panel20.Controls.Add(this.label25);
@@ -495,17 +462,6 @@
             this.panel20.Name = "panel20";
             this.panel20.Size = new System.Drawing.Size(171, 222);
             this.panel20.TabIndex = 30;
-            // 
-            // comboBox18
-            // 
-            this.comboBox18.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox18.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.comboBox18.FormattingEnabled = true;
-            this.comboBox18.Location = new System.Drawing.Point(11, 151);
-            this.comboBox18.Name = "comboBox18";
-            this.comboBox18.Size = new System.Drawing.Size(147, 28);
-            this.comboBox18.TabIndex = 67;
-            this.comboBox18.Text = "Màu sắc";
             // 
             // label24
             // 
@@ -561,7 +517,7 @@
             // panel13
             // 
             this.panel13.BackColor = System.Drawing.Color.Honeydew;
-            this.panel13.Controls.Add(this.comboBox13);
+            this.panel13.Controls.Add(this.comboBox12);
             this.panel13.Controls.Add(this.label13);
             this.panel13.Controls.Add(this.numericUpDown9);
             this.panel13.Controls.Add(this.label14);
@@ -571,17 +527,6 @@
             this.panel13.Name = "panel13";
             this.panel13.Size = new System.Drawing.Size(171, 222);
             this.panel13.TabIndex = 24;
-            // 
-            // comboBox13
-            // 
-            this.comboBox13.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox13.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.comboBox13.FormattingEnabled = true;
-            this.comboBox13.Location = new System.Drawing.Point(13, 154);
-            this.comboBox13.Name = "comboBox13";
-            this.comboBox13.Size = new System.Drawing.Size(147, 28);
-            this.comboBox13.TabIndex = 65;
-            this.comboBox13.Text = "Màu sắc";
             // 
             // label13
             // 
@@ -637,7 +582,7 @@
             // panel18
             // 
             this.panel18.BackColor = System.Drawing.Color.Honeydew;
-            this.panel18.Controls.Add(this.comboBox20);
+            this.panel18.Controls.Add(this.comboBox19);
             this.panel18.Controls.Add(this.label28);
             this.panel18.Controls.Add(this.numericUpDown20);
             this.panel18.Controls.Add(this.label29);
@@ -647,17 +592,6 @@
             this.panel18.Name = "panel18";
             this.panel18.Size = new System.Drawing.Size(171, 222);
             this.panel18.TabIndex = 32;
-            // 
-            // comboBox20
-            // 
-            this.comboBox20.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox20.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.comboBox20.FormattingEnabled = true;
-            this.comboBox20.Location = new System.Drawing.Point(12, 149);
-            this.comboBox20.Name = "comboBox20";
-            this.comboBox20.Size = new System.Drawing.Size(147, 28);
-            this.comboBox20.TabIndex = 71;
-            this.comboBox20.Text = "Màu sắc";
             // 
             // label28
             // 
@@ -713,7 +647,7 @@
             // panel17
             // 
             this.panel17.BackColor = System.Drawing.Color.Honeydew;
-            this.panel17.Controls.Add(this.comboBox21);
+            this.panel17.Controls.Add(this.comboBox20);
             this.panel17.Controls.Add(this.label30);
             this.panel17.Controls.Add(this.numericUpDown21);
             this.panel17.Controls.Add(this.label31);
@@ -723,17 +657,6 @@
             this.panel17.Name = "panel17";
             this.panel17.Size = new System.Drawing.Size(171, 222);
             this.panel17.TabIndex = 33;
-            // 
-            // comboBox21
-            // 
-            this.comboBox21.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox21.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.comboBox21.FormattingEnabled = true;
-            this.comboBox21.Location = new System.Drawing.Point(12, 149);
-            this.comboBox21.Name = "comboBox21";
-            this.comboBox21.Size = new System.Drawing.Size(147, 28);
-            this.comboBox21.TabIndex = 73;
-            this.comboBox21.Text = "Màu sắc";
             // 
             // label30
             // 
@@ -789,7 +712,7 @@
             // panel15
             // 
             this.panel15.BackColor = System.Drawing.Color.Honeydew;
-            this.panel15.Controls.Add(this.comboBox14);
+            this.panel15.Controls.Add(this.comboBox13);
             this.panel15.Controls.Add(this.label16);
             this.panel15.Controls.Add(this.numericUpDown8);
             this.panel15.Controls.Add(this.label17);
@@ -799,17 +722,6 @@
             this.panel15.Name = "panel15";
             this.panel15.Size = new System.Drawing.Size(171, 222);
             this.panel15.TabIndex = 26;
-            // 
-            // comboBox14
-            // 
-            this.comboBox14.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox14.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.comboBox14.FormattingEnabled = true;
-            this.comboBox14.Location = new System.Drawing.Point(13, 154);
-            this.comboBox14.Name = "comboBox14";
-            this.comboBox14.Size = new System.Drawing.Size(147, 28);
-            this.comboBox14.TabIndex = 66;
-            this.comboBox14.Text = "Màu sắc";
             // 
             // label16
             // 
@@ -862,82 +774,6 @@
             this.button6.Text = "+ Thêm";
             this.button6.UseVisualStyleBackColor = false;
             // 
-            // panel19
-            // 
-            this.panel19.BackColor = System.Drawing.Color.Honeydew;
-            this.panel19.Controls.Add(this.comboBox19);
-            this.panel19.Controls.Add(this.label26);
-            this.panel19.Controls.Add(this.numericUpDown19);
-            this.panel19.Controls.Add(this.label27);
-            this.panel19.Controls.Add(this.pictureBox17);
-            this.panel19.Controls.Add(this.button20);
-            this.panel19.Location = new System.Drawing.Point(733, 533);
-            this.panel19.Name = "panel19";
-            this.panel19.Size = new System.Drawing.Size(171, 222);
-            this.panel19.TabIndex = 31;
-            // 
-            // comboBox19
-            // 
-            this.comboBox19.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox19.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.comboBox19.FormattingEnabled = true;
-            this.comboBox19.Location = new System.Drawing.Point(12, 149);
-            this.comboBox19.Name = "comboBox19";
-            this.comboBox19.Size = new System.Drawing.Size(147, 28);
-            this.comboBox19.TabIndex = 69;
-            this.comboBox19.Text = "Màu sắc";
-            // 
-            // label26
-            // 
-            this.label26.AutoSize = true;
-            this.label26.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label26.ForeColor = System.Drawing.Color.IndianRed;
-            this.label26.Location = new System.Drawing.Point(8, 131);
-            this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(77, 19);
-            this.label26.TabIndex = 70;
-            this.label26.Text = "60.000/m";
-            // 
-            // numericUpDown19
-            // 
-            this.numericUpDown19.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDown19.Location = new System.Drawing.Point(13, 183);
-            this.numericUpDown19.Name = "numericUpDown19";
-            this.numericUpDown19.Size = new System.Drawing.Size(58, 30);
-            this.numericUpDown19.TabIndex = 66;
-            // 
-            // label27
-            // 
-            this.label27.AutoSize = true;
-            this.label27.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label27.ForeColor = System.Drawing.Color.Maroon;
-            this.label27.Location = new System.Drawing.Point(8, 109);
-            this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(105, 23);
-            this.label27.TabIndex = 69;
-            this.label27.Text = "Vải hoa nhí";
-            // 
-            // pictureBox17
-            // 
-            this.pictureBox17.Image = global::TiemVaiLucCode.Properties.Resources.vai_hoa_nhi_2_7378dd39f9_1_;
-            this.pictureBox17.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox17.Name = "pictureBox17";
-            this.pictureBox17.Size = new System.Drawing.Size(171, 103);
-            this.pictureBox17.TabIndex = 4;
-            this.pictureBox17.TabStop = false;
-            // 
-            // button20
-            // 
-            this.button20.BackColor = System.Drawing.Color.Bisque;
-            this.button20.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button20.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.button20.Location = new System.Drawing.Point(77, 183);
-            this.button20.Name = "button20";
-            this.button20.Size = new System.Drawing.Size(82, 30);
-            this.button20.TabIndex = 65;
-            this.button20.Text = "+ Thêm";
-            this.button20.UseVisualStyleBackColor = false;
-            // 
             // panel1
             // 
             this.panel1.AutoScroll = true;
@@ -975,7 +811,7 @@
             // panel22
             // 
             this.panel22.BackColor = System.Drawing.Color.Honeydew;
-            this.panel22.Controls.Add(this.comboBox16);
+            this.panel22.Controls.Add(this.comboBox15);
             this.panel22.Controls.Add(this.label20);
             this.panel22.Controls.Add(this.numericUpDown16);
             this.panel22.Controls.Add(this.label21);
@@ -985,17 +821,6 @@
             this.panel22.Name = "panel22";
             this.panel22.Size = new System.Drawing.Size(171, 222);
             this.panel22.TabIndex = 28;
-            // 
-            // comboBox16
-            // 
-            this.comboBox16.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox16.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.comboBox16.FormattingEnabled = true;
-            this.comboBox16.Location = new System.Drawing.Point(12, 151);
-            this.comboBox16.Name = "comboBox16";
-            this.comboBox16.Size = new System.Drawing.Size(147, 28);
-            this.comboBox16.TabIndex = 63;
-            this.comboBox16.Text = "Màu sắc";
             // 
             // label20
             // 
@@ -1078,17 +903,6 @@
             this.panel24.Size = new System.Drawing.Size(171, 222);
             this.panel24.TabIndex = 24;
             // 
-            // cmb5
-            // 
-            this.cmb5.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmb5.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.cmb5.FormattingEnabled = true;
-            this.cmb5.Location = new System.Drawing.Point(12, 153);
-            this.cmb5.Name = "cmb5";
-            this.cmb5.Size = new System.Drawing.Size(147, 28);
-            this.cmb5.TabIndex = 65;
-            this.cmb5.Text = "Màu sắc";
-            // 
             // label38
             // 
             this.label38.AutoSize = true;
@@ -1144,7 +958,7 @@
             // panel23
             // 
             this.panel23.BackColor = System.Drawing.Color.Honeydew;
-            this.panel23.Controls.Add(this.comboBox15);
+            this.panel23.Controls.Add(this.comboBox14);
             this.panel23.Controls.Add(this.label18);
             this.panel23.Controls.Add(this.numericUpDown15);
             this.panel23.Controls.Add(this.label19);
@@ -1154,17 +968,6 @@
             this.panel23.Name = "panel23";
             this.panel23.Size = new System.Drawing.Size(171, 222);
             this.panel23.TabIndex = 27;
-            // 
-            // comboBox15
-            // 
-            this.comboBox15.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox15.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.comboBox15.FormattingEnabled = true;
-            this.comboBox15.Location = new System.Drawing.Point(11, 151);
-            this.comboBox15.Name = "comboBox15";
-            this.comboBox15.Size = new System.Drawing.Size(147, 28);
-            this.comboBox15.TabIndex = 54;
-            this.comboBox15.Text = "Màu sắc";
             // 
             // label18
             // 
@@ -1220,7 +1023,7 @@
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.Honeydew;
-            this.panel3.Controls.Add(this.comboBox12);
+            this.panel3.Controls.Add(this.comboBox11);
             this.panel3.Controls.Add(this.label11);
             this.panel3.Controls.Add(this.numericUpDown10);
             this.panel3.Controls.Add(this.label12);
@@ -1230,17 +1033,6 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(171, 222);
             this.panel3.TabIndex = 22;
-            // 
-            // comboBox12
-            // 
-            this.comboBox12.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox12.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.comboBox12.FormattingEnabled = true;
-            this.comboBox12.Location = new System.Drawing.Point(13, 154);
-            this.comboBox12.Name = "comboBox12";
-            this.comboBox12.Size = new System.Drawing.Size(147, 28);
-            this.comboBox12.TabIndex = 64;
-            this.comboBox12.Text = "Màu sắc";
             // 
             // label11
             // 
@@ -1339,7 +1131,7 @@
             // panel9
             // 
             this.panel9.BackColor = System.Drawing.Color.Honeydew;
-            this.panel9.Controls.Add(this.comboBox11);
+            this.panel9.Controls.Add(this.comboBox10);
             this.panel9.Controls.Add(this.label44);
             this.panel9.Controls.Add(this.label2);
             this.panel9.Controls.Add(this.numericUpDown11);
@@ -1350,17 +1142,6 @@
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(171, 222);
             this.panel9.TabIndex = 11;
-            // 
-            // comboBox11
-            // 
-            this.comboBox11.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox11.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.comboBox11.FormattingEnabled = true;
-            this.comboBox11.Location = new System.Drawing.Point(11, 154);
-            this.comboBox11.Name = "comboBox11";
-            this.comboBox11.Size = new System.Drawing.Size(147, 28);
-            this.comboBox11.TabIndex = 63;
-            this.comboBox11.Text = "Màu sắc";
             // 
             // label44
             // 
@@ -1438,17 +1219,6 @@
             this.panel8.Size = new System.Drawing.Size(171, 222);
             this.panel8.TabIndex = 7;
             // 
-            // cmb4
-            // 
-            this.cmb4.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmb4.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.cmb4.FormattingEnabled = true;
-            this.cmb4.Location = new System.Drawing.Point(11, 153);
-            this.cmb4.Name = "cmb4";
-            this.cmb4.Size = new System.Drawing.Size(147, 28);
-            this.cmb4.TabIndex = 63;
-            this.cmb4.Text = "Màu sắc";
-            // 
             // label36
             // 
             this.label36.AutoSize = true;
@@ -1504,7 +1274,7 @@
             // panel10
             // 
             this.panel10.BackColor = System.Drawing.Color.Honeydew;
-            this.panel10.Controls.Add(this.comboBox10);
+            this.panel10.Controls.Add(this.comboBox9);
             this.panel10.Controls.Add(this.label4);
             this.panel10.Controls.Add(this.numericUpDown12);
             this.panel10.Controls.Add(this.label5);
@@ -1514,17 +1284,6 @@
             this.panel10.Name = "panel10";
             this.panel10.Size = new System.Drawing.Size(171, 222);
             this.panel10.TabIndex = 10;
-            // 
-            // comboBox10
-            // 
-            this.comboBox10.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox10.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.comboBox10.FormattingEnabled = true;
-            this.comboBox10.Location = new System.Drawing.Point(14, 154);
-            this.comboBox10.Name = "comboBox10";
-            this.comboBox10.Size = new System.Drawing.Size(147, 28);
-            this.comboBox10.TabIndex = 62;
-            this.comboBox10.Text = "Màu sắc";
             // 
             // label4
             // 
@@ -1580,7 +1339,7 @@
             // panel11
             // 
             this.panel11.BackColor = System.Drawing.Color.Honeydew;
-            this.panel11.Controls.Add(this.comboBox9);
+            this.panel11.Controls.Add(this.comboBox8);
             this.panel11.Controls.Add(this.label7);
             this.panel11.Controls.Add(this.numericUpDown13);
             this.panel11.Controls.Add(this.label8);
@@ -1590,17 +1349,6 @@
             this.panel11.Name = "panel11";
             this.panel11.Size = new System.Drawing.Size(171, 222);
             this.panel11.TabIndex = 9;
-            // 
-            // comboBox9
-            // 
-            this.comboBox9.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox9.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.comboBox9.FormattingEnabled = true;
-            this.comboBox9.Location = new System.Drawing.Point(12, 154);
-            this.comboBox9.Name = "comboBox9";
-            this.comboBox9.Size = new System.Drawing.Size(147, 28);
-            this.comboBox9.TabIndex = 61;
-            this.comboBox9.Text = "Màu sắc";
             // 
             // label7
             // 
@@ -1667,17 +1415,6 @@
             this.panel7.Size = new System.Drawing.Size(171, 222);
             this.panel7.TabIndex = 6;
             // 
-            // cmb3
-            // 
-            this.cmb3.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmb3.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.cmb3.FormattingEnabled = true;
-            this.cmb3.Location = new System.Drawing.Point(14, 153);
-            this.cmb3.Name = "cmb3";
-            this.cmb3.Size = new System.Drawing.Size(147, 28);
-            this.cmb3.TabIndex = 61;
-            this.cmb3.Text = "Màu sắc";
-            // 
             // label34
             // 
             this.label34.AutoSize = true;
@@ -1733,7 +1470,7 @@
             // panel12
             // 
             this.panel12.BackColor = System.Drawing.Color.Honeydew;
-            this.panel12.Controls.Add(this.comboBox8);
+            this.panel12.Controls.Add(this.comboBox7);
             this.panel12.Controls.Add(this.label9);
             this.panel12.Controls.Add(this.numericUpDown14);
             this.panel12.Controls.Add(this.label10);
@@ -1743,17 +1480,6 @@
             this.panel12.Name = "panel12";
             this.panel12.Size = new System.Drawing.Size(171, 222);
             this.panel12.TabIndex = 8;
-            // 
-            // comboBox8
-            // 
-            this.comboBox8.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox8.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.comboBox8.FormattingEnabled = true;
-            this.comboBox8.Location = new System.Drawing.Point(11, 154);
-            this.comboBox8.Name = "comboBox8";
-            this.comboBox8.Size = new System.Drawing.Size(147, 28);
-            this.comboBox8.TabIndex = 53;
-            this.comboBox8.Text = "Màu sắc";
             // 
             // label9
             // 
@@ -1819,17 +1545,6 @@
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(171, 222);
             this.panel6.TabIndex = 5;
-            // 
-            // cmb2
-            // 
-            this.cmb2.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmb2.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.cmb2.FormattingEnabled = true;
-            this.cmb2.Location = new System.Drawing.Point(10, 153);
-            this.cmb2.Name = "cmb2";
-            this.cmb2.Size = new System.Drawing.Size(147, 28);
-            this.cmb2.TabIndex = 53;
-            this.cmb2.Text = "Màu sắc";
             // 
             // label32
             // 
@@ -1902,6 +1617,16 @@
             this.cmbmausac.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbmausac.ForeColor = System.Drawing.SystemColors.WindowText;
             this.cmbmausac.FormattingEnabled = true;
+            this.cmbmausac.Items.AddRange(new object[] {
+            "Tím ",
+            "Trắng",
+            "Đen ",
+            "Hồng",
+            "Vàng",
+            "Xanh lá",
+            "Xanh Dương",
+            "Nâu",
+            "Be"});
             this.cmbmausac.Location = new System.Drawing.Point(11, 153);
             this.cmbmausac.Name = "cmbmausac";
             this.cmbmausac.Size = new System.Drawing.Size(147, 28);
@@ -1970,6 +1695,491 @@
             this.pictureBox9.TabIndex = 34;
             this.pictureBox9.TabStop = false;
             // 
+            // cmb2
+            // 
+            this.cmb2.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmb2.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.cmb2.FormattingEnabled = true;
+            this.cmb2.Items.AddRange(new object[] {
+            "Tím ",
+            "Trắng",
+            "Đen ",
+            "Hồng",
+            "Vàng",
+            "Xanh lá",
+            "Xanh Dương",
+            "Nâu",
+            "Be"});
+            this.cmb2.Location = new System.Drawing.Point(11, 153);
+            this.cmb2.Name = "cmb2";
+            this.cmb2.Size = new System.Drawing.Size(147, 28);
+            this.cmb2.TabIndex = 61;
+            this.cmb2.Text = "Màu sắc";
+            // 
+            // cmb3
+            // 
+            this.cmb3.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmb3.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.cmb3.FormattingEnabled = true;
+            this.cmb3.Items.AddRange(new object[] {
+            "Tím ",
+            "Trắng",
+            "Đen ",
+            "Hồng",
+            "Vàng",
+            "Xanh lá",
+            "Xanh Dương",
+            "Nâu",
+            "Be"});
+            this.cmb3.Location = new System.Drawing.Point(14, 153);
+            this.cmb3.Name = "cmb3";
+            this.cmb3.Size = new System.Drawing.Size(147, 28);
+            this.cmb3.TabIndex = 62;
+            this.cmb3.Text = "Màu sắc";
+            // 
+            // cmb4
+            // 
+            this.cmb4.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmb4.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.cmb4.FormattingEnabled = true;
+            this.cmb4.Items.AddRange(new object[] {
+            "Tím ",
+            "Trắng",
+            "Đen ",
+            "Hồng",
+            "Vàng",
+            "Xanh lá",
+            "Xanh Dương",
+            "Nâu",
+            "Be"});
+            this.cmb4.Location = new System.Drawing.Point(11, 153);
+            this.cmb4.Name = "cmb4";
+            this.cmb4.Size = new System.Drawing.Size(147, 28);
+            this.cmb4.TabIndex = 63;
+            this.cmb4.Text = "Màu sắc";
+            // 
+            // cmb5
+            // 
+            this.cmb5.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmb5.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.cmb5.FormattingEnabled = true;
+            this.cmb5.Items.AddRange(new object[] {
+            "Tím ",
+            "Trắng",
+            "Đen ",
+            "Hồng",
+            "Vàng",
+            "Xanh lá",
+            "Xanh Dương",
+            "Nâu",
+            "Be"});
+            this.cmb5.Location = new System.Drawing.Point(13, 153);
+            this.cmb5.Name = "cmb5";
+            this.cmb5.Size = new System.Drawing.Size(147, 28);
+            this.cmb5.TabIndex = 71;
+            this.cmb5.Text = "Màu sắc";
+            // 
+            // cmb6
+            // 
+            this.cmb6.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmb6.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.cmb6.FormattingEnabled = true;
+            this.cmb6.Items.AddRange(new object[] {
+            "Tím ",
+            "Trắng",
+            "Đen ",
+            "Hồng",
+            "Vàng",
+            "Xanh lá",
+            "Xanh Dương",
+            "Nâu",
+            "Be"});
+            this.cmb6.Location = new System.Drawing.Point(13, 153);
+            this.cmb6.Name = "cmb6";
+            this.cmb6.Size = new System.Drawing.Size(147, 28);
+            this.cmb6.TabIndex = 72;
+            this.cmb6.Text = "Màu sắc";
+            // 
+            // comboBox6
+            // 
+            this.comboBox6.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox6.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.comboBox6.FormattingEnabled = true;
+            this.comboBox6.Items.AddRange(new object[] {
+            "Tím ",
+            "Trắng",
+            "Đen ",
+            "Hồng",
+            "Vàng",
+            "Xanh lá",
+            "Xanh Dương",
+            "Nâu",
+            "Be"});
+            this.comboBox6.Location = new System.Drawing.Point(12, 153);
+            this.comboBox6.Name = "comboBox6";
+            this.comboBox6.Size = new System.Drawing.Size(147, 28);
+            this.comboBox6.TabIndex = 73;
+            this.comboBox6.Text = "Màu sắc";
+            // 
+            // comboBox7
+            // 
+            this.comboBox7.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox7.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.comboBox7.FormattingEnabled = true;
+            this.comboBox7.Items.AddRange(new object[] {
+            "Tím ",
+            "Trắng",
+            "Đen ",
+            "Hồng",
+            "Vàng",
+            "Xanh lá",
+            "Xanh Dương",
+            "Nâu",
+            "Be"});
+            this.comboBox7.Location = new System.Drawing.Point(11, 154);
+            this.comboBox7.Name = "comboBox7";
+            this.comboBox7.Size = new System.Drawing.Size(147, 28);
+            this.comboBox7.TabIndex = 53;
+            this.comboBox7.Text = "Màu sắc";
+            // 
+            // comboBox8
+            // 
+            this.comboBox8.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox8.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.comboBox8.FormattingEnabled = true;
+            this.comboBox8.Items.AddRange(new object[] {
+            "Tím ",
+            "Trắng",
+            "Đen ",
+            "Hồng",
+            "Vàng",
+            "Xanh lá",
+            "Xanh Dương",
+            "Nâu",
+            "Be"});
+            this.comboBox8.Location = new System.Drawing.Point(10, 153);
+            this.comboBox8.Name = "comboBox8";
+            this.comboBox8.Size = new System.Drawing.Size(147, 28);
+            this.comboBox8.TabIndex = 61;
+            this.comboBox8.Text = "Màu sắc";
+            // 
+            // comboBox9
+            // 
+            this.comboBox9.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox9.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.comboBox9.FormattingEnabled = true;
+            this.comboBox9.Items.AddRange(new object[] {
+            "Tím ",
+            "Trắng",
+            "Đen ",
+            "Hồng",
+            "Vàng",
+            "Xanh lá",
+            "Xanh Dương",
+            "Nâu",
+            "Be"});
+            this.comboBox9.Location = new System.Drawing.Point(14, 151);
+            this.comboBox9.Name = "comboBox9";
+            this.comboBox9.Size = new System.Drawing.Size(147, 28);
+            this.comboBox9.TabIndex = 62;
+            this.comboBox9.Text = "Màu sắc";
+            // 
+            // comboBox10
+            // 
+            this.comboBox10.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox10.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.comboBox10.FormattingEnabled = true;
+            this.comboBox10.Items.AddRange(new object[] {
+            "Tím ",
+            "Trắng",
+            "Đen ",
+            "Hồng",
+            "Vàng",
+            "Xanh lá",
+            "Xanh Dương",
+            "Nâu",
+            "Be"});
+            this.comboBox10.Location = new System.Drawing.Point(11, 151);
+            this.comboBox10.Name = "comboBox10";
+            this.comboBox10.Size = new System.Drawing.Size(147, 28);
+            this.comboBox10.TabIndex = 63;
+            this.comboBox10.Text = "Màu sắc";
+            // 
+            // comboBox11
+            // 
+            this.comboBox11.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox11.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.comboBox11.FormattingEnabled = true;
+            this.comboBox11.Items.AddRange(new object[] {
+            "Tím ",
+            "Trắng",
+            "Đen ",
+            "Hồng",
+            "Vàng",
+            "Xanh lá",
+            "Xanh Dương",
+            "Nâu",
+            "Be"});
+            this.comboBox11.Location = new System.Drawing.Point(12, 150);
+            this.comboBox11.Name = "comboBox11";
+            this.comboBox11.Size = new System.Drawing.Size(147, 28);
+            this.comboBox11.TabIndex = 64;
+            this.comboBox11.Text = "Màu sắc";
+            // 
+            // comboBox12
+            // 
+            this.comboBox12.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox12.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.comboBox12.FormattingEnabled = true;
+            this.comboBox12.Items.AddRange(new object[] {
+            "Tím ",
+            "Trắng",
+            "Đen ",
+            "Hồng",
+            "Vàng",
+            "Xanh lá",
+            "Xanh Dương",
+            "Nâu",
+            "Be"});
+            this.comboBox12.Location = new System.Drawing.Point(12, 151);
+            this.comboBox12.Name = "comboBox12";
+            this.comboBox12.Size = new System.Drawing.Size(147, 28);
+            this.comboBox12.TabIndex = 65;
+            this.comboBox12.Text = "Màu sắc";
+            // 
+            // comboBox13
+            // 
+            this.comboBox13.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox13.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.comboBox13.FormattingEnabled = true;
+            this.comboBox13.Items.AddRange(new object[] {
+            "Tím ",
+            "Trắng",
+            "Đen ",
+            "Hồng",
+            "Vàng",
+            "Xanh lá",
+            "Xanh Dương",
+            "Nâu",
+            "Be"});
+            this.comboBox13.Location = new System.Drawing.Point(12, 150);
+            this.comboBox13.Name = "comboBox13";
+            this.comboBox13.Size = new System.Drawing.Size(147, 28);
+            this.comboBox13.TabIndex = 66;
+            this.comboBox13.Text = "Màu sắc";
+            // 
+            // button20
+            // 
+            this.button20.BackColor = System.Drawing.Color.Bisque;
+            this.button20.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button20.ForeColor = System.Drawing.Color.SaddleBrown;
+            this.button20.Location = new System.Drawing.Point(77, 183);
+            this.button20.Name = "button20";
+            this.button20.Size = new System.Drawing.Size(82, 30);
+            this.button20.TabIndex = 65;
+            this.button20.Text = "+ Thêm";
+            this.button20.UseVisualStyleBackColor = false;
+            // 
+            // pictureBox17
+            // 
+            this.pictureBox17.Image = global::TiemVaiLucCode.Properties.Resources.vai_hoa_nhi_2_7378dd39f9_1_;
+            this.pictureBox17.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox17.Name = "pictureBox17";
+            this.pictureBox17.Size = new System.Drawing.Size(171, 103);
+            this.pictureBox17.TabIndex = 4;
+            this.pictureBox17.TabStop = false;
+            // 
+            // label27
+            // 
+            this.label27.AutoSize = true;
+            this.label27.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label27.ForeColor = System.Drawing.Color.Maroon;
+            this.label27.Location = new System.Drawing.Point(8, 109);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(105, 23);
+            this.label27.TabIndex = 69;
+            this.label27.Text = "Vải hoa nhí";
+            // 
+            // numericUpDown19
+            // 
+            this.numericUpDown19.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDown19.Location = new System.Drawing.Point(13, 183);
+            this.numericUpDown19.Name = "numericUpDown19";
+            this.numericUpDown19.Size = new System.Drawing.Size(58, 30);
+            this.numericUpDown19.TabIndex = 66;
+            // 
+            // label26
+            // 
+            this.label26.AutoSize = true;
+            this.label26.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label26.ForeColor = System.Drawing.Color.IndianRed;
+            this.label26.Location = new System.Drawing.Point(8, 131);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(77, 19);
+            this.label26.TabIndex = 70;
+            this.label26.Text = "60.000/m";
+            // 
+            // panel19
+            // 
+            this.panel19.BackColor = System.Drawing.Color.Honeydew;
+            this.panel19.Controls.Add(this.comboBox18);
+            this.panel19.Controls.Add(this.label26);
+            this.panel19.Controls.Add(this.numericUpDown19);
+            this.panel19.Controls.Add(this.label27);
+            this.panel19.Controls.Add(this.pictureBox17);
+            this.panel19.Controls.Add(this.button20);
+            this.panel19.Location = new System.Drawing.Point(733, 533);
+            this.panel19.Name = "panel19";
+            this.panel19.Size = new System.Drawing.Size(171, 222);
+            this.panel19.TabIndex = 31;
+            // 
+            // comboBox14
+            // 
+            this.comboBox14.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox14.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.comboBox14.FormattingEnabled = true;
+            this.comboBox14.Items.AddRange(new object[] {
+            "Tím ",
+            "Trắng",
+            "Đen ",
+            "Hồng",
+            "Vàng",
+            "Xanh lá",
+            "Xanh Dương",
+            "Nâu",
+            "Be"});
+            this.comboBox14.Location = new System.Drawing.Point(11, 151);
+            this.comboBox14.Name = "comboBox14";
+            this.comboBox14.Size = new System.Drawing.Size(147, 28);
+            this.comboBox14.TabIndex = 61;
+            this.comboBox14.Text = "Màu sắc";
+            // 
+            // comboBox15
+            // 
+            this.comboBox15.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox15.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.comboBox15.FormattingEnabled = true;
+            this.comboBox15.Items.AddRange(new object[] {
+            "Tím ",
+            "Trắng",
+            "Đen ",
+            "Hồng",
+            "Vàng",
+            "Xanh lá",
+            "Xanh Dương",
+            "Nâu",
+            "Be"});
+            this.comboBox15.Location = new System.Drawing.Point(10, 151);
+            this.comboBox15.Name = "comboBox15";
+            this.comboBox15.Size = new System.Drawing.Size(147, 28);
+            this.comboBox15.TabIndex = 63;
+            this.comboBox15.Text = "Màu sắc";
+            // 
+            // comboBox16
+            // 
+            this.comboBox16.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox16.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.comboBox16.FormattingEnabled = true;
+            this.comboBox16.Items.AddRange(new object[] {
+            "Tím ",
+            "Trắng",
+            "Đen ",
+            "Hồng",
+            "Vàng",
+            "Xanh lá",
+            "Xanh Dương",
+            "Nâu",
+            "Be"});
+            this.comboBox16.Location = new System.Drawing.Point(14, 151);
+            this.comboBox16.Name = "comboBox16";
+            this.comboBox16.Size = new System.Drawing.Size(147, 28);
+            this.comboBox16.TabIndex = 65;
+            this.comboBox16.Text = "Màu sắc";
+            // 
+            // comboBox17
+            // 
+            this.comboBox17.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox17.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.comboBox17.FormattingEnabled = true;
+            this.comboBox17.Items.AddRange(new object[] {
+            "Tím ",
+            "Trắng",
+            "Đen ",
+            "Hồng",
+            "Vàng",
+            "Xanh lá",
+            "Xanh Dương",
+            "Nâu",
+            "Be"});
+            this.comboBox17.Location = new System.Drawing.Point(11, 151);
+            this.comboBox17.Name = "comboBox17";
+            this.comboBox17.Size = new System.Drawing.Size(147, 28);
+            this.comboBox17.TabIndex = 67;
+            this.comboBox17.Text = "Màu sắc";
+            // 
+            // comboBox18
+            // 
+            this.comboBox18.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox18.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.comboBox18.FormattingEnabled = true;
+            this.comboBox18.Items.AddRange(new object[] {
+            "Tím ",
+            "Trắng",
+            "Đen ",
+            "Hồng",
+            "Vàng",
+            "Xanh lá",
+            "Xanh Dương",
+            "Nâu",
+            "Be"});
+            this.comboBox18.Location = new System.Drawing.Point(12, 149);
+            this.comboBox18.Name = "comboBox18";
+            this.comboBox18.Size = new System.Drawing.Size(147, 28);
+            this.comboBox18.TabIndex = 69;
+            this.comboBox18.Text = "Màu sắc";
+            // 
+            // comboBox19
+            // 
+            this.comboBox19.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox19.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.comboBox19.FormattingEnabled = true;
+            this.comboBox19.Items.AddRange(new object[] {
+            "Tím ",
+            "Trắng",
+            "Đen ",
+            "Hồng",
+            "Vàng",
+            "Xanh lá",
+            "Xanh Dương",
+            "Nâu",
+            "Be"});
+            this.comboBox19.Location = new System.Drawing.Point(12, 149);
+            this.comboBox19.Name = "comboBox19";
+            this.comboBox19.Size = new System.Drawing.Size(147, 28);
+            this.comboBox19.TabIndex = 71;
+            this.comboBox19.Text = "Màu sắc";
+            // 
+            // comboBox20
+            // 
+            this.comboBox20.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox20.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.comboBox20.FormattingEnabled = true;
+            this.comboBox20.Items.AddRange(new object[] {
+            "Tím ",
+            "Trắng",
+            "Đen ",
+            "Hồng",
+            "Vàng",
+            "Xanh lá",
+            "Xanh Dương",
+            "Nâu",
+            "Be"});
+            this.comboBox20.Location = new System.Drawing.Point(12, 148);
+            this.comboBox20.Name = "comboBox20";
+            this.comboBox20.Size = new System.Drawing.Size(147, 28);
+            this.comboBox20.TabIndex = 73;
+            this.comboBox20.Text = "Màu sắc";
+            // 
             // Frm_BanHang
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -2012,10 +2222,6 @@
             this.panel15.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).EndInit();
-            this.panel19.ResumeLayout(false);
-            this.panel19.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown19)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox17)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel22.ResumeLayout(false);
@@ -2069,6 +2275,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox17)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown19)).EndInit();
+            this.panel19.ResumeLayout(false);
+            this.panel19.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -2085,13 +2295,11 @@
         private System.Windows.Forms.Panel panel13;
         private System.Windows.Forms.PictureBox pictureBox12;
         private System.Windows.Forms.PictureBox pictureBox16;
-        private System.Windows.Forms.PictureBox pictureBox17;
         private System.Windows.Forms.Panel panel18;
         private System.Windows.Forms.PictureBox pictureBox15;
         private System.Windows.Forms.Panel panel17;
         private System.Windows.Forms.Panel panel15;
         private System.Windows.Forms.PictureBox pictureBox14;
-        private System.Windows.Forms.Panel panel19;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel22;
         private System.Windows.Forms.PictureBox pictureBox20;
@@ -2144,8 +2352,6 @@
         private System.Windows.Forms.Button button22;
         private System.Windows.Forms.NumericUpDown numericUpDown8;
         private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.NumericUpDown numericUpDown19;
-        private System.Windows.Forms.Button button20;
         private System.Windows.Forms.NumericUpDown numericUpDown16;
         private System.Windows.Forms.Button button17;
         private System.Windows.Forms.NumericUpDown numericUpDown15;
@@ -2194,8 +2400,6 @@
         private System.Windows.Forms.Label label29;
         private System.Windows.Forms.Label label30;
         private System.Windows.Forms.Label label31;
-        private System.Windows.Forms.Label label26;
-        private System.Windows.Forms.Label label27;
         private System.Windows.Forms.Label label40;
         private System.Windows.Forms.Label label41;
         private System.Windows.Forms.Label label42;
@@ -2208,27 +2412,33 @@
         private System.Windows.Forms.Label label35;
         private System.Windows.Forms.Label label32;
         private System.Windows.Forms.Label label33;
-        private System.Windows.Forms.ComboBox comboBox17;
-        private System.Windows.Forms.ComboBox cmb6;
-        private System.Windows.Forms.ComboBox comboBox7;
-        private System.Windows.Forms.ComboBox comboBox18;
-        private System.Windows.Forms.ComboBox comboBox13;
-        private System.Windows.Forms.ComboBox comboBox20;
-        private System.Windows.Forms.ComboBox comboBox21;
-        private System.Windows.Forms.ComboBox comboBox14;
-        private System.Windows.Forms.ComboBox comboBox19;
-        private System.Windows.Forms.ComboBox comboBox16;
-        private System.Windows.Forms.ComboBox cmb5;
-        private System.Windows.Forms.ComboBox comboBox15;
-        private System.Windows.Forms.ComboBox comboBox12;
-        private System.Windows.Forms.ComboBox comboBox11;
         private System.Windows.Forms.Label label44;
+        private System.Windows.Forms.ComboBox cmbmausac;
+        private System.Windows.Forms.ComboBox cmb6;
+        private System.Windows.Forms.ComboBox cmb5;
         private System.Windows.Forms.ComboBox cmb4;
+        private System.Windows.Forms.ComboBox cmb3;
+        private System.Windows.Forms.ComboBox cmb2;
+        private System.Windows.Forms.ComboBox comboBox16;
+        private System.Windows.Forms.ComboBox comboBox6;
+        private System.Windows.Forms.ComboBox comboBox17;
+        private System.Windows.Forms.ComboBox comboBox12;
+        private System.Windows.Forms.ComboBox comboBox19;
+        private System.Windows.Forms.ComboBox comboBox20;
+        private System.Windows.Forms.ComboBox comboBox13;
+        private System.Windows.Forms.Panel panel19;
+        private System.Windows.Forms.ComboBox comboBox18;
+        private System.Windows.Forms.Label label26;
+        private System.Windows.Forms.NumericUpDown numericUpDown19;
+        private System.Windows.Forms.Label label27;
+        private System.Windows.Forms.PictureBox pictureBox17;
+        private System.Windows.Forms.Button button20;
+        private System.Windows.Forms.ComboBox comboBox15;
+        private System.Windows.Forms.ComboBox comboBox14;
+        private System.Windows.Forms.ComboBox comboBox11;
         private System.Windows.Forms.ComboBox comboBox10;
         private System.Windows.Forms.ComboBox comboBox9;
-        private System.Windows.Forms.ComboBox cmb3;
         private System.Windows.Forms.ComboBox comboBox8;
-        private System.Windows.Forms.ComboBox cmb2;
-        private System.Windows.Forms.ComboBox cmbmausac;
+        private System.Windows.Forms.ComboBox comboBox7;
     }
 }

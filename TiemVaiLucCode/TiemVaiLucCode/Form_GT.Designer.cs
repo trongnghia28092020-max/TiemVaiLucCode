@@ -119,10 +119,10 @@
             this.label24.ForeColor = System.Drawing.Color.Black;
             this.label24.Location = new System.Drawing.Point(952, 523);
             this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(260, 95);
+            this.label24.Size = new System.Drawing.Size(293, 95);
             this.label24.TabIndex = 24;
-            this.label24.Text = "SĐT: 0358467814\r\n\r\nEmail: tranthuyduy2006@gmail.com\r\n\r\nĐịa chỉ: Trường Đại Học Đồ" +
-    "ng Tháp";
+            this.label24.Text = "SĐT: 0354455312\r\n\r\nEmail: trongnghia.28092020@gmail.com\r\n\r\nĐịa chỉ: Trường Đại Họ" +
+    "c Đồng Tháp";
             // 
             // label23
             // 
@@ -131,10 +131,10 @@
             this.label23.ForeColor = System.Drawing.Color.Black;
             this.label23.Location = new System.Drawing.Point(648, 522);
             this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(260, 95);
+            this.label23.Size = new System.Drawing.Size(253, 95);
             this.label23.TabIndex = 23;
-            this.label23.Text = "SĐT: 0358467814\r\n\r\nEmail: tranthuyduy2006@gmail.com\r\n\r\nĐịa chỉ: Trường Đại Học Đồ" +
-    "ng Tháp";
+            this.label23.Text = "SĐT: 0783730934\r\n\r\nEmail: ngoluc112006@gmail.com\r\n\r\nĐịa chỉ: Trường Đại Học Đồng " +
+    "Tháp";
             // 
             // label22
             // 

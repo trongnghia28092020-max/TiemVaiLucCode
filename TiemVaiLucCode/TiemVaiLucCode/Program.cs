@@ -16,7 +16,7 @@ namespace TiemVaiLucCode
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Frm_ĐKhoan()); // Truyền số tiền cần thanh toán
+            Application.Run(new Form_TC()); // Truyền số tiền cần thanh toán
         }
     }
 }
